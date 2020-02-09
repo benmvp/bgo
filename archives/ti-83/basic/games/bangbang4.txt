@@ -1,0 +1,95 @@
+  _____       _      _       _     ___
+ |  _  \     / \    | |     | |  /   _ \
+ | |_|  |  /  _  \  |  \    | | |  /  |_|
+ |     /  |  |_|  | | |\ \  | | | |  __        __         __
+ |  _  \  |  ___  | | |  \ \| | | | |_ \      |  |       |  |
+ | |_|  | | |   | | | |    \  | |  \__| |     |  |       |  |
+ |_____/  |_|   |_| |_|     |_|  \_____/      |  |       |  |
+  _____       _      _       _     ___        |  |_______|  |
+ |  _  \     / \    | |     | |  /   _ \      |__________   |
+ | |_|  |  /  _  \  |  \    | | |  /  |_|                |  |
+ |     /  |  |_|  | | |\ \  | | | |  __                  |  |
+ |  _  \  |  ___  | | |  \ \| | | | |_ \                 |  |
+ | |_|  | | |   | | | |    \  | |  \__| |                |  |
+ |_____/  |_|   |_| |_|     |_|  \_____/                 |__|
+ 
+ 
+                            Version 4.3
+
+                           By: Sean Weeks
+                        scybolt@hotmail.com
+                      http://www.skybolts.com
+
+	BangBang 4 is a neat game I build in Basic for the TI-83
+or TI-83 plus. It only takes up 3600 bytes of space. Recently it
+has been completely re-programmed, and it has several more
+functions. The first version for the TI-83 was started in
+my grade 8 classroom.
+
+	First, send the game to your calculator and run it
+through the PRGM button. You will see it generate a terrain.
+Then you will see the main menu. If you don't like the terrain,
+you can select Redraw Terrain, or choose a custom terrain from
+the Terrain type menu. Then select a type of game to play.
+
+Missiles:
+
+Large:  Lots of explosion, but heavy and very affected by wind.
+Medium: Good explosions, and slightly affected by wind.
+Small:  Small explosions, lightweight, small, and barely affected
+        by wind
+
+Angle:    Try about 50 degrees. The cannon moves as far as 170
+              90
+              |  / 45
+              | /
+              |/___ 0
+
+
+Velocity: A good velocity is about 200
+          (WARNING: too much is dangerous to your base!)
+
+-- 1 Player vs AI (New in BangBang4) --
+
+1 Player vs AI is often very challenging. You always get to start
+first. AI is usually very accurate, but can get quite confused in
+valleys or high winds.
+
+-- 1 Player --
+
+1 Player is like playing against a target. The only dangers are
+hitting yourself.
+
+-- 2 Player --
+
+This is really fun if you find someone to play against you
+(or against yourself). Whoever starts first is random.
+Player 1 is on the left and player 2 on the right.
+
+
+Different terrain types:
+
+Selecting a different level of terrain lets the program 
+generate terrain up to higher altitudes. You can also
+put in a custom terrain maximum height.
+
+Note: If you quit the game by pressing ON, you usually have
+      use the FnOn function to be able to see Y= graphs.
+
+You may distribute this game and put it on as many web sites
+as you like as long as you DO NOT CHANGE THE PROGRAM OR
+SEPARATE IT FROM THIS DOCUMENT
+
+
+************* Please pass on this game! ****************
+
+----------------------------------------------------------------
+Don't forget to check my web site for more calculator programs, 
+photos, computer games, and other stuff at:
+
+http://www.skybolts.com
+
+----------------------------------------------------------------
+
+Please e-mail all bugs and comments to:
+scybolt@hotmail.com

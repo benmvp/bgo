@@ -1,0 +1,5 @@
+Rent-A-Cop
+By: darkGravity
+Type: 83/83+ BASIC Game
+Site:www.geocities.com/fbprogramming
+A fun text-based game where you take the role of a rent-a-cop and go to gang headquarters and shoot their asses. After that, you get to beat the final druglord boss. Includes small cigarette side-game to get more cigarettes and you can find pieces enemies drop for better weapon or parts. If you liked Drug Wars or Pimp Quest, this game is a MUST :) (Also MirageOS compatible)

@@ -1,0 +1,4 @@
+			Cleanup.8xp
+		      Jason D. Ralphs
+
+	This program was designed to cleanup your calculator after a virus or such is put on.  It also works as a great "reset defaults" function.

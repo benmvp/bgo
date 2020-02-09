@@ -1,0 +1,195 @@
+Dragonball Z - Saiyan Saga
+version: 5.0
+created by: Lucas Johnson (luke195rs@aol.com)
+
+7 May 2001
+
+Note: to see this best, checkmark the "Word wrap" option in the "Edit" menu.
+
+
+*****************************
+* DBZ-ss User's Manual v1.0 *
+*****************************
+
+Contents
+--------
+
+	I. Installation
+	II. About Dragonball Z
+		A. The Dragonball Z TV series
+		B. The Saiyan Saga DBZ game
+	III. General Gameplay
+		A. Starting a new game
+		B. Saving
+		C. Learning new moves
+		D. Training
+	IV. The Battle Engine
+		A. The basics
+		B. Distand combat
+		C. Close combat
+		D. Powering up
+		E. Energy moves
+	V. End Game
+	VI. Future Sagas
+	VII. Versions
+		A. Version history
+		B. Known game errors
+	VIII. Troubleshooting
+	IX. Contacting the Author
+	X. Credits
+
+I. Installation
+---------------
+
+Dragonball Z - Saiyan Saga will use approximatly 12,000 bytes of memory for the program and it's subroutines. Additional cashe memory will be required to run the program without memory errors. The game will also require the use of Pic0, Pic1, Pic2, and ALL letter variables. You will need these unarchived for the game to work. Note that if you have any pictures in Pic0, Pic1, or Pic2, you will need to save them to another picture file or they will be overwritten.
+
+For users of the TI-83(+), make sure your calculator has sufficient memory and then open "83.zip". Load all files onto your calculator.
+Make sure the nessisary files disscused in the "System Requirements" section are unarchieved. Play the game by running prgmDBZ and enjoy!
+
+II. About Dragonball Z
+----------------------
+
+A. The Dragonball Z TV series
+
+Dragonball Z is a cartoon that runs on Cartoon Network at 5:00 PM central time for cable viewers. It is a Japanesse anime series inwhich several people from Earth, called Z Warriors, go on many adventures to defeat evil threatening the freedom of the universe. Goku, a Z Warrior, is the main character and is the strongest fighter throughout most of the series. Dragonball Z picks up where the Dragonball series left off, with Raditz on his way to Earth to destroy it.
+
+B. The Saiyan Saga DBZ game
+
+Dragonball Z - Siayan Saga is a game in which you take on the role of Goku and act out the adventures and battles he faces in a small block of episodes in the TV series most commonly known as the Saiyan Saga. The saga is defined as starting with the arrival of Raditz on Earth and ending with the episode where Vegeta is first defeated on Earth by Gohan. In other words, the beginning of the Dragonball Z series starts the Saiyan Saga, and is ended just before the "A new goal: Namek" episode in which the "Namek Saga" which also called the "Ginyu Saga" begins. The game, then, starts before DBZ even begins only starting when you finally face Raditz. The game ends when you destroy Vegeta. This differs from the series because Goku is knocked out before finishing off Vegeta. For the simplicity of the game though, I let you finish off Vegeta and not Gohan.
+
+III. General Gameplay
+---------------------
+
+A. Starting a new game
+
+With either version of game on your calculator, you can begin a new game by running prgmDBZ. The game comes with several subroutines, but don't run them. A menu will be brought up and you will have several choices. Start a new game. The game will allow you to enter a 7 letter maximum name, and let you choose a difficulty level. The difficulty level will only effect some aspects of battle, and change nothing else. More specificly, difficulty level will make your opponets, esecially the final bosses, more difficult to defeat. You will find yourself at Master Roshi's and will have several options. You will need to train to be ready for Raditz.
+
+B. Saving
+
+The game should take some time to beat and sometimes it might be a nice idea to save. Lucky you, there is a save feature where you can save your game. From Master Roshi's, select "save" to save your game. The save feature is disigned to be reletivily difficult to cheat on, but, really, there is nothing I can do to a determined cheater. It is inadvisable for game enjoyment sake to mess around with the variables that store game statistics (that, and if you aren't VERY careful, your saved game will be deleted, don't ask me how, it's a secret =).) The save feature allows you to start a new game and keep your old game if you wish.
+
+C. Learning new moves
+
+Throughout the game, you will learn moves. The first can be purchased from Master Roshi for 300 monetary units. You will gain knowlege of two more moves once you defeat Raditz, and will again learn two more once you gain King Kai's acceptance by catching bubbles, King Kai's pet monkey, 5 times. (In the game I don't make you hit the grasshopper on the head as in the TV series.) Several of these moves are vital to winning the game. These moves will be disscussed later.
+
+D. Training
+
+The only way to really advance in the first stage of the game is train. You will fight Picallo as training. The specifics of battle will not be discussed in this section, but the idea is that every time you win, you will have a higher maximum power level, a higher maximum energy level, and more money. These will also be discussed in detail later. After each battle, you will need to regain your energy level from Master Roshi's by selecting "Regain Energy".
+
+IV. The Battle Engine
+---------------------
+
+A. The basics
+
+The battle engine, as you may have noticed, is a subroutine that uses up a vast majority of the game's required memory space. Most of your gaming experience will be in battle. The first battles you find yourself in are ones against Picallo in which you are simply training to become stronger. The entire battle system is based on turn-based combat. In turn-based combat, you enter a battle with time stopped. You decide what you want to do, time resumes, the action is commenced, and it is then your enemy's turn to do something. The enemy does something and then time stops, and it is your turn to decide what you want to do again. Only actions that require time, will use your turn. So, if you simply want to see the battle stats, you will still have your turn afterwards. If you want to power-up, attempt to run, or attack, your turn is used, and it is then your enemy's turn. This cycle will continue until either you run away, you die, or your enemy dies. If your enemy dies, you win (duh!). If you die, it is game over (with one exception. Raditz is SUPPOSED to beat you.) People are killed when their energy level drops to zero. Power is simply a measure of your strength, so don't confuse the two!
+
+B. Distant combat
+
+When you enter battle mode, you will automatically be in distant combat. Here you will have several options as to what to do. If you attack, you will have a few options as to what energy based moves you wish to perform. Attacks from here will require some of your energy to take more energy away from your enemy. If you are very strong, you will not notice the effects of some of the weaker moves.
+
+C. Close combat
+
+Close combat involves good old-fashioned beating the **** out of each other. The menu in close combat is more limited, but it is a completly different mode of combat. When you attack, you press the function keys (the 5 at the very top of your calc) to attack your enemy in various ways. Time will resume AFTER you throw the first punch and you will have a limited amount of time to try to follow up on it. If you can get enough hits, you will have a combo, and the game will say so. To get a combo, thus, you will have to press a fuction key again after you hit, and then as many times as you like after that. Only certain patterns of hits will continue a combo, and the pattern will change for every game, so you have to memorize which combos work so that you can use them again against harder bosses.
+
+D. Powering up
+
+After each fight, your maximum power level will increace to some amount depending on the difficulty of the last enemy. It is recommended that before you start a new battle you power up to your maximum level first. Some battles, like the boss battles for example, you will already be powered up, so check the stats if you don't know so you don't waste a turn. When powering up, you will see graphics very much like those seen in a scouter in the TV series. Powering up uses a turn.
+
+E. Energy moves
+
+In distant combat, you use energy moves to either attack, or change stats. Moves will require a certain amount of energy to use. This energy depends quite completly on how powerful you are. This affects even more how much damage is inflicted by your hit. So, an advanced move when you are weak will take a lot out of you to do little, and when you are strong, the same move will take very little from you to do more damage. The stronger you are though, the less and less damage the move will do in comparison to your strength, thus, you learn new moves so that you will always be able to maintain the balance. Two moves are essential to beat the game, both of which you learn last. Spirit Bomb is one of these. It works just like the other moves except it is a lot stronger. Kaioken is the other important move. This move works very unlike the other moves in that it will dramatically increase your power level in a battle. This change effects all of your moves for the better, and all of your enemy's moves for the not so better. Kaioken uses up a turn just like powering up. Kaioken can also be used on top of other Kaiokens to make you VERY strong. You are limited to kaiokens though. You can only have 15 kaiokens built on top of each other at one time (in this saga). Besides that, you will likely never see that number before you are forced to attack due to the damage you have accumualated from your enemy having so much time to attack. Kaioken does not increase your energy, and your kaioken power will end after the battle. Also note that since the battle with Nappa and the battle with Vegeta are considered one fight, kaiokens you build up in the fight with Nappa are still there when you fight Vegeta.
+
+V. End Game
+-----------
+
+The final battle is fought with Vegeta. Vegeta is considerably stronger than you are so strategy is very important. You will have to discover stratigies for yourself to beat him, especially on the harder difficulty levels. If you die in this battle, you will have to pick up agian where you last saved. If you do beat Vegeta, you will have beat the game. Your game will be saved for use in future DBZ sagas.
+
+VI. Future Sagas
+----------------
+
+I want to continue the DBZ game series, but I don't know how far. I can't even garantee the creation of the next saga, the Namek Saga. The good thing about the future sagas is that only a fraction of 120+ hours I poured into the Saiyan Saga thus far will be needed to make more sagas as I already have a battle engine. Some modifications will be required, but the worst of it is definatly over. If any of you are RPG programers out there, you will understand how much easier it is to simply make a text-based plot script than a battle system. For the rest of you, you'll just have to take my word for it. Eventually with the sagas, I want to make a program that will make the series continuous, so that a gamer could play the Saiyan Saga up to, oh say the Andriod Saga and never have to leave the game. Also in the future, I want to make a 2-player DBZ battle engine where it will simulate a battle between the character you've built, and the one your friend has built on his calculator using the link cable. If anyone has any suggestions, they are more than welcome.
+
+VII. Versions
+--------------------
+
+A. Version History
+
+The past of DBZ-ss has been largly undocumented so there is only so much I know.
+
+v1.0
+Release date: Late 1999
+- initial release
+
+v2.0
+Release date: N/A, never released
+- interface dramatically enhanced
+- minor subroutines established
+- kaioken attack added
+- bug fixes in battle engine
+
+v3.0
+Release date: N/A, never released
+- battle engine redesigned to dramaticly reduce drag time
+
+v4.0
+Release date: unknown
+- new enemies added
+- end game save added
+- end game bug fixes
+- kamehameha and spirit bomb graphics enhanced
+
+v5.0
+Release date: late April/early May 2001
+- battle menu enhaced to show stats
+- close combat mode added
+- combos added
+- difficulty levels added
+
+B. Known game errors
+
+Error: Invalid end-snake dimension
+Occurance: Extremely rare
+Description:
+In this error, the program creating Snake Way will pick a non-integer value for it's end point and so the player sees the snake going right through the middle of two valid points that it can go through. This error has happened once to me, and it's source is not known to me. That one time it happened, it had only minor negetive side effects on the game.
+
+VIII. Troubleshooting
+---------------------
+
+Problem:
+I get a memory error when I play the game
+Remedy:
+Free up more memory
+
+Problem:
+I get an archive error when I play the game
+Remedy:
+Make sure that picture files pic0, pic1, and pic2 are unarchived, and that ALL letter variables are unarchieved. Also make sure that the DBZ list is unarchived. 
+
+Problem:
+The game won't load onto my calculator
+Remedy:
+This could be caused by a number of things. Make sure that the graph-link is connected securly at both the computer port and your calculator's port. Make sure that your link is connected to the right computer port. Make sure your software settings are correct. Make sure you are not trying to load the 83+ version onto your 83.
+
+Problem:
+I get an undefined error when I play the game
+Remedy:
+This is most likely caused because you do no not have all subroutines on your calculator. Try reloading the game to your calculator. This could also be caused because you are not running the right program. Make sure you start the game by executing prgmDBZ and not the other programs.
+
+IX. Contacting the Author
+-------------------------
+
+If you have any suggestions or questions concerning the game, please feel free to contact me at luke195rs@aol.com. If you wish to IM me, my AIM is luke195rs and kalkrazy. Although DBZ-ss has been considerably tested, I cannot garantee that errors won't come up. If you have run across an error in the game, I strongly encourage you to contact me about the error so I can fix it and send out a revised version as quickly as possible.
+
+X. Credits
+----------
+
+Although every byte of code in the game was placed by myself, Lucas Johnson, I'd like to thank several people for their ideas and keeping me dropping the game. 
+Those people are:
+
+Chris Brotzman
+Ben Ilegbodu
+
+and all of you out there who so relentlessly bombarded me with e-mail complaining about the delayed release. =)
+
+
+Enjoy the sagas, everyone. =)

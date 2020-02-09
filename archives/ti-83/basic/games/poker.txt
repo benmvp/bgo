@@ -1,0 +1,21 @@
+POKER v2.0
+Black Software
+
+Ti83 basic game
+
+The game is pretty simple:
+
+	<Graph keys> to hold or to remove the hold the card
+	<2nd> Change: Remove -> Hold / Hold -> Remove
+
+It uses lists and only takes 3802 bytes.
+I don't think there are any bugs in it.
+
+If you have suggestions or comments:
+
+E-mail me at: christopherderycke@hotmail.com
+
+If you have idees for a next game, please e-mail me to
+
+If you know how to remove the interrupt when the <ON> key is pressed in a basic game
+or you have the code of an ASM program that executes the Basic program and remove the interrupt, please e-mail it to me.

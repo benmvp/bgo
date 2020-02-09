@@ -1,0 +1,22 @@
+		    Olympic Javelin Throw Y2K4 v1.0
+			   Copyright (C) 2001
+			     By: Billy Ella
+-----------------------------------------------------------------------
+Description: Face off against the computer in this button mashing race
+for the gold. No matter what the turnout is you still get a medal!There
+are three levels of computer diffuculty and each has its own high
+score. There is also a 2 Player mode which has the same addicting
+gameplay and features a 1p and 2p high score. Are you up to the 
+challenge???
+-----------------------------------------------------------------------
+Keys: Menu-Up moves the arrow up
+	   Down moves the arrow down
+           2nd confirms your selection
+      Gameplay-When prompted press down or up
+-----------------------------------------------------------------------
+Notes: If you delete Pic 6 you will get an undefined error. To fix this
+enter in this(-> equals store): 0->LJAVHS(7). The game should now work.
+
+E-mail me at Blink0072005@aol.com if you have any Questions, Comments,
+or find any bugs! Please don't change the author name.
+        

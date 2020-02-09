@@ -1,0 +1,4 @@
+Author-Chris Coykendall (darkGravity) #045
+File Size-1/2kb
+Type-TI-83+ BASIC Math
+Description-A simple program which tells you your weight on the planets in the solar system using the Weight=Gravity*Mass formula.

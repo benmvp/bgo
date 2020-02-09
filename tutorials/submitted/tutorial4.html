@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Member Submitted Tutorial #3</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+<style>
+
+<!--
+	select		{background-color:#dddddd; font-family:Verdana; font-size:8.5pt; color:black}
+	A:link		{color: #0000CD; text-decoration:none;}
+	A:visited	{color: #0000CD; text-decoration:none;}
+	A:hover		{color: #B22222;}
+-->
+</style>
+
+<link href="../../hlb.css" rel="stylesheet" />
+
+<script language="javascript" src="../../redirect.js"></script>
+
+<base target="_self" />
+</head>
+
+<body bgcolor="ffffff">
+<font face="verdana" size="1">
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../../home.html">HOME</a> <b>>></b> <a href="../index.html">Tutorials</a> <b>>> <i>Tutorial 4: Nibbles Game -- Hit Detection</b></i></td>
+	</tr>
+</table>
+
+<center>
+<b>Advanced Game Techniques Tutorials
+<hr />
+Advanced BASIC<br />
+Tutorial 4<br />
+Nibbles Game: Hit Detection</b>
+</center>
+
+<p><table align="right" width="210" cellpadding="0" cellspacing="0" border="0" bgcolor="dddddd">
+  <tr>
+    <td>
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td bgcolor="#FF6600" width="20" height="20">&nbsp;</td>
+          <td bgcolor="#666666" width="190" height="20"><font face="arial" size="1" color="#FFFFFF"><b>&nbsp;Advanced BASIC Tutorials</b></font></td>
+        </tr>
+      </table>
+      <table align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td>
+            <form>
+              <select class="pulldownMenu" onchange="if(options[selectedIndex].value) self.location.href=this.options[this.selectedIndex].value">
+                <option value="" selected="selected">Select Tutorial...</option>
+                <option value="tutorial1.html">1. Advanced Game Design</option>
+                <option value="tutorial2.html">2. Arrays: Data Structure</option>
+                <option value="tutorial3.html">3. Nibbles: Lists</option>
+                <option value="tutorial4.html">4. Nibbles: Hit Detection</option>
+                <option value="tutorial5.html">5. Scroll Screen Left & Right</option>
+                <option value="tutorial6.html">6. Advanced Graphics</option>
+                <option value="tutorial7.html">7. Trig Func & Relevant Uses</option>
+              </select>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></p>
+
+<p align="justify"><b>Part 1: Introduction</b>
+<br />First of all, your probably wondering what exactly advanced programming is. For our purposes, we can define advanced programming as the ability to use all the available facits of the TI-Basic to create quality and technicaly complex games. In order to do this you must understand how the calculator uses the commands on a very low level. To use TI-Basic to make quality games you have to know what your doing. Since ASM programming is very fast, you have to be able to program very intelligently to make quality games that will compete with them. The purpose of these tutorials is to explain several advanced programming techniques. By starting at game design and ending at 3-D programming. It explains mainly the theorys behind these techniques and not the exact syntax of things.</p>
+
+<p align="justify">For these tutorials it is assumed that you already know how basic basically works. If you don't know the syntax and how to use things like 'If' statements or 'Lbl's' then you should go read the many other Basic Tutorials out there on the web.</p>
+
+<p align="justify">Reading of the previous tutorial is not required to read through this tutorial. But is recommended as features talked about previously are used in this tutorial without extensive documentation.</p>
+
+<p align="justify"><b>Nibbles Hit Detection?</b>
+<br />As everyone noticed after typing in the code from the last tutorial, the game was not complete. It still requried some hit detection. It's not right if you can run through yourself. How could we store all that data you ask? A matrix of course. We simply store one into a matrix which represents the screen and then we can know where the snake body and the piece of 'food' is.</p>
+
+<p align="justify"><b>Source Code:</b>
+<br />Here is the source for the updated nibbles engine. As you will notice, most of it is the same as before, but with slight changes:</p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+<colgroup>
+  <col span="1" width="35%">
+  <col span="1" width="65%">
+</colgroup>
+  <tr>
+    <td bgcolor="999999" width="100%" colspan="2">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="999999">
+	  <tr>
+          <td><font face="verdana" size="1"><b>TI CODE</b></font></td>
+	    <td align="center"><font face="verdana" size="1"><b>EXPLANATION & DESCRIPTION</b></font></td>
+	  </tr>
+      </table>
+    </td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">ClrHome</font></td>
+    <td><font face="verdana" size="1">&nbsp;</font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">3->X:2->Y</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">1->S:0->T<br />2->C:0->L</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">50->dim(<font size="-3">L</font>1)<br />50->dim(<font size="-3">L</font>2)</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">{10,18}->dim([J])</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This sets up the matrix, the reason it is bigger than the screen is explained in 2.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">Fill(0,[J])</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">Fill(0,<font size="-3">L</font>1)<br />Fill(0,<font size="-3">L</font>2</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">For(A,1,10)<br />1->[J](A,1)<br />1->[J](A,18)<br />End<p>For(A,1,18)<br />1->[J](1,A)<br />1->[J](10,A)<br />End</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This sets up the matrix. Here is an ASCII representation of the matrix:
+<p align="center">111111111111111111<br />
+100000000000000001<br />
+100000000000000001<br />
+100000000000000001<br />
+100000000000000001<br />
+100000000000000001<br />
+100000000000000001<br />
+100000000000000001<br />
+100000000000000001<br />
+111111111111111111<br />
+Screen Bounds</center></p>
+The reason for this is to avoid costly if statements. Instead of having an if x>16 or x&lt;1 or y>8 or y&lt;0 statement. You can just use the statement that you use to check if you hit the snake to check if you went outside the bounds. This is just a technique to speed up the game just a little bit.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">2-><font size="-3">L</font>1(2):3-><font size="-3">L</font>2(2)<br />2-><font size="-3">L</font>1(1):2-><font size="-3">L</font>2(1)</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">0->M</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">While [J](Y,X)=0 or [J](Y,X)=2</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This loop keeps the game going when you hit a piece of 'food'. It has to reset the current location to 0 so that the second while statement will evaluate to true. There is a better way of doing that but I can't give away all of my secrets...</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">0->M</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">0->[J](Y,X)</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">Output(1,1,L+1)</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">While not([J](Y,X)</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">If not(M:Then<br />Lbl 1<br />randInt(1,8)->J<br />randInt(1,16->I<br />If [J](J+1,I+1)<br />Goto 1<br />2->[J](J+1,I+1<br />Output(J,I,"+")<br />1->M:L+1->L<br />End</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This is the block of code that creates the 'food' for the snake. It uses the M as a flag to see whether or not there is already piece of 'food' on the screen. <center><b>LABELS ARE PREVENTABLE</b></center> Don't say I'm hypocritical because I am using lbl's. The proper way to do that piece of code is with a DO WHILE statement. Unfortunately, the TI-83 does not offer that command. It then stores the location of the 'food' in the matrix and outputs it to the screen.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">(C-L)->Z<br />If Z<1:Z+50->Z<br />Output(<font size="-3">L</font>1(Z)-1,<font size="-3">L</font>2(Z)-1," ")<br />0->[J](<font size="-3">L</font>1(Z),<font size="-3">L</font>2(Z)<br />Output(Y-1,X-1,"O")<br />1->[J](Y,X)</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">getKey->K<br />If (K>21):Then<br />(K=26)-(K=24)->S<br />(K=34)-(K=25)->T:End<br />If K=21:Pause</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">Determines if key is pressed.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">C+1->C<br />If C=51<br />1->C<br />X+S->X:Y+T->Y<br />X-><font size="-3">L</font>2(C):Y-><font size="-3">L</font>2(C)<br />End<br />End</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">For(Q,L,1,-1)<br />(C-Q)->Z<br />If Z<1:Z+50->Z<br />Output(<font size="-3">L</font>1(Z)-1,<font size="-3">L</font>2(Z)-1," "<br />For(A,1,50)<br />End<br />End</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This part is just for jazz, it starts at the tail and erases every piece of the snake.</div></font></td>
+  </tr>
+</table>
+
+<p align="justify"><b>Overview:</b>
+<br />This is of course, longer. Since you understand the basics from the last tutorial I have skiped those.</p>
+
+<p align="justify">If you read the last tutorial then everything else is pretty much self explanatory.</p>
+
+<p align="justify"><b>Game Release:</b>
+<br />If you think that your ready to release a game when you just have the code complete, you have another thing comming. At this state the above code is in the code complete stage, but it still has to go through the content complete stage. Where you add menus, documentation, and all the stuff that makes a good game.</p>
+
+<hr />
+
+If you don't understand this stuff:
+
+<ol>
+  <li>Reread the tutorial.</li>
+  <li>Reread it again (throughly, and experiment with the code)</li>
+  <li>Then I can't write good tutorials, or</li>
+  <li>You should rethink wanting to program Advanced BASIC</li>
+</ol>
+
+<p align="justify"><a href="tutorial5.html">Next Tutorial:</a> Scrolling Screen Left & Right.</p>
+
+<p align="justify">Written by <a href="../../members/users/user021.html">Brandon Green</a>.</p>
+
+<p align="justify">Tutorial is property of Brandon Green, &copy; 2000. Do not use without permision. Algorithms are property of Brandon Green, e-mail for permision to use.</p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<!--#geoguide-->
+</font>
+</body>
+</html>

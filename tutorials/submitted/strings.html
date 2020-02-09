@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Strings</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../../hlb.css" rel="stylesheet" />
+
+<script language="javascript" src="../../redirect.js"></script>
+
+<basefont size="2" />
+
+</head>
+
+<body text="#000000" link="#0000FF" alink="#008000" vlink="#0000FF">
+
+<font face="Times New Roman, Times, Serif">
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../../home.html">HOME</a> <b>>></b> <a href="../index.html">Tutorials</a> <b>>> <i>Strings</b></i></td>
+	</tr>
+</table>
+
+<p align="center"><font size="4"><u><i><b>Strings</b></i></u></font></p>
+
+<p align="justify"><i><b>Hey!</b></i>  I'm assuming that since you're reading this, you want to learn about strings.  Not only can you store names and words to them, you can use them to store data into.
+In order to be able to use strings to there fullest extent, you will need to learn all the commands and tricks that make strings so powerful.
+</p>
+
+<p align="justify">Here is a list of the different commands you should learn that are used with strings.</p>
+
+<p align="justify">
+<b>
++
+Equ>String(<br />
+expr(<br />
+InString(<br />
+Length(<br />
+String>Equ(<br />
+Sub(
+</b>
+</p>
+
+<p align="justify">Now I know all these commands are in your book but sometimes it's hard to understand something you aren't familiar with. That's why I'm here.</p>
+
+<p align="justify">All code is <u>underlined</u></p>
+
+<p align="justify"><b>Using the "+":</b>  You can use + with strings to combine two strings together. </p>
+
+<p align="justify">
+<i>Ex.</i><br />
+<u>"I LIKE<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str1<br />
+"STRINGS<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str2<br />
+Str1+"_"+Str2<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str3</u>
+</p>
+
+<p align="justify">String 3 would then be "I LIKE STINGS" you can figure that one out I think.</p>
+
+<p align="justify"><b>Equ>String:</b>  Even though I rarely use this command, Equ>String( can be very useful. You can use it to store Y1 or any of those variables to strings. String>Equ does just the opposite of that.</p>
+
+<p align="justify"><b>Expr:</b>  <u>Expr(</u> is a VERY useful command. You can use it to convert strings into an expression.</p>
+
+<p align="justify">
+<i>Ex.</i><br />
+<u>"12345<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str1<br />
+expr(Str1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</u>
+</p>
+
+<p align="justify">That would store 12345 to a sting; you can combine commands and only select a part to use. I use this to test strings that I stored data to. I'll touch on that more later.</p>
+
+<p align="justify"><b>InString:</b> The <u>InString(</u> command can be used to tell you where in a string a certain group of characters is. </p>
+
+<p align="justify">
+<i>Ex.</i><br />
+<u>"MADE IN THE USA<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str1<br />
+InString(Str1,"USA</u>
+</p>
+
+<p align="justify">That would give you 13 because it begins at the 13<sup>th</sup> character.  You can use this in tests and any other things you can think of.</p>
+
+<p align="justify"><b>Length:</b> You can use <u>length(</u> to test how many characters are in a certain string. You can store this to a variable for later use in your programs.</p>
+
+<p align="justify">
+<i>Ex.</i><br />
+<u>"STRINGS<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str1<br />
+length(Str1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</u>
+</p>
+
+<p align="justify">"A" would be 7. Remember that you can use most of these commands in If statements.</p>
+
+<p align="justify">Sub:  Now probably the best command for strings is <u>sub(</u>. This command is used for selecting certain portions of a string. You can store the answer of this command to other strings. You can also combine this with <u>expr(</u> to test for a number at a certain part in the string.  The first part after the command you put is the string your checking, the second is where to start, and the third is how many after the start.</p>
+
+<p align="justify">
+<i>Ex.</i><br />
+<u>"STAIND234<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str1<br />
+sub(str1,1,6<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str2<br />
+expr(sub(Str1,7,3)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</u>
+</p>
+
+<p align="justify">String 2 is STAIND and A would be 234. I use this command in level loading programs too. I just test the certain part of the string for a number and output the picture accordingly.</p>
+
+<p align="justify">
+<i>Ex.</i>
+<u>"1111110101101011000111111<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str1<br />
+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />X:1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Y:1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A<br />
+ClrHome<br />
+Repeat X=26<br />
+expr(sub(str1,A,1))<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str2<br />
+If B=1:Output(X,Y,"H<br />
+A+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A<br />
+Y+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Y<br />
+If Y=6<br />
+Then<br />
+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Y<br />
+X+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />X<br />
+End<br />
+End</u>
+</p>
+
+<p align="justify">There that's kind of how my loading programs are. You can also use letters but then you can't use the <u>expr(</u> command. If you did you would just change B to Str2, get rid of the <u>expr(</u> command and, say <u>If Str2="A"</u> or whatever letter you use. And you can make it better by adding more outputs to make you game look even better. You can then make a walk around program and make a maze or something. Be creative and don't limit yourself.</p>
+
+<p align="justify">Try combining these commands because you can really make some nice programs if you know how to really use all these commands. I hoped I helped a lot. <i><b>Later!</b></i></p>
+
+<p align="center"><font size="3"><b>By:</b> <a href="../../members/users/user027.html">Sean Sartell</a></font></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+<!--#geoguide-->
+</body>
+</html>

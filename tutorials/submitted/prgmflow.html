@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Program Flow</title>
+</head>
+
+<body bgcolor="#000000" text="#ffffff" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+<h1 align="center"><i>Program Flow</i></h1>
+<br /><br />
+<h5 align="left">Created by: Lucas Johnson</h5>
+
+<img src="alum.gif" />
+
+<p>In this tutorial, you will learn how to improve your program writing techniques and the quality of your programs.</p>
+
+<table border="1" bgcolor="#000030" align="center" text="white" width="100%">
+<td align="center"><font size="4">- Preview -</font></td>
+</table>
+
+<font size="4"><p>Material</p></font>
+<p>In this lesson you will learn:</p>
+<ul>
+<li>How to write programs more efficently
+<li>How to make your programming experiance more enjoyable
+</ul>
+
+<table border="1" bgcolor="#000030" align="center" text="white" width="100%">
+<td align="center"><font size="4">- The Lesson -</font></td>
+</table>
+
+
+<p>Most of you most likely went here because it is the next tutorial. This element called program flow is the most important element in a program. So, then, what is program flow? Well, it's pretty much like it sounds, its how well your program flows. "What?" you might ask. Let me describe it this way. It's how well your program is organized, how well it FLOWS from one section to the next, how easy it is to read and interpret. Program flow is one thing that is developed through time and experiance in programming languages. This element, in a language as speed-limited as TIBASIC, is absolutly critical. This tutorial was built not to build your vocabulary, but to build your "grammer" you might say. Program flow is also important because, often times, you will put a program away for a while and only later come back to it. The better the flow of the program, the easier it will be to go back to it and pick up where you left off. So, lets learn how to increase your ability to make a program flow.</p>
+
+<p><b>Careful Planning</b></p>
+
+<p>Planning is one thing you may or may not do with out me saying it right here. Sometimes you may feel that in order to make a program do what you want, you have to do a little planning ahead before jumping into a program. Other times, you may not. Unless you know exactly what you are going to do, it is an extremely good idea to plan things out. "I know what I'm doing" you might say. Well, if you sit down with a piece of paper and pencil and think out more carefully what needs to get done, you will, 9 times out of 10, realize that you didn't have everything thought out as well as you had thought. The better the planning, the better the program turns out, the quicker it gets done, the easier it is to go back and make changes, the easier it is to come back to after a time away from it. There is NO such thing as planning too carefully. Before I made my most complex game, I filled several sheets of paper with sketches, variable maps, and sample code. That program took me 10 days to complete verses another much less complex game that took me 2 months to complete. Enough said, I think you get the point.</p>
+
+<p><b>Abolishing "Lbl" and "Goto"</b></p>
+
+<p>In a program truly thought out, it is not nessisary to use a SINGLE Lbl/Goto set. For any program. Not one. Period. Now, I'm not saying you fail as a programmer if you use them at all. I use them a lot in the header of my programs where I do menus and things like that, but part of program flow excersises that you don't use these. "That makes no sense, why not?" you might ask. Well, let me explain how Lbl/Goto work. As you know, the calculator's processor processes one line of code and then goes on to another line. When the processor encounters a "Lbl" it is skipped entirely. When it encounters a "Goto", the processor stores the two digit code in temporary memory and goes to the beginning of the program. It analyizes line by line until it finds the "Lbl" command with the last two digits that match what it was told to find. The processor then starts at that point and is now also clear of any loops or conditions it was in before. Thus, if you were to create a program that used Lbls deep in the program, the processor would have to go through every single line to find that matching "Lbl". The location of that "Lbl" is NOT stored in memory, so the calculator has to search from the begginning of the program EVERY SINGLE TIME. In real loops like those using "Repeat", "While", or "For(", the location of the start of the loop IS stored in memory. What this does is not only does it considerably slow the program AND make the program difficult to read, it ALSO can frequently create an ERR:MEMORY error. This is why they happen if you ever have had this problem before. Now there is a trick to avoid that error, but it literally stops the program. My advice, only use these commands when no other practical solution can be found. THIS DOES HAPPEN. Sometimes it is much more practical to use a Lbl/Goto set than not. It can, on occasion, save a great deal of memory, a great deal of time, and actually INCREASE program flow. This is why they exist. So, what are these instances? Well, obviously in menus, but also when they are only needed for a one or two time thing. Say you have a game and one of the options is instructions, after you go to the instructions, it is much better to use a Goto command to go back to the begginning of the menu, than to go through the trouble to make a loop and declare a new variable just for it. That and it saves memory. Bottom line, Lbl/Goto command loops work great for things you only need to happen once or twice, but if you are trying to make a loop out of it in a game, that is a NO NO. If you need to make a loop, make a loop with Repeat, While, and For(. That's what they are there for, true, it can be temping to use them in programs because it only takes to commands and no brains or thought required, but, in this case, refer to the above paragraph where I talk about planning.</p>
+
+<p><b>Nesting loops</b></p>
+
+<p>Another reason to get rid of Lbl/Goto is because it is very hard to effectivly "nest" Lbl/Goto loops. Nesting? What is that? Nesting is a loop or condition INSIDE of an existing loop or condition. To demonstrate, let me make a sample program:</p>
+
+<font color="#FFFFCC">
+:For(A,1,16)<br />
+:For(B,1,8)<br />
+:Output(B,A,"X")<br />
+:End<br />
+:End
+</font>
+
+<p>If you run this program, X's will start appearing going down columns from left to right. If you don't know what happened here, lets go through the program together. We start out with the program entering the loop with the variable "A" and it starts a loop. As this loop cannot continue and be incremented until it reaches the ":End", it must go through a SECOND loop COMPLETLY before incrementing the "A" variable again. The "Output" command is executed a total of 128 times before the program is done. This procedure is incredibly important to use in more complex games if you want to increase your program flow in a program if you ever need to use a loop in a loop. This isn't rare at all. Often times you will have a "main game loop" where the loop goes on and on until a condition changes and the code afterward tells you the game is over. Often times you will need at least a few loops inside of this "main game loop".</p>
+
+<p><b>Conclusion</b></p>
+
+<p>Increased program flow will work wonders for your programs, they will work faster, take less time to develop, be less strainful, enable to learn more, enhance your programming experiance and so much more. There is absolutly no "bad side effects" to learning greater program flow other than the fact that it takes time to learn. Once you get the hang of it though, you'll thank yourself.</p>
+
+<img src="alum.gif" />
+
+<h5 align="center">Questions? Comments? 
+Suggestions? <a href="mailto:luke195rs@aol.com">Contact me.</a></h5>
+<br /><br /><br /><br /><br /><br />
+
+<!--#geoguide-->
+</body>
+</html>

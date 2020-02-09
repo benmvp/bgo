@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Conditionals</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../../hlb.css" rel="stylesheet" />
+
+<script language="javascript" src="../../redirect.js"></script>
+
+</head>
+
+<body background="radar.gif" 
+text="#FFFFFF" link="#0000FF" alink="#008000" vlink="#0000FF" bgproperties="fixed">
+<bgsound src="" loop="-1"">
+
+<font face="Times New Roman, Times, Serif">
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../../home.html">HOME</a> <b>>></b> <a href="../index.html">Tutorials</a> <b>>> <i>Conditionals</b></i></td>
+	</tr>
+</table>
+
+<img src="ti83plus.gif" align="left" />
+<img src="ti83plus.gif" align="right" />
+
+<br />
+<br />
+<br />
+<h1 align="center"><i>Conditions</i></h1>
+<br />
+<br />
+<br />
+<br />
+<center><img src="alum.gif" width="575" height="15" border="0" /></center>
+
+<p align="justify">This tutorial will teach you about conditions on the TI-83+.</p>
+
+<p align="justify">Condtions are used in a program to determine if a certain block of code you set will be excecuted or not. For example, in a game like Tron, where you are a continous snake and must avoid walls and trap your enemy, the program must be able to tell if you run into a wall. So IF you run into a wall, THEN end the program (as it would be a game over).</p>
+
+<p align="justify">To make a condition inside a program, you would do this:</p>
+
+<font color="#ffffcc">
+<p align="justify">(earlier code in the program)<br />
+:If (your condition is true)<br />
+:Then<br />
+:(do this)<br />
+:(do this)<br />
+:End<br />
+(remainder of program)</p>
+</font>
+
+<p align="justify">In this example, "your condition is true", can be any condition. For example, if you put "A=5" in this section, then when the program reached "If A=5", it would look at the value stored in the 
+variable "A". If this value equaled 5, then the program would continue and execute the commands after the If statement and ignore the "End". If the value in A was not 5, the program will SKIP all commands after the If statement and will not continue excecuting commands again until it reaches its corrsponding "End"</p>
+
+<p align="justify">The command "Then" must be used in all conditions were the number of commands to be executed if the statement is true is greater than 1. Should you ONLY need one command executed if and only if the statement is true, than you could do this:</p>
+
+<font color="#ffffcc">
+<p align="justify">(earlier part of program)<br />
+:If (your condition is 
+true)<br />
+:(do this)<br />
+(remainder of program)</p>
+</font>
+
+<p align="justify">As mentioned earlier, if you do not have a "Then", (in which case 
+you also don't need an "End", it is implied that only the one 
+immediate command following the If statement should be excecuted 
+should the condition be true.</p>
+
+<p align="justify">Let's make a program using this knowledge that will count to ten and stop. For the sake of this tutorial, I will make comments after a "//" which should NOT be entered into a program. This will not work inside a program. Create a new program and enter:</p>
+
+<font color="#ffffcc">
+<p align="justify">:0->A<br />
+:<a href="../../index/a-m.html#lbl">Lbl</a> 00 //Creates a label in the program, will be ignored for now<br />
+:A+1->A<br />
+:<a href="../../index/a-m.html#disp">Disp</a> A //Displays the value inside the variable A<br />
+:If A=10<br />
+:<a href="../../index/n-z.html#stop">Stop</a> //This command will stop the program<br />
+:<a href="../../index/a-m.html#goto">Goto</a> 00 //This statement will goto the place in the program where the "Lbl" with the corresponding two ending digits is located (In this case it is "00")</p>
+</font>
+
+<p align="justify">There are much better ways to create this program, but it would require a lot of explaining that I will do in another tutorial and it may confuse you to learn too much all at one time. (I honestly don't mean any offense by that).</p>
+
+<p align="justify">Run the program. Look at the program. Does it make sense? The program will keep going through itself and going back to "Lbl 00".  Each time it goes through, A is incremented by one. When A reaches 10, the program will stop.</p>
+
+<p align="justify">You now know the basics of conditions</p>
+
+<p align="justify">Now, we will take a closer look at conditions and find out what makes them work and some advanced meathods of creating conditions.</p>
+
+<p align="justify">If statements use what is called "Boolean Logic". In that everything is either Off or On. 1 represents On, and 0 represents Off. "Not(" 
+is a command that will take the opposite of a number using Boolean Logic. Also, any nonzero number is considered On, not just 1. See for yourself. On the homescreen type:</p>
+
+<font color="#ffffcc">
+<p align="justify">not(5) //press enter to get "0"<br />
+not(Ans) //press enter to get "1"</p>
+</font>
+
+<p align="justify">The opposite of 5, since it is non-zero, is zero. The opposite of 0, in every case, will then be 1. </p>
+
+<p align="justify">If statements use this to determine if a statemnet is true or not. Say you have If A=5, same as last time, the program will check the 
+statement to see if it is true. If it is, a 1 is assigned to the condition. If it is not true, a 0 is assigned to the condition. Now the statement has only two possible answers 1 or 0. The If statement 
+will consider itself true if the assigned value is nonzero. This type of thing does not nessisarily need to be in an If statement. Have you ever seen anything like this?:</p>
+
+<font color="#fffcc">
+<p align="justify">:X+(A=26)-(A=24)->X</p>
+</font>
+
+<p align="justify">This, at first can look very confusing. What could A be? Say A equals 24. The conditions inside the parentheses will be anylized. 
+(A=26) will become a zero as this is false, and (A=24) will become a one as it is true. What you end up with is "X+0-1->X" or "X-1->X" if A=26, then going back through this line, we would end up with "X+1->X". However, only when A=24 or A=26, will the value inside X ever be changed as all you would get in any other condition is "X+0-0->X" or "X->X".</p>
+
+<p align="justify">There are times that an adaption off of the above command may come in very useful. Conditions like this can be inserted into almost 
+anything. Use your imagination. "There is a better way to do it. FIND it." - Anonymous</p>
+
+<center><img src="alum.gif" width="575" height="15" border="0" /></center>
+<br />
+
+<img src="ti83plus.gif" align="left" />
+<img src="ti83plus.gif" align="right" />
+<br />
+
+<h4 align="center">Tutorial Made By: <a href="/cgi-bin/members/users.pl?user=4">Lucas Johnson</a></h4>
+
+
+<h5 align="center">Questions? Comments? 
+Suggestions? <a href="mailto:luke195rs@aol.com">Contact me.</a></h5>
+
+<br />
+<br />
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+<!--#geoguide-->
+</body>
+</html>

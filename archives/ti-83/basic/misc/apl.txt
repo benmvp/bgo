@@ -1,0 +1,74 @@
+->Make sure to check out advdesktp v3.3 , the best windows look alike prgm made by f4String Software!!:)
+
+Made by F4String Software
+Made by Erik J. Beerlage
+Made in Holland, Zoetermeer.
+20-08-2000 3:30
+erikbeerlage@hotmail.com
+
+[Description Advanced Pixle]
+Advanced Pixle v1.3 allows you to store pictures into a list, you can make
+nice graphics while the pixles come one at the time! You can use the list
+with Zplotr to use it in other programs! The program is easy to use.
+
+[Requirements]
+*ti-83
+*link cable
+*All:			5500 bytes
+*Without example(list):	1750 bytes
+
+[Program uses]
+*Lpic
+*Many variables
+(*Example uses Lejb)
+
+[Features]
+*Easy to use
+*Nice graphical interface
+*It saves pictures
+
+[Installation]
+Send "Advanced Pixle v1.3.83g" to your TI-83
+
+[keys]
+Ent		Pixles on/off
+2nd		Pixles on/off
+Del		New Screen
+Clear		Exit
+Mode		Menu
+Y=		Menu
+Window		Menu
+Zoom		Menu
+Trace		Menu
+Graph		Menu
+
+[Files included]
+*Advanced Pixle v1.3.83p
+*Zmouse.83p
+*Zplotr.83p
+*Zcontr.83p
+*Example.83p
+*ejb-list.83i
+
+[Use in other program]
+Open program zplotr, change lPIC to the listname you saved the picture at.
+In the main program at a link and voilá nice graphical picture on screen!! 
+
+[Bugs]
+I think I got them all out of the program, if you find one feel free to email me.
+
+[Note]
+THANK YOU FOR USING THIS PROGRAM. DO WHATEVER YOU LIKE WITH IT, BUT:
+THIS PROGRAM MAY NOT BE CLAIMED IN ANY WAY BY ANYONE ELSE, IN PARTS OR WHOLE.
+If you are looking for nice programs try:	BASH v1.3 by Enigma Software;
+->						Phantasm v1.0.b by Dustin Graham
+->						Vista98e by DTECH Software
+
+->Make sure to check out advdesktp v3.3 , the best windows look alike prgm made by f4String Software!!:)
+
+
+[History]
+Version 1.0 <> 35/07/2000
+        Early version than called piclist.
+Version 1.3 <> 20/08/2000
+        New version with nice menu.

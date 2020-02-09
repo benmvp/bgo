@@ -1,0 +1,13 @@
+Tetris v1.0
+-----------
+
+Developed by:
+Lucas Johnson
+luke195rs@aol.com
+infobase.basicguruonline.com
+
+Tetris is an accurate clone of the classic NES game. The object of the game is to get as many "lines" as you can. You get lines by completly filling up a horizontal row with the blocks. When a block falls from the sky, you can rotate it with [2nd] and move left and right with [<] and [>] respectfully. When it either reaches the bottom or lands on another block, it will stop. If it completes a horizontal line, that line will disappear and all the blocks will fall where that line was. Should you not get enough lines, your blocks will eventually hit the top of the screen and the game will be over. The "next" box will tell you the next block. Your score will depend on how many lines you can get, and how many lines you can get with a single play. For example: A single play eliminating 4 lines (a TETRIS) will get you far more points than 4 plays that eliminate 1 line each.
+
+Version history
+v1.0
+  - initial release

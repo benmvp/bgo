@@ -1,0 +1,8 @@
+tap is a very simple game where you are trying to get rid of all your boxes before your friend can!
+
+you can define which buttons you want to tap for each player.
+enter pauses.
+
+written by micahel dean
+
+ldean1347@earthlink.net

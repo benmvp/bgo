@@ -1,0 +1,25 @@
+How many times have you visted BASIC Guru Online?|This is my first time*282|A couple of times*64|Many times*91|Everyday for the tutorials*31|I'm never coming back*31|499
+How did you find out about this site?|ti-calc.org*113|Major Search Engine*80|Geocities*11|A Webring*18|A link from other site*65|From a friend*21|Other*22|330
+Which new feature do you like best?|Various downloads/programs stats*11|Automatic downloads counter*7|Automatic membership acceptance*1|Automatic poll results*2|Automatic program rating*0|Other*1|22
+Are any of your programs on ticalc.org's latest CD?|Yes*17|No*5|I don't know*2|I don't have programs at ticalc.org*4|I don't have any programs*0|28
+Which other programming languages do you know? (pick all that apply)|BASIC/COBOL/Pascal*23|C/C++*20|Java*6|Visual BASIC*16|HTML/CSS/JavaScript*26|Perl/ColdFusion/PHP/ASP*8|Other*14|None*3|116
+Do you like the new site layout/design?|Yep, sure do*17|It's alright*3|Naw, the old one was better*3|23
+What is your Internet connection speed?|T1/T3*0|DSL/Cable*27|56K*16|33.6 kbps*2|28.8 kbps*1|14.4 kbps*0|Other*4|50
+Did you a play a sport for your school this year?|Yes*25|No*20|45
+Do you want the rest of the tutorials to be completed?|Yes, please finish*36|I do not care*5|41
+Why do you come to the site?|Mainly the tutorials*4|Mainly the programs*7|Both*6|Neither*3|20
+Have you ever used your TI calc to cheat on a test?|Yes, but just once*6|Yes, several times*9|Yes, every time I get*12|Never*18|45
+How much time do you spend on your calculator daily?|Less than 1 hour*18|1 - 2 hours*15|2 - 4 hours*7|4 - 6 hours*4|All my free time*11|55
+Are you planning to get the TI-83+ Silver Edition?|Yes, I definitely will*14|Maybe*14|No*21|What??*21|70
+What do you mainly use your calc for?|For school*6|To play calc games*11|Programming*8|All of the above*23|Other*1|49
+What type of program do you like to play/make?|Math/Science*12|RPG*34|Strategy*17|Classic Remake*15|Simulation*12|Other*7|97
+Have you been caught playing games or using programs to cheat in class?|A couple of times*1|Many times*3|Never been caught...yet*17|I've never played games or cheated in class*6|27
+What grade are you in?|Middle school or earlier*18|9th grade*29|10th grade*15|11th grade*9|12th grade*1|College*4|College graduate*2|78
+Do you like the new layout of the home page?|Yes, it's great!*11|It's okay*10|The old one was better*4|No, it doesn't look good*2|28
+What calculator(s) do you own?|None*0|TI-83*12|TI-83 and another*4|TI-83 Plus*67|TI-83 Plus and another*16|Other*9|108
+How long have you owned your TI Graphing Calculator?|I don't own one*5|Less than a month*11|1 - 2 months*28|3 - 6 months*11|7 months to a year*12|1 - 2 years*29|3 - 4 years*7|More than 4 years*2|105
+How many tutorials have you completed?|1-5*2|6-15*3|16-25*0|All of them*6|None of them*17|28
+How many calculators do you have?|None*3|1*37|2*14|3*1|4 or more*4|59
+Where do you go to get calculator programs?|Ti-calc.org*6|Dimension-TI*1|TI Files*0|Twilight TI*0|Texas Instruments*1|I use my own*0|Other*0|8
+Will you come back to BASIC Guru Online?|Yes*3|Yes, for the tutorials*4|Yes, for the cool games*0|Probably Not*0|The site's not useful*0|The site sucks*0|Other*0|7
+What's the best feature of BASIC Guru Online?|There isn't one*0|Extensive Tutorials*3|Searchable Index*0|Navigation Bars*0|Updates & News Page*0|Links Page*0|All of the above*2|Other*1|6

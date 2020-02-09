@@ -1,0 +1,15 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		BLACK JACK v1.1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System: TI83/+
+
+> 2nd		- Hit
+> Other botton	- Stand
+
+Please report bugs and comments to me!
+----------------------------------------
+By Martin Johansson
+smoother_1982@hotmail.com
+----------------------------------------
+010421 -End of document

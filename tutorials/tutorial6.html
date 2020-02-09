@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 6: Branching</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 6: Branching</font><br />
+<font size="3">Lbl & Goto...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 6: Branching</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+In this tutorial, we will learn how to use Lbl and Goto in a program.  These two commands are very helpful because it allows the calculator to jump from one point in the program to another.  Sometimes you do not want the program to run every part of your program.  You may want to skip over a certain part of a program if a certain condition occurs.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#lbl">Lbl</a></td>
+    <td>Specifies the label to which the program can go to</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#goto">Goto</a></td>
+    <td>Causes the program to go to the label</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#stop">Stop</a></td>
+    <td>Ends program execution and returns to home screen</td>
+  </tr>
+</table>
+</p>
+
+<p align="justify"><font size="3" color="#000080">The Code:</font><br />
+There's only going to be one set of code this time, but it's probably the longest code we've done so far.  Lbl and Goto are used a lot with conditionals.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "1ST "</font></b></td>
+    <td>Disp "1ST"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Input "NUMBER? ",A</font></b></td>
+    <td>Asks for 1st number and stores it into A</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "","2ND " </font></b></td>
+    <td>Displays a blank line and "2ND"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Input "NUMBER? ",B</font></b></td>
+    <td>Asks for 2nd number and stores it into B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If A&gt;B:Goto 1A</font></b></td>
+    <td>If A is greater than B,go to Label 1A</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If B&gtA:Goto 1B</font></b></td>
+    <td>If B is greater than A,go to Label 1B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1A</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "THE FIRST NUMBER"</font></b></td>
+    <td>Displays "THE FIRST NUMBER"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "   WAS BIGGER",""</font></b></td>
+    <td>Displays "WAS BIGGER" and a blank line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 22</font></b></td>
+    <td>Goto Label 22</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1B</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "THE 2ND NUMBER"</font></b></td>
+    <td>Displays "THE 2ND NUMBER"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "   WAS BIGGER",""</font></b></td>
+    <td>Displays "WAS BIGGER" and a blank line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 22</font></b></td>
+    <td>Goto Label 22</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 22</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Input "AGAIN? ",Str1</font></b></td>
+    <td>Asks if you would like to do this again</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If Str1="YES":Then</font></b></td>
+    <td>If the answer is "yes", then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 1</font></b></td>
+    <td>Goto Label 1</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Else</font></b></td>
+    <td>If the answer is anything, but "yes", then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto JK</font></b></td>
+    <td>Goto Label JK</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the If-Then-Else statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl JK</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End the entire program</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut6a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial6a.gif" width="129" height="110" border="0" align="middle" /> and <img src="outputs/tutorial6b.gif" width="129" height="110" border="0" align="middle" /><br />
+<b>OR</b><br />
+<img src="outputs/tutorial6c.gif" width="129" height="110" border="0" align="middle" /> and <img src="outputs/tutorial6d.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify"><font size="3" color="#000080">Further Explanation:</font><br />
+After the Else command, you have a choice.  You could either just put Stop, or put Goto JK (which I did).  I chose to put Goto JK, just to give you another Label construction to look at.  I didn't show it up there, but you can also have a label with just one letter (<b><font color="#008000">Lbl A</font></b>).  The labels do not necessarily have to been in flowing order.  You could rearrange it so that Lbl JK was at the top and it wouldn't make a difference.  It's better to have the Lbl close to the Goto because the calculator does have to go far to find the Lbl.  The farther the Lbl is from the Goto, the longer it takes for the calculator to find it, and the slower your program.  It might not make a big difference in this, program, but when you have a lot of labels it could slow things up.  Once again, we could use a different command instead of doing the If-Then-Else statement to ask if we want to run the program again.  To check out the new command go to <a href="tutorial9.html">Tutorial 9</a>.</p>
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+Lbl and Goto work in pairs; you can't have one without the other.  If you get an error like ERR:LABEL, that means that the <i>label</i> in the Goto command is not defined with a Lbl command.  You might have accidentally mistyped the <i>label</i>.  Even if you are making a program that is not going to use branching, make it a habit of putting <font color="#008000"><b>Lbl 1</b></font> at the beginning of your programs.  Well we are half way through the Tutorials v1.0, and coming up next are For loops, which are used in counting.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial5.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial7.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial5.html">Tutorial 5</a></td>
+	<td><a href="tutorial7.html">Tutorial 7</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

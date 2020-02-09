@@ -1,0 +1,75 @@
+		   Radical Simplifier v4.5
+		      Copyright © 2000
+
+Author:	Ben Ilegbodu
+Date:  	1/28/01
+Format:	BASIC for TI-83 Plus
+Email:	Benahimvp@aol.com
+*******************************************************
+Description:	Math program in which the user inputs a
+ 		number in the index (root) and the
+		computer displays a reduced form of the
+ 		radical.
+
+Files:	*radsimp.8xp
+	*radsimp.txt
+********************************************************
+Manual:
+* Run radsimp
+* The opening screen will appear, press enter
+* Input the number
+* Input the index(root)
+* Input the coefficient in front of the radical.  If
+  there is no coefficient input 1.
+* The simplified form of the radical will be displayed,
+  press enter
+* You will be asked if you would like to do it again: If
+  "yes" it will ask you for another number, if "no"
+  it'll go to the closing screen, press enter
+
+Example #1:	Example #2:	Example #3:
+NUMBER: 4	NUMBER: 8	NUMBER: 8
+INDEX: 2	INDEX: 2	INDEX: 3
+COEFFICIENT: 3	COEFFICIENT: 5	COEFFICIENT: 7
+
+ANSWER IS:	ANSWER IS:	ANSWER IS:
+6		10*2/(2)	14
+
+Example #4:	Example #5:	Example #6:
+NUMBER: 24	NUMBER: 16	NUMBER: 64
+INDEX: 3	INDEX: 4	INDEX: 4
+COEFFICIENT: 4	COEFFICIENT: 6	COEFFICIENT: 1
+
+ANSWER IS:	ANSWER IS:	ANSWER IS:
+8*3/(3)		12		2*4/(4)
+
+Example #7:	Example #8:	Example #9:
+NUMBER: 86	NUMBER: 15	NUMBER: 10000000
+INDEX: 1	INDEX: 5	INDEX: 7
+COEFFICIENT: 8	COEFFICIENT: 2	COEFFICIENT: 9
+
+ANSWER IS:	ANSWER IS:	ANSWER IS:
+688		2*5/(15)	90
+
+Example #10:
+NUMBER: 10000000
+INDEX: 8
+COEFFICIENT: 3
+
+ANSWER IS:
+3*8/(10000000)
+
+Version History:
+v4.5 - Added the "coefficient" feature
+v4.1 - Fixed a bug when you try to find the root of a
+       negative number.  It would display 1 inside the
+       radical, which is unnecessary.
+v3.5 - Reduced the size of the program from 1239 bytes
+       to 967 bytes and made other minor changes
+v3.0 - Fixed all the spaces between numbers
+v2.0 - Changed it so that it'll put sqrt if it the index
+       is 2
+v1.0 - first output of program
+
+There should not be any bugs, but if there are, feel free
+to email me and I'll get back to you as quick as I can.

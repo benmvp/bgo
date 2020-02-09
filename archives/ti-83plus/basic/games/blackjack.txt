@@ -1,0 +1,18 @@
+Program: Black Jack 1.0
+Author: Ben Grunwald
+Released: February 2001
+Calculator: Ti 82,83,83+
+E-mail: Biteme84@aol.com
+
+The Game:
+This game is quite self explanatory.  Its the normal black jack.  If you have an ace and you go over 21 then the calculator will automatically change it into a one instead of an 11.  There are three saving slots and you must pay back your debt of 1000000 dollars.  Don't worry, it sounds like a lot but by being able to save you can do this quite easily.  Please do not separate this file from Blakjack.8xp but you may distribute this freely.
+
+History:
+Black Jack 1.0: First release of Black Jack.  This is an old game i wrote a couple years ago but decided that since its finished i might as well put it on the itnernet.
+
+Fore more great programs come to basicguruonline.com
+
+You MAY distribute this program freely and post it on your website as long as you include this attached read me file.
+
+
+C. 1999 By Akbar and Jeff Sex Gods Studios.

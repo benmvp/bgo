@@ -1,0 +1,13 @@
+Defence Outpost Delta
+---------------------
+
+Developed by:
+Lucas Johnson
+luke195rs@aol.com
+infobase.basicguruonline.com
+
+Defence Outpost Delta is an arcade game for the TI-83+. In it, you are a laser turret and must destroy every alien that, at the same time, is attempting to destroy you. Most of the aliens will fall from the sky and attempt to reach the ground. If they do so, the game is over. A smaller percentage of the aliens will try to bombard you from the air. If they reach you, the game is over. The laser turret you use has a very wide range of motion, but it takes a lot of time to move and aim. The small crosshairs at the top of the screen can be controled by the player and will indicate the direction the turret will fire. After it reaches the side of the screen, it will move down the sides. When an alien is between you and the crosshairs, you can fire and successfully destroy it. The aliens in the game are represented by small box shapes. As the game progresses, the aliens will gratually move faster and faster until you are inevitably destroyed. The goal of the game is to get the highest score. To do this, you must have a large number of kills and good accuracy. The final score will be tallied after the game has ended. My record score is 3226 with 40 kills and 61% accuracy.
+
+Version History
+v1.0
+ - initial release

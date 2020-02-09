@@ -1,0 +1,172 @@
+aceracer|Ace Racer 2K1 v3.0|ti-83/basic/games|66
+aceracer|Ace Racer 2K1 v3.0|ti-83plus/basic/games|183
+acp|Advanced Chemistry Plus|ti-83plus/basic/science|65
+advti|Advanced TI-Windows v3.6|ti-83/assembly/misc|91
+aec|Advanced EuroCalculator v1.5|ti-83/basic/misc|33
+alien|3D Rotating Alien Face|ti-83/assembly/misc|9
+am|Advanced Math v1.2|ti-83/basic/math|47
+am|Advanced Math v1.2|ti-83plus/basic/math|94
+anarchy|Anarchy|ti-83plus/basic/games|162
+anazi|Shoot the Nazi II|ti-83/basic/games|34
+anazi|Shoot the Nazi II|ti-83plus/basic/games|78
+antisnake|Anti-Snake v1.7|ti-83plus/basic/games|106
+apl|Advanced Pixle-List v1.3|ti-83/basic/misc|36
+archer|Acher v4|ti-83/basic/games|49
+arena|Arena|ti-83/basic/games|23
+arena|Arena|ti-83plus/basic/games|40
+arms13|Arms Dealer v1.3|ti-83plus/basic/games|72
+asteroid|Asteroids|ti-83plus/basic/games|63
+asteroids|ASTEROIDS v1.2|ti-83plus/basic/games|82
+attack|Attack|ti-83/basic/games|20
+attack|Attack|ti-83plus/basic/games|38
+bangbang4|BangBang 4|ti-83/basic/games|16
+basicguru|BASIC 83 Guru v2.5|windows/utilities|67
+basictut|Basic Tutor|ti-83/assembly/misc/ion|37
+basictut|Basic Tutor|ti-83plus/assembly/misc/ion|89
+batt|Batt|ti-83plus/basic/misc|33
+battle|Battle|ti-83plus/basic/games|39
+battleship|Battleship v1|ti-83plus/basic/games|74
+benquad|The Complete Quadratic Formula Program v5.5|ti-83/basic/math|61
+benquad|The Complete Quadratic Formula Program v5.5|ti-83plus/basic/math|178
+bcwars|BC Wars|ti-83plus/basic/games|9
+bfly|Flapping Butterfly|ti-83/assembly/misc|4
+bjack2|BlackJack v2|ti-83plus/basic/games|17
+bjacksp|Black-Jack Special Y2K1 v2.0|ti-83/basic/games|46
+blackjack|Black Jack 1.0|ti-83plus/basic/games|48
+blackjack|Black Jack v1.1|ti-83/basic/games|42
+blizz|Blizz v1.1|ti-83/basic/games|32
+bmprogset|Basic Master 83 Program Set|ti-83/basic/misc|28
+bounty|Bounty Hunter Version Alpha 0.1|ti-83plus/basic/games|59
+bowling|Supreme Bowling with Link Play v4.6a|ti-83/basic/games|70
+bowling|Supreme Bowling with Link Play v4.6a|ti-83plus/basic/games|215
+break|Fake Break Message|ti-83/assembly/misc|3
+brickblock|Brick Block v2.2|ti-82/basic/games|39
+brickblock|Brick Block v2.2|ti-83/basic/games|84
+btl|Btl|ti-83/basic/games|19
+btl|Btl|ti-83plus/basic/games|38
+calvin|Dancing Calvin|ti-83/assembly/misc|4
+catch|Catch|ti-83plus/basic/games|43
+cbox|Chatterbox v2.0|ti-83/basic/misc|17
+cbox|Chatterbox v1.0+|ti-83plus/basic/misc|18
+change|Change Calculator|ti-83plus/basic/misc|27
+cleanup|Clean-Up|ti-83plus/basic/misc|41
+climber|Climber|ti-83plus/basic/games|46
+clock|Chess Clock|ti-83plus/basic/misc|42
+cobra|Cobra|ti-83/basic/games|44
+convert|Convert! v1.0|ti-83plus/basic/math|44
+darklands|Darklands|ti-83plus/basic/games|61
+dartz|DARTZ 2000 with Link Play v1.5a|ti-83/basic/games|53
+dartz|DARTZ 2000 with Link Play v1.5a|ti-83plus/basic/games|82
+dbzss|Dragon Ball Z - Saiyan Saga v5.0|ti-83plus/basic/games|370
+dec2bin1|Decimal to Binary Converter v1|ti-83plus/basic/math|17
+dec2hex2|Decimal to Hexidecimal Converter v2|ti-83plus/basic/math|17
+decision|Decision Maker|ti-83plus/basic/misc|32
+dist|Distance Formula v1.0|ti-83/basic/math|18
+dist|Distance Formula v1.0+|ti-83plus/basic/math|17
+dod|Defense Outpost Delta v1.0|ti-83plus/basic/games|45
+doom|Doom|ti-83plus/basic/games|12
+drive|Drive|ti-83/basic/games|40
+dstar|DStar v1.1 SE (Special Edition)|ti-83/basic/games|31
+duckhunt|Duck Hunt v1.0|ti-83plus/basic/games|102
+dw98gold|Doorways '98 Gold Edition|ti-83/basic/misc|31
+ed|Erase Draw|ti-83plus/basic/misc|33
+equation|Linear Equations Solver v1.0b|ti-83/basic/math|50
+equation|Linear Equations Solver v1.0b|ti-83plus/basic/math|60
+ezequ|EZEQU v1.4|ti-83plus/basic/math|54
+factor|The Best Quadratic Factoring Program v1.5|ti-83/basic/math|46
+factor|The Best Quadratic Factoring Program v1.5|ti-83plus/basic/math|78
+fakeit|FakeIt v1.0|ti-83/basic/misc|41
+fall|Fall v2.0|ti-83plus/basic/games|53
+finalfight|Final Fight: Search for the Black Orb|ti-83plus/basic/games|95
+fistfury|Fists of Fury 2: Revenge of Farmer Jon|ti-83plus/basic/games|292
+fixall22|FixAll --- PRO|ti-83plus/basic/misc|23
+formtool|Formulas Toolkit v1.09|ti-83plus/basic/math|63
+frac83|Fraction Calculator Add-On 83|ti-83/basic/math|28
+fraction|Fraction Calculator Add-On|ti-83plus/basic/math|47
+frog|Animated Frog|ti-83/assembly/misc|8
+g-input|G-Input|ti-83/basic/misc|9
+g-input|G-Input|ti-83plus/basic/misc|8
+gadget|gadget|ti-83/basic/games|22
+gadget|gadget|ti-83plus/basic/games|25
+gameslol|Games (lol)|ti-83plus/basic/games|49
+gb|Graphics Builder|ti-83plus/basic/misc|51
+genome|Genome Decoder 2.0|ti-83/basic/misc|18
+genome|Genome Decoder 1.0+|ti-83plus/basic/misc|18
+geotool|Geometry Toolkit²|ti-83plus/basic/math|52
+gpa|GPA finder lite|ti-83plus/basic/misc|34
+grafx|GRAFX v1.0|ti-83plus/basic/misc|51
+graphset|Graph Settings Utility|ti-83plus/basic/math|29
+guess|Premier Guessing Game v7.5|ti-83/basic/games|39
+guess|Premier Guessing Game v7.5|ti-83plus/basic/games|38
+hangman|Hangman|ti-83/basic/games|40
+hangman|Hangman v3.0|ti-83plus/basic/games|70
+hangman1|Hangman Challenge (Beta 1)|ti-83plus/basic/games|18
+hex2dec1|Hexidecimal to Decimal Converter v1|ti-83plus/basic/math|17
+hobbes|Dancing Hobbes|ti-83/assembly/misc|4
+ionshell|ION Shell v1.0|ti-83plus/basic/misc|62
+jshell|JShell v4.0|ti-83/basic/misc|101
+keyhunt|Keyhunt|ti-83/basic/games|29
+knowledge|Knowledge|ti-83plus/basic/games|58
+lemonade|Lemonade Stand|ti-83plus/basic/games|38
+lifetrax|LifeTrax v1 Full|ti-83plus/basic/misc|27
+lightsout|Lights Out|ti-83plus/basic/games|50
+lineracer|Line Racer|ti-83/basic/games|89
+loderun|Lode Runner v1.1.1|ti-83/basic/games|73
+ltrax4|LifeTrax v4 Lite|ti-83plus/basic/misc|29
+magic8|Magic 8 Ball Version 1.7|ti-83plus/basic/games|63
+maze|The Ultimate Maze 2000 v2.0|ti-83/basic/games|54
+maze|The Ultimate Maze 2000 v2.0|ti-83plus/basic/games|139
+memory|Memory v1.0|ti-83plus/basic/games|31
+memory2|Memory² v1.0|ti-83/basic/games|38
+memory2|Memory² v1.0|ti-83plus/basic/games|40
+mh|Math Help 2|ti-83plus/basic/math|39
+midwar|Midevil War v2.0|ti-83plus/basic/games|107
+minerun|Minerunner|ti-83plus/basic/games|49
+mineswp|Minesweeper v5.0|ti-83/basic/games|83
+mirror|Mirror|ti-83/basic/math|27
+movie|movie|ti-83plus/basic/games|12
+neonguess|Neon Guess|ti-83plus/basic/games|29
+network|Network v1.1|ti-83/basic/misc|47
+nibbles|Nibbles Arcade v1.0|ti-83/basic/games|173
+note|Animated Musical Note|ti-83/assembly/misc|4
+noteit|Note-It v1.05|ti-83plus/basic/misc|45
+numgame|The Number Game|ti-83plus/basic/games|27
+numuti1|Number Utility 1|ti-83/basic/misc|33
+numuti1|Number Utility 1|ti-83plus/basic/misc|39
+numuti2|Number Utility 2|ti-83/basic/misc|32
+numuti2|Number Utility 2|ti-83plus/basic/misc|34
+ojav|Olympic Javelin Throw Y2K4 v1.0|ti-83/basic/games|37
+olympics|Special Olympics|ti-83plus/basic/games|24
+pass|PASS|ti-83plus/basic/misc|76
+pegz|PeGz v1.0|ti-83/basic/games|43
+penny|Spinning Penny|ti-83/assembly/misc|4
+phantasy|Phantasy Star V|ti-83/basic/games|50
+phantasy|Phantasy Star V|ti-83plus/basic/games|66
+pipes|Pipes|ti-83plus/basic/games|126
+planet83|Planetarion-83|ti-83/basic/games|40
+planetweight|Interplanetary Weights|ti-83plus/basic/science|29
+poker|Poker|ti-83/basic/games|52
+pong|Pong|ti-83/assembly/games/ion|42
+pong|Pong v1.0|ti-83plus/basic/games|104
+pong2|Pong 2|ti-83/assembly/games/ion|28
+probwork|Probability Workshop|ti-83/basic/math|30
+ra|Red Alert v1.9|ti-83/basic/games|75
+ra|Red Alert v1.9|ti-83plus/basic/games|267
+race|Race!|ti-83plus/basic/games|34
+radsimp|Radical Simplifier v4.5|ti-83plus/basic/math|52
+radsimp|Radical Simplifier v5.0|ti-83/basic/math|40
+rentacop|Rent-A-Cop|ti-83plus/basic/games|68
+resister|Resister Color Code Converter|ti-83plus/basic/misc|36
+routines1|ASM Routines Set1|ti-83/assembly/misc|36
+routines2|ASM Routines Set2|ti-83/assembly/misc|31
+rroulet|Russian Roulette - Solo Version|ti-83/basic/games|31
+sector|Sector|ti-83plus/basic/math|28
+serialk|Serial Killa|ti-83/basic/games|45
+shapes|Shapes 2001 SE|ti-83/basic/math|18
+shapes|Shapes 2001 SE+|ti-83plus/basic/math|19
+simon|Simon v1.3|ti-83plus/basic/games|32
+sk8jam|Sk8 Jam 83+|ti-83plus/basic/games|61
+snake|Snake|ti-83/assembly/games/ion|59
+snake|Snake v1.9|ti-83/basic/games|58
+snake|Snake v1.9|ti-83plus/basic/games|104
+solver|Solver

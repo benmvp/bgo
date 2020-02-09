@@ -1,0 +1,84 @@
+ 	  Premire Guessing Game Version 7.5
+		Copyright © 2000-2001
+
+Author:	Ben Ilegbodu
+Date:  	2/22/01
+Format:	BASIC for TI-83 Plus
+Email:	Benahimvp@aol.com
+********************************************************
+Description:	Game in which user guesses a number 
+		between a certain range
+Files:		* guess.8xp
+		* guess.txt
+********************************************************
+1-Player Mode:
+You have to guess a number between a certain range, which
+is determined by the level you play:
+Easy -- 1-100
+Medium -- 1-1,000
+Hard -- 1-10,000
+Difficult -- 1-100,000
+Impossible -- 1-1,000,000
+
+1-Player vs. Computer Mode:
+You have to guess a number between 1 and 1,000,000 and
+you try to guess the calculator's number before it
+guesses yours.
+
+2-Player Mode:
+Each player has to guess each other's number that is
+between 1 and 1,000,000 or between 1 and the custom upper
+range that you choose.  Also, each player has the option
+of requesting assistance.  The first person to guess the
+other person's number wins!
+
+Hisotry:
+Guess v7.5  -- In 2-player mode, each player has the
+	       option of having assistance and a custom
+	       upper range can be chosen
+Guess v7.0  -- Replaced all regular menus with custom
+	       menus
+	       Created a nice animated opening screen
+	       Added a Records page, which gives the
+	       option to reset all records or just to
+	       reset each individual one
+	       Improved the 2-player mode so that each
+	       player has to guess the other's number
+	       Added the 1-P vs. COMP mode
+Guess v6.0  -- Increased the "prediction" function by
+	       making it so that the program will tell
+	       you if your prediction was above or below
+               your actual amount of tries.
+Guess v5.6  -- Fixed a minor bug that prevented the game
+	       from running
+Guess v5.5  -- Added the "prediction" function and 
+	       changed the record/prediction screen.
+Guess v5.0  -- Fixed the different menus so that they
+	       also include instructions.  Also fixed
+	       some minor bugs that I didn't know
+	       existed.
+Guess v4.6  -- Erased previous high score set-up and
+	       changed it so that each level has its
+	       individual high score that can only be
+	       deleted in the game.
+Guess v4.5  -- added the 2-player mode
+	       added the "pick your own range" mode
+	       deleted "easy" level
+	       change "simple" level to "easy" level
+Guess v4.0  -- added the "+" (back) function
+Guess v3.5  -- added the "record" function
+Guess v3.0  -- deleted level "tough" and added a quit
+	       function in the level menu
+Guess v2.5  -- added two more levels (simple and tough)
+Guess v2.0  -- made spacing appearance a lot better and
+	       added the "assistance" function
+Guess v1.5  -- added level "difficult" and fixed a minor
+	       problem
+Guess v1.0a -- fixed minor bugs
+Guess v1.0  -- original game w/ "between" function
+
+
+There should not be any bugs, but if there are, please 
+feel free to email me or if you have any suggestions
+(Benahimvp@aol.com).  Please do not change the author
+name.

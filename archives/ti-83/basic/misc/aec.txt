@@ -1,0 +1,75 @@
+->Make sure to check out advdesktp v3.3 , the best windows look alike prgm made by f4String Software!!:)
+
+Made by F4String Software
+Made by Erik J. Beerlage
+Made in Holland, Zoetermeer.
+02-sep-2000 5:10
+erikbeerlage@hotmail.com
+
+[Advanced Euro Calculator v1.5]
+Advanced Euro Calculator v1.5 is an easy to use valuta converser of all countries joining the EMU. Its simple and fast! Countries: The Netherlands , Germania , Belgium , Luxembourg , France , Spain , Italy , Austria , Finland , Ireland , Portugal , Greece !  JUST CHECK IT OUT IT'S REALLY REALLY NICE.
+
+[12 Countries]
+In the program the following
+   abreviations are used:
+*The Netherlands	(Ned)
+*Germania		(Dui)
+*Belgium		(Bel)
+*Luxembourg		(Lux)
+*France			(Fra)
+*Spain			(Spa)
+*Italy			(Ita)
+*Austria		(Ost)
+*Finland		(Fin)
+*Ireland		(Ire)
+*Portugal		(Por)
+*Greece			(Gri)
+
+
+[Requirements]
+*ti-83
+*link cable
+*1249 bytes
+
+[Program uses]
+*variables K,L,M
+*Matrix [A]
+
+[Features]
+*Easy to use
+*Graphical interface
+*All EMU countries
+*Fast
+
+[Installation]
+Send "Advanced Euro Calculator v1.5" to your TI-83
+In the map "Adv. EuroCalculator Individual Programs" are all the individual programs.
+
+[Key's]
+*[Arrows] left/right 	-Change input country
+*[Arrows] up/down	-Change output country
+*[Enter]/[2nd]		-Enter amount of money
+*[Clear]		-Exit program
+
+
+[Files included]
+*Adv.EuroCalculator
+*Exchange Rate MATRIX
+
+[Bugs]
+I think I got them all out of the program, if you find one feel free to email me.
+
+[Notes]
+THANK YOU FOR USING THIS PROGRAM. DO WHATEVER YOU LIKE WITH IT, BUT:
+THIS PROGRAM MAY NOT BE CLAIMED IN ANY WAY BY ANYONE ELSE, IN PARTS OR WHOLE.
+If you are looking for nice programs trie:	BASH v1.3 by Enigma Software;
+->						Phantasm v1.0.b by Dustin Graham
+->						Vista98e by DTECH Software
+
+->Make sure to check out advdesktp v3.3 , the best windows look alike prgm made by f4String Software!!:)
+
+[History]
+Version 1.0 <> 20/aug/2000
+	- Early version the program worked with menu`s pretty pethatic by this version.
+Version 1.5 <> 02/sep/2000
+	- Updated to achieve a more graphical version and less bytes.

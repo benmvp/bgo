@@ -1,0 +1,80 @@
+Basic Tutor v1.0
+
+Programming by:    Tutorials by:    BASM Programming:
+--Joel Seligstein  --Cody Dupre     --www.basm.org
+--joel@basm.org    --cody@basm.org
+
+Basic Tutor is a program to help teach non-programmers begginer TI-BASIC.  It features
+--a nice, easy to use interface with a Windows-Help-File format, including a mouse.  It
+--currently has 10 tutorials explaining some basic commands in TI-BASIC.
+
+
+_______________________________________
+Table of Contents
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+1. Installing Basic Tutor
+2. Keys and Other Info in Basic Tutor
+3. Tutorial List
+4. Version History
+5. Future Versions
+
+_______________________________________
+1. Installing Basic Tutor
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+To Install Basic Tutor, follow these steps:
+(1) Send ION.8xg to your calculator.
+(2) Run prgmION to install Ion.
+(3) Send Basictut.8xp to your calculator.
+(4) Run prgmA and select 'Basic Tutor v1.0'
+
+_______________________________________
+2. Keys and Other Info in Basic Tutor
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+There are two ways to access every feature in Basic Tutor:
+
+Key         | Function
+------------+--------------
+Arrow Keys  | Move mouse
+2nd         | Click mouse [Menu options and scrollbar]
+Y=          | Click Main
+Window      | Click Prev
+Zoom        | Click Next
+Trace       | Click About
+Graph       | Click Quit
+Del         | Scroll up
+Stat        | Scroll down
+Clear       | Quit
+
+_______________________________________
+3. Tutorial List
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+## | Topic
+---+--------------
+01 | ClrHome 
+02 | Disp
+03 | Output(
+04 | Lbl & Goto
+05 | Pause
+06 | Variables
+07 | If
+08 | Then
+09 | Else
+10 | Input and Str
+
+_______________________________________
+4. Version History
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+1.0:
+ -10 Tutorials
+ -GUI with Main, Prev, Next, About, Quit, and a Scrollbar
+ -Mouse and Keys for each function
+
+_______________________________________
+5. Future Versions
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+-More tutorials.
+-...??? Email me with suggestions.
+-If I get enough emails on this, I will make a windows program
+ that will allow you to use this interface for individual
+ programs, so you can have a help file.  Email me with comments,
+ suggestions, etc. on this idea.

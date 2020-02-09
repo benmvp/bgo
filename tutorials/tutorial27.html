@@ -1,0 +1,501 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 27: Lists</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 27: Lists</font><br />
+<font size="3">Using lists in games...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 27: Lists</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+Great!  We are now back to learning information that will help us in making good games.  Now, the idea of lists should not be new to you because we initially came into contact with them way back in <a href="tutorial3.html">Tutorial 3</a> where we learnt how to store and delete them.  In this tutorial, you not only learn basic manipulation of lists, but also how to use lists to save information from a game and store it so that it can be loaded the next time the game is played.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#augment">augment(</a></td>
+    <td>Concatenates (puts together) the elements of two lists</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#clrlist">ClrList</a></td>
+    <td>Sets the dimension of a list to 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#fill">Fill(</a></td>
+    <td>Stores a specified value into each element of a list</td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+		<td><b>augment(</b><i>listA</i>,<i>listB</i><b>)</b></td>
+		<td><b>ClrList</b> <i>listname1</i>[,<i>listname2</i>, ..., <i>listname</i> <i>n</i>]</td>
+		<td><b>Fill(</b><i>value</i>,<i>listname</i><b>)</b></td>
+	</tr>
+</table>
+</p>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+There will be a few codes, each one getting harder and more complex.  This first one will be straightforward, just showing you how to use the new commands and refreshing your memory on some commands previously learnt.  You may want to review the commands <a href="../index/a-m.html#dim">dim(</a> and <a href="../index/a-m.html#l"><font size="-2">L</font></a>.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">3<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim(<font size="-2">L</font>BEN):6<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim(<font size="-2">L</font>BEN2)</font></b></td>
+    <td><font size="-2">L</font>BEN has 3 elements and <font size="-2">L</font>BEN2 has 5</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">{2,8,36}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />BEN</font></b></td>
+    <td><font size="-2">L</font>BEN is given the value of {2,8,36}</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Fill(5,<font size="-2">L</font>BEN2)</font></b></td>
+    <td>Fills every element of <font size="-2">L</font>BEN2 with 5s</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp <font size="-2">L</font>BEN,<font size="-2">L</font>BEN2</font></b></td>
+    <td>Displays <font size="-2">L</font>BEN and <font size="-2">L</font>BEN2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">augment(<font size="-2">L</font>BEN,<font size="-2">L</font>BEN2)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>BEN3</font></b></td>
+    <td>Concatenates <font size="-2">L</font>BEN2 to the end of <font size="-2">L</font>BEN and stores it to <font size="-2">L</font>BEN3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,1,<font size="-2">L</font>BEN3</font></b></td>
+    <td>Displays <font size="-2">L</font>BEN3 on the fourth line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrList <font size="-2">L</font>BEN,<font size="-2">L</font>BEN2,<font size="-2">L</font>BEN3</font></b></td>
+    <td>Makes the dimension of the three lists 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp <font size="-2">L</font>BEN,<font size="-2">L</font>BEN2,<font size="-2">L</font>BEN3</font></b></td>
+    <td>Displays <font size="-2">L</font>BEN, <font size="-2">L</font>BEN2, <font size="-2">L</font>BEN3</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut27a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial27a.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial27b.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial27c.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">Run the program.  First off, let me just tell you that you are supposed to get that "ERR: INVALID DIM" message.  This is because the calculator cannot display a list with a dimension of 0.  What would it display?  I just added that last line in the program just so that you could see exactly what ClrList does.  Let me just run down the entire code.  The third line just initializes both lists, the first with a dimension of 3 and the second with a dimension of 4.  Now, let's take a look at the next line: "<b><font color="#008000">{2,8,36}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />BEN</font></b>."  You may have thought that I left out the <b><font size="-2" color="#008000">L</font></b> and taking initiative put it in on your calculator.  Well, I left out the <b><font size="-2" color="#008000">L</font></b> on purpose because it is not necessary when you're storing list elements into a user-defined list.  You can just write the name and leave out the <b><font size="-2" color="#008000">L</font></b>.  This only works when you are storing list elements into the list as we are doing.  Let me just explain one more line: "<b><font color="#008000">Output(4,1,<font size="-2">L</font>BEN3</font></b>."  You may not know this (I don't think I've told you before), but <a href="../index/n-z.html#output">Output(</a> and <a href="../index/a-m.html#disp">Disp</a> act very differently.  In one way that they act differently, which is shown in the code, is that text that is longer than 16 characters while using Output, gets wrapped onto the next line.  Also, Output( displays lists with the commas instead of spaces like Disp.  I just thought I should mention that.  In the next code, I will show you how to concatenate three different-sized lists together and then split them up into 3 equal lists.  Note: I will be using the same lists over again, and there is an easier way to write "<font color="#008000"><b><font size="-2">L</font>BEN</b></font>" then first looking for <b><font size="-2" color="#008000">L</font></b> and then typing in B-E-N.  If you just press <img src="../index/2nd.gif" width="19" height="11" border="0" align="middle" alt="2ND" /> and <img src="../index/stat.gif" width="27" height="11" border="0" align="middle" alt="STAT" /> <font color="#FFD700">[LIST]</font>, you'll see a list of all the user-created lists.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">{2,8,36}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />BEN</font></b></td>
+    <td><font size="-2">L</font>BEN is given the value of {2,8,36}</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">{7,3,11,24}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />BEN2</font></b></td>
+    <td><font size="-2">L</font>BEN2 is given the value of {7,3,11,24}</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">{9,13,95,33,61}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />BEN3</font></b></td>
+    <td><font size="-2">L</font>BEN3 is given the value of {9,13,95,33,61}</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp <font size="-2">L</font>BEN,<font size="-2">L</font>BEN2,<font size="-2">L</font>BEN3</font></b></td>
+    <td>Displays <font size="-2">L</font>BEN, <font size="-2">L</font>BEN2, and <font size="-2">L</font>BEN3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">augment(<font size="-2">L</font>BEN,augment(<font size="-2">L</font>BEN2,<font size="-2">L</font>BEN3))<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>BEN4</font></b></td>
+    <td>Concatenates all three lists together and stores it to <font size="-2">L</font>BEN4</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,2,"CONCATENATED:"</font></b></td>
+    <td>Displays "CONCATENATED:" on the fifth line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(7,1,<font size="-2">L</font>BEN4</font></b></td>
+    <td>Displays <font size="-2">L</font>BEN4 on the seventh line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,4)</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000"><font size="-2">L</font>BEN4(X)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>NEW(X)</font></b></td>
+    <td>Stores first four elements of  <font size="-2">L</font>BEN4 into <font size="-2">L</font>NEW</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000"><font size="-2">L</font>BEN4(X+4)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>NEW2(X)</font></b></td>
+    <td>Stores second four elements of  <font size="-2">L</font>BEN4 into <font size="-2">L</font>NEW2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000"><font size="-2">L</font>BEN4(X+8)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>NEW3(X)</font></b></td>
+    <td>Stores third four elements of  <font size="-2">L</font>BEN4 into <font size="-2">L</font>NEW3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "SPLIT APART:",""</font></b></td>
+    <td>Displays "SPLIT APART:" and a blank line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp <font size="-2">L</font>NEW,<font size="-2">L</font>NEW2,<font size="-2">L</font>NEW3</font></b></td>
+    <td>Displays <font size="-2">L</font>NEW, <font size="-2">L</font>NEW2, and <font size="-2">L</font>NEW3</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut27b.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial27d.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial27e.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial27f.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">So, did you like that?  It may be a bit confusing, but after I explain, it should be come clearer.  The third, fourth, and fifth lines, use the new method of storing into a list without using the <font size="-2" color="#008000"><b>L</b></font>.  The first part that might give you trouble is the line after the first Pause command.  What actually happens is that the "<font color="#008000"><b>augment(<font size="-2">L</font>BEN2,<font size="-2">L</font>BEN3)</b></font>" part is done first.  This leaves you with a list that looks like this: "{7 3 11 24 9 13 95 33 61}.  Then the calculator concatenates that list to the end of <font size="-2">L</font>BEN, thus making a huge list, LBEN4, that reads: {2 8 36 7 3 11 24 9 13 95 33 61}.  You should now understand that part.  It wasn't too hard, was it?  If you really want to prove to yourself that you completely understand that, try putting 4 lists together.  <font size="-2">L</font>BEN4 gets displayed and then you come upon this For loop.  It may look a little complex, but if you look closely at the logic, it is actually quite simple.  Let me run you through what happens.  First, X is initially stored as 1.  So then it reads the next line, which actually says, "<font color="#008000"><b><font size="-2">L</font>BEN4(1)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>NEW(1)</b></font>" because X is 1.  The line after that actually says,"<b><font color="#008000"><font size="-2">L</font>BEN4(5)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>NEW2(1)</font></b>" once again because X is 1.  Finally, the last line in the For loop reads, "<font color="#008000"><b><font size="-2">L</font>BEN4(9)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>NEW3(1)</b></font>."  So, after going through the entire For loop once, <font size="-2">L</font>NEW is {2}, <font size="-2">L</font>NEW2 is {3}, and <font size="-2">L</font>NEW3 is {13}.  Then the For loop loops back around and now X becomes 2.  So the three lines now read as: "<b><font color="#008000"><font size="-2">L</font>BEN4(2)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>NEW(2)</font></b>," "<font color="#008000"><b><font size="-2">L</font>BEN4(6)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>NEW2(2)</b></font>," and "<b><font color="#008000"><font size="-2">L</font>BEN4(10)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>NEW3(3)</font></b>."  So now, after going through the entire loop twice, <font size="-2">L</font>NEW is {2 8}, <font size="-2">L</font>NEW2 is {3 11}, and <font size="-2">L</font>NEW3 is {13 95}.  This process occurs two more times so that <font size="-2">L</font>NEW is {2 8 36 7}, <font size="-2">L</font>NEW2 is {3 11 24 9}, and <font size="-2">L</font>NEW3 is {13 95 33 61}.  Not to complex now, huh?  At the end of the code, all three newly user-created lists are displayed.  In the final code that is coming up, I will show you how to save different pieces of information before quitting a game, and also how to load it when the game is played the next time.  You may want to take a quick peak at <a href="highscore.html">How To Setup A High Score Function</a> just as a reference.</p>
+
+<p align="justify">Before you start on the code let me just explain a few things first.  We are going to pretend as if the code is part of a RPG, where you have health, shield, bullets for your guns, knives, and nukes, among other things that don't need to be listed.  User variable <b>H</b> will stand for health, <b>S</b> will stand for shield, <b>B</b> for bullets, <b>K</b> for knives, and finally <b>N</b> for nukes.  First, I'm going to show you the "game" and how to save those 5 pieces of information.  I'll explain everything in that code and then add on the loading function.  I think it's better to do it separately so not to explain too much at one time.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Menu("","PLAY",2)</font></b></td>
+    <td>Sets up a menu with only one option: PLAY</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 2</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">163<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />H</font></b></td>
+    <td>Your health is at 163 units</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">57<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />S</font></b></td>
+    <td>Your shield is at 57 percent in tact</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">79<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>You have 79 bullets for you gun</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">36<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />K</font></b></td>
+    <td>You have 36 knives</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">2<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />N</font></b></td>
+    <td>You have 2 nukes</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 3</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(1,6,"STATUS</font></b></td>
+    <td>Displays "STATUS:" on the top line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,1,"HEALTH:</font></b></td>
+    <td>Displays "HEALTH:" on the third line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,10,H</font></b></td>
+    <td>Displays the value for health on the same line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,1,"SHIELD:</font></b></td>
+    <td>Displays "SHIELD:" on the fourth line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,10,S</font></b></td>
+    <td>Displays the value for shield on the same line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,1,"BULLETS:</font></b></td>
+    <td>Displays "BULLETS:" on the fifth line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,10,B</font></b></td>
+    <td>Displays the value for bullets on the same line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,1,"KNIVES:</font></b></td>
+    <td>Displays "KNIVES:" on the sixth line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,10,K</font></b></td>
+    <td>Displays the value for knives on the same line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(7,1,"NUKES:</font></b></td>
+    <td>Displays "NUKES:" on the seventh line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(7,10,N</font></b></td>
+    <td>Displays the value for nukes on the same line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Repeat G=22</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">getKey<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />G</font></b></td>
+    <td>Repeat until the <img src="../index/mode.gif" width="26" height="11" border="0" align="middle" alt="MODE" /> key is pressed</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End Repeat loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 4</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Menu("SAVE FIRST?","YES",5,"NO",9)</font></b></td>
+    <td>A menu that asks whether to save before quitting</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 5</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">H-20<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>GAME(1)</font></b></td>
+    <td>Store new health into the first entry of <font size="-2">L</font>GAME</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">S+3<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>GAME(2)</font></b></td>
+    <td>Store new shield into the second entry of <font size="-2">L</font>GAME</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">B-9<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>GAME(3)</font></b></td>
+    <td>Store new bullets into the third entry of <font size="-2">L</font>GAME</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">K+16<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>GAME(4)</font></b></td>
+    <td>Store new knives into the fourth entry of <font size="-2">L</font>GAME</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">N+4<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>GAME(5)</font></b></td>
+    <td>Store new nukes into the fifth entry of <font size="-2">L</font>GAME</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,4,"GAME SAVED</font></b></td>
+    <td>Displays "GAMED SAVED" on the fourth line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 9</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">DelVar H:DelVar S:DelVar B</font></b></td>
+    <td>Delete from memory the contents of H, S & B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">DelVar K:DelVar N</font></b></td>
+    <td>Delete from memory the contents of K & N</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut27c.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial27g.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial27h.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/mode.gif" width="26" height="11" border="0" alt="MODE" /> <img src="outputs/tutorial27i.gif" width="129" height="110" border="0" align="middle" /><br />
+choose YES <img src="outputs/tutorial27j.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">So, did you know you could do that with <a href="../index/a-m.html#menu">Menu(</a>...not even have a title?  You'll hardly ever need to do something like that, but it is something that you should know how to do.  Next, random values are stored into the 5 variables, which are then displayed.  The next few lines weren't really necessary, but I thought I should add it in because you might want to do something similar in a game you make.  The <a href="../index/n-z.html#repeat">Repeat</a> loop waits for the user to press the <img src="../index/mode.gif" width="26" height="11" border="0" align="middle" alt="MODE" /> button, which serves as the Quit button.  Once <img src="../index/mode.gif" width="26" height="11" border="0" align="middle" alt="MODE" /> is pressed, the program goes to another menu, which asks if you want to save the 5 pieces of information before quitting.  If you pick "YES," the 5 pieces of info are then stored into a newly created user-created list called GAME.  The reason why I just didn't do, "<font color="#008000"><b>H<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>GAME(1)</b></font>" is because I wanted the values that are saved to be different than how they originally start off because that's what will happen during the course of a regular game.  It was not necessary for me to add those <a href="../index/a-m.html#delvar">DelVar</a> statements at the end, but I wanted to simulate those variables being changed by another program and to prove to you that this method works.  In the next code, I will show you the loading function, which you'll need to add right after "<font color="#008000"><b>Lbl 2</b></font>."</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">5<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim(<font size="-2">L</font>GAME)</font></b></td>
+    <td><font size="-2">L</font>GAME has 5 elements</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If <font size="-2">L</font>GAME(1)>0:Then</font></b></td>
+    <td>If their is a value for health of <font size="-2">L</font>GAME, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Menu("FINISH LAST GAME","YES",2A,"NO",2B)</font></b></td>
+    <td>A menu that asks if you want to continue the last game</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 2A</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000"><font size="-2">L</font>GAME(1)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />H</font></b></td>
+    <td>Store first entry of <font size="-2">L</font>GAME into H (health)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000"><font size="-2">L</font>GAME(2)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />S</font></b></td>
+    <td>Store second entry of <font size="-2">L</font>GAME into S (shield)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000"><font size="-2">L</font>GAME(3)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Store third entry of <font size="-2">L</font>GAME into B (bullets)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000"><font size="-2">L</font>GAME(4)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />K</font></b></td>
+    <td>Store fourth entry of <font size="-2">L</font>GAME into K (knives)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000"><font size="-2">L</font>GAME(5)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />N</font></b></td>
+    <td>Store fifth entry of <font size="-2">L</font>GAME into N (nukes)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Fill(0,<font size="-2">L</font>GAME)</font></b></td>
+    <td>Fills every element of <font size="-2">L</font>GAME with 0s</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 3</font></b></td>
+    <td>Go to Label 3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End If-Then statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 2B</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Fill(0,<font size="-2">L</font>GAME)</font></b></td>
+    <td>Fills every element of <font size="-2">L</font>GAME with 0s</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut27d.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial27g.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> <img src="outputs/tutorial27k.gif" width="129" height="110" border="0" align="middle" /> choose "YES" <img src="outputs/tutorial27l.gif" width="129" height="110" border="0" align="middle" /><br />
+press <img src="../index/mode.gif" width="26" height="11" border="0" alt="MODE" /> <img src="outputs/tutorial27i.gif" width="129" height="110" border="0" align="middle" /> choose "YES" <img src="outputs/tutorial27j.gif" width="129" height="110" border="0" align="middle" /> and so on...</p>
+
+<p align="justify">Okay, run the program with all this newly added code.  If you've done exactly what I've said, that initial menu, which asks if you want to "FINISH LAST GAME," should appear.  If you choose yes, those new values for the 5 pieces of information will display.  If you choose no, the original values will be displayed.  Now, let me explain the two "<font color="#008000"><b>Fill(0,<font size="-2">L</font>GAME)</b></font>."  They are basically used to clear the information.  So, if you do choose to load the info from the previous game, after the info is loaded, it is erased.  If you choose not to load the last game's information, it is erased anyway.  There are many ways you could do this part.  You could get rid of the second "<font color="#008000"><b>Fill(0,<font size="-2">L</font>GAME)</b></font>" so that if the user chooses not to load the information that they'll have the option next time they play.  You could remove both of them so that they could continue to load that same information over and over again.  Doing this might actually be beneficial if you have a pretty hard game.  Let's say for instance that the user has gotten to a level that he's never gotten to before and decides to save and quit.  Then the next time he plays the game and loads the information, but dies quickly because he made a mistake.  He might want to start from that place he had saved the next time he plays the game.  He might want to keep on starting from that saved place until he gets significantly farther along and saves that place.  Do you see what I'm saying?  The way you use those "<font color="#008000"><b>Fill(0,<font size="-2">L</font>GAME)</b></font>" statements all depend on how you want to set up your game.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+If you were able to fully grasp everything that was taught, you are becoming a really good programmer.  Using the features taught in this tutorial will help make your game much better.  Many people want the option to save/load their positions in the game.  Using this knowledge will help you give the users of your games what they want.  Coming up in the next tutorial, you will use another mathematical feature, the matrix, to aid you in making games.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial26.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial28.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial26.html">Tutorial 26</a></td>
+	<td><a href="tutorial28.html">Tutorial 28</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

@@ -1,0 +1,4 @@
+			TSE\TSE II\Ion Shell v1.0
+			      Jason D. Ralphs
+
+	This program integrates MirageOS and TSE or ION.  If Mirage wont let you play your favorite games this lets you execute TSE or ION through MirageOS.  Also, this program reduces the risk of assembly code crashes by performing garbage collection.  You must have either or both shells installed in order for this to work.  You may also now delete "prgmA".  And this allows you to have both TSE and Ion installed at the same time.

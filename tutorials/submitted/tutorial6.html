@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Member Submitted Tutorial #3</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../../hlb.css" rel="stylesheet" />
+
+<script language="javascript" src="../../redirect.js"></script>
+
+<style>
+<!--
+	select		{background-color:#dddddd; font-family:Verdana; font-size:8.5pt; color:black}
+	A:link		{color: #0000CD; text-decoration:none;}
+	A:visited	{color: #0000CD; text-decoration:none;}
+	A:hover		{color: #B22222;}
+-->
+</style>
+<base target="_self" />
+</head>
+
+<body bgcolor="ffffff">
+<font face="verdana" size="1">
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../../home.html">HOME</a> <b>>></b> <a href="../index.html">Tutorials</a> <b>>> <i>Tutorial 6: Advanced Graphics</b></i></td>
+	</tr>
+</table>
+
+<center>
+<b>Advanced Game Techniques Tutorials
+<hr />
+Advanced BASIC<br />
+Tutorial 6<br />
+Advanced Graphics</b>
+</center>
+
+<p><table align="right" width="210" cellpadding="0" cellspacing="0" border="0" bgcolor="dddddd">
+  <tr>
+    <td>
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td bgcolor="#FF6600" width="20" height="20">&nbsp;</td>
+          <td bgcolor="#666666" width="190" height="20"><font face="arial" size="1" color="#FFFFFF"><b>&nbsp;Advanced BASIC Tutorials</b></font></td>
+        </tr>
+      </table>
+      <table align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td>
+            <form>
+              <select class="pulldownMenu" onchange="if(options[selectedIndex].value) self.location.href=this.options[this.selectedIndex].value">
+                <option value="" selected="selected">Select Tutorial...</option>
+                <option value="tutorial1.html">1. Advanced Game Design</option>
+                <option value="tutorial2.html">2. Arrays: Data Structure</option>
+                <option value="tutorial3.html">3. Nibbles: Lists</option>
+                <option value="tutorial4.html">4. Nibbles: Hit Detection</option>
+                <option value="tutorial5.html">5. Scroll Screen Left & Right</option>
+                <option value="tutorial6.html">6. Advanced Graphics</option>
+                <option value="tutorial7.html">7. Trig Func & Relevant Uses</option>
+              </select>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></p>
+
+
+<p align="justify"><b>Part 1: Introduction</b>
+<br />First of all, your probably wondering what exactly advanced programming is. For our purposes, we can define advanced programming as the ability to use all the available facits of the TI-Basic to create quality and technicaly complex games. In order to do this you must understand how the calculator uses the commands on a very low level. To use TI-Basic to make quality games you have to know what your doing. Since ASM programming is very fast, you have to be able to program very intelligently to make quality games that will compete with them. The purpose of these tutorials is to explain several advanced programming techniques. By starting at game design and ending at 3-D programming. It explains mainly the theorys behind these techniques and not the exact syntax of things.</p>
+
+<p align="justify">For these tutorials it is assumed that you already know how basic basically works. If you don't know the syntax and how to use things like 'If' statements or 'Lbl's' then you should go read the many other Basic Tutorials out there on the web.</p>
+
+<p align="justify"><b>Part 2: Who needs Graphics?</b></p>
+
+<p align="justify"><b>Explanation:</b>
+<br />If you think that graphics are not important for a game, then you will never be a good game programmer (Text based RPGs and such dont count!). It doesnt matter if you have the BEST engine ever made, if the user doesn't see any thing good, they won't care. So basically, the only thing that matters is that the user SEES a good program. Doing this requires knowledge of several features on the calc that aren't always used to their greates extent. The previous tutorials have been for just about any calc, but this one will be specific to the TI-83 and TI-83+, but you can still use some of these ideas on other calcs.</p>
+
+<p align="justify"><b>Where are Advanced Graphics commands:</b>
+<br />Just look under the DRAW menu to see all the commands!</p>
+
+<p align="justify"><b>Part 3: Where to get started</b></p>
+
+<p align="justify"><i>When using the graph screen, you shouldn't use the Y variable, the calc will often reset the Y variable to 0 when you clear the screen or use Text and stuff</i>
+</p>
+
+<p align="justify"><b>Screen dimensions:</b></p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+    <td bgcolor="999999" width="50%"><font face="verdana" size="1"><div align="justify">The screen is 95 pixels by 63 pixels (don't forget the 0 pixel!). One very important part to making making graphics easy, is to set the screen to the right dimensions. The way I always do the graphics is as follows:</div></font></td>
+    <td bgcolor="dddddd" width="50%"><font face="Tifont, Ti83pc" size="2">0->Xmin<br />
+94->Xmax<br />
+-62->Ymin (thats the negative sign)<br />
+0->Ymax</font></td>
+  </tr>
+  <tr>
+    <td bgcolor="999999" width="50%" colspan="2"><font face="verdana" size="1"><div align="justify">This makes it so that you dont need any eguations to go from a line command to a pxl-test( ). All you have to do is put a negative in front of the Y in the line command. For example:</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd" width="50%" colspan="2"><font face="Tifont, Ti83pc" size="2"><i><b>syntax of line= line(X1,Y1,X2,Y2)</b></i><br />
+<i><b>syntax of pxl-Test=pxl-Test(Y1,X1)</b></i><br />
+<i><b>dont ask me why TI switched some of the commands, you'll just have to look it up in your manual if you're not sure.</b></i><br />
+<i><b>set window vars as stated above</b></i><br />
+:1->X:2->Y<br />
+:3->S:4->T<br />
+:Line(X,-Y,S,-T<br />
+:pxl-Test(Y,X</font></td>
+  </tr>
+  <tr>
+   <td bgcolor="999999" width="50%" colspan="2"><font face="verdana" size="1"><div align="justify">When it finishes go to the homescreen, hit Ans, and a 1 will show up.</div></font></td>
+  </tr>
+</table></p>
+
+<p align="justify">The one means that the pxl test found that that pxl was on. If it was zero, then the pixel would have been off.</p>
+
+<p align="justify">Like I said, using those window dimensions is just what I prefer, it makes it easier. Now that you have the window set, you need something to use to put up graphics.</p>
+
+<p align="justify"><b>Changing Pixles Quickly:</b>
+<br />In the world of gaming, speed is almost always the top priority. There are several ways to turn pixels on and off quickly.</p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+    <td bgcolor="999999" width="50%" colspan="2"><font face="verdana" size="1"><div align="justify">The standard command to easily turn many pixels on quickly is the Line( command. It is the absolute fastest way to turn on AND OFF pixels. It is very simple to utilize the Line command to turn pixels off, here's a sample program:</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd" width="50%"><font face="Tifont, Ti83pc" size="2"><i><b>set window vars as above</b></i><br />
+0->A<br />
+While 1<br />
+not(A)->A<br />
+Line(0,0,94,-62,A)<br />
+End</font></td>
+    <td bgcolor="999999" width="50%"><font face="verdana" size="1"><div align="justify">This program will flash a line across the screen. The not(A) changed the 0 to 1 and back agian every time it loops.</div></font></td>
+  </tr>
+</table>
+
+<p align="justify">The second fastest way to turn pixels on and off is with the Text( command. Sprites are just about impossible to do in BASIC so that they go fast. So instead, Text is used in the place of sprites. While your are only limited to the standard charachter set, it is an easy way to turn 10-15 pixels in one milli second. Don't forget that you can Text(0,0,"_____" using spaces like this is the fastest way to turn off a big block of pixels in a very short amount of time.</p>
+
+<p align="justify"><p><b>Part 4: Special Effects</b></p>
+
+<p align="justify">The absolute fastest way to turn on a lot of pixels is with the RecallPic command. But unfortunatly, Pics are static, and stay the same. However, Pics are used in many advanced things such as grayscale and layering.</p>
+
+<p align="justify"><b>Layered Graphics:</b>
+<br />Wouldn't it be cool if you could have a background that an object moved across, and the background never changed? You can! A Pic, when recalled, simply turns on the pixels, and does not turn them off. Here's a sample program so you can see what it does.</p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+    <td bgcolor="dddddd" width="70%"><font face="Tifont, Ti83pc" size="2"><i><b>same window set as above</b></i><br />
+ClrDraw<br />
+For(A,0,400)<br />
+Pxl-On(RandInt(0,62),RandInt(0,94)<br />
+Text(55,0,A)<br />
+End<br />
+StorePic 1<br />
+10->X:10->Z<br />
+While 1  <i><b>or Repeat 0, they are the exact same</b></i><br />
+0<br />
+Repeat Ans<br />
+getKey->K:End<br />
+X+(K=26)-(K=24)->X<br />
+Z+(K=34)-(K=25)->Z<br />
+Line(X,-(Z+6),X+28,-(Z+6),0)<br />
+Text(Z,X,"SiCoDe")<br />
+RecallPic 1<br />
+End</font></td>
+    <td bgcolor="999999" width="30%"><font face="verdana" size="1"><div align="justify">The Line off command is to erase the trail that would other wise appear. As you can see, it looks very cool to have something moving over on top of the background. And many awesome looking intros could be made using this technique.<div></font></td>
+  </tr>
+</table></p>
+
+<p align="justify"><b>Wipes:</b><br />
+One really easy, and good looking effect, is to wipe the screen clear. You do this using a Line off command. If you used only one line off command, it would go slow, but you can use several and double the speed of the wipe. Here's an example that wipes horizontally:</p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+    <td bgcolor="dddddd" width="50%" rowspan="2"><font face="Tifont, Ti83pc" size="2"><i><b>set window vars as above</b></i><br />
+For(X,0,94,3<br />
+Line(X,0,X,-62,0)<br />
+Line(X+1,0,X+1,-62,0)<br />
+Line(X+2,0,X+2,-62,0)<br />
+End</font></td>
+    <td bgcolor="999999" width="50%"><font face="verdana" size="1"><div align="justify">Here's an example that wipes diagonally:</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd" width="50%"><font face="Tifont, Ti83pc" size="2"><i><b>set window vars as above</b></i><br />
+For(X,0,80)<br />
+Line(X,0,0,-X,0)<br />
+Line(94-X,-62,94-X+62,0,0)<br />
+End</font></td>
+  </tr>
+</table></p>
+
+<p align="justify">The possibilties for the different wipes are limitless, you could have it wipe vertically, wipe diagonally from each country. A cool wipe, could really impress the person playing your game.</p>
+
+<p align="justify"><b>Grey Scale:</b>
+<br />While grey scale in BASIC isnt exactly as good as in ASM, it still does look grey. This algorithm is from Jonathan W. Capps (<a href="mailto:pieman2000@aol.com">PieMan2000@aol.com</a>). The basic idea is to recall 3 Pics in successive order, the one recalled at the beginning will be darker than the one recalled last. So here's the example:</p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+   <td bgcolor="dddddd" width="70%"><font face="Tifont, Ti83pc" size="2">ZStandard<br />
+ZDecimal<br />
+For(A,3,1.5,-.5)<br />
+Circle(0,0,A)<br />
+If A=2.5<br />
+StorePic 1<br />
+If A=2<br />
+StorePic 2<br />
+End<br />
+StorPic 3<br />
+Repeat 0<br />
+ClrDraw<br />
+RecallPic 1<br />
+RecallPic 2<br />
+RecallPic 3<br />
+End</font></td>
+    <td bgcolor="999999" width="30%"><font face="verdana" size="1"><div align="justify">As you can see, it does look like grey scale, and thats basically how they do it in ASM, it just goes slowe<u>rrr</u> in BASIC.</div></font></td>
+  </tr>
+</table></p>
+
+<p align="justify"><b>Graphical Menus:</b>
+<br />Perhaps one of the easiest things to do to make your game look better, is to have a graphical menu. If you have just the standard Menu( menu, your game looks dull and boring. If you want to see a very impressive menu, just download Nibbles Arcade(sicode.ticalc.org/games). The Nibbles Arcade Menu, has instant key-press response, but inverses the current menu selection also. It isnt very hard at all to make your menu and it only takes up about 200-300 more bytes, a custom menu will add a lot to your game.</p>
+
+<hr />
+
+If you don't understand this stuff:
+
+<ol>
+  <li>Reread the tutorial.</li>
+  <li>Reread it again (throughly, and experiment with the code)</li>
+  <li>Then I can't write good tutorials, or</li>
+  <li>You should rethink wanting to program Advanced BASIC</li>
+</ol>
+
+<p align="justify"><a href="tutorial7.html">Next Tutorial:</a> Trigonometric Functions on the Calc and Relevant Uses</p>
+
+<p align="justify">Written by <a href="../../members/users/user021.html">Brandon Green</a>.</p>
+
+<p align="justify">Tutorial is property of Brandon Green, &copy; 2000. Do not use without permision. Algorithms are property of Brandon Green, e-mail for permision to use.</p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<!--#geoguide-->
+</font>
+</body>
+</html>

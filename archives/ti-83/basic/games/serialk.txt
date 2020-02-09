@@ -1,0 +1,6 @@
+Author-Chris Coykendall (darkGravity) Member#045
+Title-Serial Killa
+Platform-TI-83/83+
+Language-TI-BASIC
+Type-Game
+Description-A simple dodging game where you run away from the psycho serial killer! Use arrow keys to move and clear to quit.

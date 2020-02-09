@@ -1,0 +1,377 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 11: Random Numbers</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 11: Random Numbers</font><br />
+<font size="3">Random Numbers...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 11: Random Numbers</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+In this tutorial we will learn our last command, randInt(.  This really has nothing to do with the rest of the commands that I have taught you.  In fact it isn't even a PRGM command, but a MATH command.  I just had to insert this last tutorial because you need the command for the game in the next tutorial.  The command is fairly easy to grasp, because all it does is pick a random number (an integer) between the range that you set.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#randint">randInt(</a></td>
+    <td>Generates and displays a random integer within a range</td>
+  </tr>
+</table>
+</p>
+
+<p align="justify"><b>randInt(</b><i>lower</i>,<i>upper</i>[,<i>numtrials</i>]<b>)</b></p>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+There are going to be two separate codes: one shows you the basic way of using randInt in a program and the second is a fun little program that I like to put on people's calculator.  However, before even getting to the codes, I want you to really grasp how randInt works.  Before entering the program editor, I want you to go to the home screen and enter the randInt command.  I want your calculator to display a random number between 1 and 50, so it should look like this <b>randInt(1,50)</b>.  I don't want any trials.  Okay, press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> and you should see a number that's between 1 and 50.  Now press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> again, and a new number between 1 and 50 should appear.  If it so happened that the same number appeared, then the 1 in 50 chance happened and the randInt command pick the same number again.  Just press enter again and there should be a new number.  Now keep on pressing Í until you see the same number twice.  I just want you to really see how the randInt command works.  Now on to the codes:</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores 0 into X</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Repeat A=19</font></b></td>
+    <td>Repeat everything until the random number is 19</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">B+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Add one to X every time it repeats</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">randInt(1,20)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+    <td>Picks a random integer between 1 and 20</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,8,A)</font></b></td>
+    <td>Displays that random number on line 4</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,100)</font></b></td>
+    <td>This construction is used so that we will be able</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>to see the random number for a short while</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End Repeat Loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(8,8,B)</font></b></td>
+    <td>Displays the number of times it took to get to 19</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut11a.zip'" /></p>
+
+<p align="center">An example of a final output: <img src="outputs/tutorial11a.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">This program just keeps on displaying random numbers between 1 and 20 until the random number is 19.  If it so happens (it happened to me when I was testing the program) that the first random number is 19, just run the program again.  User variable B in this program is the number of times it took for the random number to be 19.  So if the number at the bottom (B) was 23, that means that 19 appeared on the 23rd try.  You better study that because you'll need it in the next tutorial.  The next program is a fun little program:</p>
+
+<a name="game">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">randInt(1,8)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+    <td>Picks a random integer between 1 and 8</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">randInt(1,12)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Picks a random integer between 1 and 12</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(A,B,"HELLO")</font></b></td>
+    <td>Displays "HELLO" in a random spot</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,100)</font></b></td>
+    <td>This construction is used so that we will be able</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>to see the random number for a short while</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 1</font></b></td>
+    <td>Go to Label 1</td>
+  </tr>
+</table>
+</a>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut11b.zip'" /></p>
+
+<p align="center">A possible output: <img src="outputs/tutorial11b.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">As you have probably noticed, the program doesn't stop.  This is an endless loop (I did this on purpose) and it only stops unless you press <img src="../index/on.gif" width="17" height="11" border="0" align="middle" alt="ON" /> and then <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> or press <img src="../index/2nd.gif" width="19" height="11" border="0" align="middle" alt="2ND" /> and <img src="../index/on.gif" width="17" height="11" border="0" align="middle" alt="ON" /> <font color="#FFD700">[OFF]</font>.  I was thinking of putting in a For statement that would let it display "HELLO" in a random spot for a certain number of times, but I decided to do it this way just so you would learn how to break a program.  However, when I make this program I use a command called <a href="../index/a-m.html#getkey">getKey</a>, so it'll stop displaying "HELLO" if I either: press <img src="../index/on.gif" width="17" height="11" border="0" align="middle" alt="ON" /> and then <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" />, press <img src="../index/2nd.gif" width="19" height="11" border="0" alt="2ND" /> and  <img src="../index/on.gif" width="17" height="11" border="0" alt="ON" /> <font color="#FFD700">[OFF]</font>, or I press a particular key.  To take a look at how this is done, you can go to <a href="tutorial21.html">Tutorial 21</a>.</p>
+
+<p align="justify"><font size="3" color="#00FF00">Version 2.0 Update:</font><br />
+After the first output of BASIC 83 Guru, I thought of another way to use randInt.  This way of using randInt is if you want more than one choice to happen randomly after a certain situation occurs.  randInt is accompanied by Goto & Lbl and If statements in this code.  What if you wanted to make a "Magic 8 Ball" game, which had four different replies.  You would want those replies to be randomly chosen, right?  Well this is how you'd make such a game:</p>
+
+<p align="justify"><font size="3" color="#000080">The Code:</font></p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="45%">
+  <col span="1" width="55%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl A</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,3,"MAGIC 8 BALL")</font></b></td>
+    <td>Displays text at row 4 and column 3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,500)</font></b></td>
+    <td>This line and the next line are used to delay</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>the program for a couple of seconds</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl D</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,2,"THINK OF YOUR")</font></b></td>
+    <td>Displays "THINK OF YOUR"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,3,"QUESTION AND")</font></b></td>
+    <td>Outputs text at row 3 and column 3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,1,"PRESS ENTER FOR")</font></b></td>
+    <td>Displays "PRESS ENTER FOR"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,4,"AN ANSWER.")</font></b></td>
+    <td>Outputs text at row 6 and column 4</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,5,"THINKING")</font></b></td>
+    <td>Displays "THINKING" on the screen for</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,500)</font></b></td>
+    <td>screen for a few seconds</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">randInt(1,4)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />C</font></b></td>
+    <td>Picks a random integer between 1 and 4</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If C=1:Goto 1</font></b></td>
+    <td>If C equals 1, go to Label 1</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If C=2:Goto 2</font></b></td>
+    <td>If C equals 2, go to Label 2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If C=3:Goto 3</font></b></td>
+    <td>If C equals 3, go to Label 3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If C=4:Goto 4</font></b></td>
+    <td>If C equals 4, go to Label 4</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,2,"DEFINITELY YES")</font></b></td>
+    <td>Displays "DEFINITELY YES"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto B</font></b></td>
+    <td>Goto Label B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 2</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,2,"DEFINITELY NOT")</font></b></td>
+    <td>Displays "DEFINITELY NOT"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto B</font></b></td>
+    <td>Goto Label B</td>
+  </tr>
+   <tr valign="middle">
+    <td><b><font color="#008000">Lbl 3</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,5,"MAYBE SO")</font></b></td>
+    <td>Displays "MAYBE SO"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto B</font></b></td>
+    <td>Goto Label B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 4</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,1,"TRY AGAIN LATER")</font></b></td>
+    <td>Displays "TRY AGAIN LATER"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto B</font></b></td>
+    <td>Goto Label B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl B</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Menu("AGAIN?","YES",D,"NO",C)</font></b></td>
+    <td>Ask if you want to play again</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl C</font></b></td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut11c.zip'" /></p>
+
+<p align="center">Possible output:<br />
+<img src="outputs/tutorial11c.gif" width="129" height="110" align="middle" border="0" /> then <img src="outputs/tutorial11d.gif" width="129" height="110" align="middle" border="0" /><br />
+<b>AND</b><br />
+<img src="outputs/tutorial11e.gif" width="129" height="110" align="middle" border="0" /> and <img src="outputs/tutorial11f.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify"><font size="3" color="#000080">Further Explanation:</font><br />
+If you've run the program you can see that the opening screen comes up displaying "MAGIC 8 BALL" and it waits a few seconds and then asks you to think of the question that you want to ask the "Magic 8 Ball."  When you press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> it displays "THINKING" for a while and then gives you the answer.  I added that "THINKING" part, just so it gives the effect that the game is actually thinking.  If I didn't put that part there, it would almost immediately give me the answer, which isn't very realistic.  All of the answers have a 1 in 4 (equal) chance of appearing.  Now what happens if you wanted "MAYBE SO" to have a better chance of occurring than all the other answers?  What if you wanted it to be <i>weighted</i>?  This is really easy.  All you have to do is change two lines.  Change the line that reads <b><font color="#008000">randInt(1,4)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />C</font></b> to <font color="#008000"><b>randInt(1,5)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />C</b></font> and change the line that reads <b><font color="#008000">If C=3:Goto 3</font></b> to <font color="#008000"><b>If C=3 or C=5:Goto 3</b></font>.  This makes the chance that "MAYBE SO" is displayed 2 out of 5 and the others 1 out of 5.  You may be wondering what the command or does.  Will it's pretty simple actually.  If either one of the statements are true, it'll go to label 3.  You can find or by pressing <img src="../index/2nd.gif" width="19" height="11" border="0" align="middle" alt="2ND" />, <img src="../index/math.gif" width="27" height="11" border="0" align="middle" alt="MATH" />, and then <img src="../index/right.gif" width="11" height="12" border="0" align="middle" alt="RIGHT" />.  Scroll down to <b>2:or</b>.  This construction of randInt is used a lot in "text only" games or RPGs (role playing games).  It makes the games better because different outcomes can occur randomly.  If a certain outcome was fixed, the program would be boring after the first couple of times playing it.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+Well, this is the last command that you'll learn before our big game.  If you want to quickly review all the lessons up to this point, just click on the "Tutorials" link in either navigation bar.  If you feel confident that you <b>completely</b> understand everything that I have taught you, then go on to The Big Game.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial10.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="game.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial10.html">Tutorial 10</a></td>
+	<td><a href="game.html">The Big Game</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

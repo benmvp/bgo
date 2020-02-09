@@ -1,0 +1,495 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 15: Lines</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 15: Lines</font><br />
+<font size="2">Drawing Lines on the Graph Screen...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 15: Lines</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+We've finally gotten to the tutorial on Lines.  In the previous two tutorials, I've been showing you ways to make lines with points and pixels, but in this tutorial, I'll show you the real way to make horizontal, vertical, and diagonal lines.  The problem with using points and pixels to make a line is that you can only easily make horizontal or vertical lines; it's very difficult to make diagonal lines.  Actually, the only way to make a diagonal line using pixels or points is to write a command line for each point in the diagonal line; you cannot use a For loop.  Lines are really essential in making graphics on the graph screen.  A line can be as short as two pixels and as long as the whole length of the screen.  The three different line commands use the coordinate plane (<i>x</i>,<i>y</i>) like the point commands, so you will have to set the <a href="../index/n-z.html#windowvar">window variables</a>.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#line">Line(</a></td>
+    <td>Draws a line segment from (<i>X<font size="-2">1</font></i>,<i>Y<font size="-2">1</font></i>) to (<i>X<font size="-2">2</font></i>,<i>Y<font size="-2">2</font></i>)</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#horizontal">Horizontal</a></td>
+    <td>Draws a horizontal line through <i>y</i> coordinate</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#vertical">Vertical</a></td>
+    <td>Draws a vertical line through <i>x</i> coordinate</td>
+  </tr>
+</table>
+</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="50%">
+<col span="1" width="50%">
+</colgroup>
+  <tr valign="middle">
+    <td>Line(<i>X<font size="-2">1</font></i>,<i>Y<font size="-2">1</font></i>,<i>X<font size="-2">2</font></i>,<i>Y<font size="-2">2</font></i><b>)</b></td>
+    <td><b>Horizontal</b> <i>y</i></td>
+  </tr>
+  <tr valign="middle">
+    <td>Line(<i>X<font size="-2">1</font></i>,<i>Y<font size="-2">1</font></i>,<i>X<font size="-2">2</font></i>,<i>Y<font size="-2">2</font></i><b>,0)</b></td>
+    <td><b>Vertical</b> <i>x</i></td>
+  </tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+There will be many small sets of code in this tutorial.  In the first code, we will make a box and a diamond using Line(.  In the second code, I will show you how to draw a line and then erase part of it, just like we did in the previous lesson.  The third code will show you how to underline and box-in text using Line(.  In the fourth code, we will make a grid using Vertical and Horizontal.  Finally, the fifth and last code will use Line( to shade in the box we made.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(5,-20,25,-20</font></b></td>
+    <td>Draws a horizontal line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(25,-20,25,-40</font></b></td>
+    <td>Draws a vertical line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(25,-40,5,-40</font></b></td>
+    <td>Draws a horizontal line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(5,-40,5,-20</font></b></td>
+    <td>Draws a vertical line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(50,-30,60,-20</font></b></td>
+    <td>Draws a diagonal line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(60,-20,70,-30</font></b></td>
+    <td>Draws a diagonal line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(70,-30,60,-40</font></b></td>
+    <td>Draws a diagonal line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(60,-40,50,-30</font></b></td>
+    <td>Draws a diagonal line segment</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut15a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial15a.gif" width="129" height="110" align="middle" border="0" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial15b.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify">What this little program does is draw a box, pause until the user presses <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" />, and then draws a diamond.  The program is very straightforward.  Notice how when I'm drawing the box and the diamond that the (<i>x</i>,<i>y</i>) coordinate at the end of one Line( command is the same as the (<i>x</i>,<i>y</i>) coordinate at the beginning of the next Line( command.  And since I'm closing the figure, the first coordinate in the first Line( command and the last coordinate in the last Line( command are the same.  Next, I'm going to show you how to draw lines and then erase part of them.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(5,-10,45,-10</font></b></td>
+    <td>Draws a horizontal line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(75,-10,75,-50</font></b></td>
+    <td>Draws a vertical line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(15,-60,63,-40</font></b></td>
+    <td>Draws a diagonal line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(15,-10,35,-10,0</font></b></td>
+    <td>Erases half of the horizontal line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(75,-20,75,-40,0</font></b></td>
+    <td>Erases half of the vertical line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(27,-55,51,-45,0</font></b></td>
+    <td>Eraseas half of the diagonal line segment</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut15b.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial15c.gif" width="129" height="110" align="middle" border="0" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial15d.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify">The program just displays three types of lines (diagonal, vertical, and horizontal), waits for the user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" />, and then erases exactly half of each line.  Figuring out the coordinates to erase part of the diagonal line was pretty difficult actually, but I figured out the slope of the line and was able to work from there.  Next, I will show you how to underline and box in text.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(15,25,"UNDERLINED</font></b></td>
+    <td>Writes "UNDERLINED"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(35,30,"BOXED IN</font></b></td>
+    <td>Writes "BOXED IN"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(25,-22,63,-22</font></b></td>
+    <td>Draws a horizontal line segment to underline text</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(28,-34,59,-34</font></b></td>
+    <td>Draws the top of the box</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(59,-34,59,-42</font></b></td>
+    <td>Draws the right side of the box</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(59,-42,28,-42</font></b></td>
+    <td>Draws the bottom of the box</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(28,-42,28,-34</font></b></td>
+    <td>Draws the left side of the box</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut15c.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial15e.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">If you put in everything correctly, at the top should read, "<u>UNDERLINED</u>" and in the middle of the screen it should say "BOXED IN" with a box around it.  I just wanted to show you different things you can do with line to make your text look better and stand out.  Next, we are going to make a grid using the commands Vertical and Horizontal.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,0,94,8</font></b></td>
+    <td>X is going to be stored from 0-94 in increments of 8</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Vertical X</font></b></td>
+    <td>Draws a vertical line at each value for X</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(Y,0,-62,-8</font></b></td>
+    <td>Y is stored from -62-0 in increments of 8</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Horizontal Y</font></b></td>
+    <td>Draws a vertical line at each value for Y</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut15d.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial15f.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">You have to put a negative in front of the 8 in the second For loop because you're actually counting backwards from 0 to -62.  You could just change it to read <b><font color="#008000">For(Y,-62,0,8)</font></b>, but I didn't want to do that.  If you inputted everything correctly, the program should draw an 8x8 grid.  The last code, finally, will shade in the box that we originally made in the first code.</p>
+<a name="box">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(5,-20,25,-20</font></b></td>
+    <td>Draws a horizontal line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(25,-20,25,-40</font></b></td>
+    <td>Draws a vertical line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(25,-40,5,-40</font></b></td>
+    <td>Draws a horizontal line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(5,-40,5,-20</font></b></td>
+    <td>Draws a vertical line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,5,25</font></b></td>
+    <td>X is going to be stored from 5-25</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(X,-20,X,-40</font></b></td>
+    <td>Draws a vertical line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+</table>
+</a>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut15e.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial15a.gif" width="129" height="110" align="middle" border="0" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial15g.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify">Obviously, there is an easier way to shade in something.  If you want to find out what command is just solely for shading, go to <a href="tutorial17.html">Tutorial 17</a>.  What this code actually does is draw a line from the top of the box to the bottom in each pixel from left to right.  This gives the illusion that it is shading in the box.  The problem with this method of shading is that you can't shade in diagonally or shade below or above a function.  In this code, you could actually take away those four line commands that draw the box, because the shading will make a box in itself.  Try it and see.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+Now you know many tricks with using the three line commands.  I feel that Line( is the most important of the three, because it can do the functions of the other two.  In the next tutorial, we will learn how to draw circles, which is the second to last step in making pictures.
+</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial14.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial16.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial14.html">Tutorial 14</a></td>
+	<td><a href="tutorial16.html">Tutorial 16</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

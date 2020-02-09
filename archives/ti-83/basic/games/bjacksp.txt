@@ -1,0 +1,32 @@
+		Black-Jack Special Y2K1 v2.0
+		      Copyright © 2001
+		       By: Billy Ella
+--------------------------------------------------------
+Description: This game has 2 modes of play: Challenge
+(called game)and High Score Mode. In challenge you
+have to win $100,000 to find information on a terrorist.
+Lose or win, you get an animation to watch! High Score
+Mode has you winning as much $ as you can in 5 rounds
+of play.There are three levels, each with their own high
+score.There is also a secret game if you manage to win
+the Challenge...
+--------------------------------------------------------
+Keys:Menu-up goes moves arrow up;down moves arrow down;
+& 2nd confirms  your selection
+
+  During   Gameplay-If there's a input menu(aces,story)
+enter 1 if your choice is next to the one, or 2 if
+your selection is next to two. Enter -(minus) at the
+money/bet screen during the Challenge Mode to Save and 
+Quit.
+-------------------------------------------------------
+Notes: If you start a new game the saved game will be
+deleted.
+--------------------------------------------------------
+History: v1.0-Well, the engine was messed up, didnt work
+that well. The project was deleted and abandoned(to sum 
+it all up).
+	 v2.0--Engine readid, game was rebulit from scratch.
+
+E-mail me at SMSHMTH007@aol.com if you have any comments
+or suggestions. Please Don't change the author name! 

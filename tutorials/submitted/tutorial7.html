@@ -1,0 +1,420 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Member Submitted Tutorial #3</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../../hlb.css" rel="stylesheet" />
+
+<script language="javascript" src="../../redirect.js"></script>
+
+<style>
+<!--
+	select		{background-color:#dddddd; font-family:Verdana; font-size:8.5pt; color:black}
+	A:link		{color: #0000CD; text-decoration:none;}
+	A:visited	{color: #0000CD; text-decoration:none;}
+	A:hover		{color: #B22222;}
+-->
+</style>
+<base target="_self" />
+</head>
+
+<body bgcolor="ffffff">
+<font face="verdana" size="1">
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../../home.html">HOME</a> <b>>></b> <a href="../index.html">Tutorials</a> <b>>> <i>Tutorial 7: Trigonometric Functions on the Calc and their Relevant Uses</b></i></td>
+	</tr>
+</table>
+
+<center>
+<b>Advanced Game Techniques Tutorials
+<hr />
+Advanced BASIC<br />
+Tutorial 7<br />
+Trigonometric Functions on the Calc and their Relevant Uses</b>
+</center>
+
+<p><table align="right" width="210" cellpadding="0" cellspacing="0" border="0" bgcolor="dddddd">
+  <tr>
+    <td>
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td bgcolor="#FF6600" width="20" height="20">&nbsp;</td>
+          <td bgcolor="#666666" width="190" height="20"><font face="arial" size="1" color="#FFFFFF"><b>&nbsp;Advanced BASIC Tutorials</b></font></td>
+        </tr>
+      </table>
+      <table align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td>
+            <form>
+              <select class="pulldownMenu" onchange="if(options[selectedIndex].value) self.location.href=this.options[this.selectedIndex].value">
+                <option value="" selected="selected">Select Tutorial...</option>
+                <option value="tutorial1.html">1. Advanced Game Design</option>
+                <option value="tutorial2.html">2. Arrays: Data Structure</option>
+                <option value="tutorial3.html">3. Nibbles: Lists</option>
+                <option value="tutorial4.html">4. Nibbles: Hit Detection</option>
+                <option value="tutorial5.html">5. Scroll Screen Left & Right</option>
+                <option value="tutorial6.html">6. Advanced Graphics</option>
+                <option value="tutorial7.html">7. Trig Func & Relevant Uses</option>
+              </select>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></p>
+
+
+<p align="justify"><b>Part 1: Introduction</b>
+<br />First of all, your probably wondering what exactly advanced programming is. For our purposes, we can define advanced programming as the ability to use all the available facits of the TI-Basic to create quality and technicaly complex games. In order to do this you must understand how the calculator uses the commands on a very low level. To use TI-Basic to make quality games you have to know what your doing. Since ASM programming is very fast, you have to be able to program very intelligently to make quality games that will compete with them. The purpose of these tutorials is to explain several advanced programming techniques. By starting at game design and ending at 3-D programming. It explains mainly the theorys behind these techniques and not the exact syntax of things.</p>
+
+<p align="justify">For these tutorials it is assumed that you already know how basic basically works. If you don't know the syntax and how to use things like 'If' statements or 'Lbl's' then you should go read the many other Basic Tutorials out there on the web.</p>
+
+<p align="justify">Finally, this is a tutorial where you will actually learn something useful and that you can directly use in programming! <i>[*MAKE SURE YOUR CALCULTOR IS IN DEGREE MODE, OR THIS WILL NOT WORK*]</i></p>
+
+<p align="justify"><b>Part 2: Trigono What?</b></p>
+
+<p align="justify"><b>Starting Off:</b>
+<br />Why the heck do you want to know about trigonometry on the calc you ask? Well, you do. If you haven't figured it out already, mathmatics is the key to programming higher level games. Math is at the core of every grahpicaly intensive game you play. If you are a real programmer then you like math, now if you consider yourself a real programmer and don't like math, then:</p>
+
+<ul>
+  <li>you just don't like math class and actually like math itself, or</li>
+    <li>you're not destined to become a great programmer.</li>
+</ul>
+
+<p align="justify"><b>What Trigonometric Functions:</b> 
+<br />Trigonometry is basically the study of properties that deal with triangles, hence the tri part of the word. As you will soon learn, triangles are the greatest polygons ever. Because of their special properties (which is what trigonometry is about...), triangles are used in 3D programming, they also make it really easy to do other cool stuff. Note that I got just about all this from my HighSchool Algebra II book. Here is a image of a triangle, with the relevant trig functions beneath it.</p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+    <td bgcolor="ffffff" width="40%" align="center"><img src="trig1.gif" /></td>
+    <td bgcolor="ffffff" width="60%"><font face="verdana" size="1"><div align="justify">All descriptors of the sides are from the point of view of Q, the angle which you know.</div>
+<p align="justify">sin (theta) = O/H (Opposite divided by Hypotenus)<br />
+cos (theta) = A/H (Adjacent divided by Hypotenus)<br />
+tan (theta) = O/A (Opposite divided by Adjacent)</p></font></td>
+  </tr>
+</table></p>
+
+<p align="justify"><b>Part 3: What Does It All Mean Man!</b></p>
+
+<p align="justify"><b>Useful Uses Of These Functions:</b> 
+<br />Let me briefly explain WHY you want to know these functions. By supplying either sin or cos with an angle, they will give you coord for the X,Y point on a circle! And since when you rotate something, the points follow the path of a circle, you can see these functions will be very useful.</p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+    <td width="48%" align="center"><img src="trig2.gif" /></td>
+    <td width="52%"><font face="verdana" size="1"><div align="justify">Just belive me and imagine that that is a perfect circle. Now, if you look back up at the triangle, you'll see that sin=y, cos=x. Because the Opposite side lies on the Y axis, and Adjacent side lies on the X axis, we're not really going to go into tan in this tutorial, Douglas and I are using tan to make our 3D golf engine.<p>Ok, back to the circle, the numbers that go around the circle are the&deg;. You'll notice that the 0 degree mark is on the X asix to the right. You'll need to know that so keep it in mind. (note that all&deg; on the circle are supposed to lie along each major axis.<p>Now, when you give a degree value to either Sin or Cos, it gives you a number, what does this number mean? Take a look at this table.</div></font></td>
+  </tr>
+</table></p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr bgcolor="dddddd">
+    <td bgcolor="999999"><font face="verdana" size="1">Sin:</font></td>
+    <td><font face="verdana" size="1">0&deg;=0</font></td>
+    <td><font face="verdana" size="1">90&deg;=1</font></td>
+    <td><font face="verdana" size="1">180&deg;=0</font></td>
+    <td><font face="verdana" size="1">270&deg;=-1</font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td bgcolor="999999"><font face="verdana" size="1">Cos:</font></td>
+    <td><font face="verdana" size="1">0&deg;=1</font></td>
+    <td><font face="verdana" size="1">90&deg;=0</font></td>
+    <td bgcolor="dddddd"><font face="verdana" size="1">180&deg;=-1</font></td>
+    <td bgcolor="dddddd"><font face="verdana" size="1">270&deg;=0</font></td>
+  </tr> 
+</table></p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+    <td bgcolor="999999" width="65%"><font face="verdana" size="1"><div align="justify">Notice any correlation between the values and the circle? Here it is again (in x,y format, and you know that (x,y) is (cos,sin), because you read it up above).</div></font></td>
+    <td bgcolor="dddddd" width="35%"><font face="verdana" size="1">(1,0) - 0&deg;<br />
+(0,1) - 90&deg;<br />
+(0,-1) - 180&deg;<br />
+(-1,0) - 270&deg;</font></td>
+  </tr>
+</table></p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+    <td width="48%" align="center"><img src="trig3.gif" /></td>
+    <td width="52%"><font face="verdana" size="1"><div align="justify">Holy Cow! Look at that, those are the points around the circle at all major intersections of the circle and an axis.</div></font></td>
+  </tr>
+</table></p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+    <td bgcolor="dddddd" width="100%" colspan="2"><font face="verdana" size="1"><div align="justify">Now so that you understand it more, lets take another example. Lets say you wanted to make a line from the origin at a 45&deg; angle. To do this you need two points, the origin and the another point that is at a 45&deg; angle. To find the second point, we just plug our values into the ordered pair with sin and cos.</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="999999" width="50%"><font face="Tifont, Ti83pc" size="2"><b>Note:</b> The window should be Zstandard Press <img src="../../index/zoom.gif" width="29" height="11" border="0" align="middle" alt="ZOOM" /> <img src="../../index/6.gif" width="11" height="11" border="0" align="middle" alt="6" /><p>Pt-On(cos(45),sin(45))</font></td>
+    <td bgcolor="dddddd" width="50%"><font face="verdana" size="1"><div align="justify">Now, this evaluated to Pt-On(.71,.71), which is the correct point. So now do:</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="999999" width="50%"><font face="Tifont, Ti83pc" size="2">Line(0,0,cos(45),sin(45))</font></td>
+    <td bgcolor="dddddd" width="50%"><font face="verdana" size="1"><div align="justify">You'll notice that the line doesnt seem to be at a 45&deg; angle.</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd" width="50%"><font face="verdana" size="1"><p align="justify"><u>After</u> setting the window to Zstandard, press <img src="../../index/zoom.gif" width="29" height="11" border="0" align="middle" alt="ZOOM" /> <img src="../5.gif" width="11" height="11" border="0" align="middle" alt="5" /></p>
+<p align="justify">Now do the line again, you can see that it is at exactly 45&deg;.</p>
+<p align="justify">Here's a program to show you the line rotating around:</p></font></td>
+    <td bgcolor="999999" width="50%"><font face="Tifont, Ti83pc" size="2"><p>PRGM:CIRC1<br />
+For(A,0,360,10<br />
+Line(0,0,cos(A),sin(A))<br />
+End</font></td>
+  </tr>
+</table></p>
+
+<p align="justify"><b>Part 4: Rotating it</b></p>
+
+<p align="justify"><b>Making Bigger Circles:</b>
+<br />After doing the above Prgm, you'll notice that the circle created is rather small. In order to change the radius, you simply change the coeffecient in front of both the cos and sin. In the above Prgm the coeffecient for each is 1.</p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+    <td bgcolor="999999" width="35%" rowspan="3"><font face="Tifont, Ti83pc" size="2">PRGM:CIRC2<br />
+ClrDraw<br />
+Input R<br />
+For(A,0,360,8)<br />
+Line(0,0,Rcos(A),Rsin(A))<br />
+End</font></td>
+    <td bgcolor="dddddd" width="65%"><font face="verdana" size="1"><div align="justify">But now your thinking, thats nice, but I want to Rotate something, not make circles! Ok, Ok. Thats what I'm getting to. First off, we're going to rotate just a simple line. In order to do this, you could do the folliwing:</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="999999" width="65%"><font face="Tifont, Ti83pc" size="2">Line(Rcos(A),Rsin(A),Rcos(180+A),Rsin(180+A)<br /><br />
+<b>Note:</b> The angle value can be above 360&deg; or below 0&deg; and it will work exactly the same!</font></td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd" width="65%"><font face="verdana" size="1"><div align="justify">Now stick that line command in Prgm CIRC2 and run it. You'll see that it is <u>slow</u>. But don't worry there are several ways to make it go faster. To start off, the sin and cos commands go slow, and it is unnecessary to calculate sin and cos 4 times and multiply 4 times. To help you out, I have the following diagram:</div></font></td>
+  </tr>
+</table></p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+    <td width="50%" align="center"><img src="xyaxis.gif" /></td>
+    <td width="50%" align="center"><img src="xydaxis.gif" /></td>
+  </tr>
+</table></p>
+
+<p align="justify">It wasn't hard to derive those points, I just found the midpoint of two points (such as (-y,x) and (x,y) to derive (x-y,y+x)). The midpoint formula is:</p>
+
+<center><img src="midp.gif" /></center>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+<colgroup span="2" width="50%"></colgroup>
+  <tr>
+    <td bgcolor="dddddd" width="100%" colspan="2"><font face="verdana" size="1"><div align="justify">Now we're going to make a new Prgm.<br />
+<i><b>Remember not to use Y when drawing to the graph screen, the calc may occasionally set it to 0</b></i></div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="999999"><font face="Tifont, Ti83pc" size="2">PRGM:CIRC3<br />
+ClrDraw<br />
+5->R<br />
+For(A,0,360,8)<br />
+Rcos(A)->X<br />
+Rsin(A)->Z<br />
+ClrDraw<br />
+Line(X,Z,-X,-Z)<br />
+End</font></td>
+    <td bgcolor="dddddd"><font face="verdana" size="1"><div align="justify">Notice how the ClrDraw is right in front of the Line command, this sets flicker to a minumum</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="999999"><font face="Tifont, Ti83pc" size="2">PRGM:CIRC32<br />
+ClrDraw<br />
+6->R<br />
+For(A,0,360,8)<br />
+Rcos(A)->X<br />
+Rsin(A)->Z<br />
+ClrDraw<br />
+Line(X,Z,-X-Z,-Z+X)<br />
+Line(X,Z,-X+Z,-Z-X)<br />
+End</font></td>
+    <td bgcolor="dddddd"><font face="verdana" size="1"><div align="justify">But that still flickers to much, so:</div></font></td>
+  </tr>
+  <tr><td bgcolor="999999"><font face="Tifont, Ti83pc" size="2">PRGM:CIRC33<br />
+ClrDraw<br />
+6->R<br />
+For(A,0,360,8)<br />
+Rcos(A)->X<br />
+Rsin(A)->Z<br />
+Line(S,U,-S-U,-U+S,0<br />
+Line(S,U,-S+U,-U-S,0<br />
+Line(X,Z,-X-Z,-Z+X)<br />
+Line(X,Z,-X+Z,-Z-X)<br />
+X->S:Z->U<br />
+End</font></td>
+    <td bgcolor="dddddd"><font face="verdana" size="1"><div align="justify">Ahh, that looks better. Now you can figure out how to but in a key press statement that would either add to the angle or subtract depending on what key is pressed.</div></font></td>
+  </tr>
+</table></p>
+
+<p align="justify"><b>Part 4: A Sample Game</b></p>
+
+<p align="justify"><b>Pregenerated Arrays:</b>
+<br />Wouldn't it be cool if you could have a game where you drive around a little car, and depending on what speed you are going, your turn radius is affected accordingly? That would be easy, and the source is written below. </p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+<colgroup span="2" width="50%"></colgroup>
+  <tr bgcolor="dddddd"><td bgcolor="999999" rowspan="2"><font face="verdana" size="1">But first, we need to still make it go faster! How you ask? By not having to use cos and sin. Notice how in the above PRGM's only every 10 angle is used. So what we do is create a list that contains the values for sin and cos that we are going to use. Here's the set up program:</font></td>
+    <td><font face="Tifont, Ti83pc" size="2">PRGM:ASET<br />
+18->dim(<font size="-3">L</font>1<br />
+<font size="-3">L</font>1-><font size="-3">L</font>2<br />
+For(A,0,360,20<br />
+cos(A)-><font size="-3">L</font>1((A/20)+1)<br />
+sin(A)-><font size="-3">L</font>2((A/20)+1)<br />
+End</font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td bgcolor="999999"><font face="verdana" size="1">After you run that program, you can run this game:</font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">Race Car:</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">PRGM:GO</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">ClrHome</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">Disp"____GO____"<br />
+Disp"< =Turn Left"<br />
+Disp"> =Turn Right"<br />
+Disp" ^ = Speed Up"<br />
+Disp"DEL=Brake"</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">Pause</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+  <td><font face="Tifont, Ti83pc" size="2">20->D</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">Degree<br />AxesOff<br />
+Zstandard<br />
+1.8Xmin->Xmin<br />
+1.8Ymin->Ymin<br />
+1.8Xmax->Xmax<br />
+1.8Ymax->Ymax<br />
+Zsquare</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">0->S:0->N:0->O<br />0->P:0->Q<br />
+0->U:0->T<br />
+40->A</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">Sets up variables</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">ClrDraw<br />
+While 1<br />
+0:Repeat Ans<br />
+getKey->K<br />
+End</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">Just a line with 0 on it, sets the Ans variable to 0, this just keeps looping until the Ans variable is changes, which will be when you push a key. Without the 0 then the Ans variable could be 1 and it would not loop.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">If K=25 and S<6<br />
+S+.2->S</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">If push acclerator and are going less that 6. This controls the max speed</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">If K=23:Then<br />
+If S>.5:Then<br />
+S-S/6->S:Else<br />
+S-.4->S:End<br />
+End</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">If they're going so fast then it gradually reduces their speed.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd"><td><font face="Tifont, Ti83pc" size="2">If S<0:-D->E<br />
+If S>=0:D->E</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">If your backing up(which you do by holding the brake) then the controls to turn left and right are backwards.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">If K=24<br />
+A+E->A<br />
+If K=26<br />
+A-E->A</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This is just whether you turn right or left</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">If A>360<br />
+A-360->A<br />
+If A<0<br />
+A+360->A</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">The reason this statement is required is because we're not using cos( and sin(, we're using lists, so without this it would give you a Dim error.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2"><font size="-3">L</font>1((A/20)+1)->X<br /><font size="-3">L</font>2((A/20)+1)->Z</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">Gets the value from the list.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">SX+N->N:SZ+O->O</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This moves the car, as you can see, (N,O) is the center of the car. You take the new point on an imaginary circle, expand it by your speed, and add that point to your old point to get where the car is. Without this the car would just sit in one place and spin, and not move forward.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">Line(X+N,Z+O,(-X-Z)+N,(-Z+X)+O<br />
+Line(X+N,Z+O,(-X+Z)+N,(-Z-X)+O</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">The line commands, except for the offset of (N,O) which is added to each one, the Line( commands are the same as above.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">End</font></td>
+    <td>&nbsp;</td>
+  </tr>
+</table></p>
+
+<hr />
+
+If you don't understand this stuff:
+
+<ol>
+  <li>Reread the tutorial.</li>
+  <li>Reread it again (throughly, and experiment with the code)</li>
+  <li>Then I can't write good tutorials, or</li>
+  <li>You should rethink wanting to program Advanced BASIC</li>
+</ol>
+
+<p align="justify">Written by <a href="../../members/users/user021.html">Brandon Green</a>.</p>
+
+<p align="justify">Tutorial is property of Brandon Green, &copy; 2000. Do not use without permision. Algorithms are property of Brandon Green, e-mail for permision to use.</p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<!--#geoguide-->
+</font>
+</body>
+</html>

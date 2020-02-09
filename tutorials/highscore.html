@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>How To Setup A High Score Function</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>></b> <a href="game.html">Big Game</a> <b>>> <i>How To Setup A High Score Function</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><b>How To Setup A High Score Function</b><br />
+BASIC programmers for the TI-83 and TI-83 Plus have had a problem when it comes to saving high scores and records of their BASIC games.  You cannot just leave the number in a <a href="../index/n-z.html#uservar">user variable</a> because it could get overwritten in another program.  To combat this problem, programmers have found a way to manipulate lists to save high scores or records.  You can save the number into a user-created list and it's <b>far</b> less likely to be messed with.  For the sake of this example the program will be called GAME, so the user-created list will also be called GAME.  Don't worry, everything that's not explained in the commented section will be explained at the end.  User variable H is your score in the game.  Read the stuff below the code before running the program.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim(<font size="-2">L</font>GAME)</font></b></td>
+    <td>Makes 1 the dimension of <font size="-2">L</font>Game.</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Menu("CLEAR HIGH SCORE","NO",Z,"YES",BB)</font></b></td>
+    <td>A menu that asks if you want to clear the high score</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl BB</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">{0}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>GAME</font></b></td>
+    <td>Clears the high score</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl Z</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Input "YOUR SCORE? ",H</font></b></td>
+    <td>Stores your score into user variable H</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If H&gt<font size="-2">L</font>GAME(1):Then</font></b></td>
+    <td>If the your score is more than the present high score, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">H<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>GAME(1)</font></b></td>
+    <td>Makes your score the new high score and</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,2,"NEW HIGH SCORE")</font></b></td>
+    <td>Displays "NEW HIGH SCORE"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End If-Then statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,1,"HIGH SCORE:")</font></b></td>
+    <td>Displays "HIGH SCORE:" on line 6</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,13,<font size="-2">L</font>GAME(1))</font></b></td>
+    <td>Displays the high score on the same line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits of user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Menu("AGAIN?","YES",1,"NO",A)</font></b></td>
+    <td>A menu that asks if you want to do this again</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl A</font></b></td>
+  </tr>
+<tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End the entire program</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/highscore.zip'" /></p>
+
+<p align="justify"><font size="3" color="#000080">Further Explanation:</font><br />
+First of all, run the program; choose not to clear the score, and when it asks you for your score enter a low number like 50.  It'll say that there's a new high score and it'll display the high score at the bottom.  Run it again and this time enter 60.  It should say the same thing except that the high score is now 60.  Now enter 30.  It shouldn't say that there's a new high score and the high score should still read 60.  If all of the tests work, then your high score function works!!  Now let me show you some stuff in the code.  When the calculator executes -- <b><font color="#008000">:1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim(<font size="-2">L</font>GAME)</font></b> -- it does one of two things depending on the condition.  This is what really makes this high score function work.  You see, when you first ran the program, there was no list called GAME.  So when the calculator ran that little piece of code above, it actually created a list called GAME and gave it a dimension of one.  If there is already a list called GAME, it doesn't do anything.  Well, really it just re-makes the dimension of the list, one.  You definitely need this piece of code because it's the only way to test if the game had been played before.  At first, when I tried to make a high score function with a list, it wouldn't work because I wouldn't be able to create the new list in the game.  Then when I figured out how to store values into lists I did this: <b><font color="#008000">{0}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>GAME(1)</font></b>.  The problem with that code is that it makes the high score zero every time you run the program, which defeats the whole purpose.  Finally, I figured out how to manipulate the list so that it could work for me.  <b>Note:</b> If you want to store into a specific entry in a list, compare a specific entry in a list with something else, or display a specific entry in a list you must put () (parenthesis) around the list entry number.  If you don't put parenthesis and the <i>list entry number</i>, what you want to happen, won't.  I'll explain one more thing, the code only works for High Scores.  If you want to do the same thing for a Record, you have to slightly change the code.  I consider a Record different from a High Score.  For example, if you had a guessing game and you wanted to keep the record of the number of tries, the lowest would be the best, right?  That's what I consider to be a record.  The only code you'll have to change is the code on line 7: <b><font color="#008000">{0}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>GAME</font></b>.  You would have to change the 0 inside the {} to an exorbitant value like 9999.  You do this so that the record is "cleared".  It's pretty hard for someone to have more than 9,999 tries.  So when the game is played, the number of tries it took you will be the new record.  You should be able to understand everything else because of the comments next to them.  Wow, this was meant to only be a little footnote with a code, but it ended up being like a tutorial!  If you got to this example of High Score from The Big Game, <a href="game.html">click here</a> to go back there.
+</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

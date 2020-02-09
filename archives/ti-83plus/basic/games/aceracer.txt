@@ -1,0 +1,65 @@
+ 	         Ace Racer 2K1 v3.0
+		Copyright © 2000-2001
+
+Author:	Ben Ilegbodu
+Date:  	02/28/01
+Format:	BASIC for TI-83 Plus
+Email:	Benahimvp@aol.com
+********************************************************
+Description:	Basic racing game 
+Files:		* AceRacer.8xp
+		* AceRacer.txt
+********************************************************
+Object:
+The object of Ace Racer 2K1 is to stay in between the
+barriers (').  If you run it to one of the barriers, you
+have crashed, and the game is over.
+
+Keys:
+Left and Right arrow keys move "v" left and right
+MODE --	Pause during gameplay
+CLEAR -- Quit during gameplay
+2nd -- Teacher key during gameplay
+STAT -- Save & Quit
+
+Scoring:
+-	You get 2 points for each barrier you pass up in
+	SLOW mode
+-	You get 3 points for each barrier you pass up in
+	Normal mode
+-	You get 4 points for each barrier you pass up in
+	FAST mode
+
+Cool Features:
+You can choose a custom car or custom track for gameplay.
+The default car is "v" and the default track is the
+apostrophe (').  You can change it to whatever symbol you
+want.  If there's a character that you want that's in a
+sybmol that's more than one charcter and it's the 1st
+character, just put in that symbol.  The first character
+is automatically chosen.
+
+
+History:
+v3.0	--	Added Save & Load feature
+		Added the ability to have a custom car
+		and/or track
+v2.5	--	Changed all menus to custom menus
+		Added special keys during gameplay: Quit,
+		Pause, & Teacher Key
+		Changed opening sequence
+v2.0	--	3 speeds (Slow, Normal, & Fast)
+		Optimized the code and made the gameplay
+		smoother
+v1.5	--	High score with the ability to save the
+		last 5 highest scores
+v1.0	--	First release with no special features
+
+Future Version:
+v3.5	--	You tell me!!!
+
+
+There should not be any bugs, but if there are, please 
+feel free to email me or if you have any suggestions
+(Benahimvp@aol.com).  Please do not change the author
+name.

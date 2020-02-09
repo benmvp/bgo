@@ -1,0 +1,27 @@
+Hangman v2.0
+Tristan Griffith (a.k.a. mrtinkertrain@wickedco.com)
+2-20-01	
+
+Hangman v2.0 is your standard hangman game.  You are given seven tries 
+to save a man from certain death by guessing a word.  This program is 
+pretty self-explanitory.  In order to get a word from a library, you
+must have a library (HANGLIB1 or higher) installed on your calc.  
+
+Keys used:
+"alpha": lets you guess entire word
+"A-Z":picks letter (duh)
+"2nd":enters the letter selected
+"Mode":quits game
+
+Any questions, comments, library requests, and bug reports should be 
+sent to:
+
+ mrtinkertrain@wickedco.com
+
+            -or-
+
+     saxyboy85@aol.com
+
+AIM: saxyboy85
+
+Don't forget to check out www.wickedco.com! 

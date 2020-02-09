@@ -1,0 +1,376 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 22: Moving Objects</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 22: Moving Objects</font><br />
+<font size="3">Using getKey to move objects on the Screen...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 22: Moving Objects</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+Obviously by the subtitle of this tutorial, we will be using <a href="../index/a-m.html#getkey">getKey</a> and the arrows to move objects on the screen.  This is very useful for RPG games or racing games where you want the user to be able to move the person or the car around on the screen.</p>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+This first code is more of simulating motion on the screen.  In this code, we won't be actually moving an object, but using the arrow keys and coordinates (<i>x</i>,<i>y</i>) to imagine an object moving.  It will also have a key that you can press to quit the program.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">10<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />X:10<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Y</font></b></td>
+    <td>Sets the initial coordinates at (10,10)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">While 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">getKey<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />G</font></b></td>
+    <td>Stores the key's key code into user variable G</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If G=24:Then</font></b></td>
+    <td>If <img src="../index/left.gif" width="11" height="12" border="0" align="middle" alt="LEFT" /> is pressed, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">X-1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />X</font></b></td>
+    <td>Decrease X by one</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 2</font></b></td>
+    <td>Goto Label 2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End If statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If G=25:Then</font></b></td>
+    <td>If <img src="up.gif" width="11" height="12" border="0" align="middle" alt="UP" /> is pressed, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Y+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Y</font></b></td>
+    <td>Increase Y by one</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 2</font></b></td>
+    <td>Goto Label 2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End If statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If G=26:Then</font></b></td>
+    <td>If <img src="../index/right.gif" width="11" height="12" border="0" align="middle" alt="RIGHT" /> is pressed, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">X+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />X</font></b></td>
+    <td>Increase X by one</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 2</font></b></td>
+    <td>Goto Label 2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End If statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If G=34:Then</font></b></td>
+    <td>If <img src="down.gif" width="11" height="12" border="0" align="middle" alt="DOWN" /> is pressed, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Y-1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Y</font></b></td>
+    <td>Decrease Y by one</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 2</font></b></td>
+    <td>Goto Label 2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End If statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If G=22:Stop</font></b></td>
+    <td>If <img src="../index/mode.gif" width="26" height="11" border="0" align="middle" alt="MODE" /> is pressed, end program execution</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End initial While loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 2</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,3,"X=    Y=</font></b></td>
+    <td>Displays "X=    Y=" (four spaces in between)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,5,X</font></b></td>
+    <td>Displays the X-coordinate</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,11,Y</font></b></td>
+    <td>Displays the Y-coordinate</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 1</font></b></td>
+    <td>Go to Label 1</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut22a.zip'" /></p>
+
+<p align="center">Possible output:<br />
+<img src="outputs/tutorial22a.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">This code is probably three to four times bigger than what I had planned.  Originally, I just had the each entire If statement on one line saying something like "<font color="#008000"><b>If G=34:Y-1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Y</b></font>", and that was it.  That didn't work because I also needed a Goto for it to display the new coordinates.  When you first run the program, the screen is blank.  The coordinates do not appear until you have pressed one of the arrow keys.  In this program, you have to envision an object move left, right, up, and down.  However, in the next program, I'll show you how to make a 2x2 pixel box move around, so we'll be working on the graph screen.  The code should be similar to the code above, but longer.</p>
+
+<a name="update"><p align="justify"><font size="3" color="#00FF00"><b>Version 3.0 Update:</b></font><br />
+While looking at Wade Peterson's <a href="http://wadebp.cjb.net" target="_blank">Advanced BASIC for the TI-83</a> tutorial, I saw a better way to check which key was pressed using getKey.  The way I used above, using If-Then statements, it's not the best way to check at all.  It takes up too much space.  In Wade's tutorial he showed a better way.  This way uses the <a href="../index/a-m.html#equalto">equals sign (=)</a> in a way that I didn't know it could be used.  I'll show you how it is used in the next code.  You should easily tell the difference.</p></a>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">47<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:31<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Sets the initial coordinates at (10,10)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">While 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">getKey<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />G</font></b></td>
+    <td>Stores the key's key code into user variable G</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">A+(G=26)-(G=24)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+    <td>If <img src="../index/right.gif" width="11" height="12" border="0" align="middle" alt="RIGHT" /> is pressed increase A by 1 or if <img src="../index/left.gif" width="11" height="12" border="0" align="middle" alt="LEFT" /> is pressed decrease A by 1</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">B+(G=34)-(G=25)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>If <img src="down.gif" width="11" height="12" border="0" align="middle" alt="DOWN" /> is pressed increase B by 1 or if <img src="up.gif" width="11" height="12" border="0" align="middle" alt="UP" /> is pressed decrease B by 1</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If G=22:Then</font></b></td>
+    <td>If <img src="../index/mode.gif" width="26" height="11" border="0" align="middle" alt="MODE" /> is pressed...</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clear the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End program execution</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End If statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 2</font></b></td>
+    <td>Goto Label 2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End initial While loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 2</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If A&lt1:Then</font></b></td>
+    <td>If you go too far to the left,</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">47<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:31<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>it puts box in original position</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End If statement</td>
+  </tr>
+ <tr valign="middle">
+    <td><b><font color="#008000">If A&gt92:Then</font></b></td>
+    <td>If you go too far to the right,</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">47<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:31<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>it puts box in original position</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End If statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If B&gt60:Then</font></b></td>
+    <td>If you go too far to down,</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">47<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:31<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>it puts box in original position</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End If statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If B&lt1:Then</font></b></td>
+    <td>If you go too far to up,</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">47<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:31<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>it puts box in original position</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End If statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-On(B,A</font></b></td>
+    <td>This line and the next three lines</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-On(B,A+1</font></b></td>
+    <td>display a box using pixels with the</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-On(B+1,A</font></b></td>
+    <td>top-left corner of the box at</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-On(B+1,A+1</font></b></td>
+    <td><i>row</i> = B and <i>column</i> = A</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 1</font></b></td>
+    <td>Go to Label 1</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut22b.zip'" /></p>
+
+<p align="center">Possible output:<br />
+<img src="outputs/tutorial22b.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">I'm sure you caught the big difference in how we checked which key was pressed.  Instead of using 16 lines of code to check which key was pressed, we used only three.  Going from 16 lines to 3 lines will really reduce the size of your programs.  If I can just explain how the equal sign and all of the other relational operators work.  If you use these relational operators without If statements or While and Repeat loops, they return a 1 if the test is true or 0 if the test is false.  So if you had something like: 25=26, it would return a 0.  If the value of B was 16 and you had something like: B=16, then it would return a 1.  The same works for the others.  So when we have "<b><font color="#008000">A+(G=26)-(G=24)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b>" the reason it works is because of the equals sign.  If <img src="../index/right.gif" width="11" height="12" border="0" align="middle" alt="RIGHT" /> was pressed, that means that G would equal 26 because "<b><font color="#008000">getKey<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />G</font></b>."  Let's say that A is 34.  If you evaluate that equation it would look like: 34+(1)-(0), which equals 35.  Since G isn't 24, "<b><font color="#008000">G=24</font></b>" is false so it returns a zero.  <img src="../index/right.gif" width="11" height="12" border="0" align="middle" alt="RIGHT" /> was pressed and A increased by 1 just like we wanted it to.  Whichever key press number you want to make the variable increase, you put after the plus sign.  Whichever you want to decrease, you put after the minus sign.  If we wanted the 2x2 block to move 3 spaces at a time, instead of 1, we'd only have to make a slight change.  We would change the command line that we originally had to "<b><font color="#008000">A+3(G=26)-3(G=24)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b>."  While this construction is really a space-saver, you can only use it in this case when you're moving something up, down, right, or left. You could also use it in situations where you want to decrease or increase a variable because of a keypress.  You can't use this construction when you want to do something else using getKey.</p>
+
+<p align="justify"><font size="3" color="#000080">Further Explanation:</font><br />
+Technically, you should be able to comprehend the entire code, but there maybe a couple of things that you might want cleared up.  First off, what you should have noticed right away is that I changed all the X's to A's and all the Y's to B's.  I did this because, for some reason, the user variable Y does not work well with Pxl-On(.  After the first Pxl-On(, the value for Y would go to 0, and the other three Pxl-Ons were in the wrong place.  I do not have an explanation for why this happens, but I know it does so I just use different variables.  The next topic I want to explain might be harder to spot, but did you notice that I switched what happens when you press <img src="up.gif" width="11" height="12" border="0" align="middle" alt="UP" /> and <img src="down.gif" width="11" height="12" border="0" align="middle" alt="DOWN" />?  Before when <img src="up.gif" width="11" height="12" border="0" align="middle" alt="UP" /> was pressed, Y was increased, because as you go up on the coordinate plane, the Y values increase.  However, in the <i>row</i>,<i>column </i>method, as the box goes up, the row values decrease.  The same goes for when you press <img src="down.gif" width="11" height="12" border="0" align="middle" alt="DOWN" />, except vice versa.  You also may have notice that I changed the If statement that stops the program (when <img src="../index/mode.gif" width="26" height="11" border="0" align="middle" alt="MODE" /> is pressed) to and If-Then statement.  I did this because if you just leave it as an If statement, the program ends with the graph screen still on and the box in the same place.  The user might not know that the program is over and try to press the arrow keys again.  With it as an If-Then statement, it goes back to the home screen because of the "<font color="#008000"><b>ClrHome</b></font>" command.  Finally, the things that I really added to this program were the If-Then statements at the end.  These statements prevent the user from making the box go off the screen.  You may be thinking, "hey...what's wrong with that?"  What's wrong is that the calculator will give you an ERR:BOUND because it cannot display pixels in negative values.  If we had used Pt-On( instead of Pxl-On(, we would not have had to worry about getting that error, but I wanted to show you how to set boundaries.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+We have finished two-thirds of the getKey tutorials, and we have only one tutorial left in the entire version 2.0.  In this last tutorial of version 2.0, I will show you how to make what I call, "user-created" menus.  These menus are far more creative and better looking than the drab menus you get by using the Menu( command.  You should now begin to see the real importance of getKey because it allows you to do so much and be very creative.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial21.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="special.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial21.html">Tutorial 21</a></td>
+	<td><a href="special.html">Special Tutorial</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

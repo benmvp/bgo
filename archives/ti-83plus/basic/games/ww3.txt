@@ -1,0 +1,48 @@
+War 3 2nd edition owners manual
+
+Created by Hit and Run Entertainment
+Programmed by Joe Bechtold
+
+If their are any problems with this program we request that you please email us at Racerme20@aol.com
+The official website for this program is located at www.geocities.com/hitandrunentertainment
+
+Units		Damage Done
+Mortars		100-5000
+Infantry	500-1000
+Snipers		1000-2000
+Grenadiers	500-2000
+Rockets		1000-1500
+Flamethorwers	1000-2500
+Jeep		1000-5000
+Hummer		5000-7500
+Light Tank	5000-7500
+Medium Tank	7500-9000
+Heavy Tank	9000-10000
+Mammoth Tank	10000-15000
+Patrol Boat	500-1000
+Gun Boat	1000-2000
+Battleship	5000-9000
+Cruiser		10000-15000
+Carrier		10000-20000
+Submarine	20000-30000
+Tomcat		1000-5000
+Hornet		5000-7500
+Stealth		10000-10500
+Harrier		7500-10000
+Apache		2000-5000
+Cobra		6000-10000
+Nuke		50000-100000
+Scud		10000-200000
+Chemical	100000-200000
+
+Other Notes
+In two player if both people select the same player it will seem like it works but it wont dont do it it wont be correct!
+
+Each super weapon can only be shot three times
+
+High score works like this
+previous level score + your life x 200 - amount of turns taken to win level - 20 x (nukes fired by you x scuds fired by you x chemicals fired by you) + 100 x (amount of nukes enemy fired x amount of scuds enemy fired x amount of chemicals enemy fired) = score
+
+do you think you have a great high score email us the list GAME and if beats any of the top ten well post your score and name on our website!
+
+Is there anything that we can do to make our games or website better if you think so email us at Racerme20@aol.com thank you for chooseing hit and run entertainment for war strategy games for your TI!

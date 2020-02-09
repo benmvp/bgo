@@ -1,0 +1,7 @@
+this is a very small (96 bytes) and simple program to use
+
+just type in the amount of letter grades of each type recieved and presto, it'll tell you your GPA.
+
+by Michael Dean
+
+ldean1347@earthlink.net

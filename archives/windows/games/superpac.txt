@@ -1,0 +1,48 @@
+ 	             SUPER Pac v1.5
+		  Copyright © 2000-2001
+
+Author:	Ben Ilegbodu
+Date:  	06/03/01
+Format:	Windows Application
+Email:	Benahimvp@aol.com
+********************************************************
+Description:	Basic Pac-Man clone and TI-83 Port
+Files:		* Superpac.exe
+		* Superpac.txt
+********************************************************
+Directions:
+* Create a subdirectory (folder) to put Superpac.exe in
+* Put Superpac.exe in that folder and run it
+
+Object:
+The object of SUPER Pac is to beat all 10 levels and win
+the entire game.  Not an easy task at all.
+
+Instructions:
+Most of the instructions are already in the game,
+including the keys and scoring.  However, when moving the
+Pac-Man around, do not hold down on the arrow key!  Once
+you run into a wall, you'll keep on going into that same
+direction for a very long time!  To move the Pac-Man
+successfully and easily just tap at the same constant
+pace that the seconds count down at.  It takes a little
+getting used to, but once you've played it a little, you
+will get the hang of it.
+
+Note:
+The highscores are kept in a file called Superpac.pac so
+don't delete it or move it.  The file will appear in the
+same directory from where you run Superpac.exe.
+
+History:
+v1.5	--	First release with all the features of
+		calculator version 1.5
+
+Future Version:
+v2.0	--	2-player mode and possibly more levels
+
+
+There should not be any bugs, but if there are, please 
+feel free to email me or if you have any suggestions
+(Benahimvp@aol.com).  Please do not change the author
+name.

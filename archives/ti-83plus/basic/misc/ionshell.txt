@@ -1,0 +1,5 @@
+			Ion Shell v1.0
+                              By 
+			  Jason Ralphs
+
+	This program was designed to activate ion thru MirageOS.  Have you ever downloaded some ion games onto your calculator and tried to run it thru MirageOS?  It doesn't always work, does it.  This little program should solve that problem.  Also, have you ever had Ion clear your RAM?  Ion Shell v1.0 should dramatically reduce that problem by performing GarbageCollection both before and after using Ion.  It also turns Dignostics on and off.  On duing ion, off after ion shutdown.  Since this is a BASIC program you will not need MirageOS to run it, but it is helpful.  I recommend that you archive this file after dowloading it.  You will need Ion for this program to work, and you still have to install ion.  I recommend that if you don't already have ion you download version 6.5 or later.  

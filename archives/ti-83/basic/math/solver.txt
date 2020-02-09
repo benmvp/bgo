@@ -1,0 +1,4 @@
+Send solver to your calculator.
+Enter your eqn
+"="= -> 2nd, Test
+and press enter

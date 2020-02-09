@@ -1,0 +1,173 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Hit and Run's Tutorial 4</title>
+
+<link href="../../hlb.css" rel="stylesheet" />
+
+<script language="javascript" src="../../redirect.js"></script>
+
+</head>
+
+<body text="#000000" link="#0000FF" alink="#008000" vlink="#0000FF">
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../../home.html">HOME</a> <b>>></b> <a href="../index.html">Tutorials</a> <b>>> <i>Tutorial 3: More Graph Commands</b></i></td>
+	</tr>
+</table>
+
+<p align="center">
+<img border="0" src="http://www.geocities.com/hitandrunentertainment/images/title.gif" width="504" height="72">
+</p>
+
+<p align="center">
+<marquee style="font-size: 36pt; font-family: Comic Sans MS" behavior="alternate" width="100%" height="69">Tutorial
+4</marquee>
+</p>
+
+<h1 align="center">Tutorial 4</h1>
+
+<h2 align="center">More Graph Commands</h2>
+
+<h3 align="center">New Commands</h3>
+
+<table border="1" width="100%">
+  <tbody>
+    <tr>
+      <td width="11%">Name of term</td>
+      <td width="35%">Description</td>
+      <td width="29%">where to find command on calc.</td>
+    </tr>
+    <tr>
+      <td width="11%"><a href="../../index/a-m.html#circle">Circle</a></td>
+      <td width="35%">Makes a cirlcle on graph screen</td>
+      <td width="29%">while making a program press 2nd prgm and go up to 2 spots</td>
+    </tr>
+    <tr>
+      <td width="11%"><a href="../../index/a-m.html#line">Line</a></td>
+      <td width="35%">Makes a line from point A to B</td>
+      <td width="29%">while making a program press 2nd prgm and go down to #2</td>
+    </tr>
+    <tr>
+      <td width="11%"><a href="../../index/n-z.html#pton">Pt-On</a></td>
+      <td width="35%">makes on point on the graph</td>
+      <td width="29%">while making a program press 2nd prgm hit to the right and
+        press enter</td>
+    </tr>
+    <tr>
+      <td width="11%"><a href="../../index/n-z.html#ptoff">Pt-Off</a></td>
+      <td width="35%">Takes off a point on the graph</td>
+      <td width="29%">while making a program press 2nd prgm hit to the right and
+        go down to #2</td>
+    </tr>
+    <tr>
+      <td width="11%"><a href="../../index/n-z.html#storepic">StorePic</a></td>
+      <td width="35%">saves the pic (note: after putting savepic in a program be
+        sure to put a # after it so that it saves that pic</td>
+      <td width="29%">while making a program press 2nd prgm hit to the right
+        twice and press enter</td>
+    </tr>
+    <tr>
+      <td width="11%"><a href="../../index/n-z.html#recallpic">RecallPic</a></td>
+      <td width="35%">loads a saved pic</td>
+      <td width="29%">while making a program press 2nd prgm hit to the right
+        twice and go down to #2</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Here is a basic program in which shows how a circle works.</h4>
+
+<p><br>
+ClrDraw<br>
+AxesOff<br>
+0<img border="0" src="arrow.gif" width="12" height="8">Xmin<br>
+94<img border="0" src="arrow.gif" width="12" height="8">Xmax<br>
+-62<img border="0" src="arrow.gif" width="12" height="8">Ymin<br>
+0<img border="0" src="arrow.gif" width="12" height="8">Ymax<br>
+Circle(47,-31,30</p>
+
+<h4>Heres a program the shows you how the line tool works.</h4>
+
+<p>ClrDraw<br>
+AxesOff<br>
+0<img border="0" src="arrow.gif" width="12" height="8">Xmin<br>
+94<img border="0" src="arrow.gif" width="12" height="8">Xmax<br>
+-62<img border="0" src="arrow.gif" width="12" height="8">Ymin<br>
+0<img border="0" src="arrow.gif" width="12" height="8">Ymax<br>
+Line(50,-10,75,-35</p>
+
+<h4>Here is a program that shows you how to use point on and off and Store and
+Recall Pic.</h4>
+
+<p>ClrDraw<br>
+AxesOff<br>
+0<img border="0" src="arrow.gif" width="12" height="8">Xmin<br>
+94<img border="0" src="arrow.gif" width="12" height="8">Xmax<br>
+-62<img border="0" src="arrow.gif" width="12" height="8">Ymin<br>
+0<img border="0" src="arrow.gif" width="12" height="8">Ymax<br>
+Pt-On(47,-32<br>
+Pt-On(47,-31<br>
+Pt-On(46,-32<br>
+Pt-On(46,-31<br>
+Pt-On(48,-32<br>
+Pt-On(48,-31<br>
+StorePic 0<br>
+Pause<br>
+Pt-Off(47,-32<br>
+Pt-Off(47,-31<br>
+Pt-Off(46,-32<br>
+Pt-Off(46,-31<br>
+Pt-Off(48,-32<br>
+Pt-Off(48,-31<br>
+Pause<br>
+RecallPic 0<br>
+Pause</p>
+
+<h2>Further Explaination</h2>
+
+<p>&quot;&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+these must always be used to have the calculator show text<br>
+,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+used in menus to divide up different selections<br>
+47,-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the
+middle of the circle<br>
+30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+how far the circle will go out to<br>
+50,-10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+beginning point of line<br>
+75,-35&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ending
+point of line</p>
+
+<p>If you do not understand any part of this tutorial or have a question about
+programming <a href="mailto:Racerme20@aol.com">E-mail us</a>.</p>
+
+<p align="center"><a href="tutorial10.htm"><img border="0" src="previous.gif" width="144" height="144"></a>&nbsp;&nbsp;&nbsp;
+<a href="tutorial12.htm"><img border="0" src="next.gif" width="144" height="144"></a></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../../contactme.html">Webmaster</a>.
+</small>
+</center>
+
+<!--#geoguide-->
+</body>
+</html>

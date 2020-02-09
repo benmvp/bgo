@@ -1,0 +1,508 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 25: Changing Modes</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 25: Changing Modes</font><br />
+<font size="3">Changing from one mode to another...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 25: Changing Modes</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+In this tutorial, we will learn how to change modes inside of our programs.  Generally, programmers change modes at the beginning of the program and usually in programs that contain mathematical computations.  Most of the modes that you can change to are math related.  If you use your calculator in your higher-level math class, you have probably come across a couple of these modes before.  Although this tutorial won't be helpful for making games, it will make creating math or science programs easier.  If you have taken up to Algebra II or Pre-Calculus, it should be easy for you to understand what each mode does.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#normal">Normal</a></td>
+    <td>Sets normal display mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#sci">Sci</a></td>
+    <td>Sets scientific notation display mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#float">Float</a></td>
+    <td>Sets floating decimal mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#fix">Fix</a></td>
+    <td>Sets fixed-decimal mode for a specific number of decimal places</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#radian">Radian</a></td>
+    <td>Sets radian angle mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#degree">Degree</a></td>
+    <td>Sets degree angle mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#func">Func</a></td>
+    <td>Sets function graphing mode(<i>y</i>=<i>x</i>)</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#connected">Connected</a></td>
+    <td>Sets connected plotting mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#dot">Dot</a></td>
+    <td>Sets dot plotting mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#real">Real</a></td>
+    <td>Sets real number mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#abi">a+b<i>i</i></a></td>
+    <td>Sets complex number mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#full">Full</a></td>
+    <td>Sets full screen mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#horiz">Horiz</a></td>
+    <td>Sets horizontal split-screen mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#g-t">G-T</a></td>
+    <td>Sets graph-table vertical split-screen mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#dispgraph">DispGraph</a></td>
+    <td>Displays the graph</td>
+  </tr>
+</table>
+</p>
+
+<p align="justify"><b>Fix</b> #</p>
+
+<p align="justify">I know there are a lot, but I'd really advise that you read the further definitions of all the commands because the short definitions above really do not give a good enough one if you don't already know what they do.  These commands come in groups.  This means that you obviously can't have both modes on at the same time.  For example, Normal and Sci are in the same group.  You either have your mode set at normal, scientific, or another mode, which I won't get into.  The other groups are: Float & Fix, Radian & Degree, Func (has others in its group, but aren't discussed), Connected & Dot, Sequential & Simul, Real & a+bi, and Full, Horiz, & G-T.  The reason that I did not include some of the modes is because they are used in upper level math and are rarely used in calculator programs.  The other mode commands, as well as the ones listed above, are in Guidebook in the first chapter under "Setting Modes."</p>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+I'm going to try to incorporate as many commands in each code so that there won't be too many.  Some of the commands go together well, so it shouldn't be too much of a problem.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Normal</font></b></td>
+    <td>Sets normal display mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "A NORMAL NUMBER:</font></b></td>
+    <td>Displays "A NORMAL NUMBER:" on the top line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp 123456</font></b></td>
+    <td>Displays 123456 normally</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Sci</font></b></td>
+    <td>Sets scientific notation display mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "","THE NUMBER IN</font></b></td>
+    <td>Displays a blank linke and "THE NUMBER IN"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "SCIENTIFIC</font></b></td>
+    <td>Displays "SCIENTIFIC" on the next line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "NOTATION:</font></b></td>
+    <td>Displays "NOTATION:" on the line after that</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp 123456</font></b></td>
+    <td>Displays 123456 in scientific notation</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">3/4<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />F</font></b></td>
+    <td>Makes the user variable F equal to &frac34</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Normal</font></b></td>
+    <td>Sets normal display mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Float</font></b></td>
+    <td>Sets floating decimal mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "FLOATING DECIMAL</font></b></td>
+    <td>Displays "FLOATING DECIMAL" on the top line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp F</font></b></td>
+    <td>Displays &frac34 normally with no trailing zeros</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Fix 5</font></b></td>
+    <td>Sets fixed-decimal mode to five decimal places</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "","THE NUMBER</font></b></td>
+    <td>Displays a blank line and "THE NUMBER"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "FIXED TO FIVE</font></b></td>
+    <td>Displays "FIXED TO FIVE" on the next line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "DECIMAL PLACES:</font></b></td>
+    <td>Displays "decimal places:" on the line after that</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp F</font></b></td>
+    <td>Displays &frac34 normally with three trailing zeroes</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Float</font></b></td>
+    <td>Sets floating decimal mode</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut25a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial25a.gif" width="129" height="110" border="0" align="middle" />press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial25b.gif" width="129" height="110" border="0" align="middle" />press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /><br /><img src="outputs/tutorial25c.gif" width="129" height="110" border="0" align="middle" />press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial25d.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">I decided to end the code just so that it didn't get too long.  The code is pretty much self-explanatory.  Normal and Float are the "normal modes" and Sci and Fix are the modes you change into.  You could possibly use Sci when you have a science program that requires the answer to be in scientific notation.  You might use fix in order to set the length of a variable no matter what value is in it.  At the end of your programs you should set the "normal modes" back so the user does not have to do that.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Radian</font></b></td>
+    <td>Sets radian angle mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "THE sin(30) IN</font></b></td>
+    <td>Displays "THE sin(30) IN"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "RADIANS:</font></b></td>
+    <td>Displays "RADIANS:" on the next line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp sin(30</font></b></td>
+    <td>Displays the sine of 30 radians</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Degree</font></b></td>
+    <td>Sets degree angle mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "","THE sin(30) IN</font></b></td>
+    <td>Displays "THE sin(30) IN"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "DEGREES:</font></b></td>
+    <td>Displays "DEGREES:" on the next line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp sin(30</font></b></td>
+    <td>Displays the sine of 30&deg</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">a+b<i>i</i></font></b></td>
+    <td>Sets complex number mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "COMPLEX ANSWER</font></b></td>
+    <td>Displays "COMPLEX ANSWER"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "IN a+b<i>i</i> MODE:</font></b></td>
+    <td>Displays "IN a+b<i>i</i> MODE:"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp <img src="squareroot.gif" width="7" height="10" border="0" align="middle" alt="SQUARE ROOT" />(-25</font></b></td>
+    <td>Displays the square root of -25</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Real</font></b></td>
+    <td>Sets real number mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "","COMPLEX ANSWER</font></b></td>
+    <td>Displays "COMPLEX ANSWER"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "IN Real MODE:</font></b></td>
+    <td>Displays "IN Real MODE:"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp <img src="squareroot.gif" width="7" height="10" border="0" align="middle" alt="SQUARE ROOT" />(-25</font></b></td>
+    <td>Displays the square root of -25</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut25b.zip'" /></p>
+
+<center><img src="outputs/tutorial25e.gif" width="129" height="110" border="0" align="middle" />press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial25f.gif" width="129" height="110" border="0" align="middle" />press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /><br /><img src="outputs/tutorial25g.gif" width="129" height="110" border="0" align="middle" />press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial25h.gif" width="129" height="110" border="0" align="middle" /></center>
+
+<p align="justify">It's really hard to differentiate between the Real mode and the a+b<i>i</i> mode because the Real mode is a subset of the a+b<i>i</i> mode.  I tried to give the best example of how to tell the difference.  At the end of the program, you should have received an "ERR:NONREAL ANS."  You got this because the Real mode cannot evaluate a non-real answer.  The square root of -25 is imaginary and it cannot work with imaginary numbers.  The a+b<i>i</i> mode is set a lot in quadratic formula programs in order to allow the roots to be imaginary or complex.  Degrees and Radians are usually discussed in Geometry or Algebra II.  These two commands are mostly like used in programs to solve problems used in those two classes.  You really do not have to turn the modes back to "normal" because regular math computations won't be affected by the mode settings.  I actually prefer to leave my mode setting to a+b<i>i</i>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Full</font></b></td>
+    <td>Sets full screen mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Func</font></b></td>
+    <td>Sets function graphing mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Connected</font></b></td>
+    <td>Sets connected plotting mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOn</font></b></td>
+    <td>Turns the graph axes on</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">"X&sup2+2X-7"<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Y<font size="-2">1</font></font></b></td>
+    <td>Stores the equation "X&sup2+2X-7" into Y<font size="-2">1</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">DispGraph</font></b></td>
+    <td>Displays the graph</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(45,55,"CONNECTED</font></b></td>
+    <td>Displays "CONNECTED" on the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(52,60,"MODE</font></b></td>
+    <td>Displays "MODE" on the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Dot</font></b></td>
+    <td>Sets dot plotting mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">DispGraph</font></b></td>
+    <td>Displays the graph</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(45,60,"DOT</font></b></td>
+    <td>Displays "DOT" on the graphs screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(52,60,"MODE</font></b></td>
+    <td>Displays the graph</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Connected</font></b></td>
+    <td>Sets connected plotting mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Horiz</font></b></td>
+    <td>Sets horizontal split-screen mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">DispGraph</font></b></td>
+    <td>Displays the graph</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "HORIZONTAL</font></b></td>
+    <td>Displays "HORIZONTAL" on the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "SPLIT-SCREEN</font></b></td>
+    <td>Displays "SPLIT-SCREEN" on the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "MODE"</font></b></td>
+    <td>Displays "MODE" on the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">G-T</font></b></td>
+    <td>Sets graph-table vertical split-screen mode</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">DispGraph</font></b></td>
+    <td>Displays the graph</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(38,0,"GRAPH-TABLE</font></b></td>
+    <td>Displays "GRAPH-TABLE" on the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(45,0,"MODE"</font></b></td>
+    <td>Displays "MODE" on the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Full</font></b></td>
+    <td>Sets full screen mode</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut25c.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial25i.gif" width="129" height="110" border="0" align="middle" />press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial25j.gif" width="129" height="110" border="0" align="middle" />press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /><br /><img src="outputs/tutorial25k.gif" width="129" height="110" border="0" align="middle" />press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial25l.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">I set the Full mode at the beginning just to make sure the calculator is set in the Full mode.  The rest is self-explanatory.  Make sure you read the further definitions of <a href="../index/a-m.html#horiz">Horiz</a> and <a href="../index/a-m.html#g-t">G-T</a> to find out the boundaries of pixels and text.  Make sure to change the mode back to Full at the end.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+I hope this tutorial was helpful for you.  Maybe you didn't know you could set the number of decimal places or have a horizontal split screen.  These commands can make programming easier and make your displays look better.  In the next tutorial, we will cover something very similar.  We will be changing the zoom using the zoom commands.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial24.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial26.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial24.html">Tutorial 24</a></td>
+	<td><a href="tutorial26.html">Tutorial 26</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

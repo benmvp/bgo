@@ -1,0 +1,535 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 23: User-Created Menus</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 23: User-Created Menus</font><br />
+<font size="3">Using getKey to make your own menus...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 23: User-Created Menus</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+You've finally made it!!  You've reached the end of version 2.0.  This final tutorial will help make your programs, especially your games, unique and cool.  As it says in the subtitle, we will be using <a href="../index/a-m.html#getkey">getKey</a> to make our own menus; what I call "user-created menus."  We are going to do away with those boring menus that the calculator makes, and make our own with our own unique formatting and style.</p>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+There are two "user-created menus" that I know how to make.  The first one, which will be in the proceeding code, looks somewhat like the normal menus, but a whole lot more customized.  Let me tell you the features of this type of "user-created menu".  This new menu type not only comes with a title and choices, but it can also include text description, which gives extra information about the menu.  If you want to, you could have 15 different choices if there is enough space for all the text you want.  In addition, the text for the choices isn't limited to 14 characters and on one line; you could have it be a whole paragraph on several lines, if you wanted.  You could also underline/box-in the title, or even add a picture in the menu.  Now that I've hyped you up for it, let me show you what I am talking about.  I'm going to use a menu that I use in one of my games.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="45%">
+  <col span="1" width="55%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(0,11,"ERASE  LEVEL  RECORD?</font></b></td>
+    <td>Displays "ERASE  LEVEL  RECORD?" (2 spaces each)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(10,-7,82,-7	</font></b></td>
+    <td>Draws a horizontal line that'll underline the title</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(10,0,"*  THIS WILL CLEAR THE</font></b></td>
+    <td>Displays on graph screen "THIS WILL CLEAR THE</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(17,0,"RECORD FOR THIS LEVEL ONLY</font></b></td>
+    <td>Displays on the graph screen "RECORD FOR THIS LEVEL ONLY" all on one line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(30,0,"1:  NO</font></b></td>
+    <td>Displays option #1 "NO"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(40,0,"2:  YES</font></b></td>
+    <td>Displays option #2 "YES"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(50,0,"3:  --BACK--</font></b></td>
+    <td>Displays option #3 "--BACK--"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(30,47,"4:  --HOME--</font></b></td>
+    <td>Displays option #4 "--HOME--"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(40,47,"5:  --QUIT--</font></b></td>
+    <td>Displays option #5 "--QUIT--"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">While 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">getKey<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />I</font></b></td>
+    <td>Stores the key's key code into user variable I</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If I=92 or I=105:Goto 2</font></b></td>
+    <td>If <img src="../index/1.gif" width="11" height="11" border="0" align="middle" alt="1" /> or <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> is pressed, go to Label 2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If I=93:Goto 3</font></b></td>
+    <td>If <img src="2.gif" width="11" height="11" border="0" align="middle" alt="2" /> is pressed, go to Label 3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If I=94:Goto 4</font></b></td>
+    <td>If <img src="3.gif" width="11" height="11" border="0" align="middle" alt="3" /> is pressed, go to Label 4</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If I=82:Goto 5</font></b></td>
+    <td>If <img src="4.gif" width="11" height="11" border="0" align="middle" alt="4" /> is pressed, go to Label 5</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If I=83:Goto 6</font></b></td>
+    <td>If <img src="5.gif" width="11" height="11" border="0" align="middle" alt="5" /> is pressed, go to Label 6</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of the While loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 2</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,4,"RECORD NOT</font></b></td>
+    <td>Displays "RECORD NOT</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,5,"CLEARED.</font></b></td>
+    <td>CLEARED" on two lines</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End program execution</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 3</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,2,"RECORD CLEARED</font></b></td>
+    <td>Displays "RECORD CLEARED"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End program execution</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 4</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,4,"RETURNS TO</font></b></td>
+    <td>Displays "RETURNS TO PREVIOUS</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,1,"PREVIOUS SCREEN.</font></b></td>
+    <td>SCREEN" on two lines</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End program execution</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 5</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,2,"GOES BACK HOME</font></b></td>
+    <td>Displays "GOES BACK HOME"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End program execution</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 6</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,3,"GAME QUITTED</font></b></td>
+    <td>Displays "GAME QUITTED"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End program execution</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut23a.zip'" /></p>
+
+<p align="center">Possible output:<br />
+<img src="outputs/tutorial23a.gif" width="129" height="110" align="middle" border="0" /> and <img src="outputs/tutorial23b.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify">If you run the program and read the comments on the side of each command line you should fully understand what is supposed to happen.  Let me just explain one thing, though.  I do not know if you noticed but I got rid of the "<font color="#008000"><b>While G=0</b></font>" loop and its following "<b><font color="#008000">getKey<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />I</font></b>."  The reasoning behind this is that we don't need it.  We want it so that after we press our choice, it goes on to the rest of the program.  We had those two command lines in the previous programs becuase we wanted to continue pressing other keys, until a special exit key was pressed.  We do not want this program to continue to loop around.  I also want to give you a reason why I put "NO" as choice #1 instead of "YES."  The reason is that I think that most people wouldn't want to clear the record.  Also, I made it so that "NO" could also be chosen by pressing <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> just like you can in the calculator's menu.  You can always choose the first choice by pressing either <img src="../index/1.gif" width="11" height="11" border="0" align="middle" alt="1" /> or <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" />.  You thought this menu was fancy?  Check out the next one.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="41%">
+  <col span="1" width="59%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(0,35,"SURVEY</font></b></td>
+    <td>Displays "SURVEY"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-33<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />X</font></b></td>
+    <td>Used to place the arrow in original position</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-43<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Used because B needs an initial valid value</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(34,-7,58,-7	</font></b></td>
+    <td>Draws a horizontal line that'll underline the title</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(10,0,"HOW IS MY TUTORIAL?</font></b></td>
+    <td>Displays on the graph screen "HOW IS MY TUTORIAL?"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(30,47,"GREAT</font></b></td>
+    <td>Displays option #1 "GREAT"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(40,47,"OKAY</font></b></td>
+    <td>Displays option #2 "OKAY"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(50,47,"BAD</font></b></td>
+    <td>Displays option #3 "BAD"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 2</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(32,X,42,X</font></b></td>
+    <td>These three lines are used</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(42,X,39,X+3</font></b></td>
+    <td>to draw the arrow that will</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(42,X,39,X-3</font></b></td>
+    <td>move up and down</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(32,B,42,B,0</font></b></td>
+    <td>These three lines are used</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(42,B,39,B+3,0</font></b></td>
+    <td>to erase the previous arrow</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(42,B,39,B-3,0</font></b></td>
+    <td>that was drawn</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">While 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">getKey<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />I</font></b></td>
+    <td>Stores the key's key code into user variable I</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If I=25 or I=24:Goto UP</font></b></td>
+    <td>If <img src="up.gif" width="11" height="12" border="0" align="middle" alt="UP" /> or <img src="../index/left.gif" width="11" height="12" border="0" align="middle" alt="LEFT" /> is pressed, go to Label UP</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If I=34 or I=26:Goto DN</font></b></td>
+    <td>If <img src="down.gif" width="11" height="12" border="0" align="middle" alt="RIGHT" /> or <img src="../index/right.gif" width="11" height="12" border="0" align="middle" alt="DOWN" /> is pressed, go to Label DN</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If I=105:Goto EN</font></b></td>
+    <td>If <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> is pressed, go to Label EN</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of the While loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl UP</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">X<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>The placement of arrow is stored in B to be erased</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">X+10<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />X</font></b></td>
+    <td>The arrow will move up on choice</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If X=-23:Then</font></b></td>
+    <td>If the arrow will be placed too high,</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-53<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />X</font></b></td>
+    <td>Make the arrow go to the last choice</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-33<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Erase that arrow on the top</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of the If-Then statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 2</font></b></td>
+    <td>Go to Label 2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl DN</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">X<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>The placement of arrow is stored in B to be erased</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">X-10<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />X</font></b></td>
+    <td>The arrow will move down one choice</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If X=-63:Then</font></b></td>
+    <td>If the arrow will be placed too low,</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-33<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />X</font></b></td>
+    <td>Make the arrow go to the first choice</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-53<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Erase that arrow on the bottom</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of the If-Then statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 2</font></b></td>
+    <td>Go to Label 2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl EN</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If X=-33:Goto 3</font></b></td>
+    <td>;If <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> was pressed for choice #1, go to Label 3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If X=-43:Goto 4</font></b></td>
+    <td>;If <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> was pressed for choice #2, go to Label 4</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If X=-53:Goto 5</font></b></td>
+    <td>;If <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> was pressed for choice #3, go to Label 5</td>
+  </tr>
+ <tr valign="middle">
+    <td><b><font color="#008000">Lbl 3</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,4,"THANK YOU.</font></b></td>
+    <td>Displays "THANK YOU."</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End program execution</td>
+  </tr>
+ <tr valign="middle">
+    <td><b><font color="#008000">Lbl 4</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,4,"ONLY OKAY?</font></b></td>
+    <td>Displays "ONLY OKAY?"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,1,"WHAT CAN I DO TO</font></b></td>
+    <td>Displays "WHAT CAN I DO TO"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,1,"MAKE IT BETTER?</font></b></td>
+    <td>Displays "MAKE IT BETTER?"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End program execution</td>
+  </tr>
+ <tr valign="middle">
+    <td><b><font color="#008000">Lbl 5</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,7,"BAD?</font></b></td>
+    <td>Displays "BAD?"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,1,"WHAT HAVE I DONE</font></b></td>
+    <td>Displays "WHAT HAVE I DONE"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,6,"WRONG?</font></b></td>
+    <td>Displays "WRONG?"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End program execution</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut23b.zip'" /></p>
+
+<p align="center">Possible output:<br />
+<img src="outputs/tutorial23c.gif" width="129" height="110" align="middle" border="0" /> and <img src="outputs/tutorial23d.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify">The code does seem long just to make one menu, but it's worth.  All you have to do is use it once in a game to make your game stand out from the rest.  I made the program so that if the user presses <img src="up.gif" width="11" height="12" border="0" align="middle" alt="UP" /> or <img src="../index/left.gif" width="11" height="12" border="0" align="middle" alt="LEFT" /> that the arrow will go up, and if the user presses <img src="down.gif" width="11" height="12" border="0" align="middle" alt="DOWN" /> or <img src="../index/right.gif" width="11" height="12" border="0" align="middle" alt="RIGHT" /> that the arrow will move down.  I also made it so that if you press up and the arrow is at the top, it will cycle down to the bottom and vice versa.  At first, I had made the menu so that every time the arrow moved up or down, the screen would clear the old arrow and all the other text.  Instead, I added "Y" so that I could just erase the previous arrow.  This made the menu look better because it got rid of all the blinking of the screen.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+You have now finished the getKey series and completed all 23 tutorials!  You should be very proud of yourself for making it this far!  But guess what?  You're not done yet.  I felt bad for not having a Big Game #2 here at the end of version 2.0 so I came up with a project for you to complete.  It should not be too difficult.  The project is to combine these two "user-created menus" and make one "super menu."  This "super menu" should contain the following:
+<ul>
+  <li>An underlined/boxed-in title, a short description, and at least 6 choices for the user to choose from</li>
+  <li>The user will have the choice of either scrolling through the menu using the arrow keys and moving an actual arrow <b>OR</b> pressing the corresponding number of the choice</li>
+  <li>The screens that the choices go to don't have to have that much content; just enough so you know that the choice went to the correct label</li>
+  <li>You <b>CAN NOT</b> cheat and make it so that the arrow erases using ClrDraw; you have to erase the arrow using Line(</li>
+</ul>
+Because you need to have 6 choices in the menu, you might have to make it two columns.  Make sure that the arrow can move back and forth from the bottom of the first column to the top of the next column.  Also, make sure that the arrow can move back and forth from the first choice in the first column to the last choice in the last column.  If you want, you can send me your programs to prove that you have completed the task.  If you need a little assistance, you can <a href="../comments.html">contact me</a> and I will respond ASAP.  If you can make the "super menu" work, you can definitely consider yourself an Intermediate level programmer; not just because you can make this menu, but because you know, understand, and can use so many commands now.  With the help of getKey, you should easily be able to make a good game that's fun to play.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="special.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="overview3.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="special.html">Special Tutorial</a></td>
+	<td><a href="overview3.html">Overview v3.0</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

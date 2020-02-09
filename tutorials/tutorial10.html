@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 10: More Loops</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 10: More Loops</font><br />
+<font size="3">While & Repeat...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 10: More Loops</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+In this tutorial, we will learn more about loops using While and Repeat.  You use these two commands when you want a set of commands executed until a certain condition happens.  While runs <i>while</i> the condition is true, and Repeat runs <i>until</i> the condition is true.  The two commands are essentially the same.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#while">While</a></td>
+    <td>Performs a group of commands while condition is true</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#repeat">Repeat</a></td>
+    <td>Repeats a group of commands until condition is true</td>
+  </tr>
+</table>
+</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="50%">
+<col span="1" width="50%">
+</colgroup>
+  <tr valign="middle">
+    <td><b>While</b> <i>condition</i></td>
+    <td><b>Repeat</b> <i>condition</i></td>
+  </tr>
+  <tr valign="middle">
+    <td><i>commands</i> (while <i>condition</i> is true)</td>
+    <td><i>commands</i> (until <i>condition</i> is true)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b>End</b></td>
+    <td><b>End</b></td>
+  </tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+There are going to be two separate codes: one with While and another with Repeat.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">1<img src="arrow.gif" width="12" height="8" border="0" align="." alt="STORE" />X</font></b></td>
+    <td>Stores 1 into X</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">While X&lt8</font></b></td>
+    <td>Executes commands while X is less than 8</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp X</font></b></td>
+    <td>Displays X</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">X+1<img src="arrow.gif" width="12" height="8" border="0" align="." alt="STORE" />X</font></b></td>
+    <td>Adds one to X and then re-stores it</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End While Loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut10a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial10a.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">After running the program, you should notice that program displays 1-7 on the right hand side of the screen.  After the calculator displays "7", X is increased by 1 and now equals 8.  The While loops only runs while X is less than 8.  Once X is 8, then it executes the command after the End command, which is Pause.  Next is an example on the use of Repeat.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">1<img src="arrow.gif" width="12" height="8" border="0" align="." alt="STORE" />X</font></b></td>
+    <td>Stores 1 into X</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Repeat X=8</font></b></td>
+    <td>Executes commands while X is less than 8</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp X</font></b></td>
+    <td>Displays X</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">X+1<img src="arrow.gif" width="12" height="8" border="0" align="." alt="STORE" />X</font></b></td>
+    <td>Adds one to X and then re-stores it</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End While Loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut10b.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial10a.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">You should have figured out that this program does the exact same thing as the While loop program.  The only difference (which doesn't appear on the screen) is that on the first time of encountering the Repeat loop, the calculator executes the commands and then tests the loop.  This is all explained in the further definition of <a href="../index/n-z.html#repeat">Repeat</a>.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+You can really use these two commands interchangeably.  I usually prefer to use the Repeat command because it makes more sense to me when I'm programming.  The next tutorial will be the last tutorial (for v1.0) in which you'll be learning new commands.  The tutorial after that is the compilation of all that we've learned and you'll have to make a guessing game.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial9.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial11.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial9.html">Tutorial 9</a></td>
+	<td><a href="tutorial11.html">Tutorial 11</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 13: Points</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 13: Points</font><br />
+<font size="3">Drawing Points on the Graph Screen...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 13: Points</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+In this tutorial, we will learn how to draw points on the graph screen.  Points are the first step to making pictures on the graph screen.  The difference between the point commands and other commands like Output( or Text( is that the point commands use the (<i>x</i>,<i>y</i>) coordinate system, while the other commands use the <i>row</i>,<i>column</i> method.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#pton">Pt-On(</a></td>
+    <td>Draws a point at coordinate (<i>x</i>,<i>y</i>) with a specified mark</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#ptoff">Pt-Off(</a></td>
+    <td>Erases a point at coordinate (<i>x</i>,<i>y</i>) with a specified mark</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#ptchange">Pt-Change(</a></td>
+    <td>Toggles or reverses a point at coordinate (x,y)</td>
+  </tr>
+</table>
+</p>
+
+<p align="justify"><font size="3" color="#000080">New Variables:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#windowvar">Xmin</a></td>
+    <td>Minimum value of the x-axis in the viewing window</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#windowvar">Xmax</a></td>
+    <td>Maximum value of the x-axis in the viewing window</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#windowvar">Ymin</a></td>
+    <td>Minimum value of the y-axis in the viewing window</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#windowvar">Ymax</a></td>
+    <td>Maximum value of the y-axis in the viewing window</td>
+  </tr>
+</table>
+</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="50%">
+<col span="1" width="50%">
+</colgroup>
+  <tr valign="middle">
+    <td><b>Pt-On(</b><i>x</i>,<i>y</i>[,<i>mark</i>]<b>)</b></td>
+    <td>0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</td>
+  </tr>
+  <tr valign="middle">
+    <td><b>Pt-Off(</b><i>x</i>,<i>y</i>[,<i>mark</i>]<b>)</b></td>
+    <td>94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</td>
+  </tr>
+  <tr valign="middle">
+    <td><b>Pt-Off(</b><i>x</i>,<i>y</i><b>)</b></td>
+    <td>0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</td>
+  </tr>
+  <tr valign="middle">
+    <td></td>
+    <td>-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</td>
+  </tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+The first set of code will use Pt-On( to make a line.  The second code will use Pt-On( to make a big "B" on the screen.  The next code will show how to delete part of a line using Pt-Off(.  The last code is just something cool using Pt-Change(.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,37,57</font></b></td>
+    <td>Draws a horizontal line that is 20 points</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-On(X,-31</font></b></td>
+    <td>long in about the middle of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(25,38,"HELLO</font></b></td>
+    <td>Writes "HELLO" centered above the line</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut13a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial13a.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">This code shows you two things: how to draw a line using Pt-On( and how to underline text.  That's why it's so important to set those window variables because it makes it a whole lot easier to underline the text.  I didn't add an AxesOn at the end of the code because it would have turned the axes on over the underlined text.  I would have to add a pause and then AxesOn and that's too much trouble.  I just advise that you add an AxesOn at the end of your games or programs.  Although using Pt-On( in a For statement works for drawing lines, there's a faster and better way.  You can use the command <a href="../index/a-m.html#line">Line(</a>.  If you want to jump ahead to see how to use Line, go to <a href="tutorial15.html">Tutorial 15</a>.  Next, we'll draw a big "B."</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,-17,-45,-1</font></b></td>
+    <td>Draws a vertical line that is 28 points long</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-On(15,X</font></b></td>
+    <td>on the left side of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,16,28</font></b></td>
+    <td>Draws a horizontal line that is 12 points long</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-On(X,-17</font></b></td>
+    <td>in about the middle of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,-18,-30,-1</font></b></td>
+    <td>Draws a vertical line that is 12 points long</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-On(29,X</font></b></td>
+    <td>on the left side of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,28,16,-1</font></b></td>
+    <td>Draws a horizontal line that is 12 points long</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-On(X,-31</font></b></td>
+    <td>in about the middle of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,-32,-45,-1</font></b></td>
+    <td>Draws a vertical line that is 13 points long</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-On(29,X</font></b></td>
+    <td>on the left side of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,28,16,-1</font></b></td>
+    <td>Draws a horizontal line that is 12 points long</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-On(X,-45</font></b></td>
+    <td>in about the middle of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut13b.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial13b.gif" width="129" height="110" border="0" align="middle" />The output won't look exactly like this</p>
+
+<p align="justify">I could have combined those three For loops that drew the horizontal line that was 12 points long into one For loop.  I decided not to because I wanted the program to give the effect that the calculator was actually drawing the "B."  It kind of looks like that right?  The next code will erase part of a line.  I'll use the same code for the line we drew before.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,37,57</font></b></td>
+    <td>Draws a horizontal line that is 20 points</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-On(X,-31</font></b></td>
+    <td>long in about the middle of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,42,52</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-Off(X,-31</font></b></td>
+    <td>Erases 10 points of the horizontal line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut13c.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial13c.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">Just as before there's a better way to do this, but I just wanted to show you how Pt-Off( works.  You can use the Line( command to draw and erase part of a line.  The last code is just a cool little game I just thought up to show how Pt-Change( works.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-On(5,-31</font></b></td>
+    <td>Draws a point at (5,-31)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-On(65,-31</font></b></td>
+    <td>Draws a point at (65,-31)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-Change(35,-31</font></b></td>
+    <td>Toggles a point at (35,-31)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-Change(5,-31</font></b></td>
+    <td>Toggles the point at (5,-31)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pt-Change(65,-31</font></b></td>
+    <td>Toggles a point at (65,-31)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,100)</font></b></td>
+    <td>This line and the next line are used to</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>delay the program for about a second</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 1</font></b></td>
+    <td>Goto Label 1</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut13d.zip'" /></p>
+
+<p align="center">Repeatedly...<br />
+<img src="outputs/tutorial13d.gif" width="129" height="110" border="0" align="middle" /> and <img src="outputs/tutorial13e.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">You might not be able to see it well, but there should be two flashing points on the screen.  The program just loops back around continuosly, so the Pt-Change( toggles it on and then toggles it off.  Now you know how to make points flash.  If you don't know this yet, you can stop the program by pressing <img src="../index/on.gif" width="17" height="11" border="0" align="middle" alt="ON" /> and then <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" />.</p>
+
+<a name="highlight"></a>
+<p align="justify"><font size="3" color="#00FF00"><b>Version 3.0 Update:</b></font><br />
+So, now you know how to underline text, but you still want something more.  How can you make a selection of text stand out from the rest?  How about highlighting it?  Yes, you can highlight text on your calculator.  Actually, it isn't really highlighting, but more like inverting colors.  However, it does give the effect of highlighting and makes the text stand out.  Here's the code:</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">:</font></b></td>
+    <td><font size="2">For AShell, SOS, and TI-Explorer</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">AxesOff</font></b></td>
+    <td><font size="2">Turns the graph axes off</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">FnOff</font></b></td>
+    <td><font size="2">Deselects all the Y= functions</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td><font size="2">Stores Xmin as 0</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td><font size="2">Stores Xmax as 94</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td><font size="2">Stores Ymax as 0</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td><font size="2">Stores Ymin as -62</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">ClrDraw</font></b></td>
+    <td><font size="2">Clears the graph screen of all drawings</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">Text(29,23,"HIGHLIGHTED!!</font></b></td>
+    <td><font size="2">Writes "HIGHLIGHTED!!" in the middle of the screen</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">For(X,22,70</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">For(Y,-35,-29</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">Pt-Change(X,Y</font></b></td>
+    <td><font size="2">Toggles all the points in a rectangle around the text</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">End</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">End</font></b></td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut13e.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial13f.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">There's not too much to explain.  The only explanation that you might need is with the nested For loops.  What happens is that X initially becomes 22 and Y is -35.  Then, it toggles the point at (X,Y) or in this case (22,-35).  Next, the calculator loops back to the inner For loop, makes Y equal to -34, and toggles the point at (22,-34).  This continues until the final point, (22,-29), is toggled.  Since, the inner For loop is finished, the calculator loops back to the outer one and makes X equal to 23.  Then the process is repeated all over again.  So what basically happens is that everything that's white in the area is turned to black, and everything that was black is turned to white.  Thus, we have the effect of highlighting.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+Well that about wraps up this tutorial.  I hope I've given you enough information for you to be able to use these three commands in your programs.  I feel they are pretty easy to understand.  The next tutorial is very similar to this one except we'll be dealing with pixels instead of points.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial12.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial14.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial12.html">Tutorial 12</a></td>
+	<td><a href="tutorial14.html">Tutorial 14</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

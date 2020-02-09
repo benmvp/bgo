@@ -1,0 +1,20 @@
+----------------------------------------------------------------
+|       SSSS                                                                               |
+|    SS     SS     iiii                                                                     |
+|    SS                                                                                       |
+|      SSSS         iiii         mmmm  mmm         oooo      nn nn       |
+|             SS       iiii         mm   mmm  mm   oo    oo     nn    nn    |
+|    SS     SS      iiii   iiii   mm             mm    oo    oo    nn     nn    |
+|      SSSS           iiiii       mm             mm     oooo       nn    nn    |
+-----------------------------------------------------------------
+
+Title: Simon 2000
+Calc: TI-83 Plus
+Author: Sean Sartell
+Language: Basic
+Description: Test your memory with Simon 2000.  Now the fun hand-held game is on the TI-83 Plus.
+Keys: Use the arrow keys.  The calculator will add one to the sequence evertime and you have to test your memory
+          and see if you can remember the right sequence.  This version also has a high score and new menus. Good luck!
+Response: PLEASE respond if you find any bugs or have any comments on the game or suggestions.
+
+staind234@hotmail.com

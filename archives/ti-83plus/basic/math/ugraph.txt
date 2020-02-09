@@ -1,0 +1,6 @@
+		The Ultimate Graph Setup Utlity
+				By
+			  Jason D. Ralphs
+
+
+	This program is pretty self-explanitory.  It contains a Y= editor, X= editor, an option to turn the graph (lines) on or off, an optimize setting, and a reset defaults function.  Do NOT edit this program!

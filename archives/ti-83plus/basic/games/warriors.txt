@@ -1,0 +1,28 @@
+Warriors v1.0
+Created by Michael J.Ford
+
+Discription:
+
+Warriors is one of my best games. First, you have to buy a sword, shield,
+and gauntlets. Then you are off on your misson!
+
+Controls:
+
+When moving:
+left-left
+right-right
+up-up
+down-down
+mode-exit
+
+When shopping:
+ENTER-buy
+Mode-leave shop
+Del-exit
+
+When fighting:
+left-use sword
+right-block
+Del-leave the fight
+Mode-exit
+:End

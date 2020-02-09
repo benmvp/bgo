@@ -1,0 +1,209 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Arrays</title>
+</head>
+
+<body bgcolor="#000000" text="#ffffff" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+<h1 align="center"><i>Arrays</i></h1>
+<br /><br />
+<h5 align="left">Created by: Lucas Johnson</h5>
+
+<img src="alum.gif" />
+
+<p>In this tutorial, you will learn about the different arrays avalible to BASIC programmers of the TI-83+.</p>
+
+<table border="1" bgcolor="#000030" align="center" text="white" width="100%">
+<td align="center"><font size="4">- Preview -</font></td>
+</table>
+
+<font size="4"><p>Material</p></font>
+<p>In this lesson you will learn:</p>
+<ul>
+<li>How to use lists
+<li>How to use matrices
+<li>How to use strings
+<li>When and where to apply these arrays
+</ul>
+
+<table border="1" bgcolor="#000030" align="center" text="white" width="100%">
+<td align="center"><font size="4">- The Lesson -</font></td>
+</table>
+
+<p>An array is simply an organized set of variables. These arrays come in several forms.</p>
+
+<p><b>Lists</b></p>
+
+<p>The most common array is the list. A list is a list of individual variables. Each variable in the list has it's own individual location, but, being in a list, they can react with other variables in a list. First, lets look at how you would create a list to better understand them. Type this into a new program: (note: "L1" is actually one character short for "list 1" it can be found with [2nd], [1 or L1]. "dim(" can be found with [2nd], [LIST], [>], [3]. "ClrList" can be found with [STAT], [4].)</p>
+
+<font color="#FFFFCC">
+:ClrList L1<br />
+:4->dim(L1)<br />
+:1->L1(3)
+</font>
+
+<p>Execute this program. Now, lets look at what this program did step by step. In the first line, we cleared everything out of the list named L1. In the second line, we made the dimension of L1, 4. In other words, we allowed up to four different variaables to be stored to different locations in the list: L1. If you are lost, keep reading, it will all make since soon. Now, in the third line, we stored 1 to the third location on L1. Okay, this is where it should all come together, press [2nd], [L1 (above [1])] on the homescreen so that "L1" appears. Press [ENTER]. You should see {0 0 1 0} on the homescreen. See that we made L1 4 variables long and stored 1 into the thrird location? When we call a variable from a list, we use the list and the location just like we did when we stored 1 to the third location of L1 in the above program. Just simply "list(location)". Try it, put "L1(2)" on the homescreen and press [ENTER]. You should get 0. Try it for all the locations 1 through 4. Now that we've learned the basics of lists, let's learn how to create a list with a specific name. Now, why would you ever want to do something like that? Well, when you make a save feature in a game, a list with a specific name is one of the best places to store game data (mostly character stats) because no other program will tamper with the list. See, if you stored this data into L1, it would likely get disterbed by other programs as the built in lists (L1 through L6) are used a lot. If you make a list with it's own specific name, no other programs will use that list, even if they make their own list with a specific name. Now, lets do it. Put this into a new program: (note: when I put in "L" it is a small "L" short for "list" NOT the variable "L". This small "L" can be accessed by pressing [2nd], [LIST], [>], [^ (up)], [ENTER].)</p>
+
+<font color="#FFFFCC">
+:10->dim(LABC)
+</font>
+
+<p>Remember what I told you about the "L", and execute the program. Simple as that, now you have your own list that no other program will mess with. Now, of course, you can change "ABC" to whatever you like, as long as the name does not exceed 5 characters in length. You call and store values to the program the same way you do a built in list except you have the small "L" so you'd use "Lname(location)".</p>
+
+<p>Now that we know everything you'll need to know about lists in a standard program, let's look at when you would need a list. Lists are good to use in programs where you want to distinguish a certian set of veriables from another, or if you simply run out of the 27 letter variables and need more. Also, as we looked at, they are very good on games where you need to store stats about a character. Another major purpose of lists is in Nibbles-like games where you need to store the X and Y values of each link in the snake in a very organized fasion.</p>
+
+<p><b>Matrices</b></p>
+
+<p>Another type of array is a matrix. A matrix works very similar to a list, except that in a matrix, the data is 2 dimensional intead of 1 dimensional. This may be a bit of a shock for all those people out there that are just now learning what a matrix is because a lot of TV shows and movies make it out to be some super high-tech concept or something. All it is is a 2 dimensional grid. Each grid location stores a variable. As I am having a difficult time explaining this, let's make  a matrix. On the homescreen type this in: (NOTE: "[A]" is NOT the variable "A" with brackets around it, it is "Matrix A" which is one single character that can be found by pressing [2nd], [MATRIX], [1].)</p>
+
+<font color="#FFFFCC">
+[1,2,3],[4,5,6]->[A]
+</font>
+
+<p>When you press [ENTER], you should see:</p>
+
+<font color="#FFFFCC">
+[1 2 3]<br />
+[4 5 6]
+</font>
+
+<p>You have just made a 2 x 3 matrix. How does this help you? Like I said earlier, this is simply a 2 dimensional list. It is just another way of storing data. Some data can be viewed best if it is like this. Remember that Nibbles game I was talking about? The author needs two lists 80 characters long. But, the author could also make a 80 x 2 matrix. The 2 colomns work like lists and the data is more organized. See? The only problem with this is that an 80 x 2 matrix uses more memory than 2 lists with dimensions of 80 by a large margin. Matrices can also be useful in Pacman like games where the author needs a grid on the homescreen where Pacman can move around. The walls are stored in a matrix as a number different than the open ground. This is how the game recognizes walls so Pacman can't go through them.</p>
+
+<p>Now lets look at how to use matrices in a program. Genarally when you make a matrix in a program, you don't make it like you do in the above sample we used on the homescreen. Why? Well, you can, but in most programs, you don't know what values to put in for all spaces. You usually start by declaring the matrix as having a certain dimension, clearing the matrix in case there was anything in it before, and adding individual values. Let's make a program that will make a matrix like this: ("dim(" can be found by pressing [2nd], [MATRIX], [>] and scrolling down to "dim(" and pressing [ENTER]. "Fill(" can be found in this manner also.</p>
+
+<font color="#FFFFCC">
+:{3,3}->dim([A])<br />
+:Fill([A],0)<br />
+:4->[A](2,2)<br />
+:2->[A](1,3)
+</font>
+
+<p>Run this program and then on the homescreen type:</p>
+
+<font color="#FFFFCC">
+[A]
+</font>
+
+<p>Press [ENTER] if you haven't already done so. You should see:</p>
+
+<font color="#FFFFCC">
+[0 0 2]<br />
+[0 4 0]<br />
+[0 0 0]
+</font>
+
+<p>Let me explain what we did. In the first line, we declared that the matrix "A" had a dimension of 3 x 3. In the following line, we filled all of matrix "A" with "0"'s. In the next two lines, we stored 4 and 2 to the coorsponding coordinates in the matrix. Matrix coordinates are read ("DOWN from top","RIGHT of left"). The upper left box is (1,1) not (0,0), the matrix starts at "1" just like lists. This would have been the same as:</p>
+
+<font color="#FFFFCC">
+:[0,0,2],[0,4,0],[0,0,0]
+</font>
+
+<p>This looks more convieniant, but in a lot of programs that use matrices, the matrix values are often not known until later in the program, and then rarly all at once. Use this form when you can though, you can always change and rechange a value.</p>
+
+<p>When you resize a matrix, it is important to know that only values that still can be kept will be. If you add space to the matrix or start a new one, all blank values will automatically be "0" until changed.</p>
+
+<p><b>Strings</b></p>
+
+<p>Although not a true arrays, they certainly can be used as an array. Usually they are used simply to store text to be used later. Using a string as an array is using it against it's original design, so there are a lot of problems that can occur when trying to pull values from strings to be used and then storing values into them. I will teach you all the nifty little tricks you need to know to use strings as an array with out getting data type errors. You might ask why anyone would go through the trouble to use a string like this. On occasion, you will want to use a string as an array, but not usually. I'm including this simply to make the tutorial complete. You really will rarly need to use a string for anything else other than to store a "string" of text, but on occasion you might need it. </p>
+
+<p>First lets look at the syntax of a string. On the homescreen, type this: ("Str1" can be found by pressing [VARS], [7], [1])</p>
+
+<font color="#FFFFCC">
+"12345"->Str1
+</font>
+
+<p>Press [ENTER] and you will see:</p>
+
+<font color="#FFFFCC">
+12345
+</font>
+
+<p>Now do this on the homescreen: ("sub(" can only be found in the CATOLOG by pressing [2nd], [CATOLOG], [T (alpha not required)] and then scrolling up 2 or so times to where it says "sub(" and pressing [ENTER])</p>
+
+<font color="#FFFFCC">
+sub(Str1,3,2)
+</font>
+
+<p>Press [ENTER] and you will see:</p>
+
+<font color="#FFFFCC">
+34
+</font>
+
+<p>Let me explain the second part. I think you've got the first part under control. The "sub(" command is a very common string command that takes, a SUBset of the string. The syntax of this command is "sub('String Name','Starting Position','Length of Segment') See?</p>
+
+<p>Now do this:</p>
+
+<font color="#FFFFCC">
+Ans->A
+</font>
+
+<p>You are WRONG if you do NOT get an ERR:DATA TYPE. THIS is what makes strings difficult to work with. Let me explain why you got an error. This 34 you pulled from the string is interpretted as simply text in a string and not thirty-four. A string? That's right, when you use sub( to pull information out of a string, the rusult is a new string.</p>
+
+<p>Now I will show you the tricks to getting around data type errors releated with strings.</p>
+
+<p>To pull a number out of a string you would use: (all string related commands found in Catalog; works for all strings)</p>
+
+<font color="#FFFFCC">
+:expr(sub(Str1,A,1))->B
+</font>
+<br />
+(where A is the position in the string)
+
+<p>To put a one digit variable value into a string:</p>
+
+<font color="#FFFFCC">
+:Str1+sub("123456789",A,1)->Str1
+</font><br />
+(where A is the value to add to the string)
+<br /><br />
+To put a multipe variable value into a string:
+<br /><br />
+<font color="#FFFFCC">
+:Str1+[sub("123456789",iPart(A/(10^(B-1))),1)]+...->Str1
+</font><br />
+(for every extra digit to the number, the block inside the "[]"'s is added to the existing tally and where B is the digit place, so it would be Str1+sub(...B=2...)+sub(...B=1...)->Str1 for a 2 digit number. "A" is the original integer value.)
+
+<p>As you can see, strings can be a major pain when converting between character type data and expression type data so avoid it whenever possible. As with other things, you can also add strings together, take the following example:</p>
+
+<font color="#FFFFCC">
+:"123"->Str1<br />
+:"78"->Str2<br />
+:Str1+"456"+Str2+"9"->Str3
+</font>
+
+<p>Str3 will then have "123456789" stored to it.</p>
+
+<p>The last major thing you need to know about strings is the "length(" command. I'm hoping that this is self-explainitory, but let me demonstrate:</p>
+
+<font color="#FFFFCC">
+:"HELLO"->Str1<br />
+:Disp length(Str1)
+</font>
+
+<p>This program will display a 5 on the homescreen because the length of Str1 with HELLO in it is 5 characters. This can be useful in many situations. For example, I need to determin the second to last character of a string... but I don't know how long the string is, so I would use: (I use Str1 only for an example, it could be any string)</p>
+
+<font color="#FFFFCC">
+:sub(Str1,length(Str1)-1,1)
+</font>
+
+<p>If you get it, that's great, but if you don't let me give you a few hints. I am taking the piece of the string that is 1 short of the length of Str1 and extends 1 character. If you are still lost, refer above to the syntax of the "sub(" command.</p>
+
+<p>This pretty much raps it up for strings.</p>
+
+<p><b>Conclusion</b></p>
+
+<p>In this lesson you learned all about the 3 main types of arrays that programmers use. You learned the syntax of popular commands associated with those arrays and appropriate places to use them. If any particular part of this tutorial or any other tutorial was very confusing for you. Please don't hesitate to E-mail me. I'm more than happy to help you.</p>
+
+
+<img src="alum.gif" />
+<br />
+<br />
+
+<h5 align="center">Questions? Comments? 
+Suggestions? <a href="mailto:luke195rs@aol.com">Contact me.</a></h5>
+<br /><br /><br /><br /><br /><br />
+
+<!--#geoguide-->
+</body>
+</html>

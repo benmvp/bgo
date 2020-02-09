@@ -1,0 +1,12 @@
+Black Software
+Archer v3.0
+
+New? Smaller, it only takes 1951 bytes
+Keys:
+ 2nd    Shoot
+ Enter  Pause
+ Clear  Quit
+
+This game is created by Black
+Comments?
+E-mail my at christopherderycke@hotmail.com

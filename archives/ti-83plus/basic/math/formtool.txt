@@ -1,0 +1,26 @@
+			Formulas Toolkit
+			  Version 1.09
+			Jason D. Ralphs
+
+	This Program has it all, Y= and X= Editor, Midpoint formulas, Heron's formula, Pics Theorum, Note-It (My new word processing tool), My Graph Settings Utility, All formulas for any 2 dimensional shape, MirageOS compatable, All bugs from v1.08 fixed, help function, Pascal's  Triangle (8 Rows), Point Slope Formula, A brief explination on Midpoint formulas, An option to rest defaults on the calculator, and Notes on Angles.  Also, its only 4.7k.
+
+
+			Help
+
+	Main_______Menu 1----square, rectangle, parrellelogram,Triangle, Trapezoid, More, Exit
+	Menu       Menu 2----Circle, Pics, Midpoint, Angles, Go Back, Exit-----------:
+		   Menu 3----Stats, Normal, Trig, Go Back, Exit
+                   More------Menu 4, About, Back
+               Reset Defaults  :
+                   Help        :
+                   Exit        :
+		               Pascal's Triangle
+			       Y= Graphing
+			       X= Graphing
+                               Note-It
+			       Back
+
+			Note:  This Program is locked for a reason!!!  If you try and edit it on your computer it will have errors!!!  But I don't think that that wil happen if you edit it on your calculator, but then again, it might.
+
+			Thank you for downloading my program.
+				    Jason D. Ralphs		

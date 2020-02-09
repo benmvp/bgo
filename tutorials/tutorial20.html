@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 20: Animation</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 20: Animation</font><br />
+<font size="2">Simple Animation on the Home Screen...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 20: Animation</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+In this tutorial, I will show you a simple animation trick that you can do on the home screen.  For the first time in any of the tutorials, there are no new commands.  I'm just going to jump right into the code.</p>
+
+<p align="justify"><font size="3" color="#000080">The Code:</font><br />
+This code is an example of an opening screen I once used in one of my programs.  It has letters and words moving across the home screen into place.  It looks pretty cool I think.  The nice thing about this animation is that the user does not have to press anything for it to work.  The code looks long, but it doesn't take long to enter it in.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td><font size="2">For AShell, SOS, and TI-Explorer</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,2,"BASIC 83 GURU</font></b></td>
+    <td>Displays the text "BASIC 83 GURU"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,4,"TUTORIALS</font></b></td>
+    <td>Displays the text "TUTORIALS" on the next line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,11,2,-1</font></b></td>
+    <td>X is going to be stored from 11-2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,X,"BASIC</font></b></td>
+    <td>"BASIC" moves across the screen from right to left</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,X+5," "</font></b></td>
+    <td>Displays a blank space after "BASIC"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(A,1,20</font></b></td>
+    <td>This line and the next are used to make the</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>word go across the screen a little slower</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(Y,2,4</font></b></td>
+    <td>Y is going to be stored from 2-4</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(Y,8,"8</font></b></td>
+    <td>"8" moves across the screen from top to middle</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(Y-1,8," "</font></b></td>
+    <td>Displays a blank space above the "8"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(B,1,30</font></b></td>
+    <td>This line and the next are used to make the</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>word go across the screen a little slower</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,15,9,-1</font></b></td>
+    <td>X is going to be stored from 15-9</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,X,"3</font></b></td>
+    <td>"3" moves across the screen from right to left</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,X+1," "</font></b></td>
+    <td>Displays a blank space after the "3"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(A,1,20</font></b></td>
+    <td>This line and the next are used to make the</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>word go across the screen a little slower</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(Y,7,4,-1</font></b></td>
+    <td>Y is going to be stored from 7-4</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(Y,11,"GURU</font></b></td>
+    <td>"GURU" moves from top to middle</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(Y+1,11,"&nbsp;&nbsp;&nbsp;&nbsp;"</font></b></td>
+    <td>Displays four spaces below the word "GURU"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(B,1,30</font></b></td>
+    <td>This line and the next are used to make the</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>word go across the screen a little slower</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,4,"TUTORIALS</font></b></td>
+    <td>Displays the text "TUTORIALS" on the next line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut20a.zip'" /></p>
+
+<p align="center">Possible output:<br />
+<img src="outputs/tutorial20a.gif" width="129" height="110" align="middle" border="0" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial20b.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify"><font size="3" color="#000080">Further Explanation:</font><br />
+What this program does is, first, displays the title in the old boring way.  Then after the user presses <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" />, the program clears the screen and sends "BASIC" flying across the screen from the right.  Then "8" comes from the top, "3" comes from the right, and "GURU" comes from the bottom.  "TUTORIALS" is just displayed on the screen after that.  One thing that you must make sure is that you don't use the same variable for the main For loop that moves the word and the For loop that just makes the words move slower.  If you did, the letter would only move one space.  For an example, let's use the second For loop where the "8" is moving from the top of the screen.  Y originally starts of being 2.  If you had Y as the variable in the delaying For loop, Y would become 30 at the end of it.  Then when the program goes back to the main For loop, Y (30) is already bigger than four, so the For loop thinks it is done and goes on to the next main For loop.  Try it and see.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+Now you know another type of opening sequence.  I think this one is my favorite.  If you have any more ideas on a different type of animation that you would like to see done, just <a href="mailto:ben@basicguruonline.com">email me</a> and I'll see if I can do it.  If I can do it, I'll email you the code and add it as a "Version 3.0 Update" to this tutorial when I release v3.0.  If there is anybody out there who knows a lot of BASIC programming, I have a question for you.  I've been trying to figure out how to make pictures move across the graph screen.  The only way I have thought of doing this requires that all the drawings be redrawn each time and that'll be very slow.  If you know of way to do this, please email me.  The next three tutorials will all cover one command.  The next tutorial, just covers the basic usages of the command, while the last two tutorials are cool add-ons that you can put in your programs to make them really unique.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial19.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial21.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial19.html">Tutorial 19</a></td>
+	<td><a href="tutorial21.html">Tutorial 21</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

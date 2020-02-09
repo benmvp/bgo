@@ -1,0 +1,132 @@
+
+	 _________________________________
+	|				  |
+	| Classic Snake v 1.9 for ti-83	  |	Readme for resolution: 1280*1024
+	|_________________________________|
+
+
+1  [general information]
+2  [Red Alert v1.9]
+3  [Requirements]
+4  [Program uses]
+5  [Installation]
+6  [Controls]
+7  [Files included]
+8  [Bugs]
+9  [Notes]
+10 [History]
+11 [TI-83 Archives]
+
+ 
+[1 general information]
+
+Made by F4String Software
+Programmer: 	Erik J. Beerlage
+Gametesters:	J. v der Burg
+		R. Steven
+Programmed in Holland, Zoetermeer.
+10-feb-2001 19:13
+email:
+erikbeerlage@hotmail.com
+Websites:
+http://www.ticalc.org/archives/files/authors/39/3970.html
+http://www.geocities.com/basicguruonline/
+http://home.hetnet.nl/~ejbeerlage/index.html
+
+
+[2 Classic Snake v1.9]
+
+Classic Snake version 1.9 is a game similar to all the other Nibbles, Bytes, Frog games etc. You go around collecting pieces of food, meanwhile your snake becomes longer. Snake is written in basic, quite small and it's fast for basic! It`s compatible with the ti-83+.
+
+
+[3 Requirements]
+
+*ti-83 (+)
+*link cable
+*915B free mem
+*3KB temp mem
+
+[4 Program uses]
+
+*variables A,B,C...
+*L5
+*L6
+*Matrix [E]
+
+
+[5 Installation]
+
+Send "Classic Snake v1.9.83p" to your TI-83 (+).
+
+
+[6 Controls]
+
+Arrows		- Moves the snake
+Enter		- Pauses the game
+Clear		- Quits the game
+
+
+[7 Files included]
+
+*Classic Snake v1.9
+*Readme text
+*Screenshot1-4
+
+
+[8 Bugs]
+I think I got them all out of the program, if you find one please email me.
+
+
+[9 Notes]
+
+THANK YOU FOR USING THIS PROGRAM. DO WHATEVER YOU LIKE WITH IT, BUT: THIS PROGRAM MAY NOT BE CLAIMED IN ANY WAY BY ANYONE ELSE, IN PARTS OR WHOLE. LAST THING: I DON`T TAKE ANY RESPONSIBILITY FOR THIS PROGRAM.
+
+
+[10 History]
+Version 1.0 <> 28/06/2001
+First version, no snake tail and no public release.
+Version 1.9 <> 10/07/2001
+Optimized beautiful code and First public release version.
+
+
+------------------------------------------------------------------------------------------------------------------
+ 
+[11 TI-83 Archives by F4String Software]
+
+available at:
+http://www.ticalc.org/archives/files/authors/39/3970.html
+http://www.geocities.com/basicguruonline/
+http://home.hetnet.nl/~ejbeerlage/index.html
+
+
+Basic Misc Program:	description:
+*Advanced Ti-Windows	Advanced TI-Windows v3.6 is an windows look-a-like Shell-like program with mouse. With the menu's: file, preferences, utilities, and ?(help). On the desktop you can open 3 games and open your own programs by pushing [alpha].It has the following assembly subroutines: Open, Shutdown, Background, PXL Change, Contrast, Memory, Protector, Avail Prgm, Version and when nescessary Alphalock. 3 Different backgrounds are included, and can be changed anytime! Memory can be checked with the util menu. 
+*Advanced Euro Calc	Advanced Euro Calculator v1.5 is an easy to use valuta converser for all countries joining the EMU. Its simple and fast! Countries: The Netherlands , Germany , Belgium , Luxembourg , France , Spain , Italy , Austria , Finland , Ireland , Portugal , Greece !
+*Advanced Pixle List	Advanced Pixle List v1.3 allows you to store pictures into a list, you can make nice graphics while the pixles come one at the time! You can use the list with Zplotr to use it in other programs! The program is easy to use. 
+*Fake it	Fake It	These two programs fake the reset function on your TI-83!! -Gone1 has very nice graphics but takes up a lot pictures (2-9 and 0). The mem reset, prgm and checkram functions. -Gone2 is the small version, only the mem reset function. 
+
+Basic Games Program:	description:
+*Advanced Red Alert   	Advanced Red Alert version 1.9 is a game based on the game Command&Conquer: Red Alert. Objective is to obtain as much ore as you can and defeat the enemy forces. 4 Buildings and 2 Units can be build: Headquarters, Barracks, Warfactory, Orefactory, Infantry and Tanks. To build a tank, a Headquarters needs to be builded and than a Warfactory. To train infantry, a Headquarters needs to be builded and than Barracks. The Orefactory adds 100 to your money every turn. The game has 3 difficulties: easy, midi and hard. The highscore will be saved all the time.
+*Classic Snake		Classic Snake version 1.9 is a game similar to all the other Nibbles, Bytes, Frog games etc. You go around collecting pieces of food, meanwhile your snake becomes longer. Its a small game! Snake is written in basic, and it's quite fast for basic! It`s compatible with the ti-83+.
+
+Basic Math Program:	description:
+*Advanced Math Advanced Math version 1.0 is a math program with the following math rules: Logarithm, Power of, Differentiate, Integrate, Sin/Cos-rules, Sin/cos/tan-rules. No input!! Only the rules are plotted in the graph screen!
+
+[Assembly programs for ti-83]
+
+Asm Misc Program:	description:
+*Advanced Ti-Windows	Advanced TI-Windows v3.6 is an windows look-a-like Shell-like program with mouse. With the menu's: file, preferences, utilities, and ?(help). On the desktop you can open 3 games and open your own programs by pushing [alpha].It has the following assembly subroutines: Open, Shutdown, Background, PXL Change, Contrast, Memory, Protector, Avail Prgm, Version and when nescessary Alphalock. 3 Different backgrounds are included, and can be changed anytime! Memory can be checked with the util menu. 
+
+Asm Subroutines Program:	description:
+*Indicator off	This subroutine can be used in Basic programs to turn off the Run indicator at the top right. When the run indicator is making you nervous this can help. I have included the source code. (use: send(9prgmzind)
+*Protector	These subroutines can protect and unprotect your programs. I have included a basic program to run the program.
+*Run Program	This subroutine executes an program inputed. Basic program and 'documentation' included.
+*Alphalock	This subroutine sets alphalock. (use: send(9prgmzalp)
+*Mem Checker	This subroutine can be used to plot the free memory. I have included a basic example program and the source code.
+*Inverter	This subroutine invertes the screen. (use: send(9prgmzinv)
+*Shutdown	This subroutine shuts your calculator off. (use: send(9prgmzoff)
+
+available at:
+http://www.ticalc.org/archives/files/authors/39/3970.html
+http://www.geocities.com/basicguruonline/
+http://home.hetnet.nl/~ejbeerlage/index.html

@@ -1,0 +1,49 @@
+511 Programming|http://511.basicguruonline.com/|A site for dedicated programmers. To become a member you are required to submit a prog and to make a new prog each month. A great way to get your programming skills noticed.
+ASM 83 Guru|http://linus.jbic.com/~ben/Asmguru.html|Contains over 50 tutorials on how to program your TI-83 using Assembly and a large reference section.  If you want to learn Assembly programming, this is the site to go to.
+BASIC 83x|http://www.geocities.com/basic83x/|Programs and Programming for the TI-83x
+BASIC InfoBase|http://infobase.basicguruonline.com/|A reference site for TI-BASIC programmers
+BASM Programming|http://basm.org/|Visit this site for BASM's cool ASM programs and an impressive selection of other stuff.
+Ben Cheever dot com|http://www.bencheever.com/|ti 83 plus games, and stuff about me
+Ben999's Ti 83+ Games And Programs Page|http://ben999000.50megs.com/ti83.html|Includes a variety of games and programs for the Ti83+
+Bill Paetzke - TI-83 Programs|http://www.geocities.com/ti83programs/|TI-83 Programs that make math problems quick and easy.  Algebra through calculus, science, and financing are covered here.
+Cahal Technologies|http://www.cahaltech.com/|Quality developers for any platform -- home of TIMM, Matt3D Designer, Flash Shell, Assembly Studio, Z80 Decomp, and more for the PC, TI-83/83+/85/86/89/92.
+CobraSoft For The TI-89|http://www.cobrasoft.homepad.com/|-----CobraSoft-----Come here to download and uplaod programs, Get help with BASIC programing for the 89, See what projects are under development, and much much more.
+Code Commander|http://cc.basicguruonline.com/|A site dedicated to an assembly shell named Code Commander that has its own calculator language!
+Dimension-TI|http://www.calc.org/|A pretty good TI calculator site, including information on programming, programs, how to make link cables, and more. Also sells discounted calculators.
+Dutch TI-83(+) site from Sw00zH|http://sw00zh.port5.com/|A Dutch site about the TI-83 with games, programs and information
+Entertainment Shack|http://www.teshack.com/|Contains an HTML/Geocities FAQ, some TI-83 and Visual BASIC games, and a Message Board.
+Eric's TI-83 and TI-83 Plus Programs|http://www.ti83plusinfo.homestead.com/home.html|You can download my programs, give me ideas for new programs, and see what programs I am working on.
+Flabberghast Software|http://www.flabberghast.xs3.com/|A small group of programmers and hardware engineers for the Texas Instruments graphing calculators.  This group works continuously on software and hardware projects, and maintains an archive of finished programs and informational resources.
+Flameblade Programming|http://www.flamebladeti.cjb.net/|We cover a variety of area including TI calculators, QBasic, and more. Includes reviewed programs, tutorials, and we host Flameblades Top 50 sites.
+GEXA inc. Calculator Division|http://www.geocities.com/calcmasta|Your source for games/programs for every calculator plus tutorials, news and source code.
+Hit and Run Entertainment|http://hitandrun.basicguruonline.com/|Archives, membership, tutorials, and instruction manuals
+HyperSoft|http://hypersoft.homestead.com/files/home.htm|A great new company dedicated to producing high-quality programs. Take a visit!
+Kevtiva Interactive|http://www.ikevtiva.com/calc/|The home of a great TI programming group, with BASIC programs for the TI-82, TI-83, and TI-83+.  It is also home to Bob's Advanced TI-BASIC, which describes many Advanced BASIC techniques, and undocumented features in TI-BASIC.
+KM3K World|http://www.geocities.com/kevman3001/|A great site with lots of cool stuff!
+Knopp/Moore Creations|http://www.angelfire.com/games3/Unforgiven|A place of Ti-83 and Ti-83+ programs, puds, tutorials, and a lot more!!
+Lightyear Studios|http://lightyearstudios.tripod.com/|Lightyear Studios is a group of TI-Calulator programmers specializing in TI-83+ BASIC, also has stuff for the 83 and 89.
+Matt's TI-83+/83 Basic Site|http://tigames.homepad.com/|I have hosted many of my Basic TI-83+/83 games along with others that people sent me.
+MaxCoderz Software|http://www.maxcoderz.f2s.com|A company of talented programmers dedicated to developing high-quality programs for different platforms in various languages. We specialize in developing for TI-Graphing Calculators, PalmOS, and the PC.
+MDDB programs|http://go.to/mddb|A one-man software studio specializing in high quality TI-Basic language programs for the TI-83 and TI-83+ calculators.  Selected programs include Chess X!, a full featured two player Chess Game, the Universal Currency Exchange 83, and several other utilities, math, and science Programs.
+Michael Fox's Homepage|http://www.foxmj.org/|Programs he has written for the TI series of graphing calculators.  A well-designed site.  Check it out.
+N7Soft|http://n7soft.sheddtech.com|We are programming group that specializes in BASIC strategy games.
+Newbie's Ti-83 Site|http://newbie83.basicguruonline.com/|A website dedicated to the Ti-83 BASIC with tutorials, programs, links, and membership.  Come check it out!|
+Program Your Calculator|http://odin.prohosting.com/mjs2k/|A TI-83 / TI-83+ BASIC tutorial. Covers everything from the absolute basics to advanced graphics, and has an archive of all the best calculator games, as well as troubleshooting information.
+Radical Productions|http://www.geocities.com/botherdelic/|Come check out this site. It has great programs that only I have made. Games, OS's, processors, you name it, I've got it!|
+Reef Inc.|http://www.fortunecity.com/business/buseight/1151/index.htm|A site about TI-83 and TI-83 Plus programs and tutorials. It has links, and programs that you can download.  Just in its infancy, but a good site.
+SowbySoft Technologies|http://www.geocities.com/sowby7/|82/83/83+ programs, hardware, great GUI's, useful calc utilities, message board, links, news, upcoming projects, and other TI stuff
+TI 83 ConneXXion|http://ti83games.cjb.net|Great place to find basic and ion games for the TI-83(+), with many links, explanations,...
+TI Calculators|http://natery2000.basicguruonline.com/|Has downloads for 83+
+TI Central|http://scorpius.spaceports.com/~ti83/entrance.html|Number of programs to download.
+TI Link Zone|http://www.evs7.com/ti/list.html|A site with links to other TI-related sites
+TI Paradise|http://www.tiparadise.f2s.com/|TI-Paradise! 86 Calculator Content; games,tutorials,links,and every question you could possibly ask, and nearly every answer...
+Ti-83 Community|http://www.geocities.com/hayscorporation/ticommunity/|A site with Ti83 games, programs, news, and links.
+TI-8x Programming|http://freeweb.pdq.net/sauls1/|The home of many quality original games in BASIC and ASM, espcially Mega Man 86. A must-see for fans of quality BASIC, as these games are among some of the finest.
+ti-calc.org|http://www.ticalc.org/|The "official" unofficial headquarters for TI graphing calculators.  The best site to find all the different types of calculator programs you want for all the types of TI calculators.  Also includes tutorials, columns, news and articles.
+TI-News|http://www.tinews.net/|The #1 site for news about the TI community
+TI83-ZONE|http://ti83.50megs.com/|All about the ti83 calc.And even a play online-section!
+TideSigns TI-83 and 83+ Software|http://tidesigns.20m.com/|TideSigns develops software and has a growing set of archives.  Become a member and you can get a free TideSigns e-mail account.  You gotta check it out!
+TI|http://www.ti.com/calc/docs/graph.htm|Official Texas Instruments Graphing Calculator page with info on all their calculators.
+Twilight-TI|http://www.twilight-ti.org/|Lots of programs and excellent Tech Support
+Tyler's Ti-83 Plus Page|http://www.geocities.com/tx3_tx5/home.html|Ti-83+ games and programs.  A really good independently run site.
+Wade Peterson's home page|http://wadebp.cjb.net|Has a few TI-83 Games (BASIC and ASM), Music Files, and a good tutorial on advanced BASIC programming for the TI-83.  The tutorial gives some tricks on how to reduce program size.

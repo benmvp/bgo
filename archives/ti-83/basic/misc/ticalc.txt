@@ -1,0 +1,61 @@
+Mini Ticalc.org Website v1.0
+by Joey Gannon
+
+USER'S MANUAL
+
+-DISCLAIMER-
+This archive only contains programs by Joey Gannon, and, although it looks similar, it is not affiliated in any way with Ticalc.org. Also, even though it mentions it a lot, it is not affiliated with Basic Guru Online. Don't claim that you wrote these programs, but you may distribute them freely if you wish. I assume no responsibility if any damage is done to your calc, or if your memory is cleared. BACK UP your data!
+
+-INSTRUCTIONS-
+
+Send Ticalc.83g to your calculator. Do NOT ungroup it.
+(You may wish to clear your memory first, since it is designed to use almost all of the mem on the calc.)
+
+You can now run the program. Select AATICALC from the program menu and run it, just as you would with any other program. 
+When it first opens up, you'll see my wonderful opening graphic designed by Manaze, my graphic-designing alter-ego. (I used some the software written by Boris Casabonne to help me, though.) The first menu gives you the option of JShell, Animation, Games, Math Progs, or Who is Joey?. This manual will take you step by step through each menu and each program available to you.
+
+The most important thing you need to know is how to work the mouse. The mouse is the plus with the blinking center. (I don't know where it will show up on your screen, but it always shows up on mine near the bottom.) To select an item, just move the cursor to the line you want using the arrow keys and press Enter. You don't even have to use the left and right arrows! To go back from any sub-menu, or to quit from the main menu, move the cursor all the way to the bottom and press Enter.
+
+-MENUS-
+
+*JSHELL*
+
+JShell is an awesome BASIC O.S. that I wrote. It's huge, so I couldn't fit it all into the archive. When you first select JShell, a screen will come up describing what JShell contains. When you press Enter, you will see the real intro to JShell and a slideshow of screenshots of different menus and such within JShell. No part of that demo is interactive. The final screen will tell you where to download JShell and about future versions of JShell. You will then get a screen telling you that you are about to see a demo of the Genome Decoder. Press Enter, watch, and then read the story at the end. No part of the Genome Decoder demo is interactive. You will then be returned to the main menu.
+
+*ANIMATION*
+
+I have designed many animations in ASM using Boris Casabonne's Dez3c software. I have included a couple of them to show you what they look like. When you first select Animation, a screen will come up telling you about my animations and how they work. Press Enter to be sent to a menu of five choices: Dancing Hobbes, Rotating Note, Jumping Frog, 3D Alien Head, and More--->. If you select Dancing Hobbes or Rotating Note, just sit back and watch it loop a few times. If you select anything else, it will tell you where you can get the rest of my animations.
+
+*GAMES*
+
+When you select Games, you will find a list of my currently available games (only one at this point) and the games I'm working on and planning to release soon. If you have any ideas, e-mail them to me at Ocean1067@aol.com.
+
+*MATH PROGS*
+
+When you select Math Progs, you will read a screen about the purpose of my math programs. It tells you where to get more, and please, do not cheat by using these on tests. My teacher permits me to use them, but yours might not. The following section tells you how to use some of these programs.
+
+SHAPES
+This program provides the surface area and volume of five space figures. (Sorry, no S.A. for a cone, but I DID write the S.A. for a pyramid using only L, W, and H.) For the Cone, Cylinder, and Sphere, you can get your answers in full or in terms of pi. (For example, a cylinder with r=5 and h=8 would have a volume of 628.3185. If you get it in terms of pi, you would know that the answer was also 200 pi.)
+
+QUAD FORMULA
+This program simply takes A, B, and C and calculates out the two answers from the quadratic formula. If you don't know about imaginary numbers, this program will probably confuse you more than anything else will.
+
+DISTANCE FORM
+This will find the length of a line in space or on a coordinate plane. Just input the X, Y, and Z coords (just put 0 for Z if you're doing a plane) of the endpoints of a line and it will calculate the length in both radical form and full answer.
+
+Midpoint and More---> just take you to a screen telling you what else I have written and where you can get it.
+
+*WHO IS JOEY?*
+In case you don't know who I am, read this section. Just press Enter to view the next screen.
+
+-SPECIAL THANKS-
+I'd like to thank Boris Casabonne, Ben Ilegbodu, Ryan "Math Homie" Church, Mr. Forenza, TiCalc.org, and anybody else I forgot.
+
+-My Final Words-
+I know this was long-winded, but I hope it answers any questions you have. If you STILL have a question, e-mail me at Ocean1067@aol.com. I'll write back if I feel like it. For the final time, I am NOT responsible if your calc crashes or if you get caught cheating. DO NOT CHEAT!!! Otherwise, have fun. By the way, check back to see if I update this program, as I am constantly making it better.
+
+(c) 2001
+Joey Gannon
+Age 14
+
+-- All information in this document is accurate as of 7/19/01. --

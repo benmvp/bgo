@@ -1,0 +1,4 @@
+			   Decision Maker Pro
+			     Jason D. Ralphs
+
+	A simple 8-Ball program for BASIC or MirageOS.

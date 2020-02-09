@@ -1,0 +1,64 @@
+->Make sure to check out 0DESKTOP v2.3 , the best windows look alike prgm made by f4String Software!!:)
+
+Made by F4String Software
+Made by Erik J. Beerlage
+Made in Holland, Zoetermeer.
+05-08-2000 3:30
+(dutch: ja s'nachts ik was echt lekker op dreef)
+erikbeerlage@hotmail.com
+
+[Description Gone1 and Gone2]
+These two programs fake the reset function on your TI-83!!
+-Gone1 has very nice graphics but takes up a lot pictures (2-9 and 0).
+ The mem reset, prgm and checkram functions.
+-Gone2 is the small version, only the mem reset function.
+
+[Requirements]
+*ti-83
+*link cable
+*Gone1: 7875 bytes (not too much for this nice graphical interface)
+*Gone2:  248 bytes small version (allmost nothing)
+
+[Program uses]
+*Gone1: Pic2<->Pic9 and Pic0
+
+[Features]
+*Easy to use
+*Nice graphical interface Gone1
+*Small prgm Gone2
+
+[Installation]
+Send "Gone1.83p" and "Gone1(pic234567890).83g" or "gone2.83p" to your TI-83
+
+[keys in Gone1]
+Prgm		You enter the prgm menu -> no programs available.
+Mem(+)		You enter the memory menu -> except for delete everything works.
+Clear		Back to the begin situation.
+Quit(mode)	You quit the prgm.
+
+[keys in Gone2]
+Just follow 5 -> 1 -> 2  and it will be allright!
+
+[Files included]
+*Gone1.83p
+*Gone1(234567890).83g
+*Gone2.83p
+
+[Bugs]
+I think I got them all out of the program, if you find one feel free to email me.
+
+[Note]
+THANK YOU FOR USING THIS PROGRAM. DO WHATEVER YOU LIKE WITH IT, BUT:
+THIS PROGRAM MAY NOT BE CLAIMED IN ANY WAY BY ANYONE ELSE, IN PARTS OR WHOLE.
+If you are looking for nice programs try:	BASH v1.3 by Enigma Software;
+->						Phantasm v1.0.b by Dustin Graham
+->						Vista98e by DTECH Software
+
+->Make sure to check out 0DESKTOP v2.3, the best windows look alike prgm made by F4String Software!!
+
+
+[History]
+Version 1.0 <Gone1> 15/01/2000
+        Early version and only version.
+Version 1.0 <Gone2> 15/02/2000
+        Early version and only version.

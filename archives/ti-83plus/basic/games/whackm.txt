@@ -1,0 +1,40 @@
+WHACKM v1.2
+Tristan Griffith
+Email: mrtinkertrain@wickedco.com
+2-5-01
+
+Requirements: At least 2511 RAM and you need to have pic0 available.
+
+Whackm is a simple whack-a-mole game that tests your hand-eye 
+coordination.  
+
+There are 4 levels:
+1)Easy -each hit = 1 point
+2)Medium -each hit = 2 points	
+3)Hard -each hit = 10 points
+4)Very Hard -each hit = 30 points
+
+The numpad corresponds with the different holes, i.e. 7=top left, 
+3=bottom right, etc...
+When you have hit a "mole", you will see a little asterik.
+You are allowed 5 misses, and each miss counts as -1 point.
+
+You will notice that when you start your very first game, circles 
+will be drawn on the screen and then the game will proceed.  This DOES 
+NOT happen every time!  The program is simply drawing out the gamescreen 
+and then is saving it to pic0.  If you delete or change pic0 and your 
+gamescreen no longer has the nine "holes", then go to the homescreen 
+and enter in 0->LT(1).  LT is a list so the "L" should be the little L
+found in the list menu.  Setting LT(1) equal to zero, causes the 
+program to redraw the circles and save to pic0 again.
+
+If you have any questions or comments, please do not hesitate to 
+contact me at:
+
+mrtinkertrain@wickedco.com
+
+	  -or-
+
+    saxyboy85@aol.com
+
+Also, my AOL IM is saxyboy85.  

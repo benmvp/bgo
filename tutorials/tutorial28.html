@@ -1,0 +1,727 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 28: Matrices</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 28: Matrices</font><br />
+<font size="3">Using matrices in games...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 28: Matrices</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+We are going to continue with the trend of learning new things that will help us in making good games.  Have you ever wanted to make a game where the character moves around in a level?  Well, after finishing this tutorial, you will be able to and realize that <b>matrices</b> are not just used for math.  First, before we get into any code, we have to set one thing straight: it is one matrix, and two matrices.  There are no such things as matrixes.  I just thought that I should clear that up, because many people seem to make that mistake.  So, now that we have gotten the grammar lesson out of the way, let's start programming.</p>
+
+<p align="justify"><font size="3" color="#000080">Commands To Remember:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#augment">augment(</a></td>
+    <td>Returns a matrix, which is the second matrix added to the end of the first matrix as new columns</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#dim">dim(</a></td>
+    <td>Returns the dimension of a matrix in the form of a list</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#fill">Fill(</a></td>
+    <td>Stores a value into each element of a matrix</td>
+  </tr>
+</table>
+</p>
+
+<p><table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<colgroup span="3" width="33%"></colgroup>
+	<tr>
+		<td><b>augment(</b><i>matrixA</i>,<i>matrixB</i><b>)</b></td>
+		<td><b>dim(</b><i>matrix</i><b>)</b></td>
+		<td><b>Fill(</b><i>value</i>,<i>matrixname</i><b>)</b></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><b>{</b><i>rows</i>,<i>columns</i><b>}</b><img src="arrow.gif" width="12" height="8" border="0" alt="STORE" /><b>dim(</b><i>matrixname</i><b>)</b></td>
+	</tr>
+</table></p>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+There will be four codes in this tutorial, with the first just showing the mathematical aspects of matrices.  The second code shows how to transpose a matrix on the home screen, and the third shows how to display random text on a 4x4 grid, something you might use if you were making a memory game.  The final code is the big one, which shows how to make a level on the home screen.  One more thing before we get started.  If you wanted to use matrix [A], you cannot get it by pressing "<font color="#FFD700">[</font>," "A," and "<font color="#FFD700">]</font>."  To get matrix [A], you have to press the <img src="../index/matrx.gif" width="34" height="11" border="0" alt="MATRX" /> button and then choose from matrix [A] to [J].  This is important because you will get an ERR:SYNTAX message, if you do it the wrong way.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">{3,3}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim([A]):{3,3}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim([B])</font></b></td>
+    <td>Both [A] and [B] are 3x3 matrices</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">{3,2}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim([C]):{2,3}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim([D])</font></b></td>
+    <td>[C] is a 3x4 matrix and [D] is a 4x3 matrix</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Fill(3,[A])</font></b></td>
+    <td>Fills every element of [A] with 3s</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">[[1,2,3][4,5,6][7,8,9]]<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[B]</font></b></td>
+    <td>Sets the values of [B] row by row</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp [A],[B]</font></b></td>
+    <td>Displays [A] and [B]</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">3[A]<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[A]</font></b></td>
+    <td>Multiplies the value of every element in [A] by 3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-[B]<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[B]</font></b></td>
+    <td>Negates the value of every element in [B]</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp [A],[B]</font></b></td>
+    <td>Displays [A] and [B]</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">[[7,3][2,5][4,1]]<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[C]</font></b></td>
+    <td>Sets the values of [C] row by row</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">[[1,2,3][4,5,6]]<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[D]</font></b></td>
+    <td>Sets the values of [D] row by row</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp [C][D]</font></b></td>
+    <td>Displays [C] multiplied by [D]</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-[B]<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[B]</font></b></td>
+    <td>Negates the value of every element in [B]</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp augment([A],[B]</font></b></td>
+    <td>Displays [B] added on to the end of [A]</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp [B](3,2)</font></b></td>
+    <td>Displays value of element at row 3 and column 2</td>
+  </tr>
+</table>
+
+<p align="center"><img src="outputs/tutorial28a.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial28b.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial28c.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial28d.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut28a.zip'" /></p>
+
+<p align="justify">Let me start off explaining a couple of things.  To add or subtract matrices, the dimensions of the matrices <b>must</b> be the same.  To multiply two matrices together, the column dimension of the first matrix must match the row dimension of the second matrix.  In other words, if the first matrix has 4 columns (for instance a 5x4), then the second matrix must have 4 rows (for instance a 4x2) in order for multiplication to happen.  If those two are not the same, you will get an "ERR:DIM MISMATCH" message.  When you are setting the values of each element in a matrix, the values you enter go row by row.  So, if you have a 4x2 matrix, you'd first put the opening bracket "[," which indicates the beginning of the matrix.  Next, you'd put another opening bracket, which indicated the beginning of the first row of the matrix, which will have 2 elements on it.  Then after putting the closing bracket "]," which indicates the closing of the first row, you'd but another opening bracket to indicate the beginning of the second row.  You would continue this pattern until you've put the closing bracket, which closes the fourth row.  Then, finally, you would put another closing bracket to indicate the closing of the entire matrix.  The only other aspect of this code that I will explain is accessing an individual element in a matrix.  If you wanted to access an element that is in row 3 and column 5 of [G], then you would put "<font color="#008000"><b>[G](3,5)</b></font>."  This is very similar to how you accessed an element in a list when doing "<b><font color="#008000">L<font size="-2">1</font>(2)</font></b>."  This will be very helpful you want to display or compare a specific element in a matrix.  Next up is transposing a matrix onto the graph screen.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">{8,16}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim([A])</font></b></td>
+    <td>[A] is a 8x16 matrix</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(B,1,8</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(A,1,16</font></b></td>
+    <td>A random integer from 0 to 9 will</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">randInt(0,9)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[A](B,A)</font></b></td>
+    <td>be stored into each element of [A]</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of inner For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of outer For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(1,1,"[A](1,5)=</font></b></td>
+    <td>Displays "[A](1,5)=" on the top line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(1,12,[A](1,5)</font></b></td>
+    <td>Displays the value of the element at row 1 and column 5</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,1,"[A](7,13)=</font></b></td>
+    <td>Displays "[A](7,13)=" on the third line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,12,[A](7,13)</font></b></td>
+    <td>Displays the value of the element at row 7 and column 13</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,1,"[A](4,8)=</font></b></td>
+    <td>Displays "[A](4,8)=" on the fifth line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,12,[A](4,8)</font></b></td>
+    <td>Displays the value of the element at row 4 and column 8</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(7,1,"[A](5,1)=</font></b></td>
+    <td>Displays "[A](5,1)=" on the seventh line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(7,12,[A](5,1)</font></b></td>
+    <td>Displays the value of the element at row 5 and column 1</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(B,1,8</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(A,1,16</font></b></td>
+    <td>Displays every element of [A] in its</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(B,A,[A](B,A</font></b></td>
+    <td>corresponding spot on the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,50</font></b></td>
+    <td>Used to have a short period of time</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>after each matrix element is displayed</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of inner For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of outer For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+</table>
+
+<p align="center">Possible Output:<br />
+<img src="outputs/tutorial28e.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial28f.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut28b.zip'" /></p>
+
+<p align="justify">The whole purpose of this code was to show you that you could display what you have in a matrix on to the screen.  The reason that I have that first screen that just displays four values is so that you can see that the values match up.  As you can see in the screen shots, they do match.  You may be thinking that this does not have many practical uses.  You could also be asking how this would be done on the graph screen.  Well, you are right, but what you will learn in the next code will be another stepping stone in fully understanding how to use matrices.  Oh, and by the way, it will be on the graph screen.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">AxesOff</font></b></td>
+    <td><font size="2">Turns the graph axes off</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">FnOff</font></b></td>
+    <td><font size="2">Deselects all the Y= functions</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td><font size="2">Stores Xmin as 0</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td><font size="2">Stores Xmax as 94</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td><font size="2">Stores Ymax as 0</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td><font size="2">Stores Ymin as -62</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">{4,4}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim([A])</font></b></td>
+    <td>[A] is a 4x4 matrix</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(B,1,4</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(A,1,4</font></b></td>
+    <td>A random integer from 1 to 3 will be</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">randInt(1,3)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[A](B,A)</font></b></td>
+    <td>stored into each element of [A]</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of inner For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of outer For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp [A]</font></b></td>
+    <td>Displays [A]</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,0,4</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(15X,0,15X,-60</font></b></td>
+    <td>Creates a 4x4 grid on the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(0,-15X,60,-15X</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(B,1,4</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(A,1,4</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">[A](B,A)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />E</font></b></td>
+    <td>Stores the value of the matrix element into E</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If E=1:"HI<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str0</font></b></td>
+    <td>If value of the matrix element is 1, store "HI" into Str0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If E=2:"BYE<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str0</font></b></td>
+    <td>If value of the matrix element is 2, store "BYE" into Str0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If E=3:"HEY<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str0</font></b></td>
+    <td>If value of the matrix element is 3, store "HEY" into Str0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(15(B-1)+4,15(A-1)+2,Str0</font></b></td>
+    <td>Displays text in Str0 in the matrix element's</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>place in the 4x4 grid on the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of outer For loop</td>
+  </tr>
+</table>
+
+<p align="center">Possible Output:<br />
+<img src="outputs/tutorial28g.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial28h.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial28i.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut28c.zip'" /></p>
+
+<p align="justify">Okay...now for the explanation.  You should understand completely up until the 4x4 grid is drawn.  Technically, you should be able to figure out how the grid is drawn, but since I have never done anything like it before, I'll give you an explanation.  The For loop counts from 0 to 4, which is actually 5 times that it is being repeated.  If you look at the grid from left to right, you will see that there are 5 vertical lines.  If you look from top to bottom, you will see that there are 5 horizontal lines.  So, instead of using 10 Line( commands, we can do everything in 4 lines using the For loop.  When X starts off, it is 0, so a vertical line is drawn from (0,0) to (0-60).  Still with X being 0, a horizontal line is drawn from (0,0) to (60,0).  Next, when X is 1, a vertical line is drawn from (15,0) to (15,-60).  Notice how in both vertical lines drawn so far, the Y values have remained constant.  Since the Y values in the vertical lines won't change, we can just put the constants 0 and -60 in for the values.  X is still 1, so for the next horizontal line is drawn at (0,-15) to (60,-15).  In the case for the horizontal lines, the X values never change, so we use the constants 0 and 60 for it's values.  The next vertical line is drawn from (30,0) to (30,-60) because X is now 2 and 15 multiplied by 2 gives 30, which is the value for X.  The same pattern occurs for the next horizontal line with X still being 2, and for both lines when X is 3 and 4.  This is just basically a space saver.  Why do in 10 lines, which can be done in 4?  Okay, now on to the actual purpose of the code.  After the 4x4 grid is drawn, we use nested For loops to check through every element in [A].  An element in [A] (which is stored into user variable E) can have a value of 1, 2, or 3 because of the randInt command we used earlier in the code.  What happens next is the key to how you can have numerical values in a matrix come out to be text on the graph screen.  Three If statements check to see what the value of the element in [A] (user variable E) is, and depending on it's value, text is stored into Str0.  Str0 is then immediately displayed on the graph screen using a formula for <i>row</i> and <i>column</i> with the variables A and B.  You see, in the previous code we just did "<font color="#008000"><b>Output(B,A,[A](B,A</b></font>" because each character is assigned a specific slot on the home screen.  However, the graph screen is different.  If we did something like "<b><font color="#008000">Text(B,A,Str0</font></b>," all of the text would be jumbled in the top-left hand corner.  You will just have to figure out for yourself the formula you need to use in order to get the text to display correctly.  What I did to figure out the formula is see where I wanted the text in box at row 2 and column 3 and see what combination of addition, subtraction, and multiplication I need to get that value.  I hope you were able to understand all of that.  I would have to say that the hardest part of the whole code is just figuring out what formulas to use for <i>row</i> and <i>column</i> in the Text( command.  Once again, I color coded some values and text to see the correlation between the actual values in the matrix and what was displayed on the graph screen.  Next, we'll pool all the knowledge of this tutorial in order to make ourselves a simpe level in an RPG, where you have to collect treasures.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">{8,16<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim([A]</font></b></td>
+    <td>[A] is a 8x16 matrix</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">[[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2][1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1][1,0,2,2,0,1,0,2,2,2,0,2,0,2,2,1][1,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1][1,0,1,2,2,2,0,1,0,0,2,1,0,0,0,1][1,0,0,0,1,0,0,0,0,0,0,2,2,0,2,1][1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1][2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[A]</font></b></td>
+    <td>Sets the values of each element in [A] row by row (put all 8 lines on one line in your calculator)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,4,"LEVEL 1...</font></b></td>
+    <td>Displays "LEVEL 1..." on the fourth line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,300</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(B,1,8</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(A,1,16</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">[A](B,A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />E</font></b></td>
+    <td>Stores the value of the matrix element into E</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If E=0:Output(B,A," "</font></b></td>
+    <td>If value of the element is 0, display " "</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If E=1:Output(B,A,"!</font></b></td>
+    <td>If value of the element is 1, display "1"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If E=2:Then</font></b></td>
+    <td>If value of the matrix element is 2, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(B,A,"-</font></b></td>
+    <td>Display "-" (minus sign) on the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[A](B,A</font></b></td>
+    <td>Stores 1 as the value of the matrix element</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends If-Then statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of inner For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of outer For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">3<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[A](7,2</font></b></td>
+    <td>Stores 3 into [A] at row 7 and column 2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">3<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[A](7,3</font></b></td>
+    <td>Stores 3 into [A] at row 7 and column 3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />T</font></b></td>
+    <td>Sets user variable T to 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Repeat T=5</font></b></td>
+    <td>Repeat until 5 treasures have been placed on the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">randInt(1,16<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+    <td>Stores a random number between 1 and 16 into A</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">randInt(1,8<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores a random number between 1 and 8 into B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If [A](B,A)=0:Then</font></b></td>
+    <td>If there is no barrier at the random position, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">4<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[A](B,A</font></b></td>
+    <td>Store 4 into [A] at the random position</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(B,A,"*</font></b></td>
+    <td>Display "*" at the random position on the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">T+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />T</font></b></td>
+    <td>Increase T by 1</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends If-Then statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends Repeat loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[A](7,2</font></b></td>
+    <td>Stores 0 into [A] at row 7 and column 2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[A](7,3</font></b></td>
+    <td>Stores 0 into [A] at row 7 and column 3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">3<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:7<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Sets the values of A & B (coordinates of the "character")</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">2<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />C:7<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />D</font></b></td>
+    <td>Sets the values of C & D (coordinates of the blank space)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />T</font></b></td>
+    <td>Sets the value T (the amount of treasures collected) to 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">While T<5</font></b></td>
+    <td>Do everything while T is less than 5</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">getKey<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />K</font></b></td>
+    <td>Stores the key's key code into user variable K</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">A+(K=26)-(K=24)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />E</font></b></td>
+    <td>If <img src="../index/right.gif" width="11" height="12" border="0" alt="RIGHT" /> is pressed increase E by 1 or if <img src="../index/left.gif" width="11" height="12" border="0" alt="LEFT" /> is pressed decrease E by 1</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">B+(K=34)-(K=25)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />F</font></b></td>
+    <td>If <img src="down.gif" width="11" height="12" border="0" alt="DOWN" /> is pressed increase F by 1 or if <img src="up.gif" width="11" height="12" border="0" alt="UP" /> is pressed decrease F by 1</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If K=26 or K=24 or K=34 or K=25:Then</font></b></td>
+    <td>If <img src="../index/right.gif" width="11" height="12" border="0" alt="RIGHT" /> or <img src="../index/left.gif" width="11" height="12" border="0" alt="LEFT" /> or <img src="down.gif" width="11" height="12" border="0" alt="DOWN" /> or <img src="up.gif" width="11" height="12" border="0" alt="UP" /> are pressed (any directional key), then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If [A](F,E)=1:Then</font></b></td>
+    <td>If the spot you're going to move to is a barrier,</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">E+(K=24)-(K=26)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />E</font></b></td>
+    <td>Undo the increment/decrement of user variable E</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">F+(K=25)-(K=34)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />F</font></b></td>
+    <td>Undo the increment/decrement of user variable F</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">C<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:D<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores the blank space's position into the character's</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends "barrier-checking" If-Then statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />C:B<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />D</font></b></td>
+    <td>Stores the character's position into the blank space's</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">E<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:F<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Makes the character's future position the present one</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If [A](B,A)=4:Then</font></b></td>
+    <td>If there's a "*" in the character's new position,</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">T+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />T</font></b></td>
+    <td>Increase T (treasure count) by 1</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[A](B,A</font></b></td>
+    <td>Stores 0 in the matrix element where the treasure was</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends "treasure-checking" If-Then statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends "arrow key-checking" If-Then statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(B,A,"c</font></b></td>
+    <td>Displays the "character"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(C,D," "</font></b></td>
+    <td>Displays the blank space</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends While loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,4,"LEVEL 2...</font></b></td>
+    <td>Displays "LEVEL 2..." on the fourth line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,300</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+  </tr>
+</table>
+
+<p align="center">Possible Output:<br />
+<img src="outputs/tutorial28j.gif" width="129" height="110" border="0" align="middle" /> then <img src="outputs/tutorial28k.gif" width="129" height="110" border="0" align="middle" /> then <img src="outputs/tutorial28l.gif" width="129" height="110" border="0" align="middle" /> and then <img src="outputs/tutorial28m.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut28d.zip'" /></p>
+
+<p align="justify"><font size="3" color="#000080">Further Explanation:</font><br />
+Whew!  That was a lot of code...but wait until you see this explanation.  First of all, you must make sure that you input the numbers that go into [A] <b>exactly</b> how they appear in the code.  Any mistake will make the level look bad and possibly screw everything up.  If you hadn't already picked it up, in the matrix, a "0" stands for a blank space on the screen, a "1" represents an exclamation mark ("!"), and a "2" is a minus sign ("-").  After setting up the matrix, the program then goes through every element in [A] and displays it's corresponding character on the home screen.  So if a certain element had the value of 2, it would display a minus sign on the home screen.  You may have noticed that this time we did not store the characters into a string and then display the string after all the If or If-Then statements like we did in the previous code.  Instead, at each If statement we displayed the character without having to store it into a string.  I decided to do it this way because storing and then recalling values from a string slow down the loading process.  If we did it the other way, the level would take twice as long to fully load.  Speed is the key to a good game!  You may be wondering why, if that matrix element is 2, is it then changed to a 1.  The reason is that later on the program we will only want one number to stand for a boundary, not two.  This will become more apparent later on in the code.  After successfully setting up the level, next the program will randomly place 5 stars (treasures) on the screen for you to collect during game play.  In the Repeat loop, it gives random values for A and B (the position where the "treasure" will be placed) and checks to see if that spot on the home screen is blank by comparing the value of the corresponding element in [A].  The reason we have to do this is so that the star won't get placed on top of a barrier.  If that spot is blank, the value of the element becomes 4 and a "*" is displayed on the screen.  However, if the place where the "*" is going to place is not blank (the value of the matrix element is not 0), then the program skips that entire If-Then statement, loops back to the beginning, and gives new random values for A and B.  I purposely skipped over the part where [A](7,2) and [A](7,3) were given the values of 3 and the later stored as 0, but now I will explain it.  The reason those two elements were stored as 3 was so that when the 5 treasures were being randomly placed on the screen, they would not be placed where your "character" is going to start out at.  After all of the treasures have been placed, those two elements are then returned to their original value of 0 so that they will appear again to be just empty space.  You see we could have just designated 5 slots in [A] before when we were initializing [A], but I think it's better for the placement of the treasures to be random.  It's just more fun that way!</p>
+
+<p align="justify">Okay, moving on to the most difficult part of the code; the part that makes everything work.  In the While loop, user variables A and B will contain the coordinates of where your "character" will be placed on the screen.  User variables C and D will contain the coordinates of the "blank space."  The "blank space" is always going to be the previous position of the "character."  You see, once the character moves to a new location, the previous location needs to be deleted.  That "blank space" achieves that task.  User variable T will count the number treasures that you have collected.  The first three lines inside the While loop should look familiar to you.  However, if you notice the increment/decrement of A is actually stored into E, and the increment/decrement of B is stored into F.  User variables E and F contain the future position of your character designated by which arrow key you pressed.  The next line is very important.  It says that if a directional key was pressed then do everything between it and its corresponding End.  The reason why this is so important is that if a key was not pressed, we don't want anything to happen; we want everything to stay the same.  If you look at the code, only two lines are outside of that If-Then statement: the lines that display the character and the blank space.  So, if no key is pressed, the character and blank space are just displayed over each other until a key is pressed.</p>
+
+<p align="justify">Next, let's examine that big If-Then statement, which, by the way, should be all on one line.  The next line following that big If-Then statement is <i>another</i> If-Then statement, but this one checks to see if the future position of the character happens to be a barrier.  Do you remember back in the code when we were displaying the level and all values of 2 in the matrix were changed to 1?  Well, here is why we did that.  If we had two values for barriers, "1" for vertical ones and "2" for horizontal ones, we'd have to change that If-Then statement to read "<font color="#008000"><b>If [A](F,E)=1 or [A](F,E)=2:Then</b></font>" instead.  To avoid having to use the "or," we just made "1" stand for a barrier so that we could just have "<b><font color="#008000">If [A](F,E)=1:Then</font></b>."  Okay, the next two lines may be a little confusing at first, but once I explain it, I'm sure you'll get it.  So, if the future position is a barrier, we have to undo the changes to user variables E and F.  Let's say that both A and B were 6 (the character's current position).  If the right arrow key was pressed, that would give E the value of 7 and F would remain at 6.  However, if pressing the right button meant that we would run into a barrier, then we would have to undo that change to E.  So to do that, we have reversed that getKey formula so that if the right button was pressed, it would decrement the value of E.  If you look closely, the getKey code numbers are switched in both formulas.  In the first one it was "<font color="#008000"><b>A+(K=26)-(K=24)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />E</b></font>," but in the second one it's "<font color="#008000"><b>E+(K=24)-(K=26)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />E</b></font>."  I will explain the last line in the "barrier-checking" If-Then statement after explaining some other stuff first.  Okay, let's again say that both A and B have the value of 6.  C also is 6, and D is 7 because the character was just moved up one and the blank space would be underneath the character.  So, the <i>row</i>,<i>column</i> coordinates of the character is (6,6), and the blank space is (7,6).  Now that we have all of that settled, let's move the character to the left, but this time there is no barrier in that spot.  The program skips the whole "barrier-checking" If-Then statement and goes down to this line: <font color="#008000"><b>A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />C:B<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />D</b></font>.  What this line does is put the current position of the character in to the variables that hold the position of the blank space.  So now, both C and D are 6 because both A and B were both 6.  The next line (<font color="#008000"><b>E<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:F<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</b></font>) puts the future position of the character into the variables that hold its current position.  Now, A is 5 and B is still 6.  So before even displaying the character or the blank space, you can see that the character has moved to the left 1 space.  Before A was 6 and now it is 5, with B staying at 6 the whole time.  The blank space, which before was underneath the character, is now to the right of it because D is now 6.  The <i>row</i>,<i>column</i> coordinates of the character is (6,5), and the blank space is (6,6).  The next If-Then statement checks to see if the new position of the character (6,5) happens to be where a treasure is.  If there is a "*" in that spot, T (the number of treasures collected) is incremented by 1 and the value of that matrix element becomes 0.  We have to store that element as 0, so that if we happen to cross over that position later on, it will act as a blank space and not a spot where treasure is.  Finally, at the end of the While loop, the character and blank space are displayed.</p>
+
+<p align="justify">Okay, let me explain that last line in the "barrier-checking" If-Then statement.  The reason we need this line is so that the blank space would not be displayed on top of the character.  Let's once again say that A and B are both 6, but that last line is not in the code.  C is 6 and D is 7.  The up arrow is pressed (making E equal to 6, and giving F the value of 5), but there is a barrier above the character.  After the first two lines in that If-Then statement, E stays the same and F equals 6.  The line "<font color="#008000"><b>C<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:D<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</b></font>" is not there, so the If-Then statement is finished.  After the next two lines, A and B would both be 6, which is what we want because those were the original coordinates of the character.  However, after those two lines, C and D are also both 6.  Try it and see.  This causes a problem because the blank space would be displayed over the character.  So, in order to prevent this from happening, we have that line "<b><font color="#008000">C<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:D<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b>" inside the "barrier-checking" If-Then statement.  What this does is give A and B (which will be stored into C and D after the If-Then statement is finished) the values of C and D.  Okay, at the beginning of that line, A, B, C, E, and F are all 6, and D is 7.  After that line, A is still 6, but B is now 7.  Then when the calculator executes the line "<font color="#008000"><b>A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />C:B<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />D</b></font>," C is 6 and D is 7, instead of them both being 6 if the line "<b><font color="#008000">C<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:D<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b>" (inside the "barrier-checking" If-Then statement) wasn't there.  Finally, after executing the line "<font color="#008000"><b>E<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:F<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</b></font>," A and B are both 6, which is what we want.  The character is displayed at (6,6) and the blank space is displayed at (7,6), where they originally were in the first place.  Well, I think I've explained the code to death, so let's move on to the conclusion.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+With what you've learned in this entire tutorial, you should be able to make many more types of games now.  As shown in the tutorial, you should be able to make a level in an RPG, possibly a Tic-Tac-Toe game, and even a memory game where you have to match cards together.  Matrices  just makes doing some things very easy.  You may want to take a break, but when you are finished, go on to the next tutorial that covers fractions and decimals.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial27.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial29.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial27.html">Tutorial 27</a></td>
+	<td><a href="tutorial29.html">Tutorial 29</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

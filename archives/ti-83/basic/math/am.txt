@@ -1,0 +1,62 @@
+Made by F4String Software
+Made by Erik J. Beerlage
+Made in Holland, Zoetermeer.
+06-sep-2000 18:25
+erikbeerlage@hotmail.com
+
+[Advanced Math v1.0]
+Advanced Math version 1.0 is a math program with the following math rules: Logarithm, Power of, Differentiate, Integrate, Sin/Cos-rules, Sin/cos/tan-rules. No input!! Only the rules are plotted! Watch my screenshots.
+
+[Requirements]
+*ti-83
+*link cable
+*2474 bytes
+
+[Program uses]
+The program uses only theta as variable.
+
+[Features]
+*Easy to use
+*Graphical interface
+
+[Installation]
+Send "Advanced Mathematics v1.0" to your TI-83
+In the map "Advanced Math Individual Programs v1.0" are all the individual programs.
+
+[Key's]
+*[1]		-Logarithm
+*[2]		-Power of
+*[3]		-Differentiate
+*[4]		-Integrate
+*[5]		-Sin/Cos-Rules
+*[6]		-Sin/Cos/Tan-Rules
+*[Clear]	-Quits the program.
+*[enter]	-Back to menu
+
+[Files included]
+*Aamath
+*Zdfr
+*Zinr
+*Zlog
+*Zmac
+*Zscr
+*Zsct
+
+[Bugs]
+No bugs
+
+[Notes]
+THANK YOU FOR USING THIS PROGRAM. DO WHATEVER YOU LIKE WITH IT, BUT:
+THIS PROGRAM MAY NOT BE CLAIMED IN ANY WAY BY ANYONE ELSE, IN PARTS OR WHOLE.
+If you are looking for nice programs try:	BASH v1.3 by Enigma Software;
+->						Phantasm v1.0.b by Dustin Graham
+->						Vista98e by DTECH Software
+->						Advanced Pixle-list v1.3 by F4String Software
+		at ticalc.org			(saves pics into list and makes nice graphics)
+->		     or				Advanced Eurocalculator v1.5 by F4String Software
+	geocities.com/basicguruonline		(converts all valutas in EMU to Euro)
+->		misc. programs			Advanced Desktop v3.5 by F4String Software
+
+[History]
+Version 1.0 <> 15/sep/2000
+        First and I think last version.

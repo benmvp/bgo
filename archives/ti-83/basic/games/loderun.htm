@@ -1,0 +1,133 @@
+<HTML>
+<HEAD>
+<!--simon flannery web page design-->
+<TITLE>Lode Runner - Manual</TITLE>
+<style>
+<!--
+	A:link		{color: #0000CD; text-decoration:none;}
+	A:visited	{color: #0000CD; text-decoration:none;}
+	A:hover		{color: #0000CD; text-decoration:underline;}
+-->
+</style>
+</HEAD>
+<BODY bgcolor="ffffff">
+
+<CENTER><B><font face="Courier New, Courier" size="6">Lode Runner Manual</font></B></CENTER>
+
+<font face="Arial, Helvetica" size="2">
+
+<hr WIDTH="100%">
+
+<TABLE align="center" width="100%" cellpadding="2" cellspacing="3" border="0">
+<TR><TD width="50%"><B><CENTER><font face="Arial, Helvetica" size="2">SiCoDe Software</font></CENTER></B></TD>
+    <TD width="50%"><B><font face="Arial, Helvetica" size="2"><a href="http://sicode.ticalc.org">http://sicode.ticalc.org</a></CENTER></B></TD></TR>
+<TR><TD width="50%"><B><I><CENTER><font face="Arial, Helvetica" size="2">iNNoVATioN in TI-BASIC</font></CENTER></I></B></TD>
+    <TD width="50%"><B><font face="Arial, Helvetica" size="2"><a href="mailto:sicode@bigfoot.com">sicode@bigfoot.com</a></font><CENTER></B>
+</TD></TR></TABLE>
+
+<hr WIDTH="100%">
+
+<TABLE width="100%" cellpadding="2" cellspacing="3" border="0">
+<TR><TD bgcolor="999999" width="100%" COLSPAN="2"><font face="Arial, Helvetica" size=2><B>FILE INFORMATION:</B></font></TD></TR>
+<TR><TD bgcolor="dddddd" width="60%"><font face="Arial, Helvetica" size=2>Title: Lode Runner</TD>
+    <TD bgcolor="dddddd" width="40%"><font face="Arial, Helvetica" size=2>Language: Ti-Basic</font></TD></TR>
+<TR><TD bgcolor="dddddd" width="60%"><font face="Arial, Helvetica" size=2>Programmers: Brandon Green <a href="mailto:BrandonAGr@aol.com">(BrandonAGr@aol.com)</a> and Tim Parkin <a href="mailto:WizardTim@aol.com">(WizardTim@aol.com)</a></TD>
+    <TD bgcolor="dddddd" width="40%"><font face="Arial, Helvetica" size=2>Program Classification: Action Game</font></TD></TR>
+<TR><TD bgcolor="dddddd" width="60%"><font face="Arial, Helvetica" size=2>System: Ti-83 & Ti-83+</font></TD>
+    <TD bgcolor="dddddd" width="40%"><font face="Arial, Helvetica" size=2>Approx Size: 3000 bytes</font></TD></TR>
+</TABLE>
+
+<P><TABLE width="100%" cellpadding="0" cellspacing="0" border="0"><TR><TD width="100%" COLSPAN="2">
+<TABLE width="100%" cellpadding="2" cellspacing="3" border="0"><TR><TD bgcolor="999999" width="100%"><font face="Arial, Helvetica" size="2"><B>TABLE OF CONTAINS:</B></font></TD></TR></TABLE>
+</TD></TR>
+<TR><TD width="50%">
+<TABLE width="100%" cellpadding="2" cellspacing="3" border="0">
+<TR><TD bgcolor="dddddd" width="10%" ROWSPAN="2"><font face="Arial, Helvetica" size="2"><CENTER><B>1.</B></CENTER></font></TD>
+    <TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><B>About Lode Runner:</B></font></TD></TR>
+<TR><TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><a href="#what">What Is It?</a></font></TD></TR>
+<TR><TD bgcolor="dddddd" width="10%" ROWSPAN="1"><font face="Arial, Helvetica" size="2"><CENTER><B>2.</B></CENTER></font></TD>
+    <TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><a href="#install">Installation Instructions</a></font></TD></TR>
+<TR><TD bgcolor="dddddd" width="10%" ROWSPAN="1"><font face="Arial, Helvetica" size="2"><CENTER><B>3.</B></CENTER></font></TD>
+    <TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><a href="#control">Game Controls</a></font></TD></TR>
+<TR><TD bgcolor="dddddd" width="10%" ROWSPAN="3"><font face="Arial, Helvetica" size="2"><CENTER><B>4.</B></CENTER></font></TD>
+    <TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><B>Instructions:</B></font></TD></TR>
+<TR><TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><a href="#score">Scoring</a></font></TD></TR>
+<TR><TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><a href="#objective">Objective</a></font></TD></TR>
+</TABLE>
+</TD><TD width="50%">
+<TABLE width="100%" cellpadding="2" cellspacing="3" border="0">
+<TR><TD bgcolor="dddddd" width="10%" ROWSPAN="4"><font face="Arial, Helvetica" size="2"><CENTER><B>5.</B></CENTER></TD>
+    <TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><B>Troubleshooting & support:</B></font></TD></TR>
+<TR><TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><a href="#trouble">Troubleshooting</a></font></TD></TR>
+<TR><TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><a href="#bugs">Known bugs</a></font></TD></TR>
+<TR><TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><a href="#support">Contact support</a></font></TD></TR>
+<TR><TD bgcolor="dddddd" width="10%" ROWSPAN="3"><font face="Arial, Helvetica" size="2"><CENTER><B>6.</B></CENTER></font></TD>
+    <TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><B>Further Info:</B></font></TD></TR>
+<TR><TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><a href="#sicode">About SiCoDe</a></font></TD></TR>
+<TR><TD bgcolor="dddddd" width="90%"><font face="Arial, Helvetica" size="2"><a href="#credits">Credits & Acknowledgements</a></font></TD></TR>
+</TABLE>
+</TD></TR></TABLE>
+
+<P><a name="#what"><TABLE width="100%" cellpadding="2" cellspacing="3" border="0">
+<TR><TD bgcolor="dddddd" width="5%"><font face="Arial, Helvetica" size="2"><CENTER><B>1.</B></CENTER></font></TD>
+    <TD bgcolor="ffffff" width="95%"><font face="Arial, Helvetica" size="2"><B>What Is It?</B><BR>Lode Runner is the calculator reincarnation of a classic action/puzzle game. It involves negotiating a complex level involving ladders platforms and enemies to collect coins.</font></TD></TR>
+</TABLE>
+
+<P><a name="#install"><TABLE width="100%" cellpadding="2" cellspacing="3" border="0">
+<TR><TD bgcolor="dddddd" width="5%"><font face="Arial, Helvetica" size="2"><CENTER><B>2.</B></CENTER></font></TD>
+    <TD bgcolor="ffffff" width="95%"><font face="Arial, Helvetica" size="2"><B>Installation:</B><BR>1. Unzip the file LODE.ZIP into any directory, usually your Link Software's directory (e.g. C:\WINLINK).<BR>2. Run your Link Software and send the file LODE.83G to your TI-83/83+.<BR>3. Run the program prgmLODE to begin.<BR>4. Visit SiCoDe's website at http://sicode.ticalc.org/ for news and program updates.</font></TD></TR>
+</TABLE>
+
+<P><a name="#control"><TABLE width="100%" cellpadding="2" cellspacing="3" border="0">
+<TR><TD bgcolor="dddddd" width="5%"><font face="Arial, Helvetica" size="2"><CENTER><B>3.</B></CENTER></font></TD>
+    <TD bgcolor="ffffff" width="95%"><font face="Arial, Helvetica" size="2"><B>Game Controls:</B><BR>
+	<TABLE width="100%" cellpadding="2" cellspacing="3" border="0">
+	<TR><TD bgcolor="999999" width="100%" COLSPAN="2"><TABLE width="100%" cellpadding="2" cellspacing="0" border="0" bgcolor="999999">
+		<TR><TD width="20%"><font face="Arial, Helvetica" size=2><CENTER><B>KEY</B></CENTER></font></TD>
+	    	<TD width="80%"><font face="Arial, Helvetica" size=2><CENTER><B>ACTION</B></CENTER></font>
+		</TR></TD></TABLE></TD></TR>
+	<TR><TD bgcolor="dddddd" width="20%"><font face="Arial, Helvetica" size=2>Arrows</font></TD>
+	    <TD bgcolor="dddddd" width="80%"><font face="Arial, Helvetica" size=2>Left and Right move your character left and right. Up and down are used to climb ladders.</font></TD></TR>
+	<TR><TD bgcolor="dddddd" width="20%"><font face="Arial, Helvetica" size=2>2nd</font></TD>
+	    <TD bgcolor="dddddd" width="80%"><font face="Arial, Helvetica" size=2>Pause</font></TD></TR>
+	<TR><TD bgcolor="dddddd" width="20%"><font face="Arial, Helvetica" size=2>Enter</font></TD>
+	    <TD bgcolor="dddddd" width="80%"><font face="Arial, Helvetica" size=2>Unpause</font></TD></TR>
+	<TR><TD bgcolor="dddddd" width="20%"><font face="Arial, Helvetica" size=2>Mode</font></TD>
+	    <TD bgcolor="dddddd" width="80%"><font face="Arial, Helvetica" size=2>Make a hole in the ground to the <U>left</U> of the player.</font></TD></TR>
+	<TR><TD bgcolor="dddddd" width="20%"><font face="Arial, Helvetica" size=2>Del</font></TD>
+	    <TD bgcolor="dddddd" width="80%"><font face="Arial, Helvetica" size=2>Make a hole in the ground to the <U>right</U> of the player.</font></TD></TR>
+	<TR><TD bgcolor="dddddd" width="20%"><font face="Arial, Helvetica" size=2>Clear</font></TD>
+	    <TD bgcolor="dddddd" width="80%"><font face="Arial, Helvetica" size=2>Quit Current Game</font></TD></TR>
+	</TABLE></font>
+</TD></TR></TABLE>
+
+<P><a name="#objective"><TABLE width="100%" cellpadding="2" cellspacing="3" border="0">
+<TR><TD bgcolor="dddddd" width="5%"><font face="Arial, Helvetica" size="2"><CENTER><B>4.</B></CENTER></font></TD>
+    <TD bgcolor="ffffff" width="95%"><font face="Arial, Helvetica" size="2"><B>Objective:</B><BR>The point of Lode Runner is to collect all of the coins in the level without running into the enemies. To help you do this you have the ability to shoot holes in the ground. You can only shoot one hole at a time, and only in the ground. The enemy will fall into the hole if he walks over it. If you are in the hole when it regenerates, you will die. If the enemy is in the hole when it regenarates, it will climb back out. If the enemy is in the hole, then you can walk over the hole without being hurt. The two letters at the top of each level, are the passwords, type the password in at the appropiate screen to jump to that level.<a name="#score"><P><B>Scoring:</B><BR>Scoring is very simple, the number of coins you collect amounts to your score.</font></TD></TR>
+</TABLE>
+
+<P><a name="#trouble"><TABLE width="100%" cellpadding="2" cellspacing="3" border="0">
+<TR><TD bgcolor="dddddd" width="5%"><font face="Arial, Helvetica" size="2"><CENTER><B>5.</B></CENTER></font></TD>
+    <TD bgcolor="ffffff" width="95%"><font face="Arial, Helvetica" size="2"><B>Troubleshooting:</B><BR><B>I get a memory full error:</B> Reset your calculator then reload Lode Runner.<BR><B>I don't know how to transfer the program to my calc:</B> Read the instructions that came with your link software.<a name="#bugs"><P><B>Known Bugs/Problems:</B><BR>The only known 'bug' in the game, is when you fall on a coin, you do not immediatly pick it up, you must move then return to that spot to pick it up, this does not affect gameplay at all.<a name="#support"><P><B>Contacting Support:</B><BR>SiCoDe will always try to rectify any problems you have with this software. If you do run into any difficulties just email <a href="mailto:sicode@bigfoot.com">sicode@bigfoot.com.</a> or use our <a href="http://sicode.ticalc.org/siform.html">online form</a> to contact us. Please describe the problem fully in order to help us understand the problem.</font></TD></TR>
+</TABLE>
+
+<P><a name="#sicode"><TABLE width="100%" cellpadding="2" cellspacing="3" border="0">
+<TR><TD bgcolor="dddddd" width="5%"><font face="Arial, Helvetica" size="2"><CENTER><B>6.</B></CENTER></font></TD>
+    <TD bgcolor="ffffff" width="95%"><font face="Arial, Helvetica" size="2"><B>About SiCoDe:</B><BR>SiCoDe is a group of programmers who program for various TI calculators in the TI-BASIC language. SiCoDe aim to continually provide high-quality TI-BASIC programs. These are frequently considered to be inferior in all ways to ASM programs and we aim to eliminate this misconception!<P>SiCoDe is an affiliate of the TI-BASIC Quality Alliance which means that quality is assured in our products.<P>Further information about SiCoDe can be found by visiting our website at <a href="http://sicode.ticalc.org">http://sicode.ticalc.org/.</a> SiCoDe can be contacted at <a href="mailto:sicode@bigfoot.com">sicode@bigfoot.com.</a></font>
+	<P><a name="#credits"><TABLE width="100%" cellpadding="2" cellspacing="3" border="0">
+	<TR><TD bgcolor="999999" width="100%" COLSPAN="2"><font face="Arial, Helvetica" size=2><B>CREDITS:</B></font></TD></TR>
+	<TR><TD bgcolor="dddddd" width="50%"><font face="Arial, Helvetica" size=2><font face="Arial, Helvetica" size=2>Programmed by: Brandon Green and Tim Parkin</font></TD>
+	    <TD bgcolor="dddddd" width="50%"><font face="Arial, Helvetica" size=2><font face="Arial, Helvetica" size=2>Program Engine: Brandon Green and Tim Parkin</font></TD></TR>
+	<TR><TD bgcolor="dddddd" width="50%"><font face="Arial, Helvetica" size=2><font face="Arial, Helvetica" size=2>Original Game Idea: UnKnown</font></TD>
+	    <TD bgcolor="dddddd" width="50%"><font face="Arial, Helvetica" size=2><font face="Arial, Helvetica" size=2>Playtesters: Tim Parkin, Simon Flannery</font></TD></TR>
+	<TR><TD bgcolor="dddddd" width="50%"><font face="Arial, Helvetica" size=2><font face="Arial, Helvetica" size=2>Game Design: Brandon Green</font></TD>
+	    <TD bgcolor="dddddd" width="50%"><font face="Arial, Helvetica" size=2><font face="Arial, Helvetica" size=2>Level Design: Tim Parkin</font>
+	</TD></TR></TABLE>
+	<P><TABLE width="100%" cellpadding="2" cellspacing="3" border="0">
+	<TR><TD bgcolor="999999" width="100%" COLSPAN="2"><font face="Arial, Helvetica" size=2><B>ACKNOWLEDGEMENTS:</B></font></TD></TR>
+	<TR><TD bgcolor="dddddd" width="50%"><font face="Arial, Helvetica" size=2>SiCoDe wishes to thank...<BR>Everyone who supports SiCoDe Software.</font></TD></TR>
+	</TABLE>
+</TD></TR></TABLE>
+
+</font>
+</BODY></HTML>

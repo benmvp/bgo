@@ -1,0 +1,90 @@
+  The Complete Quadratic Formula Program Version 5.5
+		   Copyright © 2000-2001
+
+Author:	Ben Ilegbodu
+Date:  	2/22/01
+Format:	BASIC for TI-83
+Email:	Benahimvp@aol.com
+****************************************************
+Description:	Math Program in which user inputs
+		coefficients of a quadratic equation
+		and finds out what X equals and how
+		the equation is factored.  Also shows
+		the graph, and gives the discriminant
+		and the vertex of the equation.
+Files:		* benquad2.83p
+****************************************************
+Manual:	
+* Open BENQUAD.
+* An Opening Screen will appear.
+* Press ENTER, and you'll be prompted for what The
+  coefficients A, B, and C equal.  Input values.
+* If the values for X are rational, then the values are
+  displayed (at the top) with the way the equation is
+  factored (at the bottom)
+* If the answer(s) for X are not rational numbers then
+  the program will write the value for X just like it
+  would be in the quadratic formula.
+* After viewing the values, press ENTER.
+* A menu will appear asking whether you want to see the
+  values for X in decimal form or in fraction form,
+  graph of the equation, the discriminant, or the 
+  vertex.  It also asks if you want to do another
+  equation or if you want to quit.
+* If you choose either of the first three, you can
+  return back to the menu to choose another one.
+
+**Note**: "sqrt" stands for square root
+
+Example #1:		Example #3:
+A= 18			A= 7
+B= 9			B= 5
+C= -5			C= -16
+
+X=			   -5+-sqrt(473)
+	    1/3		X=----------------
+AND				14
+	   -5/6		
+	    		
+ (6X+5)			
+ (3X-1)
+
+Example #2:		Example #4
+A= 1			A=4
+B= 4			B=3
+C= 13			C=12
+
+X=			   -3+-i sqrt(183)
+	   -2+3i	X=-----------------
+AND				8
+	   -2-3i
+
+-NOT FACTORABLE-
+
+History:
+v5.5 -- Now the program correctly factors and graphs the
+	equation with a negative value for A
+	Also, can correctly handle fractional values for
+	A, B, or C
+v5.2 -- Added the fraction and decimal answer choice
+	feature
+v5.1 -- Fixed some bugs and added a little feature
+v5.0 -- Got rid of the the subprograms and again shrunk
+	the size of the file from 2500 bytes to 1595
+	bytes.  Now there's only one program.
+v4.5 -- Added discriminant and vertex functions
+v4.0 -- Made the text look better and be more
+	understandable.  Made the text of irrational
+	values exactly like it would be in the quadratic
+	formula.  Shrunk the size of the entire group of
+	programs in half from about 4500 bytes to about
+	2500 bytes.  Now the grouped file only has four
+	programs
+v3.5 -- Added radical simplification function
+v2.5 -- Made it AShell83 Compatible
+v2.0 -- Added the binomial factoring and linear function
+v1.0 -- Original release
+
+There should not be any bugs, but if there are, please 
+feel free to email me.  Please do not alter anything in
+the program without my consent.

@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 18: Functions</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 18: Functions</font><br />
+<font size="2">Drawing Functions on the Graph Screen...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 18: Functions</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+In this tutorial, we will learn about the draw commands that are used with functions.  These three draw commands have nothing to do with making pictures, but I decided to put them in a tutorial just because they are Draw commands.  These commands probably are used in math programs rather than in games.  In fact, I have never even used these commands before in any of my programs, so I'll be learning right along with you.  Although I haven't used these commands before, they seem pretty straightforward and easy to understand.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#tangent">Tangent(</a></td>
+    <td>Draws a line tangent to and expression at the value of X</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#drawf">DrawF</a></td>
+    <td>Draws an expression on the graph</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#drawinv">DrawInv</a></td>
+    <td>Draws the inverse of an expression</td>
+  </tr>
+</table>
+</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <colgroup>
+    <col span="1" width="40%">
+    <col span="2" width="30%">
+  </colgroup>
+  <tr>
+    <td><b>Tangent(</b><i>expression</i>,<i>value</i><b>)</b></td>
+    <td><b>DrawF</b> <i>expression</i></td>
+    <td><b>DrawInv</b> <i>expression</i></td>
+  </tr>
+</table>
+
+<a name="zstandard"></a>
+<p align="justify"><font size="3" color="#000080">The Code:</font><br />
+There will only be one code, which will cover Tangent(, DrawF, and DrawInv.  Because I don't use these commands often (really not at all), I'm just going to use the example codes that are in the TI-83 Graphing Calculator Guidebook.  Because these commands work with functions we'll have to change our window variables back to normal.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-10<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as -10</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">10<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 10</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">10<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 10</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-10<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -10</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">"X&sup3-2X&sup2-X+2"<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Y<font size="-2">1</font></font></b></td>
+    <td>Stores Y<font size="-2">1</font> as "X&sup3-2X&sup2-X+2"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">DrawF Y<font size="-2">1</font></font></b></td>
+    <td>Draws "X&sup3-2X&sup2-X+2" on the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Tangent(Y<font size="-2">1</font>,1.5</font></b></td>
+    <td>Draws a line tangent to "X&sup3-2X&sup2-X+2" at X=1.5</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">DrawF Y<font size="-2">1</font></font></b></td>
+    <td>Draws "X&sup3-2X&sup2-X+2" on the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">DrawInv Y<font size="-2">1</font></font></b></td>
+    <td>Draws inverse of "X&sup3-2X&sup2-X+2" on the graph screen</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut18a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial18a.gif" width="129" height="110" align="middle" border="0" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial18b.gif" width="129" height="110" align="middle" border="0" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial18c.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify"><font size="3" color="#000080">Further Explanation:</font><br />
+If you have run the program, <i>y</i>=<i>x</i>&sup3-2<i>x</i>&sup2-<i>x</i>+2 should be displayed on the screen, while the program is paused.  Then a line should run across the screen and touch the function where X=1.5, and the program should be paused again.  Then the screen should clear and then <i>y</i>=<i>x</i>&sup3-2<i>x</i>&sup2-<i>x</i>+2 should display again and then the inverse of it should be displayed on top of it.  Now this code isn't spectacular, but it does show how to use all of the commands.  You might be wondering how it can draw Y<font size="-2">1</font> when all the functions where turned off with FnOff.  What happens is that all the functions, including Y<font size="-2">1</font> are turned off when the program executes FnOff.  Then when "X&sup3-2X&sup2-X+2" is stored into Y<font size="-2">1</font>, Y<font size="-2">1</font> is activated and can be displayed.  Also, for those people who really know how to use their calculator, or have used it a lot in their math classes may realize that there is one command that'll set the window variables to what we've set them above.  That command and all of the other zoom commands are going to be covered in BASIC 83 Guru v3.0.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+As I have already said, these three commands are pretty much useless for our main purpose, which is making pictures.  The only command that may be a little helpful is DrawF, but the other two are mainly just for mathematical purposes only.  The next tutorial is on creating pictures, which is why we've been learning all of the previous commands in the first place.  Pictures are what separate good games from great games.</p>
+
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial17.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial19.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial17.html">Tutorial 17</a></td>
+	<td><a href="tutorial19.html">Tutorial 19</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

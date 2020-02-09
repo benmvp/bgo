@@ -1,0 +1,367 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 14: Pixels</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 14: Pixels</font><br />
+<font size="3">Drawing Pixels on the Graph Screen...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 14: Pixels</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+This tutorial is going to be very similar to the previous one.  Pixels and points are almost exactly the same; they differ in three ways.  The point commands use the coordinate system (<i>x</i>,<i>y</i>), while the pixel commands use the <i>row</i>,<i>column</i> method.  Because the pixel commands use the <i>row</i>,<i>column</i> method, you do not have to set the <a href="../index/n-z.html#windowvar">window variables</a>, which is why I prefer to use the pixel commands over the point commands when I'm combining them with text.  However, when I want to use lines and circles, I generally use the point commands.  The second way that the pixel commands differ from the point commands is that the pixel commands have a set boundary, just like <a href="../index/n-z.html#text">Text(</a>.  The boundaries are very similar to those of Text( except that the pixels can go down as far as row 62, while text stopped at row 57.  The final way that these two sets of commands are different is that the pixel commands don't have <i>marks</i> like the point commands do.  A pixel is just one little dot.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#pxlon">Pxl-On(</a></td>
+    <td>Draws a pixel at (<i>row</i>,<i>column</i>)</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#pxloff">Pxl-Off(</a></td>
+    <td>Erases the pixel at (<i>row</i>,<i>column</i>)</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#pxlchange">Pxl-Change(</a></td>
+    <td>Reverses or toggles the pixel at (<i>row</i>,<i>column</i>)</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#pxltest">pxl-Test(</a></td>
+    <td>Returns a 1 if pixel is on, and a 0 if pixel is off</td>
+  </tr>
+</table>
+</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="50%">
+<col span="1" width="50%">
+</colgroup>
+  <tr valign="middle">
+    <td><b>Pxl-On(</b><i>row</i>,<i>column</i><b>)</b></td>
+    <td><b>Pxl-Off(</b><i>row</i>,<i>column</i><b>)</b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b>Pxl-Change(</b><i>row</i>,<i>column</i><b>)</b></td>
+    <td><b>pxl-Test(</b><i>row</i>,<i>column</i><b>)</b></td>
+  </tr>
+</table>
+<br />
+
+<center><img src="pixels.gif" width="100" height="67" border="0" align="middle" alt="Pixel Boundaries" />
+You can't go past these boundaries</center>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+I'll be pretty much using the same codes as I did in the previous tutorial on points because they are pretty much the same.  The first code will be making a line using Pxl-On(, and then erasing it using Pxl-Off(, the second code will use Pxl-Change(, just as I used Pt-Change( in the last tutorials, and then final code will show the use of pxl-Test(.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,37,57</font></b></td>
+    <td>Draws a horizontal line that is 20 pixels long</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-On(31,X</font></b></td>
+    <td>in about the middle of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,42,52</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-Off(31,X</font></b></td>
+    <td>Erases 10 pixels of the horizontal line/font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut14a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial14a.gif" width="129" height="110" align="middle" border="0" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial13c.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify">All this program does is draw a line, wait for the user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" />, and then erases the middle half of it.  It's fairly simple.  I didn't show the example of underlining text because I wanted to combine, Pxl-On( and Pxl-Off( in one code.  To underline text, just use the same code as the one in the previous tutorial except you change Pt-On( to Pxl-On(.  Also, make sure you change the numbers that were in the coordinate system (<i>x</i>,<i>y</i>) to numbers in the <i>row</i>,<i>column</i> method.  Once again you can use the command <a href="../index/a-m.html#line">Line(</a> to do both operations in this code.  Next, using Pxl-Change(.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+ <tr valign="middle">
+    <td><b><font color="#008000">Pxl-On(31,5</font></b></td>
+    <td>Draws a pixel at row 31 and column 5</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-On(31,65</font></b></td>
+    <td>Draws a pixel at row 31 and column 65</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-Change(31,35</font></b></td>
+    <td>Toggles a pixel at row 31 and column 35</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-Change(31,5</font></b></td>
+    <td>Toggles the pixel at row 31 and column 5</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-Change(31,65</font></b></td>
+    <td>Toggles a pixel at (65,-31)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,100)</font></b></td>
+    <td>This line and the next line are used to</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>delay the program for about a second</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 1</font></b></td>
+    <td>Goto Label 1</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut14b.zip'" /></p>
+
+<p align="center">Repeatedly...<br />
+<img src="outputs/tutorial13d.gif" width="129" height="110" border="0" align="middle" /> and <img src="outputs/tutorial13e.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">This does exactly the same thing as the code in the previous tutorial, but it's a good example to show how Pxl-Change( works.  The next code is something you haven't seen yet and it's on the use of pxl-Test(.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-Change(31,47</font></b></td>
+    <td>Toggles a pixel at row 31 and column 47</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If pxl-Test(31,47)=1</font></b></td>
+    <td>If the pixel is on at row 31 and column 47, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(50,25,"THE PIXEL IS ON</font></b></td>
+    <td>Displays text "THE PIXEL IS ON    " (four spaces)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If pxl-Test(31,47)=0</font></b></td>
+    <td>If the pixel is on at row 31 and column 47, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(50,25,"THE PIXEL IS OFF</font></b></td>
+    <td>Displays text "THE PIXEL IS OFF "</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,100)</font></b></td>
+    <td>This line and the next line are used to</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>delay the program for about a second</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto 1</font></b></td>
+    <td>Goto Label 1</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut14c.zip'" /></p>
+
+<p align="center">Repeatedly...<br />
+<img src="outputs/tutorial14b.gif" width="129" height="110" border="0" align="middle" /> and <img src="outputs/tutorial14c.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">All this program does is when the pixel is toggled on by Pxl-Change(, it displays "THE PIXEL IS ON."  When Pxl-Change( toggles the pixel off, then the program displays "THE PIXEL IS OFF".  The reason why you have to add those extra four spaces at the end is that when the pixel is initially toggle on, then off, then back on again, the text will read "THE PIXEL IS ONF".  This is because "OFF" is longer than "ON".  The reason it had to be fours spaces instead of one like it'd be on the home screen is because a space on the graph screen is only one pixel.  On the home screen, a space is equivalent to a letter, but on the graph screen a space is just one pixel.  I hope I've explained that well enough.  I could have combined the If statements and the command line below them with a ":" (colon), but I didn't because I didn't have enough space.  When I tested the program on my calculator, I did join the lines with a colon, but the way I have it above, will work also.  Also, I didn't use an If-Then-Else construction because I have found out that the program runs faster with lots of If statements.  I found that it's better to use two If statements than one If-Then-Else statement.  In addition, to make the program run faster, I didn't store the answer to the pxl-Test( into a variable.  I could have stored the answer to pxl-Test( in "X" and then changed the If statements to read "If X=1..."  The way above not only saves bytes, but also makes the program run faster because it doesn't have to store a variable and then recall the value of it.  I just put the For loop at the end so you'll be able to read the text.</p>
+
+<a name="highlight"></a>
+<p align="justify"><font size="3" color="#00FF00"><b>Version 3.0 Update:</b></font><br />
+The code below does exactly the same thing as the last code in the <a href="tutorial13.html#highlight">previous tutorial</a>.  This code, once again, shows you how to "highlight" text to make it stand out.  The only difference is that it uses Pxl-Change(, instead of Pt-Change(.  Also, it highlights a little bit differently, but the end result is still the same.  Here's the code:</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">:</font></b></td>
+    <td><font size="2">For AShell, SOS, and TI-Explorer</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">AxesOff</font></b></td>
+    <td><font size="2">Turns the graph axes off</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">FnOff</font></b></td>
+    <td><font size="2">Deselects all the Y= functions</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">ClrDraw</font></b></td>
+    <td><font size="2">Clears the graph screen of all drawings</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">Text(29,23,"HIGHLIGHTED!!</font></b></td>
+    <td><font size="2">Writes "HIGHLIGHTED!!" in the middle of the screen</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">For(Y,29,35</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">For(X,22,70</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">Pxl-Change(Y,X</font></b></td>
+    <td><font size="2">Toggles all the pixels in a rectangle around the text</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">End</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font size="2" color="#008000">End</font></b></td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut14d.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial13f.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">Did you see the slight difference?  In the previous tutorial, the text was shaded from left to right.  However, in this code, the text was shaded from top to bottom.  In order for this to happen, you had to put the "Y" For loop first and the "X" For loop second.  Whichever way you want the text to be highlighted, that is which For loop you put first.  The reason it is "<b><font color="#008000">Pxl-Change(Y,X</font></b>" and not "<font color="#008000"><b>Pxl-Change(X,Y</b></font>" like it was in the last tutorial is because of <b>Pxl-Change(</b><i>row</i>,<i>column</i><b>)</b>.  <i>row</i> is actually the Y variable and <i>column </i>is the X.  I wanted to show you both ways so that you could pick which one you like best.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+That concludes this lesson.  I hope after reading this lesson and the previous lesson that you understand how to make points and pixels.  Knowing how to use these seven commands will help in making pictures of actual objects.  In the next tutorial, I'll finally show you how you use the Line( command.  Using this command is a lot easier than putting pixels or points in a For loop.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial13.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial15.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial13.html">Tutorial 13</a></td>
+	<td><a href="tutorial15.html">Tutorial 15</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

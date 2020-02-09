@@ -1,0 +1,6 @@
+Author-Chris Coykendall (darkGravity) Member#045
+Title-Up 2 Bat
+Platform-TI-83+
+Language-TI-BASIC
+Type-Game
+Description-A mini-game where you must hit the ball with a bat. One of my first proggies.(It shows :)

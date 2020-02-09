@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Member Submitted Tutorial #2</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+<style>
+<!--
+	select		{background-color:#dddddd; font-family:Verdana; font-size:8.5pt; color:black}
+	A:link		{color: #0000CD; text-decoration:none;}
+	A:visited	{color: #0000CD; text-decoration:none;}
+	A:hover		{color: #B22222;}
+-->
+</style>
+
+<link href="../../hlb.css" rel="stylesheet" />
+
+<script language="javascript" src="../../redirect.js"></script>
+
+<base target="_self" />
+</head>
+
+<body bgcolor="ffffff">
+<font face="verdana" size="1">
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../../home.html">HOME</a> <b>>></b> <a href="../index.html">Tutorials</a> <b>>> <i>Tutorial 2: Arrays -- The Amazing Data Structure</b></i></td>
+	</tr>
+</table>
+
+<center>
+<b>Advanced Game Techniques Tutorials
+<hr />
+Advanced BASIC<br />
+Tutorial 2<br />
+Arrays: The Amazing Data Structure</b>
+</center>
+
+<p><table align="right" width="210" cellpadding="0" cellspacing="0" border="0" bgcolor="dddddd">
+  <tr>
+    <td>
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td bgcolor="#FF6600" width="20" height="20">&nbsp;</td>
+          <td bgcolor="#666666" width="190" height="20"><font face="arial" size="1" color="#FFFFFF"><b>&nbsp;Advanced BASIC Tutorials</b></font></td>
+        </tr>
+      </table>
+      <table align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td>
+            <form>
+              <select class="pulldownMenu" onchange="if(options[selectedIndex].value) self.location.href=this.options[this.selectedIndex].value">
+                <option value="" selected="selected">Select Tutorial...</option>
+                <option value="tutorial1.html">1. Advanced Game Design</option>
+                <option value="tutorial2.html">2. Arrays: Data Structure</option>
+                <option value="tutorial3.html">3. Nibbles: Lists</option>
+                <option value="tutorial4.html">4. Nibbles: Hit Detection</option>
+                <option value="tutorial5.html">5. Scroll Screen Left & Right</option>
+                <option value="tutorial6.html">6. Advanced Graphics</option>
+                <option value="tutorial7.html">7. Trig Func & Relevant Uses</option>
+              </select>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></p>
+
+<p align="justify"><b>Part 1: Introduction</b>
+<br />First of all, your probably wondering what exactly advanced programming is. For our purposes, we can define advanced programming as the ability to use all the available facits of the TI-Basic to create quality and technicaly complex games. In order to do this you must understand how the calculator uses the commands on a very low level. To use TI-Basic to make quality games you have to know what your doing. Since ASM programming is very fast, you have to be able to program very intelligently to make quality games that will compete with them. The purpose of these tutorials is to explain several advanced programming techniques. By starting at game design and ending at 3-D programming. It explains mainly the theorys behind these techniques and not the exact syntax of things.</p>
+
+<p align="justify">For these tutorials it is assumed that you already know how basic basically works. If you don't know the syntax and how to use things like 'If' statements or 'Lbl's' then you should go read the many other Basic Tutorials out there on the web.</p>
+
+<p><b>Part 2: Intro to lists</b></p>
+
+<p align="justify"><b>Arrays:</b>
+<br />Basically an array is just an arranged ment of numbers. This arrangement can be either 1-d,lists, or 2-d,matrixes. To store large amounts of information, arrays become almost a requirementin advanced programming. Lists are most useful storing a long string of related information. And matrixes are often used for hit detection in games. If the calcultor doesn't know where everything is in the game, then it cann't know if they hit each other.</p>
+
+<p align="justify"><b>Lists:</b>
+<br />Lists are the most verstile data type on the TI-83. Since advanced data types such as structs, used in C and C++, are not available, the next best thing has to be used. A list is just an array of numbers that can be accesed with the memory address. Dont get scared at the terminology, lists are very easy to use. But the best thing about a list, is that you can name a list anything you like. And the good part about this is that other programs will not use your special list. If you used charachters to store, say the highscore, then that information might get damaged. So lists, are the data type that make storing information inbetween executions of the program possible (ok, you can use other things, but this tutorial isnt about those other things).</p>
+
+<p><b>Initializing:</b></p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+<colgroup>
+  <col span="1" width="75%">
+  <col span="1" width="25%">
+</colgroup>
+  <tr bgcolor="dddddd">
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">Before you can use a list, you have to tell the calculator that the lists exist. When you do this, the calculator is setting aside memory for the list. Creating a list is very simple, if you want a list named temp, that has 4 positions then type in:</div></font></td>
+    <td><font face="Tifont, Ti83pc" size="2">4->dim(<font size="-3">L</font>temp</font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This creates a string of numbers that look like this:</div></font></td>
+    <td><font face="Tifont, Ti83pc" size="2">{0,0,0,0}</font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">Note that the dim( command can be used both ways.<br />
+On homescreen enter:</div></font></td>
+    <td><font face="Tifont, Ti83pc" size="2">dim(<font size="-3">L</font>temp)<br />&nbsp; 4</font></td>
+  </tr>
+</table></p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+    <td bgcolor="999999" colspan="2"><font face="verdana" size="1"><div align="justify">The most amazing thing about this, storing into the dim(, is that it does not destroy any data if the list has already been initialized. This means that you can check to see if someone has installed a program. In the main program just type:</div align="justify"></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+      <td colspan="2"><font face="Tifont, Ti83pc" size="2">4->dim(Linstall<br />
+if <font size="-3">L</font>install(1) &nbsp;//then other program is installed<br />if not(<font size="-3">L</font>install(1) &nbsp;//other program not installed<br />&nbsp;delvar <font size="-3">L</font>install</font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">In the secondary program (one your checking to see if it is installed), just type:</div></font></td>
+    <td><font face="Tifont, Ti83pc" size="2">4->dim(<font size="-3">L</font>install<br />1-><font size="-3">L</font>install(1)</font></td>
+  </tr>
+</table></p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr bgcolor="dddddd">
+    <td bgcolor="999999" width="40%"><font face="verdana" size="1"><div align="justify">This creates many advanced features that your program can use. If you use this then you will probably need to have a reinstall or uninstall program. Using this same method, you can check to see if this is the first time that the person has run the program. If it is the first time then you can ask them questions to set up the program and store them in your install list. Just type in:</div></font></td>
+    <td width="60%"><font face="Tifont, Ti83pc" size="2">3->dim(<font size="-3">L</font>install &nbsp;//or whatever length you need for all your vars<br />If not(<font size="-3">L</font>install(1):Then<br />&nbsp;//this is first time they run prog<br />&nbsp;//put setup code in here.<br />&nbsp;//storepics here<br />1-><font size="-3">L</font>install(1)&nbsp;&nbsp;//dont forget to put this in the setup<br />End</font></td>
+  </tr>
+</table></p>
+
+<p align="justify">Using installation procedures will make your game look more complex and advanced. One big plus to this, is that you can make it create a pic, and then store it. This would save the time that it would take to redraw the pic, getting rid of unnecensary lag time during the game. Also,this would save the need to transfer the pic between calcs. And after you send the program to another calc, it will know that this is the first time it has run and redraw the pic, then store it.</p>
+
+<p><b>Part 3: Advanced Matrix Operations</b></p>
+
+<p align="justify"><b>Initializing Matrixes:</b><br />
+Alot of people dont utilize matrixes because they think that they are to hard. But matrixes are just as easy using lists. One thing that is tricky about matrixes is that they are referenced by Y,X, as opposed to X,Y for Pt-On( and Line(. You simply initalize matrixes as you would a list:</p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr bgcolor="dddddd">
+    <td width="50%"><font face="Tifont, Ti83pc" size="2">{4,2}->dim([A]</font></td>
+    <td bgcolor="999999" width="50%"><font face="verdana" size="1"><div align="justify">This would create a grid that is 4 spaces tall, and 2 spaces wide.</div></font></td>
+  </tr>
+</table><p>
+
+<p align="justify"><b>Utilizing Matrixes:</b><br />
+The most common use for a matrix is to store the data of the game screen. Use it for hit detection. For instance, if you were making a minesweeper game. At the beginning of the game you would randomly store mines throughout the matrix. Then, for the game, you would have a cursor that the user moved around. When the user pushed a key, then you would check the matrix, and output the number to the screen.</p>
+
+<p><b>List to Matrix Compression:</b></p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr bgcolor="dddddd">
+    <td bgcolor="999999" colspan="2"><font face="verdana" size="1"><div align="justify"It is often necessary to store many levels for a game. If you wrote a matrix in the game inside an statement:</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td colspan="2"><font face="Tifont, Ti83pc" size="2">If L=1 &nbsp;//if level is level one<br />Then<br />[[4,4,4,4],[5,6,2,3],[4,5,6,7]]<br />End</font></td>
+  </tr>
+  <tr>
+    <td bgcolor="999999" colspan="2"><font face="verdana" size="1"><div align="justify">However, it is unnecensary to use up that much space. You could rewrite it as follows:</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td colspan="2"><font face="Tifont, Ti83pc" size="2">3->dim(L1<br />If L=1:Then<br />4444->L1(1)<br />5623->L1(2)<br />4567->L1(3)<br />End</font></td>
+  </tr>
+  <tr>
+    <td bgcolor="999999" colspan="2"><font face="verdana" size="1"><div align="justify">But, if you have this, you must have a decompression algorithm. Every one knows that if you have the number 12. You can seperate the components 1 and 2 into seperate numbers:</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td colspan="2"><font face="Tifont, Ti83pc" size="2">12->A<br />ipart(A/10)->C<br />ipart(10*fpart(A/10))->D</font></td>
+  </tr>
+  <tr bgcolor="dddddd"><td bgcolor="999999" width="50%"><font face="verdana" size="1"><div align="justify">After the above: C=1, and D=2. Using this same method you can create a decompression algorithm:</div></font></td>
+    <td width="50%"><font face="Tifont, Ti83pc" size="2">{3,4}->dim([B]<br />For(Y,1,3<br />L1(Y)->Z<br />For(X,1,4<br />ipart(10*fpart((Z/10^X)))->[B](Y,X)<br />End:End</font></td>
+  </tr>
+</table></p>
+
+<p align="justify">While all this may seem like a waste just to compress a level, when you have more than 15 levels stored in a game, then every saved byte counts.</p>
+
+<hr />
+
+If you don't understand this stuff:
+
+<ol>
+  <li>Reread the tutorial.</li>
+  <li>Reread it again (throughly, and experiment with the code)</li>
+  <li>Then I can't write good tutorials, or</li>
+  <li>You should rethink wanting to program Advanced BASIC</li>
+</ol>
+
+<p align="justify"><a href="tutorial3.html">Next Tutorial:</a> Nibbles Game: Lists.</p>
+
+<p align="justify">Written by <a href="../../members/users/user021.html">Brandon Green</a>.</p>
+
+<p align="justify">Tutorial is property of Brandon Green, &copy; 2000. Do not use without permision. Algorithms are property of Brandon Green, e-mail for permision to use.</p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<!--#geoguide-->
+</font>
+</body>
+</html>

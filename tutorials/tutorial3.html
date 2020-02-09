@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 3: Storing & Deleting</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 3: Storing & Deleting</font><br />
+<font size="3">Storing and deleting user variables, strings, lists, matrices, etc...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 3: Storing & Deleting</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+In this tutorial, we will learn how to store and delete different variables including user variables, strings, etc.  After I give you the new commands, I will explain what each variable is.</p>
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#store"><img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /> (Store)</a></td>
+    <td>Stores a value into a variable</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#delvar">DelVar</a></td>
+    <td>Deletes from memory the contents of variable</td>
+  </tr>
+  <tr valign="middle">
+    <td valign="baseline"><font size="-2"><a href="../index/a-m.html#l">L</a></td>
+    <td>Used to create new lists</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#dim">dim</a></td>
+    <td>Displays the dimension of the list or matrix</td>
+  </tr>
+</table>
+<br />
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup span="2" width="50%"></colgroup>
+  <tr valign="middle">
+    <td><i>value</i><img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><i>variable</i></td>
+    <td><b>dim(</b><i>listname</i><b>)</b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b>DelVar</b> <i>variable</i></td>
+    <td><b>dim(</b><i>matrixname</i><b>)</b></td>
+  </tr>
+  <tr valign="middle">
+    <td valign="baseline"><font size="-2"><b>L</b></font><font size="2"><i>Listname</i></td>
+    <td><i>length</i><img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><b>(</b><i>listname</i><b>)</b></td>
+  </tr>
+  <tr valign="middle">
+    <td></td>
+    <td><b>{</b><i>rows</i>,<i>columns</i><b>}</b><img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><b>dim(</b><i>matrixname</i><b>)</b></td>
+  </tr>
+</table>
+</p>
+
+<p align="justify"><font size="3" color="#000080">New Variables:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#uservar">User Variable</a></td>
+    <td>An <a href="../index/a-m.html#alphachar">alpha character</a> in which you can store a number into</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#strigs">String</a></td>
+    <td>A type of variable in which you can store text</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#lists">List</a></td>
+    <td>A type of variable in which you can store a series of numbers</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#matrices">Matrix</a></td>
+    <td>A two-dimensional array</td>
+  </tr>
+</table>
+</p>
+
+<p align="justify">Due to questions that I have received from people who have used this tutorial, I feel that I should further explain something.  To enter in a matrix you press the <img src="../index/matrx.gif" width="34" height="11" border="0" align="middle" alt="MATRX" /> button and choose from the different matrices that are listed.  This is explained in the further definition of <a href="../index/a-m.html#matrices">Matrix</a>, but it seems that it was a problem.  You cannot enter a matrix by separately entering the three pieces.  You cannot enter "[A]", by pressing "[", "A", and then "]" separately; you must go to the matrix menu.</p>
+
+<p align="justify"><font size="3" color="#000080">The Code:</font></p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">DelVar B:DelVar Str3</font></b></td>
+    <td>Deletes the contents of user variable B and Str3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">DelVar L<font size="-2">2</font>:DelVar [D]</font></b></td>
+    <td>Deletes the contents of L<font size="-2">2</font> and [D]</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">7<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores 7 into user variable B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">"HI THERE"<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str3</font></b></td>
+    <td>Stores "HI THERE" into Str3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">3<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim(L<font size="-2">2</font>)</font></b></td>
+    <td>Stores 3 as the length of L<font size="-2">2</font></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">4<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim(<font size="-2">L</font>TEST)</font></b></td>
+    <td>Stores 4 as the length of <font size="-2">L</font>TEST</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">{2,3}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />dim([D])</font></b></td>
+    <td>Stores 2x3 as the dimensions of matrix [D]</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">{2,1,9}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />L<font size="-2">2</font></font></b></td>
+    <td>Stores number sequence 2,1,9 into L<font size="-2">2</font></td>
+  </tr>
+<tr valign="middle">
+    <td><b><font color="#008000">{2,0,0,0}<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" /><font size="-2">L</font>TEST</font></b></td>
+    <td>Stores number sequence 2,0,0,0 into <font size="-2">L</font>TEST</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">[[1,2,3][4,5,6]]<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />[D]</font></b></td>
+    <td>Stores two-dimensional array into matrix [D]</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp B,L<font size="-2">2</font>,[D]</font></b></td>
+    <td>Displays the value of user variable B, L<font size="-2">2</font>, and matrix [D]</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(7,1,<font size="-2">L</font>TEST)</font></b></td>
+    <td>Displays <font size="-2">L</font>TEST starting at row 7 and column 1</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(7,7,Str3)</font></b></td>
+    <td>Displays Str3 starting at row 7 and column 7</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut3a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial3a.gif" width="129" height="110" border="0" /></p>
+
+<a name="usedelvar">
+<p align="justify"><font size="3" color="#00FF00">Version 2.5 Update:</font><br />
+DelVar is generally not used at the beginning of the programs, but usually at the end.  It is used at the end of programs to save ram space.  If you delete the contents of a user variable, such as A, it gives you 15 more bytes of free memory.  So each time that you delete the contents of a user variable, you add 15 bytes of free memory, which is very vital.  Free memory helps your programs run faster and allows you to have more programs.  I want to give a special thanks to John Myers, who emailed me giving me this information.</p></a>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+First of all, notice that Str3 ("HI THERE") overlaps on <font size="-2">L</font>TEST {2,0,0,0}.  I did this on purpose to show you another example of how Output( overwrites.  Also, when you store 4 as the length of <font size="-2">L</font>TEST it creates <font size="-2">L</font>TEST.  If we were to put a <b><font color="#008000">:Disp <font size="-2">L</font>TEST</font></b> right after we store 4 as the length of <font size="-2">L</font>TEST and ended the program, the output would be <b>{0,0,0,0}</b>.  In this tutorial, I also tried to implement everything that we have gone over so far.  Storing is a <b>major</b> part of good programming especially, for games.  Next, we are going to go on to Conditionals, which are also a major part of good programming.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial2.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial4.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial2.html">Tutorial 2</a></td>
+	<td><a href="tutorial4.html">Tutorial 4</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

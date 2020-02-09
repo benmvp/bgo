@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 17: Shading</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 17: Shading</font><br />
+<font size="3">Shading in Areas on the Graph Screen...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 17: Shading</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+Shading really makes elements of your picture stand out.  It also adds some "color" to you pictures.  Do you remember back in Tutorial 15, where I showed you how to shade using many lines?  Well, now I'm going to show you the true way of shading, and using it to make cool designs.  In this tutorial, you will have to have some background in Algebra to be able to fully understand some concepts, but that shouldn't be a problem because you wouldn't have a graphing calculator if you haven't taken Algebra, yet.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#shade">Shade(</a></td>
+    <td>Shades in between a defined upper and lower bound with different patterns and patres</td>
+  </tr>
+</table>
+</p>
+
+<p align="justify"><b>Shade(</b><i>lowerfunc</i>,<i>upperfunc</i>[,<i>Xleft</i>,<i>Xright</i>,<i>pattern</i>,<i>patres</i>]<b>)</b><br />
+<b>**Note:</b>  I highly recommend that you thoroughly go over the further definition of Shade( because it has some information there that I will not explain here in the main tutorial.  I might use some words or phrases that you may not know or understand and are explained there.</p>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+There will be several different codes showing the different usages of Shade(.  This first code will show you how to shade the entire screen.  For right now, since we aren't using any Y= type of functions, will still use the same values for the window variables.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Shade(-62,0</font></b></td>
+    <td>Shades the entire screen from Y=-62 to Y=0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(31,25,"IT IS SHADED</font></b></td>
+    <td>Writes "IT IS SHADED"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Shade(-62,0,0,94,3,4</font></b></td>
+    <td>Shades the screen with negatively-sloped lines at every 4th pixel</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut17a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial17a.gif" width="129" height="110" align="middle" border="0" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial17b.gif" width="129" height="110" align="middle" border="0" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial17c.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify">As you can see this program shades the whole screen, and then displays "IT IS SHADED," while the program is paused.  Then when the user presses <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" />, it clears the screen.  The user then has to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> again and then the program shades the entire screen with negatively-sloped lines shaded at every 4th pixel.  I had to put the <i>Xleft</i> and <i>Xright</i> boundaries only because I wanted to set the <i>pattern</i> and <i>patres</i>.  You must set those two boundaries if you want to set the <i>pattern</i> and <i>patres</i>.  The only problem that I have with Shade( is that it draws the lower and upper bounds also.  In cases where I don't want the upper and lower bounds drawn, I add two Line( commands that will erase those drawn bounds.  Now, I want you to play around a little bit with the shading...change the boundaries, <i>pattern</i>, and <i>patres</i> to see which designs you like.  Once you're done, we're going to go on to shading with Y= functions, and we're going to have to change our window variables.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-360<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as -360</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">360<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 360</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">5<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 5</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-5<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -5</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Shade(-10,sin(x</font></b></td>
+    <td>Shades underneath the sine of X</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(50,20,"PUT TITLE HERE</font></b></td>
+    <td>Writes "PUT TITLE HERE"</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut17b.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial17d.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">I sometimes use this to make an opening screen from my programs.  The sine function makes it look as if I shaded in a hill and I just put my text somewhere in the shaded region.  You must set the window variables to what I have above for the sine function to come out correctly.  I know above I said that I didn't like that Shade( drew the upper and lower bounds, but in this case, it's really helpful.  We do not have to put "sin(x)" in Y=, because the command draws it for us.  Next, I show you how shade in a square, like we did back in <a href="tutorial15.html#box">Tutorial 15</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Shade(-45,-20,15,40</font></b></td>
+    <td>Shades in a 25x25 pixel squre</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(0,-45,94,-45,0</font></b></td>
+    <td>Erases the bottom line drawn by shade</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(0,-20,94,-20,0</font></b></td>
+    <td>Erases the top line drawn by shade</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Shade(-45,-20,15,40,4,3</font></b></td>
+    <td>Shades square with the specified <i>patterns</i> and <i>patres</i></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(0,-45,94,-45,0</font></b></td>
+    <td>Erases the bottom line drawn by shade</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(0,-20,94,-20,0</font></b></td>
+    <td>Erases the top line drawn by shade</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut17c.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial15g.gif" width="129" height="110" align="middle" border="0" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial17e.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify">This is once again where I hate when Shade( draws the upper and lower bound because it makes you add command lines to delete the lines that it drew.  I wish there was a way to turn off drawing the boundaries.  So in this code, shade draws the box shaded in, along with the boundaries, and then we have to add two Line( commands to erase the unwanted to lines.  In the next and final code, I will show you how to shade in a circle.  Shading in a circle isn't as obvious as shading in lines or other functions.  I actually <a href="mailto:ti-cares@ti.com">emailed TI</a> to ask them how to shade in a circle.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 94</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 0</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -62</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Circle(47,-31,30</font></b></td>
+    <td>Draws a circle centered at (47,-31) and radius of 30</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Shade(-<img src="squareroot.gif" width="7" height="10" border="0" align="middle" alt="Square Root" />(30&sup2–(X–47)&sup2 )–31,</font></b></td>
+    <td>Shades in the circle with positively-sloped</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000"><img src="squareroot.gif" width="7" height="10" border="0" align="middle" alt="Square Root" />(30&sup2–(X–47)&sup2 )–31,17,77,4,6)</font></b></td>
+    <td>lines at every sixth pixel</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut17d.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial17f.gif" width="129" height="110" align="middle" border="0" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial17g.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify">To shade a circle: <b>Shade(</b>-<img src="squareroot.gif" width="7" height="10" border="0" align="middle" alt="Square Root" />(r&sup2–(<i>x</i>–h)&sup2)+k,<img src="squareroot.gif" width="7" height="10" border="0" align="middle" alt="Square Root" />(r&sup2–(<i>x</i>–h)&sup2)+k[,<i>Xleft</i>,<i>Xright</i>,<i>pattern</i>,<i>patres</i>]<b>)</b>, where "r" is the radius of the circle, "h" is the x-coordinate of its center, and "k" is the y-coordinate of its center.  The whole reason why I showed you this, is because shading a circle is a lot different than shading other things.  As you should know already, Shade( works with functions.  It's easy to figure out the equation of a line, or a parabola (that's just basic algebra), but a circle is like the end of Algebra II.  A circle in the mathematical sense, is a type of conic.  I'm going to give a quick math lesson here.  The equation for a circle is: (<i>x</i>–h)&sup2 + (y–k)&sup2 = r&sup2, but the problem is that all functions have to be set equal to <i>y</i>.  If you set the equation for a circle equal to <i>y</i>, you'll get what you need to put in for Shade(.<br />
+(<i>x</i>–h)&sup2 + (<i>y</i>–k)&sup2 = r&sup2<br />
+(<i>y</i>–k)&sup2 = r&sup2 – (<i>x</i>–h)&sup2<br />
+<i>y</i>–k = &plusmn <img src="squareroot.gif" width="7" height="10" border="0" align="middle" alt="Square Root" />(r&sup2 – (<i>x</i>–h)&sup2)<br />
+<i>y</i> = &plusmn <img src="squareroot.gif" width="7" height="10" border="0" align="middle" alt="Square Root" />(r&sup2 – (<i>x</i>–h)&sup2) + k, which is the equation that you put in Shade(.  I added the "<font color="#008000"><b>17,77,4,6</b></font>" part just to show you how everything works.  I hope you've understood everything that I have gone over so far.  If you haven't taken Algebra II or gone over conics in your math class, it might be a little difficult.  But as long as you've had algebra, you should be all right.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+We are officially half way through v2.0!!!  With all the commands and tricks that I've taught you in the past six tutorial lessons, including this one, you should be able to make a really good picture on the graph screen.  However, that's not what we're going to do in the next tutorial.  Actually, there are three more Draw commands that I'm going to teach you first.  These commands really aren't necessary to make pictures like the commands that we've gone over so far, but I decided to add them anyway.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial16.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial18.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial16.html">Tutorial 16</a></td>
+	<td><a href="tutorial18.html">Tutorial 18</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

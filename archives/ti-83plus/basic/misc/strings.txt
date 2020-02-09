@@ -1,0 +1,12 @@
+String to List, and Back!
+By: Joe Bongi
+
+Strings2 is for general use in converting strings into lists and back.
+The usage is very obvious.
+
+String1 is for encrypting the string in Str1 and storing it into List STR2.
+Change wherever you see List STR2 to whatever string you want to store into.
+This is the format so other programs can call it in mid-running.
+
+String2 is for decrypting while a program is running. Change wherever you see List STR2 
+to the list that the string is stored in.

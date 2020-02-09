@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 19: Pictures</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 19: Pictures</font><br />
+<font size="3">Creating Pictures on the Graph Screen...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 19: Pictures</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+We've finally gotten to creating pictures.  Now we can compile all our commands that we've learnt in the past seven tutorials to make some really good pictures.  Pictures contain points & pixels, lines, circles, shading, text, and even functions.  A picture can also include axes and tick marks.  The picture does not include axes labels, lower and upper bound indicators, prompts, or cursor coordinates.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#storepic">StorePic</a></td>
+    <td>Stores current picture in designated picture variable</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#recallpic">RecallPic</a></td>
+    <td>Displays the chosen picture on the graph screen</td>
+  </tr>
+</table>
+</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="50%">
+<col span="1" width="50%">
+</colgroup>
+  <tr>
+    <td><b>StorePic</b> <i>n</i></td>
+    <td><b>RecallPic</b> <i>n</i></td>
+  </tr>
+</table>
+<p align="justify"><font size="3" color="#000080">New Variables:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#picturevar">Picture Variables</a></td>
+    <td>	The variables in which pictures are stored into</td>
+  </tr>
+</table>
+</p>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+There will two codes in this tutorial and links to two other codes for pictures.  The first code is simply just making a cylinder (a coke can), using lines and circles.  The second code is code for a picture that I actually use in one of my games.  It is a dartboard for my game called DARTZ 2000 with Link Play v1.5.  In that code, however, I will not give comments on every line like I usually do because there's really nothing to explain.  It is just lines, circles, and some text.  Here's the coke can:</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-10<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>Stores Xmin as -10</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">10<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>Stores Xmax as 10</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">10<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>Stores Ymax as 10</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-10<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>Stores Ymin as -10</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Circle(0,6,3</font></b></td>
+    <td>Draws a circle at (0,6) and radius of 3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Circle(0,-6,3</font></b></td>
+    <td>Draws a circle at (0,-6) and radius of 3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(3,6,3,-6</font></b></td>
+    <td>Draws a vertical line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Line(-3,6,-3,-6</font></b></td>
+    <td>Draws a vertical line segment</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Shade(-<img src="squareroot.gif" width="7" height="10" border="0" align="middle" alt="Square Root" />(9–X&sup2) – 6, <img src="squareroot.gif" width="7" height="10" border="0" align="middle" alt="Square Root" />(9–X&sup2) – 6</font></b></td>
+    <td>Shades in the bottom circle completely</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">StorePic 7</font></b></td>
+    <td>Stores the picture on the graph screen into Pic7</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for user to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">RecallPic 7</font></b></td>
+    <td>Displays the picture in Pic7 on the graph screen
+</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut19a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial19a.gif" width="129" height="110" align="middle" border="0" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial17b.gif" width="129" height="110" align="middle" border="0" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial19a.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify">The first thing that I want you to notice is how the picture come up much faster the second time, then when we were actually first drawing the picture.  This is the biggest advantage of using pictures: a whole lot of drawings can be displayed all at once.  In the time that it took that first circle to be completely finished, the program could have recalled about four or five different pictures.  Maybe even more.  If you had to display four circles (like in my dartboard picture) every time in your game, it will not only drastically slow down the game, but also waste memory and make the game really boring.  When people are playing games, they want the least amount of loading time possible.  You may be wondering why I set the window variables back to normal when we are using circles in lines.  The reason is that I wanted to make ellipses and not circles, actually.  Notice how I used the command Circle(, but it didn't come out as a perfect circle.  That happens when you set the window variables to certain values; the circles are compressed.  Next is the code that I use to make my dartboard for my DARTZ 2000 game.</p>
+
+<p align="justify">
+<font color="#008000">
+<b>
+<pre>
+:
+ClrDraw
+AxesOff
+FnOff
+0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin
+94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax
+-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin
+0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax
+Text(37,1,"5
+Text(2,27,"15
+Text(47,27,"25
+Text(12,27,"50
+Text(35,25,"100
+Circle(30,-30,25
+Circle(30,-30,20
+Circle(30,-30,15
+Circle(30,-30,5
+Line(60,-41,60,-48
+Line(90,-41,90,-48
+Line(71,-30,78,-30
+Line(71,-60,78,-60
+Line(60,-41,71,-41
+Line(60,-48,71,-48
+Line(71,-30,71,-41
+Line(78,-30,78,-41
+Line(90,-41,78,-41
+Line(90,-48,78,-48
+Line(78,-60,78,-48
+Line(71,-60,71,-48
+Text(0,65,"SCORE:
+StorePic 4
+</pre>
+</b>
+</font>
+</p>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut19b.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial19b.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">As you can see, on the left side are four circles with their point values next to them.  In the upper right it says "SCORE:", and below that is where the scores will be displayed.  At the bottom right is the meter.  A circle moves left to right and then up and down in the meter and where it stops in the meter is where the "dart" will be placed on the dartboard.  You can <a href="../cgi-bin/archives/ti-83plus/basic/games/progs.pl?prog=dartz">download DARTZ 2000 with Link Play v1.5</a> by visiting the DARTZ 2000 program profile page.</p>
+
+<p align="justify">Now if you want more examples of pictures, I have three more examples.  The first example is a <a href="lane.html">bowling lane</a> for my game, Supreme Bowling with Link Play v4.6.  This picture has lines, shading, and text.  The second code I made is extremely long.  I put it on my calculator using the TI-Graph Link.  If you have the TI-Graph Link Software, you'll want to check this code out because it actually makes a picture.  It's a picture of a <a href="turkey.html">turkey </a>that I also use in my Supreme Bowling game.  If the person makes three strikes in a row, the picture of the turkey flashes three times on the screen.  The third code is just as long as the second code with the turkey.  It is a picture of a really complicated <a href="maze.html">maze</a> that I created for my game, The Ultimate Maze 2000 v1.0.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+I hope you really enjoyed this tutorial because I enjoyed making it.  I only see one problem with the picture variables.  If you have a game that uses Pic9, let's say, someone else's program can overwrite that picture.  However, the only way that it can get overwritten is if the user lets it be.  In the next tutorial, I'll teach you how to do some simple animation that you can use in your opening screens of your games.  There are only four tutorials left.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial18.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial20.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial18.html">Tutorial 18</a></td>
+	<td><a href="tutorial20.html">Tutorial 20</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

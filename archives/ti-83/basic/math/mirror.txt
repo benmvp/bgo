@@ -1,0 +1,14 @@
+Mirror
+------
+
+Just draw 1,2,3 or 4 points and the program will "mirror" them.
+
+keys:
+
+up: up
+down: down
+right: right
+left: left
+enter: draw point
+
+stefanbroos@hotmail.com

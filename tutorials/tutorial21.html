@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 21: Reading Keypress</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 21: Reading Keypress</font><br />
+<font size="3">Beginning Level Use of getKey...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 21: Reading Keypress</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+This tutorial is going to be the beginning for you to be able to make bigger and better games because of one command.  This command can do so many things and that's why I had to separate it into three tutorials, otherwise there would have been one <b>long</b> one.  This specific tutorial, however, just shows you basic uses of it.  This is basically what is covered in the Guidebook that you receive when you get your calculator.  On the other hand, the next two tutorials contain tricks that I have seen and use in games.</p>
+
+<p align="justify"><font size="3" color="#000080">New Command:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#getkey">getKey</a></td>
+    <td>Returns the key code for the current keypress</td>
+  </tr>
+</table>
+</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td align="right"><img src="ti-83.jpg" width="92" height="190" border="0" alt="TI-83" /></td>
+    <td align="center"><img src="getkey.gif" width="134" height="187" border="0" alt="getKey key code" /></td>
+    <td align="left"><img src="ti-83plus.jpg" width="91" height="190" border="0" alt="TI-83 Plus" /></td>
+  </tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+Let me just explain a couple of things before we get started on the codes.  There's one big disadvantage with using getKey.  The command, getKey, does not wait for a key to be pressed, but checks to see what key was pressed exactly when the program executes that command line.  If a key is pressed a second earlier or later, it won't read it and it'll go on to the next lines of code.  You may be thinking, "then why do you have 3 tutorials on it?"  There is a way to make the command wait for a keypress.  What you have to do is put the command inside a loop that repeats itself until a key is pressed.  The first code will be a program that just displays the key code for the key that was pressed.  You might not understand half of this code, but try to absorb as much as you can and I'll give an explanation after.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">While 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">getKey<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />G</font></b></td>
+    <td>Stores the key's key code into user variable G</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">While G=0</font></b></td>
+    <td>This is used to make getKey wait for a keypress</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">getKey<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />G</font></b></td>
+    <td>Stores the key's key code into user variable G</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of the second While loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp G</font></b></td>
+    <td>Displays the key's key code on the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of the initial While loop</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut21a.zip'" /></p>
+
+<p align="center">Possible output:<br />
+<img src="outputs/tutorial21a.gif" width="129" height="110" border="0" /><br />
+Keys Pressed: 
+<img src="../index/2nd.gif" width="19" height="11" border="0" align="middle" alt="2ND" />, 
+<img src="../index/math.gif" width="27" height="11" border="0" align="middle" alt="MATH" />, 
+<img src="../index/6.gif" width="11" height="11" border="0" align="middle" alt="6" />, 
+<img src="../index/vars.gif" width="28" height="11" border="0" align="middle" alt="VARS" />, 
+<img src="../index/zoom.gif" width="29" height="11" border="0" align="middle" alt="ZOOM" />, 
+<img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" />, and 
+<img src="../index/sto.gif" width="27" height="11" border="0" align="middle" alt="STO" /></p>
+
+<p align="justify"><font size="3" color="#000080">Further Explanation:</font><br />
+I purposely put this program in a continuous loop so that you could read the key code of every key.  The only way that you can break program execution is by pressing the <img src="../index/on.gif" width="17" height="11" border="0" align="middle" alt="ON" /> key and choosing <b>1:Quit</b>.  You should definitely understand the first two lines of code and the line that says "<font color="#008000"><b>Disp G.</b></font>"  If you can think back to <a href="tutorial10.html">Tutorial 10: More Loops </a>(you can quickly look back if you want), you should be able to understand the three lines of code starting with "<font color="#008000"><b>While G=0</b></font>."  If you don't, here's a quick explanation:  As it also says in the definition of getKey, when no key has been pressed, getKey returns 0, which is then stored into G.  The While loop is just continuing to repeat itself and during the time between each keypress, getKey is returning 0.  That's why it says "<font color="#008000"><b>While G=0</b></font>."  When a key is pressed, that While loop ends and then the next command line displays G, which is the key's key code.  After displaying the key code, the program goes back to the "While 1" command line (I'll explain that shortly) and does everything after it all over again.  Let me tell you that this all happens very quickly.  That's why you can press two keys almost simultaneously and get two different key codes.  You only need those three lines starting with "<font color="#008000"><b>While G=0</b></font>," when you're displaying the getKey codes.  This is because it would continually display 0 until a key is pressed, and then it would display that key's keycode.  Try it and see.  Take out those three lines and see what the program does.  Generally, for all other programs, you don't need those three lines, just when you want to display the getKey keycode.  All you need is the "<b><font color="#008000">While 1</font></b>" part.  All that's left to explain are the two lines starting with "<b><font color="#008000">While 1</font></b>."  I wish I could give you a good explanation for this, but I cannot because I don't truly know how that works; I just know it does.  The "<b><font color="#008000">While 1</font></b>" acts like a continual loop; it just does everything between it and it's corresponding "<font color="#008000"><b>End</b></font>" repeatedly unless the program is broken by the user.  I've just found out that any number works after that While loop.  You could put "23323" and the program would work just the same.  The last line of code to explain is the "<b><font color="#008000">getKey<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />G</font></b>" command line that's between the While loops.  You may be thinking, "why do you need to put that there...it's unnecessary."  Well, I agree with you, but it is very necessary.  If you do not put that command line there, the program does not work, and I do not know why.  As you probably already know, getKey is generally used for games so that the user can move objects around on the screen and so that keys on the calculator can serve functions other than what they are normally used for.  Such an example is using <img src="../index/2nd.gif" width="19" height="11" border="0" align="middle" alt="2ND" /> to start a game, <img src="../index/mode.gif" width="26" height="11" border="0" align="middle" alt="MODE" /> to quit a game, <img src="../index/y.gif" width="14" height="12" border="0" align="middle" alt="Y=" /> to go to the Home screen of the game, and <img src="../index/stat.gif" width="27" height="11" border="0" align="middle" alt="STAT" /> to save your place in the game.  In the next code, I'll show you how that's done.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">While 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">getKey<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />G</font></b></td>
+    <td>Stores the key's key code into user variable G</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If G=21</font></b></td>
+    <td>If <img src="../index/2nd.gif" width="19" height="11" border="0" align="middle" alt="2ND" /> is pressed...</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,3,"GAME STARTED</font></b></td>
+    <td>Output on the screen "GAME STARTED"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If G=22:Stop</font></b></td>
+    <td>If <img src="../index/mode.gif" width="26" height="11" border="0" align="middle" alt="MODE" /> is pressed, end program execution</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If G=11:Output(4,7,"HOME</font></b></td>
+    <td>If <img src="../index/y.gif" width="14" height="12" border="0" align="middle" alt="Y=" /> is pressed, display "HOME"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If G=33</font></b></td>
+    <td>If the <img src="../index/stat.gif" width="27" height="11" border="0" align="middle" alt="STAT" /> is pressed...</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,4,"GAME SAVED</font></b></td>
+    <td>Display "GAME SAVED"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(A,1,200</font></b></td>
+    <td>This line and the next are used to make the text</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>stay up for a while before the screen is cleared</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of the initial While loop</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut21b.zip'" /></p>
+
+<p align="center">All possible outputs:<br />
+press <img src="../index/2nd.gif" width="19" height="11" border="0" alt="2ND" /> <img src="outputs/tutorial21b.gif" width="129" height="110" align="middle" border="0" /> or press <img src="../index/mode.gif" width="26" height="11" border="0" alt="MODE" /> <img src="outputs/tutorial1a.gif" width="129" height="110" align="middle" border="0" /><br />
+<b>OR</b><br />
+press <img src="../index/y.gif" width="14" height="12" border="0" alt="Y=" /> <img src="outputs/tutorial21c.gif" width="129" height="110" align="middle" border="0" /> or press <img src="../index/stat.gif" width="27" height="11" border="0" alt="STAT" /> <img src="outputs/tutorial21d.gif" width="129" height="110" align="middle" border="0" /></p>
+
+<p align="justify">You should be able to fully understand this code, but I do want to say a few things.  The reason that I separated the first and the last If statements into two lines is just because of space.  There wasn't enough space to fit the If statements and what it should do on the same line, so I just separated them each into two lines.  I recommend that you put them on one line in your program because that is the way I normally would do it.  The beauty of the "<font color="#008000"><b>While 1</b></font>" is that you do not need an Else command (did you notice that?).  If a key is pressed and it's not one of the four listed, none of those If statements are true, and it just goes back up to the "<font color="#008000"><b>While 1</b></font>" and starts all over again.  The last code is a revised form of a code that we have previously used before.  This program uses <a href="../index/n-z.html#randint">randInt</a> and displays words in random places on the screen.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Repeat getKey=63</font></b></td>
+    <td>Repeats until a <i>special</i> key is pressed</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">randInt(1,8)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+    <td>Picks a random integer between 1 and 8</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">randInt(1,12)<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Picks a random integer between 1 and 12</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(A,B,"HELLO")</font></b></td>
+    <td>Displays "HELLO" in a random spot</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,100)</font></b></td>
+    <td>This construction is used so that we will be</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td> able to see "HELLO" for a short while</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of the Repeat loop</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut21c.zip'" /></p>
+
+<p align="center">Possible output:<br />
+<img src="outputs/tutorial11b.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">We had this same code in <a href="tutorial11.html#game">Tutorial 11</a>, but it just continuosly looped around until the user pressed <img src="../index/on.gif" width="17" height="11" border="0" align="middle" alt="ON" /> because we did not know about getKey back then.  Now, the program displays "HELLO" in random places until a special key is pressed.  Do you know what key that is?  Do not scroll up and look up the key code.  Run the program and press all the buttons until you find out which one stops it.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+Do you now see why I had to break the tutorial on getKey up into three tutorials?  What we have gone over in this tutorial is just the basics; these are the regular uses of getKey.  You can use getKey to do much cooler things, which I will show you in the next tutorial and the one after that.  There is still far more exciting programs yet to come!</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial20.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial22.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial20.html">Tutorial 20</a></td>
+	<td><a href="tutorial22.html">Tutorial 22</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

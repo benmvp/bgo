@@ -1,0 +1,53 @@
+ 	             SUPER Pac v1.5
+		  Copyright © 2000-2001
+
+Author:	Ben Ilegbodu
+Date:  	05/10/01
+Format:	BASIC for TI-83
+Email:	Benahimvp@aol.com
+********************************************************
+Description:	Basic Pac-Man clone 
+Files:		* Superpac.83g  (Superpac.83p,
+		  Zpacenem.83p & Zpaclev.83p)
+		* Superpac.txt
+********************************************************
+Directions:
+Send Superpac.83g to your calculator.
+
+Object:
+The object of SUPER Pac is to beat all 10 levels and win
+the entire game.  Not an easy task at all.
+
+Keys:
+Arrow keys -- move "c" around
+MODE --	Pause during gameplay
+CLEAR -- Quit during gameplay
+
+Scoring:
+-  You get 3 points for each dot that you eat
+-  You get 5 points for each square that you eat
+
+Additional Info:
+The squares just give you 5 points instead of 3 points.
+They do not enable you to eat the enemy, which, by the
+way, can move through the walls.  After each level you
+get bonus points for the time remaining.  After every
+other level you get an extra life ("1-UP") to help you
+along the way.  Trust me, you'll definitely need it.  If
+you do beat the game, please let me know because I'll be
+very impressed!
+
+
+History:
+v1.5	--	Added 3 levels to make 10 total
+v1.0	--	First release
+
+Future Version:
+v2.0	--	More levels if lots of people beat the
+		game and any other suggestions I receive
+
+
+There should not be any bugs, but if there are, please 
+feel free to email me or if you have any suggestions
+(Benahimvp@aol.com).  Please do not change the author
+name.

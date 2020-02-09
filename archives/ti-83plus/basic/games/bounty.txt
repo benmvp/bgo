@@ -1,0 +1,8 @@
+Bounty Hunter Alpha v0.1
+By Netherworld Software
+Copyright 2001
+
+This is the first of the Alpha demos of Bounty Hunter.
+
+Alpha Version 0.1: -Can buy guns and armor (if player has enough money)
+                   -Explains why player is on Earth

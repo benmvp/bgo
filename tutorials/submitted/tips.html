@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tips & Tricks</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../../hlb.css" rel="stylesheet" />
+
+<script language="javascript" src="../../redirect.js"></script>
+
+<basefont size="2" />
+
+</head>
+
+<body text="#000000" link="#0000FF" alink="#008000" vlink="#0000FF">
+
+<font face="Times New Roman, Times, Serif">
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../../home.html">HOME</a> <b>>></b> <a href="../index.html">Tutorials</a> <b>>> <i>Tips & Tricks</b></i></td>
+	</tr>
+</table>
+
+<p align="center"><font size="4"><u><i><b>Tips & Tricks</b></i></u></font></p>
+
+<p align="justify"><i><b>Hey</b></i> everybody! Here's a bunch of tricks I know and I'd like to share with you all.</p>
+
+<p align="justify">
+All code is <u>underlined</u><br />
+* in front means works for 83+ ONLY.
+</p>
+
+<p align="justify">
+<b>Delaying Program:</b> Have you ever wanted to just delay your program on a screen for just a certain amount of time?  Well you can. Just use a loop command.<br />
+<i>Ex.</i> <u>For(A,0,400:End</u><br />
+Change 400 to however long you want it. Experiment a bit with it.
+</p>
+
+<p align="justify">
+<b>How Many Digits in the #:</b> You can also find out how many digits are in a number like 100 is a 3 digit number. This is a very useful trick. You can store it to a variable for later use. Be careful with negative numbers. You might want to add a <u>abs(</u> command at the beginning if you have negative numbers.<br />
+<i>Ex.</i> <u>int(log(#)+1</u>
+</p>
+
+<p align="justify">
+<b>Pt-On:</b> There are easy ways to make a cross and/or a little 3*3 square on the graph if you need to. X and Y are the coordinates<br />
+<i>Box Ex.</i> <u>Pt-On(X,Y,2</u><br />
+<i>Cross Ex.</i> <u>Pt-On(X,Y,3</u>
+</p>
+
+<p align="justify">
+<b>*Using Big Text:</b> Did you know that there are two different sized fonts you can use on the graph? Well there are. Use this to get the bigger font (it's the same font as the one you use on the homescreen).<br />
+<i>Big Font Ex.</i> <u>Text(-1,X,Y,"TEXT</u>
+</p>
+
+<p align="justify">
+<b>Turning of Pixels FAST!:</b> There are different ways you can use to turn pixels off faster than doing it one by one. Try these! Put spaces in for the text commands<br />
+<i>Turn Off Line Ex.</i> <u>Line(X1,Y1,X2,Y2,0</u><br />
+<i>Small Text Ex.</i> <u>Text(X,Y,"_______"</u>     (For each space it turns off 5 vertical pixels)<br />
+<i><b>*</b>Large Text Ex.</i> <u>Text(-1,X,Y,"______"</u>      (For each space it turns a 6*8 block off)
+</p>
+
+<p align="justify">
+<b>Displaying Consecutively:</b> Have you ever wanted to display a string and then your own words after that?  You can do this with any word display command but with the display command it does it a line down. And don't get rid of the quotation marks at the end.<br />
+<i>Ex.</i> <u>"BOB<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str1:Output(X,Y,Str1,"_IS COOL"</u>
+</p>
+
+<p align="justify">
+<b>Storing Expressions:</b> You can store expressions so you save memory.  Store you expression to a string if you need to use that expression a lot in your program.<br />
+<i>Ex.</i> <u>"abs(int(log(A)+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Str1</u><br />
+Then when you need it, define the variable being used and add this and store it to whatever variable you want.<br />
+<i>Ex.</i> <u>expr(Str1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</u>
+</p>
+
+<p align="justify">
+<b>Prompt Trick:</b> The command Prompt is used to let the user input a number for the prompted variable. You can prompt numerous variables like this:<br />
+<i>Ex.</i> <u>Prompt X,Y,Str1</u><br />
+You can also prompt for a Y? variable if you prompt for a string then use <u>string>equ(</u> command.
+</p>
+
+<p align="justify">
+<b>More Than 27 Variables!:</b> I know you all know about lists and matrices but if you need more variables you can use all those window variables (hit vars and then enter) and also I'm pretty sure you can use the finance variables (hit apps and then enter and go over to vars). You can also use them as characters! I like the thick N.</p>
+
+<p align="justify">
+<b>Lowercase Letters and Cool Characters:</b> Did you know you can use lowercase letters without assembly language. Here's how I make "Staind234".<br />
+<i>Ex.</i> <u>Output(1,1,"Staint(</u><br />
+<u>Output(1,6,"d234</u><br />
+The <u>int(</u> is used to get the lowercase i and n. Then I just output "d234" over the "t(". It runs it so fast you never see the "t(". There are also some accessible lowercase letters in the vars/statistics menu. And if you look around you can find some cool characters to use in different functions that you can use this trick on. Like the ">dec" character. Try it!
+</p>
+
+<p align="justify">
+<b>Get Rid of the "Done":</b> For some reason I just don't like having the calc display "Done". Well here's how to rid your self of it.<br />
+<i>Ex.</i> <u>ClrHome:Output(1,1,"</u><br />
+That's it. Just clear the screen and run the output command even if you don't output anything.
+</p>
+
+<p align="justify">
+Making Line and Pixel Easier to Use: I'm sure you all know this one, but maybe not.  Then you can use the same coordinates (except make the x's negative with lines) for lines and points as well as text and pixels.<br />
+<i>Ex.</i><br />
+<u>0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</u><br />
+<u>0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</u><br />
+<u>94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</u><br />
+<u>-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</u>
+</p>
+
+<p align="justify">Have a nice trick that's not on here? Well send it to me at <a href="mailto:Staind234@hotmail.com">Staind234@hotmail.com</a>!  I'll put it on the tutorial and give you credit for giving it to me. Hope you learned some new stuff!  <i><b>Later!</b></i></p>
+
+<p align="center"><font size="3"><b>By:</b> <a href="../../members/users/user027.html">Sean Sartell</a></font></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+<!--#geoguide-->
+</body>
+</html>

@@ -1,0 +1,54 @@
+Neon ? Guess v1.00			December 5, 2000
+==================
+For TI-83 Plus
+
+By:   Kee-Yip Chan
+AIM:   Blue Akuma 1216
+Email:   keeyip85@hotmail.com
+Website:   www.geocities.com/neonti
+
+
+
+About
+=====
+This is my first "game" for TI-83 Plus.  It's a simple guessing
+game.  However, what's different about this one is that it has
+way better graphics and organization than any guessing game 
+(or almost any game for that matter) that I know of.  It
+also has three levels of difficulty and a high(best) score for all
+of the three levels of difficulty.   You basically try to guess
+the correct number in the least amount of tries.  After every
+guess is a hint telling you whether you should go higher or lower.
+
+
+
+How to Run
+==========
+Send nguess83.8XG to your calculator.
+If your linking software doesn't automatically ungroup the files,
+goto into your memory and ungroup nguess83.8XG.
+Run nguess.8XP to play the game.
+
+
+
+How to Play
+==========
+At the title screen, press ENTER to go to the main menu.
+Select 1 to play, and 2 to exit the game.
+Select either 1, 2, or 3, depending on the level of difficulty you desire.
+Press   CLEAR   to return to the main menu.
+You should be able to see the high(best) scores for each of the levels of 
+difficulty just below where it says "Best Scores."
+Now that you're in the game, enter random numbers to guess
+the actual number.  Hints will be given after each guess.
+
+
+
+Credits
+======
+Ben Ilegbodu's basicguruonline tutorials.
+
+
+
+All art and programming done by me, Kee-Yip Chan.
+Send any comments, ideas, or other feedback to:   keeyip85@hotmail.com

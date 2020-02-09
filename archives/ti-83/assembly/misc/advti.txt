@@ -1,0 +1,182 @@
+
+
+	 _______________________
+	|			|   |--|	  |		   |	-    _
+	 --------|     |--------     __ 	  |		   |	    | \	     |
+		 |     |	    |  |	  |		   |	|   |  \     |
+		 |     |	    |  |  |---|   |		   |	|   |   \    |
+		 |     |	    |  |	   \      __	  /	|   |    \   |		version 3.6
+		 |     | 	    |  |	    \    /  \	 /	|   |     \  |
+                 -------             --		     \__/    \__/	|   |      \-|
+
+____________________________________________________________________________________________________________________
+
+
+
+[general information]
+
+Made by F4String Software
+Made by Erik J. Beerlage
+Made in Holland, Zoetermeer.
+15-okt-2000 19:40
+erikbeerlage@hotmail.com
+made by resolution: 1280*1024
+
+
+[Advanced TI-Windows v3.6]
+
+Advanced TI-Windows v3.6 is an update of the previous version (Advanced TI-Windows v3.3). It is an windows look-a-like Shell-like program with mouse. With the menu's: file, preferences, utilities, and ?(help). On the desktop you can open 3 games and open your own programs by pushing [alpha]. I have used for the desktop [ALPHA] instead of [2nd] to keep the program run smoothly. It has the following assembly subroutines: Open, Shutdown, Background, PXL Change, Contrast, Memory, Protector, Avail Prgm, Version and when nescessary Alphalock. 3 Different ackgrounds are included, can be changed anytime! Memory can be checked with the util menu. You can see a Gif animation file if you click with your mouse on the file information button at the left!! Check it out.
+
+
+[Requirements]
+
+*ti-83
+*link cable
+*10000 byte's
+
+
+[Program uses]
+
+*many variables A,B,C...
+*Pic0 as temporary picture
+*Lcod as password list
+*some individual programs
+ inside TI-Win use strings
+ (str1 and str7)
+
+
+[Features]
+
+*Easy to use
+*Graphical interface
+*Fast mouse
+*Password protection
+*A lot nice ASM programs
+*Quite fast for its
+ capabilities
+*included games
+
+
+[Installation]
+
+Send "Advanced Desktop v3.6" to your TI-83
+In the map "Advanced Desktop v3.6 individual programs" are all the individual programs.
+
+
+[Key's]
+
+*[Arrows]	-Moves the mouse quite fast.
+*[Enter]/[2nd]	-Selects, in the toolbar only.
+*[Alpha]	-Selects, at the desktop only.
+*[Clear]	-Quits the program direct.
+*[Y=]/[Del]	-Help about the controls.
+
+
+[Menu's]
+
+File:	Open		ASM	Open a Program on the calculator, enter name of the program.
+	Refresh			Refresh's the screen, useful after for example PXL Change.
+	Shutdown	ASM	The calculator will be shutdown.
+	Quit			The Program will be shutdown.
+Pref:	Password		Enter a new password.
+	Backgrnd	ASM	Check's wheter all prgm's are available.
+	PXL Change	ASM	Every Pxl on the screen will be changed.
+	Contrast	ASM	Modifies the calculators contrast.
+Util:	Memory		ASM	The amount of free memory.
+	Protector	ASM	(Un)Protects programs against editting.
+	Variables		Saves, loads and deletes variables.
+	Avail Prgm	ASM	Shows all the available Prgm's.
+?(help):Help			Help information.
+	Controls		Help about Controls.
+	Version		ASM	Version information.
+
+
+[Files included]
+
+*Aawin
+*Zalp
+*Zcod
+*Zcon
+*Zctl
+*Zdir
+*Zds1
+*Zds2
+*Zds3
+*Zhlp
+*Zind
+*Zinv
+*Zmem
+*Zmouse
+*Znam
+*Zoff
+*Zpr
+*Zpro
+*Zrun
+*Zupr
+*Zvar
+*Zver
+*File1-File8
+
+[Note how to put programs in]
+The user has to assign the icons to a program, see file4<info>.
+To do this enter File4-File8 in the Program Edit Function.
+In the file delete the contents and 2nd recall the program.
+The last thing you have got to do is enter 'ZNAM', in that file
+enter the name of the file for the desktop.
+!!But be sure to keep <or reenter>: 0->Xmin ; 94->Xmax ; 0->Ymin ; 62->Ymax
+recall picture0 at the end of your program also enter the right coordinates
+to A&B for the mouse: A->45 ; B->40 (only if the program uses these variables)
+
+
+[Bugs]
+I think I got them all out of the program, if you find one please email me.
+
+
+[Notes]
+THANK YOU FOR USING THIS PROGRAM. DO WHATEVER YOU LIKE WITH IT, BUT:
+THIS PROGRAM MAY NOT BE CLAIMED IN ANY WAY BY ANYONE ELSE, IN PARTS OR WHOLE.
+LAST THING: I DON`T TAKE ANY RESPONSIBILITY FOR THIS PROGRAM.
+
+
+[Recommended Misc. Programs]
+->						BASH v1.3 by Enigma Software
+->						Phantasm v1.0.b by Dustin Graham
+->						Vista98e by DTECH Software
+
+
+[F4String Programs]
+->						Advanced Pixle-list v1.3 by F4String Software
+		Programs are Available			(saves pics into list and makes nice graphics)
+->			 at			Advanced Eurocalculator v1.5 by F4String Software
+		www.ticalc.org and			(converts all valutas in EMU to Euro)
+->	  www.geocities.com/basicguruonline	Advanced Math v1.0 by F4String Software
+							(Math RULES <no input> int, dif, log, sin/...)
+->						Advanced Desktop v3.4-3.5 by F4String Software
+							(Windows look-a-like shell)
+->						Fake it v1.0 by F4String Software
+							(Fake the mem reset function, the best way in basic)
+
+[History]
+Version 1.0 <> 15/01/2000
+        Early version, the program worked with menu`s, pretty pethatic!
+        - Updated to achieve a more graphical version.
+Version 1.5 <> 01/07/2000
+	This version worked with the digits on the calculator.
+	- Updated to achieve a more graphical version.
+Version 2.0 <> 20/07/2000
+        Except for the icons just like version 2.3.
+        - Updated to include icons.
+Version 2.3 <> 22/07/2000
+	Size: 7500 bytes, without unnecessary stuff.
+	- Great version.
+Version 3.3 <> 09/08/2000
+	Size: 9250 bytes, without unnecessary stuff.
+	- Even more Great.
+Version 3.4 <> 09/08/2000
+	Size: 9500 bytes, without unnecessary stuff.
+	- Included one more game. Optimalised.
+Version 3.5: <> 16/09/2000
+	Size: 10000 bytes, without unnecessary stuff.
+	- Better Password function, protector & open -> alphalock
+Version 3.6: <> 12/10/2000
+	Size: 10000+ bytes, I made a lot subroutines in asm.

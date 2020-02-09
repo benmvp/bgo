@@ -1,0 +1,59 @@
+TUTORIAL 1 -StringCompression
+• Advanced BASiC programming
+• tutorial. By Martin Johansson
+• April 2001
+• smoother_1982@hotmail.com
+###################
+
+For you non C++ programmer, /!=/ means not equal. [2nd] [Math] 2
+/->/ is the store botton.
+
+
+• Following algorithm can help you saving space in your games.
+By using it you avoiding unnessesary memory. Example: you have created
+a game which contains 10 levels in it. You thought you were smart
+when you stored the levels in a matrix by using this method:
+
+:If L=1:then
+:[[1,1,1,1][1,0,0,1][1,1,1,1]]->[A]:End
+(this makes a square)
+
+	( [[1,1,1,1]
+	   [1,0,0,1]
+	   [1,1,1,1]] )
+
+
+If you instead creat a string and enter all your numbers after each
+other like this:
+
+:"111110011111"->Str1
+
+now have you saved alots of bytes. But good brings always bad, because now
+you have to have a decompression algorithm that uncompress the string to 
+your
+matrix, I have come up with a litle one like this:
+
+(remember the string?: "111110011111"->Str1)
+
+PROGRAM:STR2MTRX
+:3->R:4/->/C			// R=ROW, C=COLUMN
+:{R,C}/->/dim([A])
+:1->F
+:For(A,1,length(Str1))
+:exp(sub(Str1,A,1))/->/[A]((fPart(A/4)/!=/0)+ipart(A/4),F)
+:F(F<4)+(F<4)+(F=4)/->/F
+:End
+
+Now have the program decompressed the string into the matrix. After your 
+done with
+the matrix just typ: Delvar [A], then its deleted.
+____________________________________
+
+If you download my game, DStar v1.1 SE, then you can see that I have used 
+this code
+for making small levels. But its just a introducing thing, your not actually 
+saving
+space in that game because it just using one matrix, [A].
+
+
+/Martin Johansson

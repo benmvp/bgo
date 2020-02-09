@@ -1,0 +1,30 @@
+			Geometry Toolkit^2
+			  Jason D. Ralphs
+
+	This program was not designed to be used for cheating, if you use it as such I will not be held responsible.
+
+	With that out of the way I can now tell you about the program.  It is very simple to use.  You just press the number that corresponds with your choice.  This program does not do the work for you, i just reminds you of what the formulas are.  Yes I did also write Formulas Toolkit v1.08 and v1.09.  This is basically just an uprgrade of them.  It still contais Note-It, but I've added an Ion Shell v1.06, my Dice program, a command prompt, a password module, my new guess the number program,  a more comprehensive help guide, and a theorums/notes section. When I upgrade this I will be adding My Convert program. Or maybe I'll just upgrade that.  
+
+	Ion Shell v1.06
+1. Garbage Collect.  Frees up memory and helps prevent crashing
+2. Run Ion.  Runs Ion
+3. Back. Takes you back to the main options menu
+4. Exit.  Exits the program
+
+	Note-It v1.5
+1. New Fileset.  Creates a new set of notes.  You can only have one set.  Each set can hold a total of 230 charactors.
+2. Load Prev.  Restores old fileset for viewing.
+3. Delete all. Deletes a fileset.
+4. Back. Takes you back to the main options menu
+5. Exit.  Exits the program
+
+	Command Prompt
+PASS: New Password Maker, enter a negative number or 0 to disable it.
+CLS: Clear Screen
+BACK: Goes back to main menu.
+
+	You must enter the commands in caps.
+
+		Thank you for downloading this file.
+
+ 

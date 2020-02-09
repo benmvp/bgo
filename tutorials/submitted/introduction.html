@@ -1,0 +1,70 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Introduction</title>
+</head>
+
+<body bgcolor="#000000" text="#ffffff" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+<h1 align="center"><i>Introduction</i></h1>
+<br /><br />
+<h5 align="left">Created by: Lucas Johnson</h5>
+
+<img src="alum.gif" />
+
+<p>In this tutorial, you will be introduced to the world of TI-BASIC.</p>
+
+<table border="1" bgcolor="#000030" align="center" text="white" width="100%">
+<td align="center"><font size="4">- Preview -</font></td>
+</table>
+
+<font size="4"><p>Material</p></font>
+<p>In this lesson you will learn:</p>
+<ul>
+<li>How to create a new program
+<li>How to make a simple program
+<li>How a general program runs
+<li>The purpose and use of variables
+</ul>
+<font size="4"><p>Vocabulary</p></font>
+<dt>Command<dd>This tells the calculator to perform a specific task
+<dt>Variable<dd>This is an allowcation for a value, usually represented by a letter, where a value my be stored for later use in the program.
+<dt>Line<dd>This is what it sounds like. It is a line of code. As text overlaps onto the next line, it is still apart of the same line. Better described, one line is the area between the colon of the line you are on and the colon of the next line
+<br /><br />
+
+<table border="1" bgcolor="#000030" align="center" text="white" width="100%">
+<td align="center"><font size="4">- The Lesson -</font></td>
+</table>
+
+
+<p>If you have never made a program before or are having trouble getting started, this is the place to start. If you know a fair amount about programming in TI-BASIC, you can read the other tutorials. Although it is best to start at the beginning and work your way in order, if you know the content, skip around as you wish. If you do not, read each chapter. As I create examples, you will learn much better if you actually put in the same things I do into a program and run it.</p>
+
+<p>The first thing you need to do is be able to create a new program and understand how a program works. To do this, press [PRGM], [<], [ENTER]. The calculator will now ask you to name the program. It will already be in alpha-lock, so all you need to do is type in what you want the program to be called using the green letters above each key. Once you are done, press [ENTER]. Now you are in what is called the program editor. From here, you can create and modify programs you create. At the top of the screen, you will find the program name, and on the next line, a colon. The colon starts a line of code. This line, depending on what you put in it will tell the calculator to do different things. Press [ENTER]. You will find that a second colon appears on the next line. You may also put something in this line which will also tell the calculator to do something. When you run this program, the calculator will start at the very first line of the program and end after it gets past the very last line. So, the calculator will do whatever it is told to do in the first line, and then move on to the next. When it does what it is told on that line, it goes to the next. When there are no more lines left that tell the calculator to do something, the program is over. What exactly it is told to do in these lines makes the program function as it does.</P>
+
+<p>The first program we will create will tell the calculator to display test on the homescreen. After I write the program, I will tell you where you can find these commands and what they do. We will start with a very simple program, that happens to be a very traditional first program: a program that will display the text: "Hello World!". Read what I write into a program, listen to the explanation, and then try it yourself. You may call this program whatever you wish. When you get into the editor by creating a new program, type:
+
+<font color="#FFFFCC">
+<p>:ClrHome<br />:Disp "HELLO WORLD!"</p>
+</font>
+
+<p>Now, this program may be self-explanatory, but I'll explain it anyway. The first line tells the program to clear the home screen. When it does, it then displays the text "Hello World!". Now, to type this in, you first need the "ClrHome" command. This can be found when you are in the program editor by pressing [PRGM], [>], [8]. Now press [ENTER] to get to the second line. "Disp" can be found in the program editor by pressing [PRGM], [>], [3]. Now you need to type in the text. One thing you need to know about the "Disp" command, is that if you want to display text, you MUST have quotations around what you want the calculator to display. If you do not, the calculator will recognize what you have said by H times E times L and so on, and will return a value depending on that. Also, since you cannot times anything by " ", the calculator will give you an error message. To type in the text, first put the calculator in alpha-lock mode. You can do this by pressing [2nd], [Alpha]. You will notice that your cursor is now has an "A" inside of it. You may now type in the text with the little green letters above each key. The space character can be found at the bottom and the "!" can be found by pressing [MATH], [<], [4]. When you run this program, your screen will clear and you will see "HELLO WORLD!" (without the quotations) written at the top of the screen. After that, you will see "Done" written under it indicating that the program is over. If this is what you got, give yourself a pat on the back, if you did not, reread this tutorial. If that doesn't work, contact me for help.</P>
+
+<p>At this point you might be saying: "Okay, that's cool, so when to move on the games?" Well, games are much more complex then the level I'm teaching right now. Maybe you have seen a program that creates a game, and maybe you haven't, but games, the good ones take <i>hundreds</i> of lines of different commands to create. Sometimes it may take more than a <i>thousand</i> lines. So as you can see, not only does it take a good deal of time to develop games, we are not nearly at that point yet. Good games aren't just created overnight. Don't despair though and give up, we will definitely get there, and completing a game is a VERY satisfying feeling. That and taking what you know and manipulating it to do something you've never done before. So don't give up on this, it's a very rewarding experience.</p>
+
+<p>Now on to the next subject: variables. A variable is usually a letter, and has a value stored into it. This value can be called at any point in the program and modified at any point in the program. These keep track of important values that you may need later in a program. For example, look at a game like Tetris. Don't you think it's important to keep track of how many lines you have?, your score?, your level?, the speed of the blocks? the next block? the height of the current block?, and other things in the game that my ever need to be used again? These values are ALL stored into individual variables. In order to put something into a variable, you would first write in the value, then press [STO->] and then the variable you want to store this value into. Say you wanted to put 4 into the variable S, I would type "4->S" on that line.(note: in this language you cannot have variable names longer then one character long. So SN would be considered S times N and not it's own variable.) Then I would press [ENTER] to start a new line, as this action is considered it's own command. Say I wanted to take the value in N and store it to the value in Q. I would type in "N->Q". When I do this, Q is changed to whatever N was, but N itself is never changed. Say I wanted to add one to the variable X. I would type in "X+1->X". Get it? Well, if you don't try it in a program. Create a new program and type in:</p>
+
+<font color="#FFFFCC"
+<p="p">:5->A<br />:A-2->A<br />:Disp A</p>
+</font>
+
+<p>Before you run this, try and determine what this program will do. Then run the program. Where you right? You should have said that the program would have given you the answer of 3. If you did not and cannot reason what happened, go back and reread the tutorial.</p>
+
+<p>This pretty much sums up what you need to know before you get into the more enjoyable aspects of programming in TI-BASIC. If you understood this, proceed to the next tutorial.</p>
+
+<img src="alum.gif" />
+
+<h5 align="center">Questions? Comments? 
+Suggestions? <a href="mailto:luke195rs@aol.com">Contact me.</a></h5>
+<br /><br /><br /><br /><br /><br />
+<!--#geoguide-->
+</body>
+</html>

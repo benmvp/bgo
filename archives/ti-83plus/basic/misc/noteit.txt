@@ -1,0 +1,4 @@
+			Note-it v 1.05
+			Jason D. Ralphs
+
+	This is the best word processor I've seen for the Ti-83+.  It has a maximum of 230 Characters on the screen, this beats the assembly programs like txtview and letter; they only have a max of about 144, if I remember right.  And best of all its about half the size, I think its 537 bytes.  Finally, its for either BASIC or MirageOS, so it'll work on about anything.

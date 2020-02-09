@@ -1,0 +1,33 @@
+        **Word Wrap and Maximize this window to view correctly!!!**  
+          Dartz 2000 with Link Play v1.5  (AShell 83 Compatible)
+                          Copyright(C) 2000
+
+Editor: Ben Ilegbodu
+Date: 	06/10/00
+Format:	BASIC for TI-83 Plus
+Email:	Benahimvp@aol.com
+****************************************************
+Description:	1-player or 2-player dart game.
+Files:		* dartz.8xg(dartz.8xp, zdartz.8xp, & Pic4.83i)
+		* dartz.txt
+****************************************************
+Manual: Send dartz.8xg to calc.  Run Dartz.  An opening screen will appear.  Press enter.  A menu will show up asking if you want to clear the high score.  If you pick yes then the high score will be reset, if not then it won't.  Next, a menu will show up asking how many players are playing or a choice to play a link game between two people on two different calculators.  After choosing, follow all the directions until the circle starts moving from left to right.  When it is at the position you like, press enter.  You should aim for the center.  Next the circle will move up and down.  After you press enter, a cross will mark where the "dart" landed on the dart board.  At the top right is your score and the bottom center is how many points you got for that particular "throw".  After the game is over the scores will be displayed along with the high score at the bottom.  Press enter and a menu will ask if you want to play again.
+
+Keys:
+(While circle is moving)
+Enter -- makes the circle stop in that position
+
+(While game is in between "throws")
+Enter -- goes the next screen
+
+(Anytime)
+ON -- quits the game.  Press on and then quit.
+
+History:
+Version 1.5 --	Added a function so that when if you want to play again, it 		plays again without having to re-fill all that information 		again
+Version 1.1 -- 	Fixed it so that the user could not forget to press Enter in
+	       	Link Mode, which would cause them to be skipped.
+Version 1.0 -- 	First release w/2-player function, link
+		capability and High Score saves
+
+Please do not post an altered version of this program without my consent.  If you have any complaints, suggestions, ideas to make it better, comments or questions please feel free to email.

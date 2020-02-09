@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Games</title>
+</head>
+
+<body bgcolor="#000000" text="#ffffff" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+<h1 align="center"><i>Games</i></h1>
+<br /><br />
+<h5 align="left">Created by: Lucas Johnson</h5>
+
+<img src="alum.gif" />
+
+<p>In this tutorial, you will strategies for making games on the TI-83(+)</p>
+
+<table border="1" bgcolor="#000030" align="center" text="white" width="100%">
+<td align="center"><font size="4">- Preview -</font></td>
+</table>
+
+<font size="4"><p>Material</p></font>
+<p>In this lesson you will learn:</p>
+<ul>
+<li>What goes into a game
+<li>How to get started making your own games
+<li>How to use subroutines
+</ul>
+
+<table border="1" bgcolor="#000030" align="center" text="white" width="100%">
+<td align="center"><font size="4">- The Lesson -</font></td>
+</table>
+
+<p>Before reading this tutorial, it is important that you understand the material in the previous chapters. If you are cinfidnet in your abilities as a TIBASIC programmer, continue. This tutorial is here to help you in your game making process and give you a few pointers. </p>
+
+<p><b>First Steps</b></p>
+
+<p>First, it is important to understand that a game is simply an interactive program and that you cannot let it intimate you. You will need to start out with simple games before working your way up to more complex games. If you do not, it will impair your ability to think rationally about the process that goes into a game. This will very often lead to you becomming frustrated and abandoning the game.</p>
+
+<p>Next, I highly recommend that you do not get another person's game and modify it to make it your own even with their permission. To fully understand the process, you must do it yourself. That doesn't mean you shouldn't be allowed help, just that you shouldn't copy code and put it in your program. You should do every line of code by hand.</p>
+
+<p>I also highly recommend that you do a significant amount of work BEFORE you ever touch the calculator. The more planned out a program is, the more likely it is to be successful.</p>
+
+<p><b>Game Structure</b></p>
+
+<p>Now, lets look at the most common game structure. Most games will start out with a header. This header may include a main menu, instructions for the game, etc. It will also include any modifications the the modes that need to be done. For example, if a game works on the homescreen, it will most likely clear the homescreen first. If it uses the graph screen, it will probably turn functions, plots, grid, and axes off and will assign an appropriate window for playing the game. This is true for nearly all games. The part that follows, the body, depends on what kind of game you choose to make. Most games can be classified as an arcade style game, and in this type of game, you will now need to assign values to important variables you will need. If you don't know what you will need, think about all the values that you will want to remember that could, under a possible condition in the game, change in anyway. Then, you will use the draw features to draw what you need on the screen for the game to look right. Now, you will want to have what I call a "main game loop". This loop is a loop that will run until the game is over. I like to use "Repeat" for this. You will need to choose how the loop will determine when the game is over. After this loop will be the game over sequence where the program will either stop, or return to the main menu. A return to the main menu is a very acceptable place to use "Goto"and "Lbl" if you want. Inside this "main game loop" is where all of the REAL stuff takes place. You can divide it into three parts, User control, AI control, and neutral. Start with User control. What I mean by user control is establish all code you will need to interpret the keystrokes the user needs to press to operate the game. This will use "getKey". AI control will control all movement by the AI. This is often random, and the "randInt(" command can be useful. The syntax is randInt('lower boundary','upper boundary'[,'numbers to draw']). You will almost never need the third part of this command, so simply leave it out as the default is "1". In the third part, neutral, you will control aspects of the game that are neither user nor AI specific. This might include creating end game conditions, increasing the game spped, etc. When creating these parts, realize that this will all happen over and over in one big circle until the end game conditions are true. </p>
+
+<p>The only type of game I can think of that would not fit this style are text-based RPG's where a character can skip around to different menus in the program. This is one of the more easier games to develop as it requires little structure. However, like any other game, it requires a large amount of planning before hand.</p>
+
+<p><b>Subroutines</b></p>
+
+<p>A subroutine is a nifty little thing that is almost never used outside of games. Actually, few BASIC programmers use them at all. In case you do not already know this, subroutines are your friend. A subroutine is an individual program that is only run when called from a program. They are not built to be ran bythemselves, but in the middle of another program as an extension. When a program runs, it can, at any point in the program, call apon another program to act as a subroutine of that program. The program that called the other program is put on hold. The program that was called, or the subroutine, is then ran. This program will run until it is stopped by either "Return" or it runs to the bottom of the program. "Return" will stop the subroutine, and resume the execution of the caller program. However "Stop" will stop the subroutine AND the caller program, and you will find yourself on the homescreen with a "Done". A program can be called by another program, by pressing [PRGM], [<], and scrolling down to the program you wish to act as a subroutine. Now, why would I want to make a subroutine? Subroutines can make building a large program much more efficiant in more ways than one. First, it allows for easier troubleshooting. If you break off a chunk of your program to act in a subroutine, you will know where an error is better if one occurs. It also makes scrolling down easier, as scrolling down a 8,000 byte program can get tiresome rather quickly. The last thing it does is it makes it easily accessable at anytime in the program.</P>
+
+<p><i><b>More coming soon...</b></i></p>
+
+<h5 align="center">Questions? Comments? 
+Suggestions? <a href="mailto:luke195rs@aol.com">Contact me.</a></h5>
+<br /><br /><br /><br /><br /><br />
+
+<!--#geoguide-->
+</body>
+</html>

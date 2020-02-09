@@ -1,0 +1,440 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 7: Loops</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 7: Loops</font><br />
+<font size="3">For Loops...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 7: Loops</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+In this tutorial, we will learn how to use the For( command.  The For( command is used to either count or to do an action more than one time.  What if you had a program and you want to display the same text on all eight lines, how would you do it?  You could use the <a href="../index/a-m.html#output">Output(</a> command eight times, but that just wastes space (which is very valuable).  We can use the For( command to write it those eight times.</p>
+
+<p align="justify"><font size="3" color="#000080">New Command:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#for">For(</a></td>
+    <td>Executes everything inside the designated number of times</td>
+  </tr>
+</table>
+</p>
+<p align="justify"><b>For(</b><i>variable</i>,<i>begin</i>,<i>end</i>[,<i>increment</i>]<b>)</b>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+There are going to be four separate codes this time.  The first one doesn't actually use For(, but it's how we would do it if we didn't have For(.  While the first three programs count forwards (...1,2,3...), the fourth program counts backwards (...3,2,1...).  The fifth code is very useful in programming games.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="50%">
+  <col span="1" width="50%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />X</font></b></td>
+    <td>Store 0 into X</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">X+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />X</font></b></td>
+    <td>Add one to X and then re-stores it</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(X,5,"FOR LOOP")</font></b></td>
+    <td>Displays "FOR LOOP" on each line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If X&lt8:Goto 1</font></b></td>
+    <td>If X is less than eight, go to Lbl 1</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End the program</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut7a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial7a.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">This is what we'd have to do if we didn't have For(, because it does the same thing.  In fact when most programmers have a lot of commands that they want to be repeated, they use this construction instead of the For loop.  The next program does the same exact thing, but it uses the For loop.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="50%">
+  <col span="1" width="50%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,8)</font></b></td>
+    <td>X is going to be stored from 1-8</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(X,5,"FOR LOOP")</font></b></td>
+    <td>Displays "FOR LOOP" on each line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End the program</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut7b.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial7a.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">When X is stored from 1-8 , it makes the calculator output "FOR LOOP" on each line.  At the beginning X is 1 so it is displayed on the first line.  Then X is two and it's displayed on the second line, and so on.  The <a href="../index/n-z.html#stop">Stop</a> command at the end of the program isn't really necessary, but I just felt like adding it.  If it wasn't there, the program still would stop after completing the For loop.  When you run the program it looks like it just displayed all the lines all at once, but it really didn't.  It displayed each one individually, but since the program was so small it did it really quickly.  Now the next program will show you how to increment the For loop.  The code will look almost like the previous code, but there's one slight difference.  See if you can catch it.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="50%">
+  <col span="1" width="50%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,8,2)</font></b></td>
+    <td>X is stored from 1-8 with increments of 2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(X,5,"FOR LOOP")</font></b></td>
+    <td>Displays "FOR LOOP" on every other line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End the program</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut7c.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial7b.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">When you run the program, you'll notice that it displayed "FOR LOOP" on every other line.  That "2" after the 8 in the For loop is what changed that.  The "2" tells the calculator to do every other number between 1 and 8.  If you want, change the increment to 3 and see what happens.  In the first loop and it would do the exact same thing.  However, programmers usually do not put the "1" because it is implied.  The next program will count backwards.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,6,1,-1)</font></b></td>
+    <td>X is going to be stored from 6-1</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp X</font></b></td>
+    <td>Displays X</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End the For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End the program</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut7d.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial7c.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">All this does is display the value for X backwards.  Notice that you have to put the "-1" there for it to work.  In the second program you didn't have to put the "1", because it is implied, but "-1" isn't implied.  What would you do if you wanted to your program to pause for a couple of seconds so that the user could look at what's on the screen?  What if you had an opening screen, and you wanted the user to take a look at it for a while?  The computer has a <a href="../index/n-z.html#pause">Pause</a> command (you can jump ahead to <a href="tutorial8.html">Tutorial 8</a>), but you have to press the <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> key for that.  What you really want the program to do is <b>delay</b> for a few seconds.  Programmers have figured out that in order to make a delay, you just make the calculator do useless stuff for a while.  Here's an example:</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="45%">
+  <col span="1" width="55%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(2,3,"THIS IS GOING")</font></b></td>
+    <td>Displays "THIS IS GOING" on line 2</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,3,"TO BE DELAYED")</font></b></td>
+    <td>Displays "TO BE DELAYED" on line 3</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,3,"FOR A COUPLE")</font></b></td>
+    <td>Displays "FOR A COUPLE" on line 4</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,4,"OF SECONDS")</font></b></td>
+    <td>Displays "OF SECONDS" on line 5</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,3,"ON THE SCREEN")</font></b></td>
+    <td>Displays "ON THE SCREEN" on line 6</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,1,500)</font></b></td>
+    <td>This line and the next line are used to</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>delay the program for a couple of seconds</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,7,"HELLO")</font></b></td>
+    <td>Displays "HELLO"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Stop</font></b></td>
+    <td>End the program</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut7e.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial7d.gif" width="129" height="110" border="0" align="middle" /> and then <img src="outputs/tutorial7e.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">When you ran the program you should have notice that the text stayed on for a while and then the screen cleared and "hello" was displayed.  You should use this construction when you want some delay, but you don't the user to have to press the <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /> key.  If you want to increase the time that it shows on the screen, just increase the second number.  If you want to decrease the time that it shows, decrease the second number.</p>
+
+<p align="justify"><font size="3" color="#00FF00"><b>Version 2.0 Update:</b></font><br />
+When I made the first version, I totally forgot one inportant aspect of the For loop.  I forgot to tell you that you can nest For loops.  Nesting For loops can be very helpful.  You can use nested For loops to make a stopwatch program.  I'm going to give you the code to make a stopwatch program, but it's not going to be perfect.  What the calculator says is a second or a minute, may not truly be a second or a minute.  I just want to show you how nested For loops work.  To make it exact, you'd have to use those delays that I just taught you above.  Before running it go through the code and try to understand as much as you can.  I'll explain everything after the code.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(A,0,9)</font></b></td>
+    <td>A is going to be stored from 0-9 (minutes)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(B,0,59)</font></b></td>
+    <td>B is going to be stored from 0-59 (seconds)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(C,0,99,7)</font></b></td>
+    <td>C is going to be stored from 0-99 (milliseconds)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,4,A)</font></b></td>
+    <td>Displays A (minutes)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,5,":")</font></b></td>
+    <td>Displays a colon after the minutes value</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If B<img src="lessthan.gif" width="6" height="9" border="0" align="middle" alt="Less Than or Equal To" />9:Then</font></b></td>
+    <td>If B is less than or equal to nine, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,6,0)</font></b></td>
+    <td>Display a zero, and</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,7,B)</font></b></td>
+    <td>Display B (seconds)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Else</font></b></td>
+    <td>If that's not true, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,6,B)</font></b></td>
+    <td>Display B (seconds)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends the seconds-displaying If statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,8,":")</font></b></td>
+    <td>Displays a colon after the seconds value</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If C<img src="lessthan.gif" width="6" height="9" border="0" align="middle" alt="Less Than or Equal To" />9:Then</font></b></td>
+    <td>If C is less than or equal to nine, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,9,0)</font></b></td>
+    <td>Display a zero, and</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,10,C)</font></b></td>
+    <td>Display C (milliseconds)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Else</font></b></td>
+    <td>If that's not true, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,9,C)</font></b></td>
+    <td>Display C (milliseconds)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends the milliseconds-displaying If statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends the inner For loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends the middle For Loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends the outermost For loop</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut7f.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial7f.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify"><font size="3" color="#000080">Further Explanation:</font><br />
+Okay, I'll explain starting from the beginning of the code.  A is going to be our minutes, and I just let it go up to 9 minutes because we really didn't need it to go past that.  B is going to be our seconds, that's why it is stored from 0 to 59.  Finally, C is going to be our milliseconds.  Before I explain how this works let me just tell you why I did some things.  The reason I added those two If statements, were simply for aesthetics.  It makes the output look better, and the spacing is good.  When the values for the seconds or milliseconds are below 10, I want the calculator to display something like "05," but instead it'll just display "5."  That's why I have to output that 0 there for the times when those values are under 10, so that it actually looks like a stopwatch.  Notice how in the For loop for the milliseconds I added an incrementation.  This just makes the program run faster.  The calculator cannot come close to displaying every millisecond as fast as milliseconds actually are.  So I made the calculator do every 7th number, which makes it closer to actual.  Try putting in 1 for the increment and you can see how slowly it runs.  Plus when you look at a stopwatch, you really can't see every millisecond anyway.  Now there's something really important that I want you to know.  You really can't see it in this code, but I'm going to tell you anyway.  When you are closing these loops using the End command, you must do that in a certain order.  You must close the innermost loop first, and then the next one, and then finally the outermost loop.  You really can't see it because there are just 3 End commands in a row.  I just don't want you to think that you put the End commands in the same order as the For( commands.  Here's how the code works: It goes to the first For loop and sets A (minutes) equal to 0.  Then it goes to the next For loop and sets B (seconds) equal to 0.  Then it goes to the last For loop and sets C (milliseconds) equal to 0.  Then it displays all of the values in a way that it looks like time -- <i>minutes</i>:<i>seconds</i>:<i>milliseconds</i>.   After displaying that, it doesn't go back and set A equal to 1, but it sets C equal to 1 and displays everything.  Then it goes back and sets C equal to 2 and displays everything.  Once C becomes 99 and it displays everything, the "C" For loop is done, because it's gone from 0-99 (incrementing by 7).  So since it's done, it goes to the previous For loop -- the "B" For loop.  That For loop now sets B equal to 1 and then executes the next line, which is the "C" For loop.  So now B is 1 and it goes through the whole "C" For loop again, displaying it each time C is incremented by 7.  Once again, when C becomes 99 it goes back to the "B" For loop and makes B equal to 2.  Then the program goes to the "C" For loop and does the whole process all over again.  This process keeps on happening with B being incremented by one until it gets to be 59.  Once it's 59 and has displayed everything, the "B" For loop is done so it goes up to the "A" For loop.  The "A" For loop now sets A equal to 1 and does everything all over again.  This all may be a little confusing right now, but once you run the program and see what's happening you should understand.  I know this is a lot to take in and if you still don't understand please <a href="mailto:ben@basicguruonline.com">contact me</a>, and I'll explain it a different way.  Now the only way of stopping this program is by either pressing <img src="../index/on.gif" width="17" height="11" border="0" align="middle" alt="ON" /> or by pressing <img src="../index/2nd.gif" width="26" height="11" border="0" align="middle" alt="2ND" /> and <img src="../index/mode.gif" width="26" height="11" border="0" align="middle" alt="MODE" /> <font color="#FFD700">[QUIT]</font>.  For my stopwatch programs I use the command <a href="../index/a-m.html#getkey">getKey</a>, which allows me to stop the program by pressing a key that I set in the program.  If you want to see how that works, you can jump way ahead to <a href="tutorial21.html">Tutorial 21</a>, but you won't understand most of it because it'll use commands that you'll learn in the in between tutorials.
+</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+So now another aspect of programming is complete!  I usually use the For loop for delaying more than what it's actually for (counting).  Well, let's go to the next tutorial, which is on pausing, using the Pause command.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial6.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial8.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial6.html">Tutorial 6</a></td>
+	<td><a href="tutorial8.html">Tutorial 8</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

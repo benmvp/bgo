@@ -1,0 +1,81 @@
+              The Ultimate Maze 2000 Version 2.0
+                       Copyright(C) 2000
+
+Editor: Ben Ilegbodu
+	(http://www.geocities.com/basicguruonline/)
+Date:   11/23/00
+Format:	BASIC for TI-83 Plus
+Email:	Benahimvp@aol.com
+*********************************************************
+Description:	1-player ultimate maze game
+Files:		* Maze2000.8xp
+		* Pic6.83i
+		* Maze2000.txt
+*********************************************************
+Manual: Send Maze2000.8xp and Pic6.83i to your calc.  Run 
+MAZE2000.  An opening screen will appear with the title
+of the game.  Press Enter.  After that, a menu you will
+ask you if you would like to clear all the high scores
+for all the levels.  After making your choice, another
+menu will give you the choice of either playing the game
+or reading the instructions.  If you choose to read the
+instructions, 3 pages of instructions will appear.  If
+you choose play, obviously you'll play the game.  Then a
+third menu will appear asking you to choose a level to
+play.  The levels are: Very Slow, Slow, Normal, Fast, and
+Very Fast.  Let me tell you that Very Slow is in fact
+VERY SLOW and Very Fast is EXTREMELY FAST.  Once the game
+is over it'll display your score for the game and the
+particular level you played.  If you set a new high score
+then it'll tell you and display your score as the new
+high score.  If you don't set a new high score, it'll
+display the current one.  Press Enter and you'll go to
+the credits.  Press Enter again and the game is over.  If
+you want to play again, just run MAZE again.  I didn't
+add a menu asking you to play again because you have to
+completely quit the game in order to regain the RAM used
+during game play.
+
+Although the main objective of this game is to make it to
+the finish, the main purpose is just to get as far as you
+can.  The maze is extremely complicated and you're most
+likely going to either accidentally run into a wall by
+turning too early/late or by running into a dead end.  If
+you somehow manage to make it all the way through and
+reach the finish, you will be awarded 1,000 extra points.
+The beauty of this game is that even if you happen to win
+it'll still be fun the next time you play because the
+correct route is almost impossible to remember.
+
+Keys:
+The arrow keys
+STAT - Save Game with an option to Continue or Quit
+CLEAR - Quit Game without saving
+MODE - Pause Game (press MODE again to resume game play
+       or press CLEAR to quit)
+ALPHA - Teacher Key: displays the homescreen with some
+	math computations on it to fool your teacher if
+	he/she passes by (press ALPHA again to resume
+	game play or press CLEAR to quit).
+
+
+Scoring:
+You get points based on the difficulty of the level you
+choose to play.  You get 1 point per increment the snake
+moves if you play on the VERY SLOW level, but receive 5
+points if you play on the VERY FAST level.
+
+History:
+Version 2.0 --	Added special keys: Save, Quit, Pause, &
+		Teacher Key, and fixed some bugs that
+		were in v1.5.
+Version 1.5 --	Added four new levels: Very Slow, Slow,
+		Fast, and Very Fast.  Normal is the same
+		speed as the initial release.
+Version 1.0 -- 	First release
+
+
+Please do not post an altered version of this program
+without my consent.  If you have any complaints,
+suggestions, ideas to make it better, comments or
+questions please feel free to email me.

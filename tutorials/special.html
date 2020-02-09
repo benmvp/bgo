@@ -1,0 +1,497 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Special Tutorial</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Special Tutorial</font><br />
+<font size="3">Using getKey to move objects on the Screen -- Advanced...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Special Tutorial</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+Ever wondered how those programmers make games like Nibbles using TI-BASIC programming?  Well, in this tutorial, I will show you exactly how that's done.  After finishing the tutorial, you should be able to make your own Nibbles game or something similar.  Also, at the end of the tutorial is a game created by <a href="/cgi-bin/members/users.pl?user=5">Ben Grunwald</a>, which uses all of the aspects of programming that I'm going to show you in this tutorial.  I decided to add this tutorial in with the set of three tutorials on getKey because that's what it mostly pertains to.  I could have added it in the Version 3.0 tutorials, but most of those have a general theme, and this tutorial does not follow that at all.</p>
+
+<p align="justify"><font size="3" color="#000080">New Command:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#ans">Ans</a></td>
+    <td>Returns the value of the last answer</td>
+  </tr>
+</table>
+</p>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+This tutorial on how to make the game at the end is broken up into three sections.  The first section covers the use of Ans.  The second discusses how to use continual motion (this term will be explained) in a game.  The final section goes over collision (hit) detection.  These three sections well help you understand how the game works.</p>
+
+<p align="justify">More likely than not, even if you've never made a program in your life (well, obviously you have), you have used Ans before.  You may not realize it, but you have.  You most likely used Ans while doing mathematical computations on the home screen.  The following is an example of some computation you might do.  What we are trying to do is divide the quantity of 36 times 4 by 16, and then add 47: (36*4)/16 + 47.</p>
+
+<center><img src="outputs/speciala.gif" width="129" height="110" border="0" align="middle" /></center>
+
+<p align="justify">Now for all you people who really know how to you use your calculator you could have inputted it like this, "(36*4)/16 + 47," but then I would not have been able to demonstrate the everyday use of Ans.  The following code shows an example of how you would use Ans in a program.  It is a simple quadratic formula program.  The equation is <i>x</i>&sup2;-14<i>x</i>-51.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "X&sup2;-14X-51=0</font></b></td>
+    <td>Displays "X&sup2;-14X-51=0" on the top line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:-51<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />C:-14<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores the coefficients into A, C, and B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Ans&sup2;-4AC<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />D</font></b></td>
+    <td>Stores the difference of B&sup2; and 4*A*C into D</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000"><img src="squareroot.gif" width="7" height="10" border="0" align="middle" alt="SQUARE ROOT" />(Ans<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />E</font></b></td>
+    <td>Stores the square root of D into E</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-B+Ans<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />F</font></b></td>
+    <td>Stores the sum of E and the negative of B into F</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Ans/2A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />G</font></b></td>
+    <td>F divided by two times A is stored into G</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-B-E<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />H</font></b></td>
+    <td>Stores negative B minus E into H</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Ans/2A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />I</font></b></td>
+    <td>H divided by two times A is stored into I</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "",G,I</font></b></td>
+    <td>Displays a blank line and the roots of the quadratic equation</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/speciala.zip'" /></p>
+
+<p align="center"><img src="outputs/specialb.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">This right here is Ans at its best.  Of course, you could simplify it all in one line, but then when there be an example of the use of Ans?  No there wouldn't.  Anyway, let me explain the code.  The reason I had B store as -14 last, instead of second, is so that I could use it for Ans in the next line when B is supposed to be squared.  Actually, for most of them I really didn't have to store the computation into variables because they are not used again in the program.  The only variable, besides A, B, & C that I had to store into was E because I reference it twice.  If I were to use Ans instead of E in "-B-E<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />H," then it would actually use the value of G and not E, because G was the last computation made.  The reason programmers use Ans instead of variables is because the calculator accesses values from Ans quicker than from user variables.  In this type of program, it really does not matter, but in a game, it's vital.  In the next code, I'll show you how to make a "snake" move by itself (continual motion).  All you have to do is direct it.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">26<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />R</font></b></td>
+    <td>Its initial direction (the right arrow's key code)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">48<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>The x-coordinate of its starting point</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">32<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+    <td>The y-coordinate of its starting point</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">While 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-On(Ans,B</font></b></td>
+    <td>Draws a pixel at (A,B)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">getKey</font></b></td>
+    <td>Stores the key's key code into Ans</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If Ans:Ans<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />R</font></b></td>
+    <td>If a key was pressed then store the key code into R</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">B-(R=24)+(R=26<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Moves the snake right/left depending on keypress</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">A-(R=25)+(R=34<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+    <td>Moves the snake up/down depending on keypress</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of While loop</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/specialb.zip'" /></p>
+
+<p align="center">Possible Output:<br />
+<img src="outputs/specialc.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">Before I explain anything, just run the program and see what it does...  As you can see, the "snake" moves by itself.  We don't have to hold down on the right button for it to go right.  The only time you have to press one of the directional buttons is when you want to change the direction of the "snake."  Now lets analyze the code.  In this code, R determines the direction of the snake.  R is initially set at 26, which is the key code for the right directional button, that's why it starts off going right.  The values that B & A are set to are just their initial coordinates.  "<b><font color="#008000">Pxl-On(Ans,B</font></b>" just plots a pixel at (A,B).  We can use Ans instead of A because A was the last computation made, "<font color="#008000"><b>32<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</b></font>."  In the next line, getKey is by itself, so the key code is just stored into Ans (this is more thoroughly explained in the further definition of <a href="../index/a-m.html#ans">Ans</a>).  The next line was the line that gave me the most trouble; it took me the longest to understand.  The first part, "<font color="#008000"><b>If Ans</b></font>" somehow says "If a key was pressed."  Don't ask me how it does this, but it just does.  It would be the same thing as saying "<b><font color="#008000">If Ans<img src="notequal.gif" width="6" height="5" border="0" align="middle" alt="Not Equal To" />0</font></b>" because when a key isn't pressed, getKey returns 0.  Therefore, the whole line simply reads, "If a key is pressed store its key code into user variable R.  If not, store 0 into R."  The next two lines are why the continual motion works.  The program starts of with R being 26.  If no key is pressed, how does the snake keep on moving to the right?  It's because of R.  When the While loop is just started a pixel is drawn at (A,B) or (32,48).  A key hasn't been pressed and R is 26, so B is increased by one.  Then the program goes back to the beginning and draws the pixel at (A,B), but this time the B is one more than it was before because of the "<font color="#008000"><b>B-(R=24)+(R=26<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</b></font>."  B is now 49, instead of 48, so the snake seems to have moved one pixel to the right.  Then in the next two lines the calculator checks if a key was pressed.  If a key wasn't pressed then it doesn't store anything into R, so R is still 26 (the right directional arrow's key code).  So when it goes to the next line "<font color="#008000"><b>B-(R=24)+(R=26<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</b></font>," B is again increased by one because R is still 26.  B is now 50, instead of 49.  Then the calculator loops back around to the beginning and draws the pixel at (32,50).  So now, there are pixels drawn at (32,48), (32,49), and (32,50) and we still haven't pressed a button.  The snake is moving by itself!!  If this were to continue ten more times, there would be pixels drawn at (32,48), (32,49), (32,50), (32,51),..., and at (32,60), and we still haven't pressed a button.  If a directional button, let's say the down button, was to be pressed, then R would now become 34.  The next point is then drawn at (33,60).  If the calculator runs through the entire loop and a key wasn't pressed, then the next point would be drawn at (34,60) and so on.  Do you see how it works?  It's a bit complicated, but it's actually pretty simply done.  If you still don't understand and are a bit (or a lot) confused, just <a href="../comments.html">contact me</a> and I'll give more explanation.  The only problem with the code above is that it allows the snake to cross over itself and you get an error message (ERR:DOMAIN) if you run into the sides of the screen.  To fix this, we need to come up with some kind of hit detection.  This is explained next.  The next code and the previous one should seem similar.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+    <td>You need to set the window</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+    <td>variables because you will be using</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+    <td>lines to make a border that will go</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+    <td>along the edge of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Horizontal 0</font></b></td>
+    <td>Draws the line at the top of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Vertical 0</font></b></td>
+    <td>Draws the line on the left of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Horizontal -62</font></b></td>
+    <td>Draws the line at the bottom of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Vertical 94</font></b></td>
+    <td>Draws the line on the right of the screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">26<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />R</font></b></td>
+    <td>Its initial direction (the right arrow's key code)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">48<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>The x-coordinate of its starting point</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">32<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+    <td>The y-coordinate of its starting point</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Repeat pxl-Test(Ans,B</font></b></td>
+    <td>Repeat until there's a pixel at the point to be drawn</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-On(Ans,B</font></b></td>
+    <td>Draws a pixel at (A,B)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">getKey</font></b></td>
+    <td>Stores the key's key code into Ans</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If Ans:Ans<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />R</font></b></td>
+    <td>If a key was pressed then store the key code into R</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">B-(R=24)+(R=26<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Moves the snake right/left depending on keypress</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">A-(R=25)+(R=34<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+    <td>Moves the snake up/down depending on keypress</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of Repeat loop</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Makes the program go back to the home screen</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/specialc.zip'" /></p>
+
+<p align="center">Possible Output:<br />
+<img src="outputs/speciald.gif" width="129" height="110" border="0" align="middle" /> and then <img src="outputs/speciale.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">Most of the command lines in this code are exactly the same as the previous code, so there shouldn't be too much to explain.  The reason for having to outline the edge of the screen is so that the collision detection can work.  You'll see why soon.  So, do you think you know what makes collision detection work?  Well if you guess this line, "<b><font color="#008000">Repeat pxl-Test(Ans,B</font></b>," then you're absolutely correct.  This could have also been written like "<b><font color="#008000">Repeat pxl-Test(Ans,B)=1</font></b>," but we want to save space, right?  What this does is repeat everything inside the loop until the point (A,B) is already drawn.  The coordinates for the point that is to be drawn is determined by the last two lines before the End statement (you should already know that).  So after those lines, we now have a point (A,B).  However, before the program loops back around to draw that point, the Repeat command checks to see if that point has already been drawn (either by the snake itself of the edge of the screen).  If a point has already been drawn at (A,B), then the loop is ended and the program finishes.  If not, then the loop continues on and draws the next point as normal.  You might realize the necessity of the outlining of the screen.  This way, if the snake was to head toward the screen, the Repeat loop would see that there's already a point drawn at (A,B) and stop.  If we didn't outline the edge of the screen we would get an "ERR:DOMAIN," which would kill program flow and execution and stop the play of the game you've made.  Do you see how the collision detection works?  It's actually fairly simple, really.  However, if you still not quite grasping the concept, you can <a href="../comments.html">contact me</a> anytime and I'll reply as soon as possible.  If you have completely understood everything so far (congratulations!), then you're ready to take a look at <a href="/cgi-bin/members/users.pl?user=5">Ben Grunwald's</a> game.  It's actually very similar to the last code except that it sets up random barriers that you cannot run into or the game is over.  I'll only comment lines that I haven't gone over specifically in this tutorial.</p>
+
+<p align="justify"><b>Note:</b>  Some of the code has been changed so that you'll be able to understand everything without much explanation and so that there are no new commands.
+</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl 1</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmin</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">94<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Xmax</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">0<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymax</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-62<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Ymin</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">DelVar P</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">50<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Q</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Lbl C</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">DelVar L</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">P+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />P	</font></b></td>
+    <td>Increase the level number by one</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(40,30,"LEVEL:</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(40,64,Ans</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Horizontal 0</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Vertical 0</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Horizontal -62</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Vertical 94</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">For(X,0,Q</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-On(randInt(1,61),randInt(1,93</font></b></td>
+    <td>Draws 50 random points (obstacles)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">26<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />R</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">48<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">32<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Repeat pxl-Test(Ans,B) or L=320</font></b></td>
+    <td>Repeat until you hit something or beat the level</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pxl-On(Ans,B</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">L+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />L</font></b></td>
+    <td>Keeps track how many pixels you've moved</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">getKey</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If Ans:Ans<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />R</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">B-(R=24)+(R=26<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">A-(R=25)+(R=34<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If L=320:Then</font></b></td>
+    <td>If you moved 320 pixels (won the level)</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Q+100<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />Q</font></b></td>
+    <td>Increase the number of obstacles to be drawn by 100</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Goto C</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td colspan="2"><b><font color="#008000">Disp "YOUR DEAD","YOUR SCORE:",(P-1)320+L</font></b></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/speciald.zip'" /></p>
+
+<p align="center">Possible Output:<br />
+<img src="outputs/specialg.gif" width="129" height="110" border="0" align="middle" /> and then <img src="outputs/specialf.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="justify">This is what happens.  You play the game and it's starts of telling you that you are at level 1.  The calculator draws the border outlining the screen.  Then the lines beginning with "<b><font color="#008000">For(X,0,Q</font></b>," draw 50 random points used as obstacles on the screen.  Q is initially stored at 50, so the For loop counts from 0 to 50.  The line "<font color="#008000"><b>Pxl-On(randInt(1,62),randInt(1,93</b></font>," picks a random number for <i>row</i> and a random number for <i>column</i> so that the point that is drawn is random.  You should automatically know everything from the end of the For loop to the End of the Repeat loop except for one line: "<b><font color="#008000">L+1<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />L</font></b>."  This is just like how we kept the number of trials back in our guessing game program.  All is does is cound the number of pixels that the snake has moved.  Once the snake has moved 320 pixels (<font color="#008000"><b>Repeat pxl-Test(Ans,B) or L=320</b></font>), the Repeat loop ends, you've won that level, and you go on to level 2.  The game gets harder because the number of random points used as obstacles increases from 50 to 150.  The "<b><font color="#008000">Goto C</font></b>" makes it go back to the beginning of the program and everything is pretty much the same except that you're now in level 2 and the number of obstacle is higher.  If the snake happens to either run into itself, the wall, or one of the obstacles, the Repeat loop also ends.  The calculator checks to see if L is equal to 320 (it's not because you died early) so it skips that whole If-Then statement and goes to that displaying line where your score is displayed.  That formula for the code is just a formula the Ben Grunwald made up for his game.  If you have any major questions about how this game was made, you should contact <a href="mailto:Biteme84@aol.com">Ben Grunwald</a> instead of me.  But just for the game.  If you have questions about anything else in this tutorial, I am the one that you should consult.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+Well that's it!!!  With the information that you've have learnt from Tutorials 21 & 22 and this one, you should be able to make a pretty good game.  Now you can make that Nibbles-like game you've always wanted to make.  You can continue on to the last tutorial of the getKey series, Tutorial 23.  There you'll be able to make awesome graph screen-based user-defined menus.  These menus will make your games extremely unique.  Once again, special thanks to Ben Grunwald for the idea for this tutorial.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial22.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial23.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial22.html">Tutorial 22</a></td>
+	<td><a href="tutorial23.html">Tutorial 23</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

@@ -1,0 +1,171 @@
+GRAFX v1.0
+Tristan Griffith (mrtinkertrain@wickedco.com or saxyboy85@aol.com)
+2-20-01
+
+GrafX is a very useful program for programmers and non-programmers 
+alike.  It allows you to scan the graphscreen and code for it in a 
+program, thus not using up all of your pics.  This program is simple
+to use and works very well.
+
+When you run the program you come to screen that says:
+
+GRAPHX V1.0
+1:SCAN
+2:SET SCAN AREA
+3:VIEW
+4:QUIT
+
+SCAN starts the program scanning at pixel 0,0 and scans the entire
+graphscreen.
+
+SET SCAN AREA lets you set coordinates for the area that you want 
+to scan.  You will see a screen that looks like this:
+
+UPPER:
+
+You input the upper coordinate of the area you want scanned.  
+
+LEFT:
+
+You input the left coordinate of of the area you want scanned.  
+
+LOWER:
+
+You input the lower coordinate of the area you want to scan.
+
+RIGHT:
+
+You input the right coordinate of the area you want to scan.To find the coordinates, I suggest you go to format and make sure that 
+
+CoordOn is selected.  Then go to window and make sure that Xmin=0, 
+Xmax=94, Ymin=-62 and Ymax=0.  Then go to the graphscreen and move 
+your cursor to find the upper left pixel coordinates, and then find the 
+lower right coordinates.  Make sure that you enter Y in first as the
+coordinates for pixels are Y,X instead of X,Y.  Also be sure that all Y
+values that you enter are positive.
+
+For example, let's say we wanted to start scanning at pixel 3,3 and 
+stop scanning at pixel 6,7.  You would then enter the appropriate 
+coordinates and would get a screen that looks like this:
+
+UPPER:3
+LEFT:3
+LOWER:6
+RIGHT:7
+
+You can enter a negative number for any of these to exit back to the
+main menu.  If you find this confusing, you can email me or just select "SCAN" in 
+the future.
+
+VIEW allows you to view the graphscreen.
+
+Obviously QUIT exits the program.
+
+After you have selected either SCAN or SCAN AT PXL and gone through
+those, you will see this screen:
+
+GRAFX V1.0
+T. GRIFFITH
+
+SCANNING... 0%
+
+ROW:0
+COL:0
+PXLS:
+
+Depending on whether or not you chose SCAN or SCAN AT PXL, you may see
+different values in the %, ROW:, and COL:.
+
+The 0% shows how much of the entire graphscreen has been scanned.
+ROW: shows the current row that is being scanned.
+COL: shows the current column that is being scanned.
+PXLS: shows how many pixels have been scanned so far.
+
+When the program has detected a pixel, you will notice that the value 
+for COL: will pause for a few seconds and an asterik will appear in the
+bottom right-hand corner of the screen.  This is just the program coding 
+that pixel.
+
+You may stop the scanning at any time by pressing the "MODE" button.
+
+When the scanning is complete, it will say:
+
+COMPLETE  100%
+
+Now check and see how many pixels were detected.  If more than 360 
+pixels were detected then you will need to do something special later 
+on.
+
+Here comes the fun part, you can now create this picture in a program 
+by pasting the y-var r1 into your program.  If you do not want to clear
+the graphscreen before you draw the pic, delete the "ClrDraw" statement 
+at the very beginning.  If more than 360 pixels were detected, then you
+are not done.  You need to move to the line immediately following the 
+last "pxl-(" statement of what you just pasted and paste the y-var r2.
+This is simply for memory reasons.
+
+If you have just read the above and are confused, here is a step by step 
+process of how to create your picture/graphic in a program.
+
+1)Assuming that you are not a programmer, you will probably not want to
+put this graphic in an already existing program, so we will need to
+create a new program.
+2)Hit the "PRGM" button and arrow over to "NEW".  Press enter.
+3)Name your new program whatever you like by pressing the appropriate 
+buttons for the appropriate letters.  When done, press enter.
+4)Now you should have a screen that looks like this, where (name) is 
+the name you gave your program:
+
+PROGRAM:(name)
+:
+
+5)Now press "2nd" and then "STO->", which is actually "Rcl".  You will 
+then see:
+
+PROGRAM:(name)
+:
+
+
+
+
+
+Rcl
+
+6)Now press the "VARS" button.  Arrow over to "Y-VARS" and scroll down 
+to "3:Polar...".  Press enter.
+7)Now press enter again and you will see:
+
+PROGRAM:(name)
+:
+
+
+
+
+Rcl r1  
+
+8)Press enter and you should see a bunch of "pxl-(" statements with 
+various numbers flood the screen.
+
+9)If GrafX detected more than 360 pixels then you need to do this step,
+otherwise, skip to step 10.  Now press enter so that you create a new 
+line.  Now press "2nd" and "STO->" and all that as before, but instead
+of r1, choose r2.  You should now see more code flood the screen.
+
+10)You are now finished, so hit "2nd" and then "MODE" to exit the 
+program.
+
+11)Now go and run your program by hitting "PRGM" and then arrowing down
+to it.
+
+12)You should now see your picture in all its splendor.
+
+If you still don't get this or have a question or comment about this 
+program, email me at:
+
+mrtinkertrain@wickedco.com
+
+          -or-
+
+saxyboy85@aol.com
+
+AIM:saxyboy85

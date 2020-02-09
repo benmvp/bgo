@@ -1,0 +1,8 @@
+Wartribes (Version 1.0)
+by Netherworld Software
+Copyright 2000, 2001
+
+You are the leader of Zalu Tribe. You must push out your rival to
+secure your country's saftey.
+
+In Version 1.0: Enemy AI

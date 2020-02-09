@@ -1,0 +1,416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 4: Conditionals</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 4: Conditionals</font><br />
+<font size="3">If, Then & Else...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 4: Conditionals</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+In this tutorial, we will learn how to use conditionals in a BASIC program.  Conditionals are really important because they test something.  They see: <b>If</b> something is what you want, <b>Then</b> go do the next thing.  The <b>Else</b> statement comes if what you wanted doesn't happen.  Let me explain in further...</p>
+
+<p align="justify">Let's say you wanted to go to the movies with a friend.  However, your mom says that the only way you're leaving the house is if you mow the lawn.  If you think about it, your choice is a form of a conditional:  <b>If</b> you mow the lawn, <b>Then</b> you get to go to the movies, or <b>Else</b> you have to stay home.  The Else is there just so you do not have to write two If statements.  If there wasn't an Else command, then your conditional would change to: <b>If</b> you mow the lawn, <b>Then</b> you get to go to the movies.  <b>If </b>you don't mow the lawn (or Else), <b>Then</b> you have to stay home.  You cannot click on the bolded words for further definitions because it is hard to define each command by itself.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#if">If</a></td>
+    <td>Checks if something is true</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#then">Then</a></td>
+    <td>If something is true, then do the next command</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#else">Else</a></td>
+    <td>If the something is not true, then do the next command</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#end">End</a></td>
+    <td>Identifies the end of a group of commands</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#colon">: (Colon)</a></td>
+    <td>Can sometimes be used as "Then" command</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#equalto">=</a></td>
+    <td>Equals or equal to</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#notequal"><img src="notequal.gif" width="6" height="5" border="0" align="middle" alt="Not Equal To" /></a></td>
+    <td>Not equal to</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#greaterthan">&gt;</a></td>
+    <td>Greater than</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#lessthan">&lt;</A></td>
+    <td>Less than</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#greaterequal"><img src="greaterthan.gif" width="6" height="9" border="0" align="middle" alt="Greater Than or Equal To" /></a></td>
+    <td>Greater than or equal to</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#lessequal"><img src="lessthan.gif" width="6" height="9" border="0" align="middle" alt="Less Than or Equal To" /></a></td>
+    <td>Less than or equal to</td>
+  </tr>
+</table>
+</p>
+<br />
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup span="3" width="33%"></colgroup>
+  <tr valign="middle">
+    <td>:<b>If</b> conidition: <b>Then</b></td>
+    <td>:<b>If</b> <i>condition</i>:<i>command</i></td>
+    <td><i>valueA</i>&gt;<i>valueB</i></td>
+  </tr>
+  <tr valign="midle">
+    <td>:<i>commands</i></td>
+    <td></td>
+    <td><i>valueA</i>&lt;<i>value</i></td>
+  </tr>
+  <tr valin="middle">
+    <td>:<b>Else</b></td>
+    <td><i>valueA</i>=<i>valueB</i></td>
+    <td><i>valueA</i><img src="greaterthan.gif" width="6" height="9" border="0" align="middle" alt="Greater Than or Equal To" /><i>valueB</i></td>
+  </tr>
+  <tr valign="middle">
+    <td>:<i>commands</i></td>
+    <td><i>valueA</i><img src="notequal.gif" width="6" height="5" border="0" align="middle" alt="Not Equal To" /><i>valueB</i></td>
+    <td><i>valueA</i><img src="lessthan.gif" width="6" height="9" border="0" align="middle" alt="Less Than or Equal To" /><i>valueB</i></td>
+  </tr>
+  <tr valign="middle">
+    <td>:<b>End</b></td>
+  </tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+There will be several different codes showing how to use these 3 conditionals.  The first one is If by itself.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">23<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:56<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores 23 and 56 into A & B, respectively</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If A&lt;B</font></b></td>
+    <td>If A is less than B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,1,"B IS GREATER")</font></b></td>
+    <td>(Then) display "B IS GREATER"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If A&gt;B:Output(4,1,"A IS GREATER")</font></b></td>
+    <td>If A is greater than B, then display "A IS GREATER"</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut4a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial4a.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">Now switch the values for A and B so that A equals 56 and B equals 23.  When you run the program, this time it'll say "A IS GREATER."  Notice the two different ways you can write an If statement.  You can have the If statement on one line and then the action on the next line, or you can have both the If statement and the action on the same line.  If you do write them on two separate lines, the If statement will only work for the proceeding line.  Any other lines will have nothing to do with the If statement.  Here's an example:</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">23<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:56<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores 23 and 56 into A & B, respectively</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If A=B</font></b></td>
+    <td>If A is equal to B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,1,"IF STATEMENT")</font></b></td>
+    <td>(Then) display "IF STATEMENT"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,1,"HELLO")</font></b></td>
+    <td>Display "HELLO"</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut4b.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial4b.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">When you run this, it only displays "HELLO", because the two values aren't equal.  This proves that the If statement does not affect whether the second command is displayed or not.  Now change the equals sign (=) to a not equal sign (<img src="notequal.gif" width="6" height="5" border="0" align="middle" alt="Not Equal To" />) and run the program.  Now it displays "IF STATEMENT" and "HELLO."  Next, I'm going to show you the two places you that can write the Then command.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">23<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:56<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores 23 and 56 into A & B, respectively</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If A<img src="notequal.gif" width="6" height="5" border="0" align="middle" alt="Not Equal To" />B</font></b></td>
+    <td>If A is not equal to B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Then</font></b></td>
+    <td>Then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(2,3,"ON SEPARATE")</font></b></td>
+    <td>Display "ON SEPARATE" and</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,6,"LINES")</font></b></td>
+    <td>Display "LINES"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of If-Then statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If B<img src="greaterthan.gif" width="6" height="9" border="0" align="middle" alt="Greater Than or Equal To" />A:Then</font></b></td>
+    <td>If B is greater than or equal A, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,3,"ON SAME LINE")</font></b></td>
+    <td>Display "ON SAME LINE"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of If-Then statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(7,2,"THIS IS ALWAYS")</font></b></td>
+    <td>Displays "THIS IS ALWAYS"</td>
+  </tr>
+  <tr valign="middle">
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(8,4,"DISPLAYED")</font></b></td>
+    <td>Displays "DISPLAYED" on the next line</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut4c.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial4c.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">When you run this, it should display everything.  You can put as many commands inside of the If-Then statement, as long as they have to do with the condition.  When I program, I prefer to do the If-Then construction as if it was done in the second conditional.  I prefer to write <b><font color="#008000">:If A=B:Then</font></b> on the same line.  Notice again how the last two lines are not affected by either of the If-Then statements.  If you were to change the greater than or equal to sign (<img src="greaterthan.gif" width="6" height="9" border="0" align="middle" alt="Greater Than or Equal To" />) to less than or equal to (<img src="lessthan.gif" width="6" height="9" border="0" align="middle" alt="Less Than or Equal To" />), then "ON SAME LINE" wouldn't be displayed.  You <b>must</b> remember to always put the End command at the end of each conditional statement.  Now we're going to go on to If-Then-Else statements.  If you weren't going to use the Else command, you would have to write your program like this:</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">23<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:56<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores 23 and 56 into A & B, respectively</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If A=B:Then</font></b></td>
+    <td>If A is equal to B, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,4,"THEY ARE")</font></b></td>
+    <td>Display "THEY ARE"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,6,"EQUAL")</font></b></td>
+    <td>Display "EQUAL"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of If-Then statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If A<img src="notequal.gif" width="6" height="5" border="0" align="middle" alt="Not Equal To" />B:Then</font></b></td>
+    <td>If A is not equal to B, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,4,"THEY ARE")</font></b></td>
+    <td>Display "THEY ARE" and</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,4,"NOT EQUAL")</font></b></td>
+    <td>Displays "NOT EQUAL"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of If-Then statement</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut4d.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial4d.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify">You should be able to understand the code.  If they are equal then it'll display "THEY ARE EQUAL".  If they are not equal then it'll display "THEY ARE NOT EQUAL."  The next code will do exactly the same thing, but it's written differently and saves a line (which reduces program size).</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">23<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:56<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores 23 and 56 into A & B, respectively</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If A=B:Then</font></b></td>
+    <td>If A is equal to B, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,4,"THEY ARE")</font></b></td>
+    <td>Display "THEY ARE"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,6,"EQUAL")</font></b></td>
+    <td>Display "EQUAL"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Else</font></b></td>
+    <td>If they aren't equal, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,4,"THEY ARE")</font></b></td>
+    <td>Display "THEY ARE" and</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,4,"NOT EQUAL")</font></b></td>
+    <td>Displays "NOT EQUAL"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>End of If-Then-Else statement</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut4e.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial4d.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+You should also be able to understand this code.  It reads:  If A is equal to B, then display "THEY ARE EQUAL", if A is not equal to B(Else), display "THEY ARE NOT EQUAL."  <b>Note:</b> that if you are going to use Else, you cannot use this construction: <b><font color="#008000">If A>B:Output(3,4,"HELLO")</font></b>.  It will not work.  Right now using Else may not seem like a big difference, but believe me it is.  Well there's not much more to say except that conditionals are very useful.  Next up is User Input.  You cannot have a game without the user doing something.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial3.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial5.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial3.html">Tutorial 3</a></td>
+	<td><a href="tutorial5.html">Tutorial 5</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

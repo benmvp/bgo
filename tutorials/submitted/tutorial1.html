@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Member Submitted Tutorial #1</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+<style>
+<!--
+	select		{background-color:#dddddd; font-family:Verdana; font-size:8.5pt; color:black}
+	A:link		{color: #0000CD; text-decoration:none;}
+	A:visited	{color: #0000CD; text-decoration:none;}
+	A:hover		{color: #B22222;}
+-->
+</style>
+
+<link href="../../hlb.css" rel="stylesheet" />
+
+<script language="javascript" src="../../redirect.js"></script>
+
+<base target="_self" />
+</head>
+
+<body bgcolor="ffffff">
+<font face="verdana" size="1">
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../../home.html">HOME</a> <b>>></b> <a href="../index.html">Tutorials</a> <b>>> <i>Tutorial 1: Advanced Game Design</b></i></td>
+	</tr>
+</table>
+
+<center>
+<b>Advanced Game Techniques Tutorials
+<hr />
+Advanced BASIC<br />
+Tutorial 1<br />
+Advanced Game Design</b>
+</center>
+
+<p><table align="right" width="210" cellpadding="0" cellspacing="0" border="0" bgcolor="dddddd">
+  <tr>
+    <td>
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td bgcolor="#FF6600" width="20" height="20">&nbsp;</td>
+          <td bgcolor="#666666" width="190" height="20"><font face="arial" size="1" color="#FFFFFF"><b>&nbsp;Advanced BASIC Tutorials</b></font></td>
+        </tr>
+      </table>
+      <table align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td>
+            <form>
+              <select class="pulldownMenu" onchange="if(options[selectedIndex].value) self.location.href=this.options[this.selectedIndex].value">
+                <option value="" selected="selected">Select Tutorial...</option>
+                <option value="tutorial1.html">1. Advanced Game Design</option>
+                <option value="tutorial2.html">2. Arrays: Data Structure</option>
+                <option value="tutorial3.html">3. Nibbles: Lists</option>
+                <option value="tutorial4.html">4. Nibbles: Hit Detection</option>
+                <option value="tutorial5.html">5. Scroll Screen Left & Right</option>
+                <option value="tutorial6.html">6. Advanced Graphics</option>
+                <option value="tutorial7.html">7. Trig Func & Relevant Uses</option>
+              </select>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></p>
+
+<p align="justify"><b>Part 1: Introduction</b><br />
+First of all, your probably wondering what exactly advanced programming is. For our purposes, we can define advanced programming as the ability to use all the available facits of the TI-Basic to create quality and technicaly complex games. In order to do this you must understand how the calculator uses the commands on a very low level. To use TI-Basic to make quality games you have to know what your doing. Since ASM programming is very fast, you have to be able to program very intelligently to make quality games that will compete with them. The purpose of these tutorials is to explain several advanced programming techniques. By starting at game design and ending at 3-D programming. It explains mainly the theorys behind these techniques and not the exact syntax of things.</p>
+
+<p align="justify">For these tutorials it is assumed that you already know how basic basically works. If you don't know the syntax and how to use things like 'If' statements or 'Lbl's' then you should go read the many other Basic Tutorials out there on the web.</div></p>
+
+<p><b>Part 2: Designing a Game</b></p>
+
+<p><b>Starting:</b></p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr bgcolor="999999">
+    <td colspan="2"><font face="verdana" size="1"><div align="justify">To start making any game at all, you must layout the basic idea. This becomes <u>very</u> important when you start making very large games. For example, if you wanted to make a racing game then you would start out by creating a diagram as follows:</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td width="40%"><font face="Tifont, Ti83pc" size="2">START<br />MENU<br />&nbsp;1RACE<br />&nbsp;2EXIT<br />1:<br />&nbsp;SET VARS<br />&nbsp;CLRSCR<br />&nbsp;RUN ENGINE( )<br />&nbsp;GOTO MENU<br />2:<br />&nbsp;CLRSCR</font></td>
+    <td width="60%"><font face="Tifont, Ti83pc" size="2">ENGINE( ):<br />&nbsp;LOOP:<br />&nbsp;GETKEY<br />&nbsp;CHECK IF PRESS MOVE KEY<br />&nbsp;y-UPDATE CHAR POS &nbsp;&nbsp;&nbsp; n-CONTINUE LOOP<br />&nbsp;OUTPUT TRACK<br />&nbsp;OUTPUT CHAR<br />&nbsp;IF HIT WALL<br />&nbsp;n-CONTINUE LOOP y-GOTO MENU<br />&nbsp;GOTO TOP OF LOOP</font></td>
+  </tr>
+</table></p>
+
+<p align="justify">While this may seem like a wast time, it is important to make complex games. Without this step it is harder to make the game, and your code might become sloppy. and it is very important to have organized code. It will make your game faster and better.</p>
+
+<p align="justify"><b>Constructing:</b>
+<br />While it may seem logical and easier to use goto statements, these are actually EVIL! To create a game that runs fast you must leave out all Lbls. The reason is that whenever the calculator hits a goto statement, it starts at the very top of the program and searches down through the program until it finds the label. If you have a large program then this process can become very slow. I guarantee that it is possible to write any program w/o Lbls. As long as you don't use labels in the engine then it wouldn't really mater if you used them to start your program. And you have to use Lbls for Menus.</p>
+
+<p align="justify"><b>Subroutines:</b>
+<br />A subroutine is just a program that a certain program calls on to do a particular task. When you become an experienced programmer then subroutines will become your best friend. Programming with subroutines creates very easily readible code. It also helps in the debugging phase. If you had one program and it was 5000 bytes, then it would take you about 2 minutes to scroll to the bottom. This is very inefficent. The main program should only call upon other programs to do stuff. If you do this then the code will be easily updated and debugged. However, when you finish your game, and prepare to release to one of the major TI sites, you may want to compile it. By doing this I mean putting all the program together. Just go to the spot in the code where you called the program, clear that line, and hit 2nd Recall, then Prog, go over to the EXEC menu and select the program that is called. This will paste your code to the spot inside the code that the cursor is at. The reason behind this is that when kids are trading programs at school they won't know what programs to transfer. And if the other guy only gets 1 of 2 programs, then he will not think well of your program. However, dont sacrifice any game speed to do this.</p>
+
+<p><b>Part 3: Optimizing Code</b></p>
+<p align="justify"><b>Storing Vars:</b><br />
+The basis of programming anything is the ability to manipulate data in such a way as to do a desired task. And perhaps one of the most common commands in TI-Basic is the -> command. This command, obviously, stores something into the memory location specified, but through running benchmark tests I have found that the main thing that slows down any game the most, is storing vars. This function takes a very <u>long</u> time when you use it multiple times with in a loop. So to optimize your code you should remove as many stores as possible.</p>
+
+<p align="justify"><b>Binary Operators:</b><br />
+I don't really know what you would call these, but since they are binary, and have operators, I will call them Binary Operators. What am I talking about? Here is an example:</p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr bgcolor="999999">
+    <td colspan="6"><font face="verdana" size="1">On the homescreen enter:</font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">1->X<br />&nbsp; 1</font></td>
+    <td><font face="Tifont, Ti83pc" size="2">(X=1)<br />&nbsp; 1</font></td>
+    <td><font face="Tifont, Ti83pc" size="2">(X=2)<br />&nbsp; 0</font></td>
+    <td><font face="Tifont, Ti83pc" size="2">(X>2)<br />&nbsp; 0</font></td>
+    <td><font face="Tifont, Ti83pc" size="2">(X>-2)<br />&nbsp; 1</font></td>
+    <td><font face="Tifont, Ti83pc" size="2">(X!=3)<br />&nbsp; 1</font></td>
+  </tr>
+</table></p>
+
+<p align="justify">As you can see, these operations return two possible values. Either 1-true or 0-false. This can be to replace certain if statements in a program. Here is an example of code that is not optimized:</p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+  <tr>
+    <td bgcolor="999999" width="100%" colspan="2">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="999999">
+	  <tr>
+          <td width="70%"><font face="verdana" size="1"><div align="justify">This code is from a nibbles type game where the front component must keep moving, so when a new key is pressed, old keys must be reset and one stored with value of movement (either - or +).<br />
+<b>Note:</b> s-change in x, t-change in y.</div></font></td>
+	    <td width="30%" align="center"><font face="verdana" size="1"><b>The same code optimised:</b></font></td>
+	  </tr>
+      </table>
+    </td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td width="70%"><font face="Tifont, Ti83pc" size="2">getKey->K<br />If K!=0:then<br />0->S:0->T<br />If K=24<br />-1->S<br />If K=26<br />1->S<br />If K=25<br />-1->T<br />If K=34<br />1->T<br />End</font></td>
+    <td width="30%"><font face="Tifont, Ti83pc" size="2">getKey->K<br />If K!=0:then<br />(K=26)-(K=24)->S<br />(K=34)-(K=25)->T<br />End</font>
+</td>
+  </tr>
+</table></p>
+
+<p align="justify">As you can see, that is a lot shorter. But more importantly, also much faster. In the later only two storages are used, where in the other there will be three.The later code performs just as many condicional operations as the first, but the later code is much shorter, this is important because space on the calcultor is very limited.</p>
+
+<p align="justify">However, this method is not always faster. If you use this instead of an if statement that doesn't have to store a variable every loop, then it will actually go slower. This is because it may unnecesarily storing a zero into a variable instead of just checking a condiconal statement. You have to just experiment with Binary Operators to get good at them.</p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+<colgroup>
+  <col span="1" width="50%">
+  <col span="1" width="50%">
+</colgroup>
+  <tr>
+    <td bgcolor="999999" width="100%" colspan="2">
+      <table width="100%" cellpadding="2" cellspacing="0" border="0" bgcolor="999999">
+	      <tr>
+          <td width="50%"><font face="verdana" size="1"><div align="justify">You can use Binary Operators to replace any If statement that stores a value into a variable:</div></font></td>
+          <td width="50%" align="center"><font face="verdana" size="1"><b>The same code optimised:</b></font></td>
+	  </tr>
+      </table>
+    </td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">If X=6<br />10->Y</font></td>
+    <td><font face="Tifont, Ti83pc" size="2">10(X=6)->Y</font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">If X=6 and Y=4<br />-3->V</font></td>
+    <td><font face="Tifont, Ti83pc" size="2">-3(X=6)(Y=4)->V</font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">If X=6 or T=2<br />1->C</font></td>
+    <td><font face="Tifont, Ti83pc" size="2">(X=6)+(T=2)->C<br />//assuming that X and T will not be true at the same time.</font></td>
+  </tr>
+</table></p>
+
+<p align="justify"><b>Binary condicionals:</b><br />
+Similar to using the binary operator, you can use a regular variable as a binary number. You of course know that 0 is false and 1 is true(actually,any integer is true). Now that you know this you can use it in a game. For instance, you could use it to check a spot in the list.</p>
+
+<p><table align="center" width="40%" cellpadding="2" cellspacing="3" border="0">
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">If L6(1)<br />xxxxxx</font></td>
+    <td><font face="Tifont, Ti83pc" size="2">If L6(1)=1<br />xxxxxx</font></td>
+  </tr>
+</table></p>
+
+<p align="justify">Both examples do the exact same thing. Except that the one on the left is a little faster. This could be used to simplify the code and just make it easier to type in.</p>
+
+<hr />
+
+If you don't understand this stuff:
+
+<ol>
+  <li>Reread the tutorial.</li>
+  <li>Reread it again (throughly, and experiment with the code)</li>
+  <li>Then I can't write good tutorials, or</li>
+  <li>You should rethink wanting to program Advanced BASIC</li>
+</ol>
+
+<p align="justify"><a href="tutorial2.html">Next Tutorial:</a> Arrays: The Amazing Data Structure.</p>
+
+<p align="justify">Written by <a href="../../members/users/user021.html">Brandon Green</a>.</p>
+
+<p align="justify">Tutorial is property of Brandon Green, &copy; 2000. Do not use without permision. Algorithms are property of Brandon Green, e-mail for permision to use.</p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<!--#geoguide-->
+</font>
+</body>
+</html>

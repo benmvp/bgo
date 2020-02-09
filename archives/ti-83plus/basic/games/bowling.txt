@@ -1,0 +1,50 @@
+       **Use Word Wrap and Maximize this window to view correctly!!!**  
+                        Supreme Bowling Version 4.6
+                              Copyright(C) 2000
+
+Editor: Ben Ilegbodu
+Date: 07/08/00
+Format:	BASIC for TI-83 Plus
+Email:	Benahimvp@aol.com
+****************************************************
+Description:	1-player or 2-player bowling game.
+Files:		* bowling.8xg(bowling.8xp & zbowling.8xp)
+		* Pic3.83i
+		* Pic5.83i
+		* bowling.txt
+****************************************************
+Manual: Load Bowling.8xg, Pic3.83i, and Pic5.83i.  Run Bowling.  An opening screen will appear.  Press enter.  A menu will show up asking if you want to clear the high score.  If you pick yes then the high score will be reset, if not then it won't.  Next, a menu will show up asking how many players are playing or a choice to play a link game between two people on two different calculators.  After choosing, follow all the directions until the bowling ball starts moving from left to right.  When it is at the position you like, press enter.  The aim is for right down the middle.  If you happen to not knock down any pins, a screen will appear saying "GUTTER BALL!"  If you happen to knock them all down, press enter and a screen will appear saying that you got a strike.  If you happen to get three strikes in a row, a screen will appear with a picture of a turkey.  After you have completed the game, the calculator will display the score(s).  If it is a 1-player game, then it will just display the one score.  If it is a 2-player game then it will display both scores and also say who won.  At the bottom it'll also display the high score.
+
+Keys:
+(While bowling ball is moving)
+Enter -- makes the ball go to the pins
+
+(While game is in between frames or in the spare & strike screens)
+Enter -- goes the next screen
+
+(Anytime)
+ON -- quits the game.  Press on and then quit.
+
+Scoring:
+1 point for each pin knocked down
+20 points for a spare
+30 points for a strike
+300 points possible
+
+History:
+Version 4.6 -- Changed it so that the gutter is shaded in
+Version 4.5 -- Added another function which displays a Turkey after 3 strikes 	       in a row.
+Version 4.0 -- Added numerous functions including: the "Gutter Ball" function 	       and being able to play again from the same game with the same 	       name(s).
+Version 3.6 -- Fixed it so that the user could not forget to press Enter in
+	       Link Mode, which would cause them to be skipped.
+Version 3.5 -- Changed the view screen to graph mode so
+	       that there is more space for text.  Made
+	       it look better.
+Version 3.0 -- Added LINK PLAY and fixed some other minor details
+Version 2.0a-- Fixed a minor bug that prevented the
+	       program from running
+Version 2.0 -- Added High Score function
+Version 1.5 -- Added the 2-player function
+Version 1.0 -- First release (1-player only)
+
+Please do not post an altered version of this program without my consent.  If you have any complaints, suggestions, ideas to make it better, comments or questions please feel free to email.

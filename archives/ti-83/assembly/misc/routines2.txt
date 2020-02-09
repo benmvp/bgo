@@ -1,0 +1,21 @@
+Asm routines set2 for TI-83
+
+This zipfile exists of 2 different assembly subroutines. They can be used and modified freely.
+The following subroutines:
+*Shutdown
+*Alphalock
+
+
+
+Want to learn assembly TI-83? Use the tutorials in ASM83 Guru by James Matthews!
+Download it from WWW.TICALC.ORG
+
+Erik J. Beerlage
+Holland, Zoetermeer.
+15-feb-2001 22:05
+email:
+erikbeerlage@hotmail.com
+Websites:
+http://www.ticalc.org/archives/files/authors/39/3970.html
+http://www.geocities.com/basicguruonline/
+http://home.hetnet.nl/~ejbeerlage/index.html

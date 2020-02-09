@@ -1,0 +1,544 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 30: Math Commands 1</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 30: Math Commands 1</font><br />
+<font size="3">Using math commands, Part 1...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 30: Math Commands 1</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+So we are continuing are little break from game programming to learn the math commands.  You might think that you do not need to learn these commands because you are only interested in making games, but these commands are also used in games also.  If you think about it, games use numbers too.  By the end of this tutorial, you will know how to round and find the absolute value of a number and get just the info before or after the decimal point.  If you are not quite sure what all of these means, just wait and it'll all become clearer to you.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#abs">abs(</a></td>
+    <td>Finds the absolute value of a value</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#round">round(</a></td>
+    <td>Rounds a value to a specified number of decimal places</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#ipart">iPart(</a></td>
+    <td>Finds the integer part of a value</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#fpart">fPart(</a></td>
+    <td>Finds the fractional part or parts of a value</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#int">int(</a></td>
+    <td>Finds the largest integer less than or equal to a value</td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+		<td><b>abs(</b><i>value</i><b>)</b></td>
+		<td><b>round(</b><i>value</i>[,<i>#decimals</i>]<b>)</b></td>
+		<td><b>iPart(</b><i>value</i><b>)</b></td>
+		<td><b>fPart(</b><i>value</i><b>)</b></td>
+		<td><b>int(</b><i>value</i><b>)</b></td>
+	</tr>
+</table>
+</p>
+
+<p align="justify"><font size="3" color="#000080">The Codes:</font><br />
+There will be three codes that'll show you the uses of these 5 commands.  The first one will show you how to use abs( and round(, which is very straightforward.  The second set of code will go over the simple uses of iPart(, fPart(, and int(, and explain the slight difference between iPart( and int(.  The last code will show you a game application of the use of fPart(.</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-29.2463<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+    <td>Stores A as -29.2463</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">abs(A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores the absolute value of A into B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">round(A,2<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />C</font></b></td>
+    <td>Stores the A rounded to 2 decimal places into C</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">round(A,3<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />D</font></b></td>
+    <td>Stores the A rounded to 3 decimal places into D</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp ""</font></b></td>
+    <td>Displays a blank line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "ABSOLUTE VALUE:",B</font></b></td>
+    <td>Displays "ABSOLUTE VALUE:" and the value of B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "2 DECIMAL PLACES",C</font></b></td>
+    <td>Displays "2 DECIMAL PLACES" and the value of C</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Disp "3 DECIMAL PLACES",D</font></b></td>
+    <td>Displays "3 DECIMAL PLACES" and the value of D</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(1,1,"NUMBER:</font></b></td>
+    <td>Displays "NUMBER:" on top line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(1,9,A</font></b></td>
+    <td>Displays the value of A</td>
+  </tr>
+</table>
+
+<p align="center"><img src="outputs/tutorial30a.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut30a.zip'" /></p>
+
+<p align="justify">That was pretty simple, right?  Using abs( and round( is pretty much just like squaring or cube rooting a number.  It's not that hard.  There does not always need to be a long drawn out explanation.  Sometimes the comments to the right of the code suffice.  Now, let's go on to the next code will demonstrate how to use iPart(, fPart(, and int(.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">79.32<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+    <td>Stores A as 79.32</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">iPart(A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores the integer part of A into B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">fPart(A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />C</font></b></td>
+    <td>Stores the fractional part of A into C</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">int(A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />D</font></b></td>
+    <td>Stores the greatest integer less than or equal to A into B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(1,1,"NUMBER:</font></b></td>
+    <td>Displays "NUMBER:" on top line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(1,9,A</font></b></td>
+    <td>Displays the value of A</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,1,"INT PART:</font></b></td>
+    <td>Displays "INTEGER PART:"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,11,B</font></b></td>
+    <td>Displays the value of B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,1,"FRAC PART:</font></b></td>
+    <td>Displays "FRACTION PART"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,12,C</font></b></td>
+    <td>Displays the value of C</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(7,1,"GREAT INT:</font></b></td>
+    <td>Displays "GREATEST INT:"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(7,12,D</font></b></td>
+    <td>Displays the value of D</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">-A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A</font></b></td>
+    <td>Stores negative of A into A</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">iPart(A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores the integer part of A into B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">fPart(A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />C</font></b></td>
+    <td>Stores the fractional part of A into C</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">int(A<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />D</font></b></td>
+    <td>Stores the greatest integer less than or equal to A into B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(1,1,"NUMBER:</font></b></td>
+    <td>Displays "NUMBER:" on top line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(1,9,A</font></b></td>
+    <td>Displays the value of A</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,1,"INT PART:</font></b></td>
+    <td>Displays "INTEGER PART:"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,11,B</font></b></td>
+    <td>Displays the value of B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,1,"FRAC PART:</font></b></td>
+    <td>Displays "FRACTION PART"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,12,C</font></b></td>
+    <td>Displays the value of C</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(7,1,"GREAT INT:</font></b></td>
+    <td>Displays "GREATEST INT:"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(7,12,D</font></b></td>
+    <td>Displays the value of D</td>
+  </tr>
+</table>
+
+<p align="center"><img src="outputs/tutorial30b.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial30c.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut30b.zip'" /></p>
+
+<p align="justify">Hmmm...interesting.  The greatest integer command was the same on the first screen, but one less on the second screen.  Why is that?  First, let me explain everything and then I will make sure you know why that is.  The first part should not be too hard to understand.  You originally start out with a number: 79.32.  First, you take the iPart (integer part) of the number, which is everything before the decimal point, so you have 79 as you answer.  Next, you take the fPart (fractional part) of the 79.32, which leaves you with only .32 because that's what's after the decimal point.  Finally, you take the greatest integer less than or equal to 79.32, which is in fact 79.  So in this case, using iPart( and int( render the same value: 79.  On the second screen, we first negate the number, making it no -79.32.  Now with all these commands, if the number is negative, the value that it returns will also be negative.  That's why after finding the iPart( of -79.32, we get -79, and after finding the fPart( or that number, we get -.32.  Those two should not be too hard to comprehend, but that last displayed value, might raise an eyebrow.  Why isn't the answer -79 to match the answer iPart( returned?  This is because of the definition of the greatest integer command.  It finds the greatest integer <b>less than or equal to</b> the number.  So what's the greatest integer less than -79?  -80.  -79 is actually greater than -79.32.  Now that I've explained it, it should not seem as tricky as before and you should really now understand the definition of the int( command.  I know it may have been a little confusing before.  As promised, in the last code I will show you some game applications of the use of fPart(.  I can almost guarantee that you will use one of these examples in one of your games.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">79.32<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:45.00<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B:23<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />C:58.66<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />D</font></b></td>
+    <td>Stores A as 79.32, B as 45.00, C as 23, and D as 58.66</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(1,1,"WHOLE NUM CHECK:</font></b></td>
+    <td>Displays "WHOLE NUM CHECK:" on top line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,1,A</font></b></td>
+    <td>Displays the value of A</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If fPart(A)=0:Then</font></b></td>
+    <td>If the fractional part of A is eqaul to 0, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,13,"YES</font></b></td>
+    <td>Display "YES"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Else</font></b></td>
+    <td>if not, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,13,"NO</font></b></td>
+    <td>Display "NO"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends If-Then-Else statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,1,B</font></b></td>
+    <td>Displays the value of B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If fPart(B)=0:Then</font></b></td>
+    <td>If the fractional part of B is eqaul to 0, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,13,"YES</font></b></td>
+    <td>Display "YES"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Else</font></b></td>
+    <td>if not, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,13,"NO</font></b></td>
+    <td>Display "NO"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends If-Then-Else statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,1,C</font></b></td>
+    <td>Displays the value of C</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If fPart(C)=0:Then</font></b></td>
+    <td>If the fractional part of C is eqaul to 0, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,13,"YES</font></b></td>
+    <td>Display "YES"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Else</font></b></td>
+    <td>if not, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,13,"NO</font></b></td>
+    <td>Display "NO"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends If-Then-Else statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,1,D</font></b></td>
+    <td>Displays the value of D</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If fPart(D)=0:Then</font></b></td>
+    <td>If the fractional part of D is eqaul to 0, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,13,"YES</font></b></td>
+    <td>Display "YES"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Else</font></b></td>
+    <td>if not, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,13,"NO</font></b></td>
+    <td>Display "NO"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends If-Then-Else statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Pause</font></b></td>
+    <td>Suspends program and waits for use to press <img src="../index/enter.gif" width="30" height="11" border="0" align="middle" alt="ENTER" /></td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrHome</font></b></td>
+    <td>Clears the home screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">63<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />A:163<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B:695<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />C:45927<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />D</font></b></td>
+    <td>Stores A as 63, B as 163, C as 695, and D as 45927</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(1,1,"MULTIPLE OF 63?</font></b></td>
+    <td>Displays "MULTIPLE OF 63?" on top line</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,1,A</font></b></td>
+    <td>Displays the value of A</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If fPart(A/63)=0:Then</font></b></td>
+    <td>If the fractional part of A divided by 63 is eqaul to 0, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,13,"YES</font></b></td>
+    <td>Display "YES"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Else</font></b></td>
+    <td>if not, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(3,13,"NO</font></b></td>
+    <td>Display "NO"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends If-Then-Else statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,1,B</font></b></td>
+    <td>Displays the value of B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If fPart(B/63)=0:Then</font></b></td>
+    <td>If the fractional part of B divided by 63 is eqaul to 0, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,13,"YES</font></b></td>
+    <td>Display "YES"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Else</font></b></td>
+    <td>if not, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(4,13,"NO</font></b></td>
+    <td>Display "NO"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends If-Then-Else statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,1,C</font></b></td>
+    <td>Displays the value of C</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If fPart(C/63)=0:Then</font></b></td>
+    <td>If the fractional part of C divided by 63 is eqaul to 0, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,13,"YES</font></b></td>
+    <td>Display "YES"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Else</font></b></td>
+    <td>if not, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(5,13,"NO</font></b></td>
+    <td>Display "NO"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends If-Then-Else statement</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,1,D</font></b></td>
+    <td>Displays the value of D</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">If fPart(D/63)=0:Then</font></b></td>
+    <td>If the fractional part of D divided by 63 is eqaul to 0, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,13,"YES</font></b></td>
+    <td>Display "YES"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Else</font></b></td>
+    <td>if not, then</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Output(6,13,"NO</font></b></td>
+    <td>Display "NO"</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">End</font></b></td>
+    <td>Ends If-Then-Else statement</td>
+  </tr>
+</table>
+
+<p align="center"><img src="outputs/tutorial30d.gif" width="129" height="110" border="0" align="middle" /> press <img src="../index/enter.gif" width="30" height="11" border="0" alt="ENTER" /> <img src="outputs/tutorial30e.gif" width="129" height="110" border="0" align="middle" /></p>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut30c.zip'" /></p>
+
+<p align="justify">So now you know.  When there is no fractional part of a number, fPart( returns 0.  We can use this knowledge to test whether a value is an integer or not.  So when you get the fPart( of 79.32, it returns .32, which is not equal to 0, so "NO" is displayed.  When you take the fPart( of 45, however, it returns 0 because there is no fractional part, and therefore displays "YES."  The second screen is really what will help you in game programming.  What you are learning is how to see if a given value is a multiple of a number.  This is very helpful when you want things to occur in multiples of hundreds.  For instance, in my racing game, Ace Racer 2K1, I want the barriers to close in after every 100 barriers are past.  I keep the number of barriers past into B, so each time the program loops back around I check to see if B is a multiple of 100.  If it is not, then just go on ahead regularly.  However, if it is a multiple of 100, then the barrier closes in a step.  That's a game application of a mathematical command.  Anyway, so when 63 (the value of A), is divided by 63, the fPart( is 0 because 63/63 is 1.  Because of this, "YES" is displayed.  On the next line however, the fPart( of 163/63 is not 0 (it's actually .587301587), so "NO" is displayed.  What I am about to say is directed to those people who know a good amount of BASIC programming.  I know the construction of using many If-Then-Else statements is not as optimal as the program can be.  There are many ways to optimize the code, one of which would be to use a subroutine.  However, subroutines are not explained until Tutorial 34, so this was the best that I can do.  Sometimes it is better to use simpler methods, even though they are not the most efficient, because it is easier to learn the information that you are intended to learn.  I just thought I should note that just so I do not receive any emails for programmers telling me that the code is not optimal.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+Now that you think about it, what you have just learned was not difficult at all.  In fact, it is fairly easy to grasp the concept.  In fact, you could have problem skipped this tutorial, not know about how to test to see whether a value is a multiple of a number, and still be a very good programmer.  It is just that what you learned just makes programming easier for you.  I am sure there is probably some other way to go about finding whether a value is a multiple, but this was is the easiest and most efficient.  Like I said at the beginning, I definitely think you will be using that construction in one of you programs.  In the next tutorial, we will march on with the mathematical theme, learning some more math commands.  Some of the commands also are helpful in making games, not just mathematical programs.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="tutorial29.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial31.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="tutorial29.html">Tutorial 29</a></td>
+	<td><a href="tutorial31.html">Tutorial 31</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

@@ -1,0 +1,51 @@
+EZEQU v1.4 by Tristan Griffith (saxyboy85@aol.com)
+2-5-01
+
+Version 1.3 was an updated version of EZEQU v1.2 which had a fatal bug.  
+Version 1.4 is the same as 1.3 except for a new graphing function.  If 
+you have that version and would like to use it, go to the homescreen 
+and plug in 2->dim(LSET.LSET is a list so that "L" should be the little
+ "L" that is in the list menu.  However, I would reccomend updating to
+v1.3 because of the convient auto detect fraction function and the new 
+quadratic function.  
+
+EZEQU is a program that allows you to solve an equation without having
+to set it to zero.  You must solve for the variable "X", otherwise, you 
+will generate an error message.  Instead of hitting "alpha" "X", simply 
+hit the "X,T,(theta),n" button.  As you will see in fig3, this 
+program also has a few other functions included:
+
+1)Guess
+2)Fraction (auto detect)
+3)Quadratic
+4)Graph
+
+To get to the guess function, go to guess on the main menu, 
+which takes you to the guess screen.
+
+Guess, when turned on, allows you to guess what your answer will be.  
+This helps the calculator to find the answer quicker.  If you turn 
+guess off then it sets the default guess equal to 1.You do not have to 
+go thru the guess menu each time, because your guess setting 
+(on or off) is saved and is the same until you go back and change it.
+
+Fraction auto detects if your answer has a decimal.  If your answer 
+does have a decimal, it simply displays your answer as a fraction as 
+well as the decimal.
+
+Quadratic is spaecialized for solving quadratics.  You must follow the 
+form: AX^2+BX+C=0.  Then you simply enter the values for A, B, and C 
+and it solves it for you.  The quadratic function does not use the 
+guess function, but it does use the auto detect fraction function.
+
+After solving for a quadratic or for a differnt equation, hit "Mode" 
+to go back to the main menu or "Enter" to solve for a quadratic or 
+other equation again.  
+
+You can graph an equation (quadratics too) after solving for it by 
+pressing the "graph" button.  This will then display a graph of your 
+equation, then the commands for what to do next are the same as if you 
+just finished solving an equation.
+
+If you have any questions or comments, please do not hesitate to contact 
+me at: mrtinkertrain@wickedco.com

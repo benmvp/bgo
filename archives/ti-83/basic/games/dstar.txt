@@ -1,0 +1,25 @@
+DDDDD  SSSSSS TTTTTT AAAAAA RRRRR
+DD  DD SS       TT   AA  AA RR  RR
+DD  DD SSSSSS   TT   AAAAAA RRRRR
+DD  DD     SS   TT   AA  AA RR  RR
+DDDDD  SSSSSS   TT   AA  AA RR  RR 
+	   DStar v1.1
+===================================================================
+
+Author:			Martin Johansson
+Size:			~ 3000 b
+System:			TI83/TI83+ -Basic
+Release Date:		20/4 -2001
+Bug(s):			
+
+Whats new?		This version is very different exept the 
+			levels. Because I have made a String->Matrix
+			converter so I have now put the levels in strings
+			because I want to save space in my coming new
+			versions. In the next version its gonna be
+			a lots of new things one example is a level
+			editor, so you can building levels by your own.
+			Stay tuned for more happy days in the future.
+
+===================================================================
+Any comments or bug reports? Send it to: smoother_1982@hotmail.com

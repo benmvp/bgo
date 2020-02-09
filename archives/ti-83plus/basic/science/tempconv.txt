@@ -1,0 +1,32 @@
+Description:
+------------
+This program converts temperature from and to Fahrenheit, Celsius, and Kelvin!
+
+Installation:
+------------
+To run this program send it to your TI-83 Plus.
+
+
+Version History:
+----------------
+Version 1.0
+This is the first release.
+
+
+Known Bugs:
+-----------
+It should be Bug Free!
+
+Programming Language:
+---------------------
+This program is written entirely in BASIC
+
+Disclaimer:
+-----------
+I DO NOT take responsibility if ANYTHING goes wrong.  This includes bugs, crashes (calculator, or computer), and any other problems I failed to mention.  You agree to this disclaimer by downloading and/or using this program!  Use of this program is at your own risk.
+
+If you would like to CONTACT me, or report a Bug:
+-------------------------------------------------
+Send email to jbirk@hotmail.com
+
+I hope that you find this program useful!

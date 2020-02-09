@@ -1,0 +1,45 @@
+Program: Anti Snake 1.7
+Author: Ben Grunwald Aka Bite ME
+URL: http://map.50megs.com
+Released: February 2000
+Calculator: 83+,83,82
+E-mail: Biteme84@aol.com
+
+This game is a Nibbles and Snake clone.  Although Anti Snake is similar to most of the same genre it has one difference.  Instead of trying to eat the apples you must dodge them.  before you play any level, you must wait approximately 5-6 seconds for the level to load because each level is randomized.  Although this program does lack extra options, it is arguably THE fastest snake clone ever written in Ti83 BASIC.
+
+Controls:
+Arrow keys
+
+
+History:
+Snake 1.0: Original slow version of snake. 500 bytes
+
+Anti-Snake 1.1:  I threw the whole old engine out and rewrote it.  Much faster and now you must dodge the apples instead of eating them. Levels are now randomly created.  436 bytes!
+
+Anti-Snake 1.2: Faster. I removed the menu to speed up repeat loop. 399 bytes!
+
+Anti Snake 1.3: Completely redid the engine this time increasing the speed so drastically that i have recieved reviews from several different sites claiming that it is the fastest snake type game written in BASIC on any calculator. 362 bytes!
+
+Anti-Snake 1.4: Changed the level building repeat loop and increased it's speed almost by double.  310 bytes!
+
+Anti-Snake 1.5: This will probably be the last optimization of Anti-Snake because i don't believe there is anything else that could speed it up.  Therefore, I expect never to write a newer version so enjoy it.  Who knows, maybe I'll surprise you. 290 Bytes!
+
+Anti-Snake 1.6:  I knew i said i probably wouldn't ever revise Antisnake but This version has two small optimizations in the main engine and therefore, although they are minute changes, they speed the program up substantially. 262 Bytes!
+
+Anti-Snake 1.7: Several days after releasing version 1.6 i found out about a problem someone had with their plots being on and not being able to run the game.  Therefore, i rereleased the game hopefully for the last time. 264 Bytes!
+
+Anti-Snake 1.8?  Maybe.  i dunno.  depends on whether i find some more ground breaking techniques to speed up Anti-Snake.  ASM is a possibility but i doubt it.  A port to the 85 and 86 are two options i am seriously considering.  If you have any new ideas or questions feel free to email me at Biteme84@aol.com.
+
+
+
+For more great programs come to http://map.50megs.com
+
+
+You MAY distribute this program freely and post it on your website as long as you include this attached read me file.
+
+An Akbar and Jeff Sex Gods studios and Millenium Advanced Programing production.
+
+By
+Ben 
+
+Thanx to everyone who encouraged me to work on this simple yet so complicated program for so long.  It finally payed off!

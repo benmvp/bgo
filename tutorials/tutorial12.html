@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Tutorial 12: Displaying Text</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../tablefontsize.css" rel="stylesheet" />
+
+<link href="../hlb.css" rel="stylesheet" />
+
+<basefont size="2" />
+<base target="main" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+<font face="Times New Roman, Times, Serif">
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<font size="4">Tutorial 12: Displaying Text</font><br />
+<font size="3">Displaying Graph Screen Text...</font>
+<hr />
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../home.html">HOME</a> <b>>></b> <a href="index.html">Tutorials</a> <b>>> <i>Tutorial 12: Displaying Text</b></i></td>
+	</tr>
+</table>
+
+<p align="justify"><font size="3" color="#000080">Introduction:</font><br />
+In this tutorial, we will learn how to clear the graph screen and display text on it.  You can display more text on the graph screen than on the home screen, because graph screen text is 3x5 pixels, while home screen text is 5x7 pixels.</p>
+
+<p align="justify"><font size="3" color="#000080">New Commands:</font>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="25%">
+<col span="1" width="75%">
+</colgroup>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#clrdraw">ClrDraw</a></td>
+    <td>Clears all drawings or text on the graph screen</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/n-z.html#text">Text(</a></td>
+    <td>Writes text on graph beginning at pixel (<i>row</i>,<i>column</i>)</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#axeson">AxesOn</a></td>
+    <td>Turns on graph axes</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#axesoff">AxesOff</a></td>
+    <td>Turns off graph axes</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#fnon">FnOn</a></td>
+    <td>Selects all Y= functions or specified Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><a href="../index/a-m.html#fnoff">FnOff</a></td>
+    <td>Deselects all Y= functions or specified Y= functions</td>
+  </tr>
+</table>
+</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+<col span="1" width="50%">
+<col span="1" width="50%">
+</colgroup>
+  <tr valign="middle">
+    <td><b>Text(</b><i>row</i>,<i>column</i>,<i>text1</i>,<i>text2</i>,...,<i>text n</i><b>)</b></td>
+    <td><b>FnOn</b> [<i>function#</i>, <i>function#</i>,...,<i>function n</i>]</td>
+  </tr>
+  <tr valign="middle">
+    <td></td>
+    <td><b>FnOff</b> [<i>function#</i>, <i>function#</i>,...,<i>function n</i>]</td>
+  </tr>
+</table>
+<br />
+
+<center><img src="text.gif" width="96" height="69" border="0" align="middle" alt="Text Boundaries" />
+You can't go past these boundaries</center>
+
+<p align="justify"><font size="3" color="#000080">The Code:</font></p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<colgroup>
+  <col span="1" width="40%">
+  <col span="1" width="60%">
+</colgroup>
+  <tr valign="middle">
+    <td><b><font color="#008000">:</font></b></td>
+    <td>For AShell, SOS, and TI-Explorer</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">AxesOff</font></b></td>
+    <td>Turns the graph axes off</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">FnOff</font></b></td>
+    <td>Deselects all the Y= functions</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">ClrDraw</font></b></td>
+    <td>Clears the graph screen of all drawings</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">7<img src="arrow.gif" width="12" height="8" border="0" align="middle" alt="STORE" />B</font></b></td>
+    <td>Stores 7 into user variable B</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(5,10,"HELLO ",157</font></b></td>
+    <td>Displays "HELLO" and 157 starting at row 5 and column 10</td>
+  </tr>
+  <tr valign="middle">
+    <td><b><font color="#008000">Text(12,10,"BYE ",B</font></b></td>
+    <td>Displays "HELLO" and B starting at row 12 and column 10</td>
+  </tr>
+</table>
+
+<p align="center"><input type="Button" name="Download" value="Download Code" onClick="window.location='files/tut12a.zip'" /></p>
+
+<p align="center"><img src="outputs/tutorial12a.gif" width="129" height="110" border="0" /></p>
+
+<p align="justify"><font size="3" color="#000080">Further Explanation:</font><br />
+We need to turn the axes off and deselect all the functions so that they won't get in the way.  If we didn't turn the axes off, they'd get in the way of the text, and the screen wouldn't be blank.  If we didn't deselect all of the functions, if there were any, the calculator would display them and they'd be in the way of the text.  When you run the program, "HELLO" and the value 457 are on the same line.  This is very useful when you want to incorporate text with variables.  That way you do not have to worry about spacing because the Text( command does it for you.  If we were using  <a href="../index/n-z.html#output">Output(</a> and trying to combine text with variables, we would have a problem.  If we didn't know how long the variable was going to be (1 digit, 2 digits, etc.) we wouldn't know how far over to space the text.  With the Text( command, we don't have to worry about it.</p>
+
+<p align="justify"><font size="3" color="#000080">Conclusion:</font><br />
+Well, I feel that there's nothing else to show you because Text( is very similar to Output(.  I already told you the few differences above.  If you want to write several lines of text, the value for <i>row</i> in the second line, should be at least 7 more than the value for row in the first line.  This will give you one pixel-line of blank space in between the two text lines.  When you are making programs and you turn the axes off at the beginning of the program, you should always turn them back on at the end of the program.  You really don't have to worry about turning the functions back on, but you should turn the axes back on.  In the next tutorial, we are going to draw points on the graph screen.</p>
+
+<p align="justify">If you do not understand a particular part in this lesson, have suggestions, or find any problems please <a href="../comments.html">contact me</a>.</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr align="center">
+	<td><a href="overview2.html"><img src="previous.gif" width="64" height="64" border="0" alt="Previous Tutorial" /></a></td>
+	<td><a href="tutorial13.html"><img src="next.gif" width="64" height="64" border="0" alt="Next Tutorial" /></a></td>
+  </tr>
+  <tr align="center">
+	<td><a href="overview2.html">Overview 2.0</a></td>
+	<td><a href="tutorial13.html">Tutorial 13</a></td>
+  </tr>
+</table>
+
+<p><script language="javascript" src="../navi.js"></script></p>
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../contactme.html">Webmaster</a>.
+</small>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</font>
+</body>
+</html>

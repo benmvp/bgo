@@ -1,0 +1,1 @@
+basictut|Basic Tutor|Ever wanted to be able to read up on the basics of basic calc programming but are not able to get to the inet? Well, with basic tutor 1.0 you can read up on the basics where ever you are.|Cody Dupre|23|ti-83/assembly/misc/ion|TI-83 Assembly Ion Miscellaneous|12,693|Yes|basictut.txt|basictut1.gif*basictut2.gif*basictut3.gif|1|3|58

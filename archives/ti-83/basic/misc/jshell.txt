@@ -1,0 +1,96 @@
+JShell v4.0
+by Joey Gannon
+
+USER'S MANUAL
+
+Send Jshell.83g to your calculator. Do NOT ungroup it.
+(You may wish to clear your memory first, since JShell is designed to use every bit of mem on the calc.)
+
+Before you run JShell, go to the Draw menu, push the left arrow, press 4, press 1, and press Enter. Press the Y= key, replace JOEY GANNON with your own name, replace the serial number with any number, and go back to the home screen. Go to the Draw menu, push the left arrow, press 3, press 1, and press Enter. You can now run JShell. Select it from the programs menu and run it, just as you would with any other program. 
+When JShell first opens up, you'll see my wonderful opening graphic designed by Manaze, my graphic-designing alter-ego. The first menu gives you the option of Programs, Games, Math, Good Advice, License, Info, and Quit. This manual will take you step by step through each menu and each program available to you.
+
+-PROGRAMS-
+
+PROTECT
+This assembly-based program was written by Martin Sommer to protect and unprotect programs on your calculator. If a program is protected, you cannot edit it. Simply type in the name of the program you want to (un)protect, press Enter, and voilá! It's done.
+Note: Some programs, such as Protect and JShell, cannot be unprotected.
+
+NORESET
+This assembly-based program, written by Tijl Coosemans, prevents anybody, such as an evil teacher or an idiotic classmate from clearing your memory or running the self-test. If you want to protect your calc, run it from JShell. If you want to unprotect it, I recommend running CHTRS from the home screen.
+A few notes: One, this program only works if you have ROM v1.10. To check, go to the home screen, push Mode, Alpha, S. Do NOT push Enter. If your number is v1.10 or v1.10001, this will work. If not, it probably won't. (It made my friend's calc flip out, since he has ROM v1.07. Second, when you run NORESET from JShell, it will ask you for a key to recover your files after you clear your mem. You can use anything but 2nd, Alpha, On, or Enter. If your memory is cleared, press that key, and everything comes back. Third, sometimes this program will screw up and you won't be able to recover your progs. Sometimes it is spontaneous, but usually this only occurs if you run another assembly program while NORESET is running in the background. I assume NO responsibility if this happens.
+
+GENOME
+I wrote this program in Basic. People think it's weird that I walk around school playing with and programming a calc. When they ask what I'm doing, I get them to shut up by running this program and saying, "I'm decoding the human genome." There are three modes (Decimal, Hexadecimal, and Binary) on the two screens (128 cps = home screen, 240 cps = draw screen). The only way to quit is to break it by pushing On, but if you push Enter again from the home screen, JShell will restart in the main menu. Of course, this program is not actually decoding the genome, but is just displaying random numbers. Sorry...
+
+CHATTERBOX
+Ryan Church and I wrote this Basic 2-calc chat program. If you push Get Message, it will retrieve an 8-line message from the linked calc. If you push Write Message, you can write an 8-line message for the other person's retrieval. While writing your message, do not type any more than 16 characters per line. (The last character you can type will go directly under the question mark.) Also, if you are done with your message before you've filled 8 lines, simply type a space in the next blank line and all of the other lines will be automatically filled. I am NOT responsible if you are caught doing this in class, but I would be a hypocrite to tell you not to do it...
+
+-GAMES-
+
+I am NOT responsible if you are caught playing these games during class, but once again, I will not be a hypocrite. (Heh heh heh...)
+
+NIBBLES
+Nibbles, written in assembly by Bill Nagel, the assembly god, is the absolute best calculator game I've ever played. It is, while very simple in game play, extremely addictive. Press 2nd to select the speed you want to play at. Press Clear to start. Press the arrow keys to try to get the dots without running into walls or yourself. Between levels or after you die, press Clear to start again. Press Mode to toggle the pause on and off. If the game is paused, press Del to end the game. If you have set a new high score, press the left and right keys to set your first initial, press Clear, and do the same for the other two initials.
+Note: For no apparent reason, sometimes your calc will turn off in the middle of a game. When you turn it back on, you'll be back in the game, but it'll be frozen. If you push an arrow key, it'll go to a screen as if you'd just lost a life. It will say something along the lines of:
+Level: 55
+Lives: 54
+Dots: 1
+When you push Clear, the game goes to a verrrrrrry slow pace. You can quit, and everything will be fine. Once, this crashed my calc. I still assume no responsibility.
+
+BREAKOUT
+This assembly game was also written by Bill Nagel. Press 2nd to select the speed you want to play at, and press Alpha to select the level. Press Clear to start. Press the arrow keys to move the paddles to hit the ball to hit the bricks without letting the ball touch the bottom. Between levels or after you die, press Clear to start again. Press Mode to toggle the pause on and off. If the game is paused, press Del to end the game. If you have set a new high score, press the left and right keys to set your first initial, press Clear, and do the same for the other two initials. (I have never had any problems with this game.)
+
+BANGBANG
+This game was written in Basic by Sean Weeks. It is quite similar to Gorilla or VGA Bomber, two old computer games. When you are playing by yourself or against the AI, you are shooting from the castle at the left, trying to blow up the castle at right. If you are playing against a friend, you can decide which side to be on. The angle you need is always between 1 and 90. The velocity required is generally between 150 and 300. I don't know what else to tell you...
+
+ELECTROBOTS
+Sean Weeks also wrote this Basic game, but I modified it to have five, rather than three, levels of difficulty. You are the circle. Use the arrow keys to avoid the robots (asterisks) without running into the electric fences ("not equal to" symbols). To get rid of the robots, run them into each other or into the fences. You will probably develop your own strategy.
+
+HOMERUN DERBY
+This is a fairly fun Basic game with a simple objective: hit the ball far. Brant Cebulla claims to have written this, but I'm not so sure I believe him. Select your player and press 2nd to swing. It seems a little tough at first, but you'll get the hang of it.
+
+FROGGER
+Brant Cebulla also wrote this game with the help of a friend. (I'm not sure of his name, but I'd give him credit if I did.) All you have to do it use the arrow keys to move the frog (pi) across the street to the gaps in the equal signs without getting hit by the cars (O's and equal signs). There are better versions of Frogger out there (sorry Brant), but this is a nice, compact, Basic version.
+
+-MATH-
+
+Note: I wrote most of these Basic programs, but Brant Cebulla started SPACE FIGURES (I improved it sooooo much), and Ben Ilegbodu wrote TRINOM FACTOR. Please do not cheat by using these on tests. My teacher permits me to use them, but yours might not.
+
+SPACE FIGURES
+This program provides the surface area and volume of five space figures. (Sorry, no S.A. for a cone, but I DID write the S.A. for a pyramid using only L, W, and H.) For the Cone, Cylinder, and Sphere, you can get your answers in full or in terms of pi. (For example, a cylinder with r=5 and h=8 would have a volume of 628.3185. If you get it in terms of pi, you would know that the answer was also 200 pi.)
+
+QUAD FORMULA
+This program simply takes A, B, and C and calculates out the two answers from the quadratic formula. If you don't know about imaginary numbers, this program will probably confuse you more than anything else will.
+
+MIDPOINT
+This will calculate the midpoint of a line on a plane or in space. If you input X, Y, and sometimes Z, it will give you the appropriate coordinates.
+
+PYTHAG THEOREM
+This prog will give you a missing leg or hypotenuse of a triangle. This may seem incredibly simple, but this will give you the answer both in full and in radical form. (Example: If A=5 and C=18, the answer is either 17.2916 or the square root of 299.)
+
+DISTANCE FORM
+This will find the length of a line in space or on a coordinate plane. Just input the X, Y, and Z coords (just put 0 for Z if you're doing a plane) of the endpoints of a line and it will calculate the length in both radical form and full answer.
+
+TRINOM FACTOR
+This trinomial factorer FOILs out quadratic equations. If the value of X is imaginary or irrational, then it will display "-NOT FACTORABLE-". The program takes a little while to display the answer, but it comes out right. This was very useful on my way through Integrated 2.
+
+-GOOD ADVICE-
+This program displays the best piece of advice I ever got. It's kinda stupid, and if you're female, it won't matter to you, but I thought it was interesting.
+
+-LICENSE-
+When I was distributing this around my classroom for money, before I made it freeware on the Internet, I used this to make sure people didn't pirate JShell. (If it were copied, the person who got the copy would then have a crashed calc. Heh heh heh...) Now that it's moot, I just left it there to show that you own it and to show off my ability to use GDBs.
+
+-INFO-
+This just shows that I wrote it and that a bunch of people helped me. I also included an ASM subroutine to show how much free memory you have. In case you don't read the credits, I'd like to thank Bill Nagel, Sean Weeks, Ben Ilegbodu, Ryan "Math Homie" Church, Mr. Forenza, TiCalc.org, Hari Bhanu, Martin Sommer, Tijl Coosemans, Brant "Jamal" Cebulla, and anybody else I forgot. Also, READ THE FRIGGIN' MANUAL!!!
+
+-QUIT-
+There are three ways to quit. Home Screen is fairly self-explanatory. Power Down turns off your calculator and reboots JShell when you turn it back on. PWord Protect turns off your calculator and protects it with a password. When you first get it, the password is "Widget" with no quotes. You don't have to push Alpha or anything. Change the password when you get it, please. When you press 1 to Start TI-83, JShell will reboot.
+
+*My Final Words*
+I know this was long-winded, but I hope it answers any questions you have. If you STILL have a question, e-mail me at Ocean1067@aol.com. I'll write back if I feel like it. For the final time, I am NOT responsible if your calc crashes, your teacher catches you playing games or chatting, or if you get caught cheating. DO NOT CHEAT!!! Otherwise, have fun. By the way, check back to see if I update JShell, as I am constantly making it better.
+
+(c) 2001
+Joey Gannon
+Age 14
+
+-- All information in this document is accurate as of 6/13/01. --

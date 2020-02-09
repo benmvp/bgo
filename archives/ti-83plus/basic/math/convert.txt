@@ -1,0 +1,6 @@
+			Convert! Version 1.0
+			   Jason D. Ralphs
+
+	This program is a unique metric\english converter for the Ti-83 Plus.  It contains about thirty differant conversions, and a table of contents.  
+
+	When you use the converter, the prompt will give you a letter and a queston mark.  This means, how many _____ do you want to convert.    

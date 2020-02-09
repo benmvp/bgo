@@ -1,0 +1,12 @@
+Graphics Builder v1.01
+by: Lucas Johnson
+
+This program was designed to let you draw Lines and points and a few 
+other things and then, when you are done drawing it, display a 
+complete list of BASIC code you need to enter into a program to draw 
+it. The program uses a total of 2250 bytes and has one subroutine that 
+must be on the calculator in order to draw. Graphics Builder was 
+designed for the TI-83+. If I find that people like this program then 
+I'll include a few features in a newer version I didn't get into this 
+one as I didn't have the time. If you have any questions or 
+suggestions, please contact me at luke195rs@aol.com.

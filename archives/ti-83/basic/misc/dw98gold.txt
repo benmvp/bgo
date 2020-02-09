@@ -1,0 +1,84 @@
+Program: Doorways '98 Gold
+Size: aprox. 5300
+Calc: TI-83
+Minimum Requirments: Clear Memory
+OS: Autoexec '98
+Producer: Hays Games Co.
+Genere: OS
+Version: 1.2
+Completion Date: 5-30-2001
+Release Date: 6-1-2001
+Description: Doorways '98 Gold includes everything you need to get the most out of
+your Ti83.  With Doorways '98 Gold installed on your Ti83, you will never have to
+use the Ti-OS again.  Doorways '98 Gold runs all Doorways '98 compatable games and
+software, and is bundled with Whack an R!, an exciting game from the Hays Games
+Company.  Also bundled in is Hays pLuS!, with extra features for your Ti83.  With
+Doorways '98 Gold, the maximum power of your Ti83 is in your hands.
+
+***CLEAR YOUR MEMORY BEFORE SENDING DWGOLD.83g TO YOUR TI-83
+***ALWAYS USE THE AUTOEXEC PROGRAM, NOT DOORWAYS 98
+***NO INSTALLATION IS NECESSARY, THE FIRST TIME YOU RUN AUTOEXEC DOORWAYS
+   AUTOMATICALLY INSTALLS
+***WHEN YOU FIRST RUN HAYS SAFE, YOUR PASSWORD WILL BE "123"
+
+Adding Programs to Doorways '98
+
+Doorways 98 has 6 empty slots to add programs named:
+
+prgmSLOTA
+prgmSLOTB
+prgmSLOTC
+prgmSLOTD
+prgmSLOT1
+prgmSLOT2
+
+Each slot file looks like this:
+
+:
+:prgmDOORWAYS
+
+To change the slot, all you need to do is add your program's name to the first line.  
+Then, go to the Rename Slots/Extra's (Control Panel) and re-name the appropriate slot.  
+
+
+Version History
+---------------
+VERSION:	v1.0
+NAME:		Doorways '98
+DATE:		4/26/1998
+DETAILS:	First release of Doorways
+		Features Contrast Changer and Poweroff
+		Features 4 customizable slots
+		Intergraded Hays Safe and Hays Messenger
+
+VERSION:	v1.1
+NAME:		Doorways '98 pLuS!
+DATE:		5/13/1998
+DETAILS:	Added Screen Saver
+		Added pLuS! Slots
+		Added new Hays Safe '98.1
+		Added Startup Pic
+
+VERSION:	v1.2
+NAME:		Doorways '98 GOLD
+DATE:		6/1/2001
+DETAILS:	Special Re-Release Edition with bundled pLuS!
+		Includes Game: Whack an R!
+
+Coming Soon from Hays Games Company:
+------------------------------------
+Doorways '98 2nd Edition
+Doorways Me
+Doorways NT 4.0
+Punchout! 83
+
+Much more!  Check out the Hays Homepage for details! 
+
+Copywrite Notice: Doorways 98, copywrite (c) 1998-2001 
+by Hays Games Co.  Doorways '98, DW98, DWNT, and Doorways NT
+are all trademarks of the Hays Corporation.
+
+Visit Hays Games Co. On the web at:
+http://www.geocities.com/hayscorporation/
+or e-mail us at:
+choad_22@hotmail.com

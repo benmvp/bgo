@@ -1,0 +1,47 @@
+ 	              Memory² v1.0
+		  Copyright © 2000-2001
+
+Author:	Ben Ilegbodu
+Date:  	04/13/01
+Format:	BASIC for TI-83 Plus
+Email:	Benahimvp@aol.com
+********************************************************
+Description:	Fun Memory Game 
+Files:		* Memory2.8xg  (Memory2.8xp,
+		  Zmemflip.8xp)
+		* Memory2.txt
+********************************************************
+Directions:
+Send Memory2.8xg to your calculator.
+
+Object:
+The object of Memory² is to match all 10 pairs of
+numbered cards before the amount of tries remaining run
+out.  You beat the entire game when you beat the 16th
+level (which starts you off with 0 tries remaining).
+
+Keys:
+Arrow keys -- move card indicator around
+2nd -- flips over selected card
+CLEAR -- Quits game
+
+Scoring:
+-  You get 13 points for each pair you correctly match
+
+Additional Info:
+Level 1 starts off with 15 tries remaining.  Once you
+beat that level, Level 2 begins with 14 tries left.  Then
+you have 13 tries at the beginning of Level 3, and so on.
+I'll be extremely, extremely impressed if you beat the
+whole game, and let me know if you do.
+
+History:
+v1.0	--	First release
+
+Future Version:
+v1.5	--	Any suggestions that I recieve
+
+There should not be any bugs, but if there are, please 
+feel free to email me or if you have any suggestions
+(Benahimvp@aol.com).  Please do not change the author
+name.

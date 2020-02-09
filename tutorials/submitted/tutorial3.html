@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Member Submitted Tutorial #3</title>
+  <link rev="made" href="mailto:Benahimvp@aol.com" />
+  <meta name="generator" content="NoteTab Light 4.82" />
+  <meta name="author" content="Ben Ilegbodu" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+<link href="../../hlb.css" rel="stylesheet" />
+
+<script language="javascript" src="../../redirect.js"></script>
+
+<style>
+<!--
+	select		{background-color:#dddddd; font-family:Verdana; font-size:8.5pt; color:black}
+	A:link		{color: #0000CD; text-decoration:none;}
+	A:visited	{color: #0000CD; text-decoration:none;}
+	A:hover		{color: #B22222;}
+-->
+</style>
+<base target="_self" />
+</head>
+
+<body bgcolor="ffffff">
+<font face="verdana" size="1">
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+  <tr>
+	<td class="hlb"><a href="../../home.html">HOME</a> <b>>></b> <a href="../index.html">Tutorials</a> <b>>> <i>Tutorial 3: Nibbles Game -- Lists</b></i></td>
+	</tr>
+</table>
+
+<center>
+<b>Advanced Game Techniques Tutorials
+<hr />
+Advanced BASIC<br />
+Tutorial 3<br />
+Nibbles Game: Lists</b>
+</center>
+
+<p><table align="right" width="210" cellpadding="0" cellspacing="0" border="0" bgcolor="dddddd">
+  <tr>
+    <td>
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td bgcolor="#FF6600" width="20" height="20">&nbsp;</td>
+          <td bgcolor="#666666" width="190" height="20"><font face="arial" size="1" color="#FFFFFF"><b>&nbsp;Advanced BASIC Tutorials</b></font></td>
+        </tr>
+      </table>
+      <table align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td>
+            <form>
+              <select class="pulldownMenu" onchange="if(options[selectedIndex].value) self.location.href=this.options[this.selectedIndex].value">
+                <option value="" selected="selected">Select Tutorial...</option>
+                <option value="tutorial1.html">1. Advanced Game Design</option>
+                <option value="tutorial2.html">2. Arrays: Data Structure</option>
+                <option value="tutorial3.html">3. Nibbles: Lists</option>
+                <option value="tutorial4.html">4. Nibbles: Hit Detection</option>
+                <option value="tutorial5.html">5. Scroll Screen Left & Right</option>
+                <option value="tutorial6.html">6. Advanced Graphics</option>
+                <option value="tutorial7.html">7. Trig Func & Relevant Uses</option>
+              </select>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></p>
+
+<p align="justify"><b>Part 1: Introduction</b>
+<br />First of all, your probably wondering what exactly advanced programming is. For our purposes, we can define advanced programming as the ability to use all the available facits of the TI-Basic to create quality and technicaly complex games. In order to do this you must understand how the calculator uses the commands on a very low level. To use TI-Basic to make quality games you have to know what your doing. Since ASM programming is very fast, you have to be able to program very intelligently to make quality games that will compete with them. The purpose of these tutorials is to explain several advanced programming techniques. By starting at game design and ending at 3-D programming. It explains mainly the theorys behind these techniques and not the exact syntax of things.</p>
+
+<p align="justify">For these tutorials it is assumed that you already know how basic basically works. If you don't know the syntax and how to use things like 'If' statements or 'Lbl's' then you should go read the many other Basic Tutorials out there on the web.</p>
+
+<p align="justify">Reading of the first two tutorials is not required to read through this tutorial. But is recommended as features talked about previously are used in this tutorial without extensive documentation.</p>
+
+<p><b>Part 2: Intro to the Genre</b></p>
+<p align="justify"><b>Nibbles?</b><br />
+Anyone who claims to be an avid calculator gamer knows what nibbles is, but for all the other people... One of the staples of a good archive of games has always been the MoFrog/Nibbles games. I have no idea who came up with this gamming genre, but whoever did is very smart. The general idea is that you have this moving snakelike figure that can grow longer, therefore making it harder to hit the dot or whatever that increases your score. Variations can be thrown in, like obstacles or whatever. If you have never played a MoFrog/Nibbles game then go to www.ticalc.org and download MoFrog for the TI-82.</p>
+
+<p align="justify"><b>How is that Possible?</b><br />
+As you have probably guessed (or by reading the title of this tutorial), the secret is arrays. It will be kind of hard to explain but I will try. This is your basic snake:</p>
+<center>*****</center>
+<p align="justify">It is 5 spaces long and as it moves, a new '*' appears and the one on the end dissappears. For the calculator to know this it has to remember the coordinates of every space of the snake. To do this you simply store the vars into two different lists. One for the X-values and one for the Y-values. To explain, here ia a basic nibbles engine, I will explain it after the following:</p>
+
+<p><table width="100%" cellpadding="2" cellspacing="3" border="0">
+<colgroup>
+  <col span="1" width="35%">
+  <col span="1" width="65%">
+</colgroup>
+  <tr>
+    <td bgcolor="999999" width="100%" colspan="2">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="999999">
+	  <tr>
+          <td><font face="verdana" size="1"><b>TI CODE</b></font></td>
+	    <td align="center"><font face="verdana" size="1"><b>EXPLANATION & DESCRIPTION</b></font></td>
+	  </tr>
+      </table>
+    </td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">ClrHome</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">1->X:1->Y<br />
+1->S:0->T</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">We have to know which direction the darn thing is moving. If you look at your calculator keys you will see that S is above X and T is above Y. So, S is change in X, and, T is change in Y. We start out with the snake in the upperleft, moving right.</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">2->C:1->L</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">To start out, the position of the current (leading end of the snake) space is the second space in the list. It is one space long. As the program cycles through the loop, C is upped by one, moving the leading end forward. Example with a snake that is 5 long: ***** <br /><br />values in list:<br />[1234567890123456789012345] - list is 25 spaces long<br />X-1234500000000000000000000<br />Y-1111100000000000000000000<br />leading end [x=5, y=1] [C].<br />end [x=1, y=1] [C-L].<br /><br />After it has moved three cycles through main loop: [C+3->C(and list has been updated)<br />___*****<br />X-1234567890000000000000000<br />Y-1111111110000000000000000<br />leading end [x=?, y=?] [C].<br />end [x=?, y=?] [C-L].<br /><br />As you can see, as C increases, the value accesed to be the address of the blank space moves along with the value of C, creating the allusion that the whole snake is moving along.</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">25->dim(<font size="-3">L</font>1<br />25->dim(<font size="-3">L</font>2</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">These statements simply setup the length of the list.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">1-><font size="-3">L</font>1(2):1-><font size="-3">L</font>2(2)</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">1-><font size="-3">L</font>1(1):1-><font size="-3">L</font>2(1)</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">While (X&lt;17)(X>0)(Y&lt;9)(Y>0)</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This is exactly the same as saying [While (X&lt;17) and (X>0) and (Y&lt;9) and (Y>0)], it just saves a few bites of memory.</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">Output(<font size="-3">L</font>1(C),<font size="-3">L</font>2(C),"*"</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This outputs the leading edge of the snake. Note most would write it:<br />
+L<font size="-3">1</font>(C)->A:<font size="-3">L</font>2(C)->B<br />
+Output(A,B,"*"<br />
+But this would slow down the loop considerably because it is making 2 unnecesary storages each loop.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td width="30%"><font face="Tifont, Ti83pc" size="2">(C-L)->Z</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">If Z&lt;1:Z+25->Z</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This prevents an "ERR:INVALID DIM" in the following case:<br />
+<br />[1___________________]
+<br />[____******_________]
+<br />[_________*__________]
+<br />[_________*__________]
+<br />[_________*__________]
+<br />[_________*__________] leading edge
+<br />[____________________]
+<br />[____________________]
+<br />Y-6000000000000002222223456
+<br />X-80000000000000056789vvvvvv[v=10]
+<br />leading end [x=?, y=?] [C].
+<br />end [x=?, y=?] [C-L].<br />
+<br />Here C-L would give you -9, which would give you a "ERR:INVALID DIM".</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">Output(<font size="-3">L</font>1(Z),<font size="-3">L</font>2(Z),"_"</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This deletes the end of the tail.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">getKey->K</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">If K:Then</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">As addresed in tutorial one, if it is not 0, it evaluates to true. This is the same as saying [If K>0].</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">(K=26)-(K=24)->S<br />(K=34)-(K=25)->T</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">As addresed in tutorial one, this if K=26, puts a 1 in S (moves right) and stores a 0 in T (there is no vertical movement. This is just an optimised way of getting the key value.</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">(K=21)+L->L</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This is simply for experiments sake, it allows you to extend the length of the snake.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">End</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">C+1->C</font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">If C=26:1->C</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This keeps the value of C from going into infinity. Note that if you left this statement out, the program would run, but the size of <font size="-3">L</font>1 and <font size="-3">L</font>2 would grow until you ran out of memory. It has to work because if you go into Stat, Edit.., you can extend the length of the program.</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">X+S->X:Y+T->Y</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This updates the leading edge of the snake with the values that it got the last time you pushed a key.</div></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="dddddd"><font face="Tifont, Ti83pc" size="2">X-><font size="-3">L</font>2(C):Y-><font size="-3">L</font>1(C)</font></td>
+    <td bgcolor="999999"><font face="verdana" size="1"><div align="justify">This is the key to the movement, it stores the value of the edge for use when the tail gets to that spot and needs to be errased.</div></font></td>
+  </tr>
+  <tr bgcolor="dddddd">
+    <td><font face="Tifont, Ti83pc" size="2">End</font></td>
+    <td>&nbsp;</td>
+  </tr>
+</table></p>
+
+
+<p align="justify"><b>Overview:</b>
+<br />Run the code. As you see, the Snake thing moves around. It is only 1 space long (even though it looks like two). When you push a 'Control key' it changes direction. If you press <img src="../../index/2nd.gif" width="19" height="11" border="0" align="middle" alt="2ND" />, then an arrow key, it will be one space longer. If you hit <img src="../../index/2nd.gif" width="19" height="11" border="0" align="middle" alt="2ND" /> more than 24 times, you will get an error, this is explained above.</p>
+
+<hr />
+
+If you don't understand this stuff:
+
+<ol>
+  <li>Reread the tutorial.</li>
+  <li>Reread it again (throughly, and experiment with the code)</li>
+  <li>Then I can't write good tutorials, or</li>
+  <li>You should rethink wanting to program Advanced BASIC</li>
+</ol>
+
+<p align="justify">As this tutorial has become quite big, I will save the hit detection part until the <a href="tutorial4.html">next tutorial.</a></p>
+
+<p align="justify">Written by <a href="../../members/users/user021.html">Brandon Green</a>.</p>
+
+<p align="justify">Tutorial is property of Brandon Green, &copy; 2000. Do not use without permision. Algorithms are property of Brandon Green, e-mail for permision to use.</p>
+
+
+<br />
+<br />
+
+<script language="javascript">
+<!--
+	var time=new Date();
+	var endyear=time.getYear();
+	if (endyear < 2000)
+	endyear = endyear + 1900;
+	document.write("<center><small>Copyright © 2000-" + endyear + " BASIC Guru Online.  All Rights Reserved.<\/small><\/center>");
+-->
+</script>
+
+<hr />
+<br />
+<center><small>Problems with this page?<br />
+Contact the <a href="../../contactme.html">Webmaster</a>.
+</small>
+</center>
+</center>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<!--#geoguide-->
+</font>
+</body>
+</html>
